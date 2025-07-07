@@ -11,9 +11,9 @@ def login(driver, url, email, password):
 
     try:
         WebDriverWait(driver, 3).until(
-            EC.presence_of_element_located((By.ID, "form:«r8R3»"))
+            EC.presence_of_element_located((By.ID, "form:«r9R3»"))
         ).send_keys(email)
-        driver.find_element(By.ID, "form:«r8R3H1»").send_keys(password + Keys.RETURN)
+        driver.find_element(By.ID, "form:«r9R3H1»").send_keys(password + Keys.RETURN)
         time.sleep(3)
         return True
     except:
