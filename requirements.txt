@@ -140,7 +140,6 @@ ordered-set==4.1.0
 orjson==3.10.18
 oss2==2.17.0
 overrides==7.7.0
-packaging==23.2
 pandas==2.2.3
 pillow==11.2.1
 platformdirs==4.3.8
