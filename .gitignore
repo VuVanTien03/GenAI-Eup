@@ -2,3 +2,4 @@
 data/
 chroma_db/
 .idea/
+__pycache__/
