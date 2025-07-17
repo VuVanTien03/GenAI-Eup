@@ -150,8 +150,6 @@ def get_similar_docs(query: str, vector_store: Chroma, k: int = 5) -> List[str]:
         print(f"Error retrieving similar documents: {e}")
         return []  # Return empty list
 
-import requests
-import json
 
 def initialize_llm(llm_type: str = "openai" , model_path: str = config['LLM_MODEL_PATH']) -> Any:
     try:
@@ -172,7 +170,7 @@ def initialize_llm(llm_type: str = "openai" , model_path: str = config['LLM_MODE
             if not config.get("OPENAI_API_KEY"):
                 raise ValueError("OPENAI_API_KEY must be set for OpenAI LLM")
             from langchain_community.llms import OpenAI
-            return ChatGroq( temperature=0,groq_api_key = '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', model_name = 'llama-3.3-70b-versatile')
+            return ChatGroq( temperature=0,groq_api_key = config['OPENAI_API_KEY'], model_name = 'llama-3.3-70b-versatile')
 
         elif llm_type == "google":
             print("ofdsfdsagdsagwerte")
@@ -306,18 +304,20 @@ def create_learning_path(agent: Any, learning_goal: str, user_knowledge: str = "
           "skills": [list of skills the user needs to learn],
           "learning_path": [
             {
-              "step": 1,
+              "day": 1,
               "objective": "...",
               "resources": ["resource1", "resource2"],
-              "assessment": "..."
+              "theory": "...",
+              "question review": ""
             },
             ...
           ]
         }
                                                                                                                                                            
         - "skills" is a list of required skills.
-        - Each "learning_path" step should have a number, clear objective, suggested resources (text/video/interactive), and a way to assess understanding (quiz, project, etc).
+        - Each "learning_path" day should have a number, clear objective, suggested resources (text/video/interactive), and a way to assess understanding (quiz, project, etc).
         Do not include explanation outside the JSON.
+        - Each question review of a day is choice question A,B,C,D and have answer for each question
         """
         return agent.run(prompt.strip())
     except Exception as e:
