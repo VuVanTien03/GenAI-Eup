@@ -19,7 +19,7 @@ class PageDownloader:
 
     def download_page(self, url, save_name, folder="roadmap"):
         self.driver.get(url)
-        time.sleep(3)  # đợi JS render
+        time.sleep(3)
 
         target = "Tôi muốn trở thành " + save_name
 
@@ -44,7 +44,7 @@ class PageDownloader:
         return file_path
 
 if __name__ == "__main__":
-    # Dummy login info vì trang không yêu cầu
+    #login info
     EMAIL = "vuvantien_t67@hus.edu.vn"
     PASSWORD = "Anhyeuem2003"
 
@@ -61,12 +61,12 @@ if __name__ == "__main__":
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
 
-    # Gọi login() như thường lệ (dù không cần cho roadmap.sh)
+    # Gọi login()
     login(driver, "https://roadmap.sh/login", EMAIL, PASSWORD)
 
     save_name = ["AI engineer", "Backend", "Frontend"]
 
-    # Gọi PageDownloader như cũ
+    # Gọi PageDownloader
     bot = PageDownloader(driver, EMAIL, PASSWORD)
     print("_____________Start Download______________________")
     for name in save_name:
