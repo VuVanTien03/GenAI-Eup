@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 class PageParser:
-    def __init__(self, file_path, output_dir="parsed_data_raw/csv/roadmap/frontend_csv"):
+    def __init__(self, file_path, output_dir="parsed_data_raw/csv/roadmap/backend_csv"):
         self.file_path = file_path
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
@@ -69,7 +69,7 @@ class PageParser:
 
 
 if __name__ == "__main__":
-    file_path = "html_pages/roadmap/frontend.html"
+    file_path = "html_pages/roadmap/backend/backend.html"
     parser = PageParser(file_path)
     print("_____________Start Parse______________________")
     parser.parse_and_save_skills()
