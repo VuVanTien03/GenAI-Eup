@@ -43,7 +43,6 @@ def GenSchedule(req: ScheduleType):
         # --- Create learning path ---
         learning_goal = req.query
         user_knowledge = req.level
-        print(req)
         learning_path = create_learning_path(agent, learning_goal, user_knowledge)
         print(learning_path)
 
