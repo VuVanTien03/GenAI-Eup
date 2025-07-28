@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "RL-ACVT-001",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Kiến trúc CNN nào đã giới thiệu khái niệm 'Residual Connections' để giải quyết vấn đề gradient vanishing trong các mạng rất sâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. LeNet-5",
+      "B. AlexNet",
+      "C. VGGNet",
+      "D. ResNet"
+    ],
+    "correct_answer": "D",
+    "explanation": "ResNet (Residual Network) đã cách mạng hóa việc đào tạo các mạng rất sâu bằng cách giới thiệu các kết nối tắt (shortcut connections) hoặc residual connections, cho phép gradient chảy trực tiếp qua nhiều lớp mà không bị suy giảm, giải quyết hiệu quả vấn đề gradient vanishing/exploding.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "ResNet", "Residual Connections"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-002",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Trong kiến trúc Inception (GoogLeNet), mục đích của việc sử dụng các 'Inception Modules' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để chỉ sử dụng các lớp Convolutional 1x1.",
+      "B. Để học các đặc trưng ở nhiều quy mô (scales) khác nhau đồng thời và giảm chi phí tính toán.",
+      "C. Để thay thế hoàn toàn các lớp Pooling.",
+      "D. Để tăng số lượng tham số của mô hình một cách đáng kể."
+    ],
+    "correct_answer": "B",
+    "explanation": "Inception modules kết hợp các lớp tích chập với kernel size khác nhau (1x1, 3x3, 5x5) và max pooling, cho phép mạng học các đặc trưng ở nhiều quy mô. Các lớp tích chập 1x1 (bottleneck layers) được sử dụng để giảm số chiều và chi phí tính toán.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "InceptionNet", "GoogLeNet"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-003",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Mô hình nào sau đây thường được sử dụng như một backbone (bộ trích xuất đặc trưng) mạnh mẽ trong nhiều tác vụ Computer Vision khác (như Object Detection, Segmentation) nhờ khả năng trích xuất đặc trưng tốt?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. LeNet-5",
+      "B. ResNet và VGGNet",
+      "C. Perceptron đơn lớp",
+      "D. Recurrent Neural Network (RNN)"
+    ],
+    "correct_answer": "B",
+    "explanation": "ResNet và VGGNet, với cấu trúc sâu và khả năng học các đặc trưng phân cấp mạnh mẽ, thường được sử dụng làm backbone trong các mô hình thị giác máy tính phức tạp hơn do khả năng trích xuất đặc trưng hiệu quả của chúng.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "Backbone", "ResNet", "VGGNet"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-004",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Điểm khác biệt chính giữa VGGNet và AlexNet là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. VGGNet sử dụng nhiều lớp Convolutional nhỏ (3x3) thay vì các lớp lớn hơn, tạo ra kiến trúc sâu hơn và đồng nhất hơn.",
+      "B. AlexNet sử dụng nhiều lớp hơn VGGNet.",
+      "C. VGGNet không sử dụng lớp Pooling.",
+      "D. AlexNet giới thiệu khái niệm Batch Normalization."
+    ],
+    "correct_answer": "A",
+    "explanation": "VGGNet nổi bật với sự đơn giản và đồng nhất của kiến trúc, sử dụng lặp lại các khối lớp tích chập 3x3 nhỏ và max pooling để xây dựng các mạng rất sâu, trong khi AlexNet sử dụng kernel lớn hơn ở các lớp đầu tiên.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "VGGNet", "AlexNet"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-005",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "MobileNet sử dụng loại tích chập đặc biệt nào để giảm số lượng tham số và tính toán, phù hợp cho thiết bị di động?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dilated Convolution",
+      "B. Transposed Convolution",
+      "C. Depthwise Separable Convolution",
+      "D. Grouped Convolution"
+    ],
+    "correct_answer": "C",
+    "explanation": "MobileNet sử dụng Depthwise Separable Convolution, một kỹ thuật chia tích chập chuẩn thành hai bước (depthwise convolution và pointwise convolution) để giảm đáng kể số lượng tham số và tính toán, làm cho mạng hiệu quả hơn cho các thiết bị tài nguyên hạn chế.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "MobileNet", "Depthwise Separable Convolution"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-006",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Tại sao Batch Normalization lại quan trọng trong việc đào tạo các mạng CNN sâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó loại bỏ hoàn toàn nhu cầu về hàm kích hoạt.",
+      "B. Nó chuẩn hóa đầu ra của mỗi lớp, giúp ổn định quá trình đào tạo và tăng tốc độ hội tụ.",
+      "C. Nó tăng thêm độ phức tạp cho mô hình để học các đặc trưng tốt hơn.",
+      "D. Nó chỉ được sử dụng cho các mô hình nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Batch Normalization chuẩn hóa đầu ra của các lớp trước khi đưa vào hàm kích hoạt, giúp giảm sự dịch chuyển covariate nội bộ (internal covariate shift), ổn định gradient, cho phép sử dụng learning rates cao hơn và tăng tốc độ hội tụ của mạng.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "Batch Normalization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-007",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Kiến trúc DenseNet khác biệt với ResNet ở điểm nào chính?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. DenseNet không có skip connections.",
+      "B. DenseNet kết nối từng lớp với MỌI lớp trước đó trong cùng một block, trong khi ResNet cộng đầu ra.",
+      "C. DenseNet chỉ sử dụng các lớp 1x1 Convolution.",
+      "D. DenseNet chỉ có một vài lớp sâu."
+    ],
+    "correct_answer": "B",
+    "explanation": "DenseNet (Dense Convolutional Network) nổi bật với 'dense connections' của nó, nơi mỗi lớp nhận đầu vào từ tất cả các lớp trước đó trong cùng một block, và truyền đầu ra của chính nó đến tất cả các lớp tiếp theo. Điều này khác với ResNet chỉ cộng đầu ra của một lớp với đầu ra của một lớp xa hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "DenseNet", "ResNet"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-008",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Thử thách chính khi áp dụng các kỹ thuật Computer Vision truyền thống vào Video Analysis là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Video có quá ít thông tin hình ảnh.",
+      "B. Video là chuỗi các khung hình liên tiếp, đòi hỏi xử lý thông tin không gian (spatial) và thời gian (temporal).",
+      "C. Video có độ phân giải quá thấp.",
+      "D. Video luôn có chất lượng tốt hơn ảnh tĩnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Video không chỉ là một tập hợp các ảnh tĩnh; nó còn chứa thông tin về sự chuyển động và mối quan hệ theo thời gian giữa các khung hình. Các mô hình phân tích video cần nắm bắt được cả đặc trưng không gian (trong mỗi khung hình) và đặc trưng thời gian (giữa các khung hình).",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "Spatial-Temporal"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-009",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Kiến trúc mạng nơ-ron nào thường được sử dụng để xử lý cả thông tin không gian và thời gian trong video?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mạng Convolutional Neural Network (CNN) 2D thông thường.",
+      "B. Mạng Recurrent Neural Network (RNN) độc lập.",
+      "C. Mạng CNN 3D hoặc kết hợp CNN 2D với RNN/Transformer.",
+      "D. Mạng Fully Connected."
+    ],
+    "correct_answer": "C",
+    "explanation": "CNN 3D có thể học các đặc trưng không gian và thời gian đồng thời. Ngoài ra, việc kết hợp CNN 2D (cho đặc trưng không gian) với RNN (cho đặc trưng thời gian) hoặc kiến trúc Transformer (cho cả hai) cũng là phương pháp phổ biến để phân tích video.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "CNN 3D", "RNN", "Transformer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-010",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Tác vụ \"Video Summarization\" (Tóm tắt video) nhằm mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng độ phân giải của video.",
+      "B. Trích xuất các phân đoạn hoặc khung hình quan trọng nhất từ video để tạo ra phiên bản ngắn gọn.",
+      "C. Dịch phụ đề của video sang ngôn ngữ khác.",
+      "D. Nhận diện tất cả các đối tượng trong từng khung hình của video."
+    ],
+    "correct_answer": "B",
+    "explanation": "Video summarization nhằm mục đích tạo ra một phiên bản ngắn hơn của video gốc, giữ lại các thông tin hoặc sự kiện quan trọng nhất, thường dưới dạng một chuỗi các khung hình chính hoặc phân đoạn video ngắn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "Video Summarization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-011",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Phân biệt giữa \"Video Classification\" và \"Action Recognition\" trong Video Analysis?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Video Classification gán nhãn cho toàn bộ video, còn Action Recognition xác định các hành động cụ thể của con người trong video.",
+      "B. Cả hai tác vụ đều giống nhau.",
+      "C. Video Classification chỉ làm việc với video không có âm thanh, còn Action Recognition thì có.",
+      "D. Video Classification cần nhiều dữ liệu hơn Action Recognition."
+    ],
+    "correct_answer": "A",
+    "explanation": "Video Classification gán một hoặc nhiều nhãn cho toàn bộ video (ví dụ: 'phim hoạt hình', 'tin tức'). Action Recognition tập trung vào việc xác định và phân loại các hành động cụ thể của con người hoặc đối tượng trong video (ví dụ: 'chạy', 'nhảy', 'đang nói chuyện').",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "Video Classification", "Action Recognition"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-012",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Optical Flow là một khái niệm quan trọng trong Video Analysis để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thay đổi màu sắc của các khung hình video.",
+      "B. Đo lường sự chuyển động rõ ràng của các điểm ảnh giữa các khung hình liên tiếp.",
+      "C. Giảm dung lượng tệp video.",
+      "D. Phát hiện khuôn mặt trong video."
+    ],
+    "correct_answer": "B",
+    "explanation": "Optical Flow (Dòng quang học) là một kỹ thuật để ước tính mô hình chuyển động rõ ràng của các điểm, các cạnh hoặc các khu vực trên bề mặt ảnh do chuyển động tương đối giữa vật thể và camera. Nó được sử dụng để nắm bắt thông tin chuyển động trong video.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "Optical Flow"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-013",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Mạng R(2+1)D (ResNet (2+1)D) là một biến thể của ResNet được thiết kế cho Video Analysis. Đặc điểm chính của nó là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó chỉ sử dụng các lớp Convolutional 2D.",
+      "B. Nó phân tách tích chập 3D thành tích chập 2D không gian và tích chập 1D thời gian.",
+      "C. Nó không có residual connections.",
+      "D. Nó chỉ được dùng để phân loại ảnh tĩnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mạng R(2+1)D là một kiến trúc hiệu quả cho video, phân tách tích chập 3D thành tích chập 2D (trong mặt phẳng không gian) và tích chập 1D (dọc theo trục thời gian), giúp giảm số lượng tham số và tăng khả năng học các đặc trưng không gian-thời gian hiệu quả hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "R(2+1)D"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-014",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Transfer Learning",
+    "question_text": "Khái niệm 'Transfer Learning' (Học chuyển giao) trong Computer Vision là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện một mô hình từ đầu với một tập dữ liệu rất lớn.",
+      "B. Sử dụng kiến thức từ một mô hình đã được huấn luyện trên một tác vụ hoặc tập dữ liệu lớn để giải quyết một tác vụ mới, liên quan.",
+      "C. Chỉ áp dụng cho các mô hình không phải là mạng nơ-ron.",
+      "D. Đào tạo nhiều mô hình cùng một lúc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Học chuyển giao là một kỹ thuật mạnh mẽ trong Computer Vision, nơi một mô hình đã được huấn luyện trên một tác vụ lớn (ví dụ: ImageNet classification) được tái sử dụng và tinh chỉnh cho một tác vụ mới, thường là với tập dữ liệu nhỏ hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Transfer Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-015",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Transfer Learning",
+    "question_text": "Khi sử dụng Transfer Learning, chúng ta thường 'đóng băng' (freeze) các lớp ban đầu của mô hình đã huấn luyện trước. Tại sao?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để giảm kích thước của mô hình.",
+      "B. Vì các lớp ban đầu đã học được các đặc trưng cấp thấp, chung và có thể tái sử dụng được.",
+      "C. Để tăng số lượng tham số cần huấn luyện.",
+      "D. Để ngăn chặn mô hình học được bất cứ điều gì mới."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các lớp Convolutional ban đầu của một CNN đã được huấn luyện trước (ví dụ: trên ImageNet) thường học được các đặc trưng cấp thấp và tổng quát (cạnh, kết cấu, màu sắc) có thể hữu ích cho nhiều tác vụ thị giác khác nhau. Việc đóng băng chúng giúp giữ lại kiến thức này và tránh phá vỡ các đặc trưng đã học.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Transfer Learning", "Freezing Layers"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-016",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Transfer Learning",
+    "question_text": "Lợi ích chính của Transfer Learning khi làm việc với tập dữ liệu nhỏ là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó luôn đảm bảo độ chính xác hoàn hảo.",
+      "B. Nó giúp tránh overfitting và cho phép đạt được hiệu suất tốt với ít dữ liệu đào tạo hơn.",
+      "C. Nó loại bỏ hoàn toàn nhu cầu về phần cứng GPU.",
+      "D. Nó chỉ áp dụng cho các tác vụ phân loại nhị phân."
+    ],
+    "correct_answer": "B",
+    "explanation": "Với tập dữ liệu nhỏ, việc huấn luyện một mô hình từ đầu dễ dẫn đến overfitting. Transfer learning giúp khắc phục điều này bằng cách tận dụng các đặc trưng đã học trước, cung cấp một khởi đầu tốt, giúp mô hình khái quát hóa tốt hơn và đạt hiệu suất cao hơn với ít dữ liệu mới.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Transfer Learning", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-017",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Transfer Learning",
+    "question_text": "Khi nào nên 'fine-tune' (tinh chỉnh) toàn bộ mô hình đã huấn luyện trước thay vì chỉ thay thế lớp đầu ra?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi dataset mới rất nhỏ và không liên quan đến dataset gốc.",
+      "B. Khi dataset mới lớn và rất khác biệt so với dataset gốc, hoặc khi muốn đạt hiệu suất tối đa.",
+      "C. Khi mô hình đã huấn luyện trước có quá ít lớp.",
+      "D. Fine-tuning luôn là lựa chọn tốt nhất, bất kể dataset."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nếu dataset mới đủ lớn và đủ khác biệt với dataset mà mô hình đã được huấn luyện trước, hoặc khi mục tiêu là đạt được hiệu suất cao nhất có thể, fine-tuning toàn bộ mô hình (hoặc nhiều lớp hơn) thường là lựa chọn tốt hơn, vì nó cho phép mô hình thích nghi tốt hơn với các đặc trưng cụ thể của dữ liệu mới.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Transfer Learning", "Fine-tuning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-018",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Transfer Learning",
+    "question_text": "Các mô hình được huấn luyện trước (Pre-trained Models) như ResNet, VGG, Inception thường được huấn luyện trên dataset nào để chúng có thể được dùng cho Transfer Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. MNIST",
+      "B. CIFAR-10",
+      "C. ImageNet",
+      "D. Pascal VOC"
+    ],
+    "correct_answer": "C",
+    "explanation": "ImageNet là một dataset phân loại ảnh quy mô lớn (hơn 14 triệu ảnh, 20.000 lớp) được sử dụng rộng rãi để huấn luyện các mô hình CNN từ đầu, tạo ra các pre-trained models có khả năng trích xuất đặc trưng mạnh mẽ cho các tác vụ Computer Vision khác.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Transfer Learning", "ImageNet", "Pre-trained Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-019",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Action Recognition",
+    "question_text": "Tác vụ Action Recognition (Nhận diện hành động) trong video tập trung vào điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại toàn bộ nội dung của một video.",
+      "B. Xác định các đối tượng tĩnh trong mỗi khung hình.",
+      "C. Nhận diện và phân loại các hành động cụ thể của con người hoặc đối tượng trong một chuỗi khung hình.",
+      "D. Tạo ra phụ đề tự động cho video."
+    ],
+    "correct_answer": "C",
+    "explanation": "Action Recognition là một tác vụ quan trọng trong Video Analysis, nhằm mục đích xác định và phân loại các hành động động học diễn ra trong video, thường liên quan đến cử chỉ, chuyển động của con người hoặc sự tương tác của đối tượng.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Action Recognition", "Video Analysis"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-020",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Action Recognition",
+    "question_text": "Kiến trúc Two-Stream Network cho Action Recognition thường kết hợp những luồng thông tin nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một luồng âm thanh và một luồng văn bản.",
+      "B. Một luồng chỉ xử lý thông tin RGB (ảnh tĩnh) và một luồng xử lý thông tin chuyển động (Optical Flow).",
+      "C. Hai luồng video có độ phân giải khác nhau.",
+      "D. Một luồng xử lý không gian 2D và một luồng xử lý 3D."
+    ],
+    "correct_answer": "B",
+    "explanation": "Two-Stream Network là một kiến trúc phổ biến cho Action Recognition, bao gồm một luồng xử lý các khung hình RGB (thông tin không gian) và một luồng xử lý các trường Optical Flow (thông tin chuyển động/thời gian). Hai luồng này sau đó được kết hợp để đưa ra dự đoán cuối cùng.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Action Recognition", "Two-Stream Network", "Optical Flow"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-021",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Action Recognition",
+    "question_text": "Thử thách chính trong Action Recognition là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ có ít dữ liệu video để đào tạo.",
+      "B. Xử lý các biến thể lớn về tư thế, tốc độ thực hiện, góc nhìn và sự che khuất của các hành động.",
+      "C. Các hành động luôn kéo dài trong cùng một khoảng thời gian.",
+      "D. Không thể phân biệt các hành động khác nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nhận diện hành động đối mặt với nhiều thách thức do sự phức tạp và biến thể của hành động: cùng một hành động có thể được thực hiện theo nhiều cách, ở các tốc độ khác nhau, từ nhiều góc nhìn, và có thể bị che khuất.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Action Recognition", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-022",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Action Recognition",
+    "question_text": "Dataset phổ biến nào được sử dụng rộng rãi để đánh giá các mô hình Action Recognition?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. MNIST",
+      "B. COCO",
+      "C. UCF101 hoặc HMDB51",
+      "D. CelebA"
+    ],
+    "correct_answer": "C",
+    "explanation": "UCF101 và HMDB51 là hai dataset benchmark tiêu chuẩn cho Action Recognition, chứa các video ngắn về các hành động khác nhau được thu thập từ YouTube, rất quan trọng để đánh giá hiệu suất của các mô hình.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Action Recognition", "Datasets", "UCF101", "HMDB51"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-023",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Action Recognition",
+    "question_text": "Mô hình dựa trên Transformer đã được ứng dụng trong Action Recognition như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ để phân loại đối tượng trong từng khung hình.",
+      "B. Để học các mối quan hệ không gian và thời gian dài hạn giữa các khung hình và các đối tượng/vùng trong video.",
+      "C. Để tạo ra video mới từ mô tả hành động.",
+      "D. Chỉ để nén video."
+    ],
+    "correct_answer": "B",
+    "explanation": "Transformer, đặc biệt là thông qua cơ chế self-attention, rất hiệu quả trong việc nắm bắt các mối quan hệ phụ thuộc dài hạn (long-range dependencies) cả về không gian và thời gian trong video, giúp mô hình hiểu rõ hơn về ngữ cảnh và trình tự của hành động.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Action Recognition", "Transformer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-024",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "Mục tiêu của Discriminator trong một GAN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ra dữ liệu giả (ví dụ: ảnh).",
+      "B. Phân biệt giữa dữ liệu thật và dữ liệu giả được tạo ra bởi Generator.",
+      "C. Giảm thiểu mất mát của Generator.",
+      "D. Chỉ được sử dụng trong các tác vụ phân loại."
+    ],
+    "correct_answer": "B",
+    "explanation": "Discriminator trong GAN đóng vai trò là một bộ phân loại, được huấn luyện để phân biệt dữ liệu thực từ tập dữ liệu đào tạo với dữ liệu giả được tạo ra bởi Generator. Mục tiêu của nó là trở nên càng tốt càng tốt trong việc phân biệt này.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "Discriminator"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-025",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "Vấn đề \"Mode Collapse\" trong GANs đề cập đến hiện tượng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Discriminator không thể phân biệt ảnh thật và ảnh giả.",
+      "B. Generator chỉ tạo ra một tập hợp nhỏ các loại mẫu ảnh, bỏ qua sự đa dạng thực sự của dữ liệu huấn luyện.",
+      "C. Generator tạo ra ảnh có độ phân giải rất thấp.",
+      "D. Quá trình đào tạo GAN quá ổn định."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mode collapse là một vấn đề phổ biến trong đào tạo GAN, nơi Generator chỉ tập trung vào việc tạo ra một số loại mẫu giới hạn mà nó biết có thể dễ dàng đánh lừa Discriminator, dẫn đến thiếu sự đa dạng trong các mẫu được sinh ra.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "Mode Collapse"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-026",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "WGAN (Wasserstein GAN) được phát triển để giải quyết vấn đề gì của GAN truyền thống?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ đào tạo chậm.",
+      "B. Sự ổn định của quá trình đào tạo và tránh mode collapse tốt hơn.",
+      "C. Khả năng tạo ra ảnh có độ phân giải rất cao.",
+      "D. Yêu cầu ít dữ liệu đào tạo hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "WGAN (Wasserstein GAN) cải thiện tính ổn định của đào tạo GAN bằng cách thay thế hàm mất mát của Discriminator bằng Wasserstein distance (Earth Mover's Distance) và áp dụng gradient clipping (hoặc gradient penalty) để thực thi Lipschitz constraint, giúp việc học mượt mà hơn và ít gặp mode collapse hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "WGAN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-027",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "StyleGAN nổi bật với khả năng gì so với các kiến trúc GAN khác?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ảnh chỉ với 1 pixel.",
+      "B. Kiểm soát chi tiết quá trình sinh ảnh thông qua các 'style' riêng biệt ở các mức độ phân giải khác nhau.",
+      "C. Đào tạo nhanh hơn gấp 100 lần các GAN khác.",
+      "D. Chỉ sinh ra ảnh đen trắng."
+    ],
+    "correct_answer": "B",
+    "explanation": "StyleGAN giới thiệu một kiến trúc Generator mới cho phép kiểm soát độc lập các đặc điểm tạo hình ở các cấp độ chi tiết khác nhau (từ thô đến mịn) bằng cách đưa 'style' thông qua Adaptive Instance Normalization (AdaIN) tại các lớp khác nhau, giúp tạo ra ảnh chất lượng cao và có khả năng điều khiển.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "StyleGAN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-028",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "Ứng dụng nào sau đây là ví dụ về GANs có điều kiện (Conditional GANs)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ảnh ngẫu nhiên không có điều kiện.",
+      "B. Sinh ảnh khuôn mặt theo giới tính hoặc độ tuổi được chỉ định.",
+      "C. Phân loại đối tượng trong ảnh.",
+      "D. Giảm nhiễu cho ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Conditional GANs (cGANs) cho phép kiểm soát quá trình sinh ảnh bằng cách đưa thêm thông tin điều kiện (ví dụ: nhãn lớp, mô tả văn bản, hoặc thuộc tính như giới tính, độ tuổi) vào cả Generator và Discriminator, từ đó tạo ra ảnh đáp ứng các tiêu chí cụ thể.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "Conditional GANs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-029",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "Chỉ số nào thường được sử dụng để đánh giá chất lượng và sự đa dạng của ảnh được tạo ra bởi GANs?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Accuracy và Recall.",
+      "B. Intersection over Union (IoU).",
+      "C. Inception Score (IS) và Fréchet Inception Distance (FID).",
+      "D. R-squared."
+    ],
+    "correct_answer": "C",
+    "explanation": "Inception Score (IS) và Fréchet Inception Distance (FID) là hai metric phổ biến và hiệu quả để đánh giá hiệu suất của GANs. IS đo lường cả chất lượng (khả năng phân biệt) và sự đa dạng của các mẫu được tạo ra, trong khi FID đo khoảng cách giữa phân bố đặc trưng của ảnh thật và ảnh giả.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "Evaluation Metrics", "IS", "FID"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-030",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "Khái niệm Self-Supervised Learning (Học tự giám sát) trong Computer Vision là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện mô hình mà không cần bất kỳ dữ liệu nào.",
+      "B. Huấn luyện mô hình bằng cách tạo ra các nhãn giả (pseudo-labels) từ dữ liệu đầu vào không được gán nhãn.",
+      "C. Huấn luyện mô hình với dữ liệu đã được gán nhãn thủ công bởi con người.",
+      "D. Chỉ áp dụng cho các tác vụ sinh ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Học tự giám sát là một kỹ thuật học máy nơi mô hình học cách trích xuất các đặc trưng hữu ích từ dữ liệu không có nhãn bằng cách giải quyết các tác vụ 'pretext' mà từ đó các nhãn giả (pseudo-labels) có thể được tự động tạo ra từ dữ liệu đầu vào. Ví dụ: dự đoán phần bị che khuất của ảnh.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-031",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "Lợi ích chính của Self-Supervised Learning là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn đạt độ chính xác cao hơn Supervised Learning.",
+      "B. Giảm đáng kể nhu cầu về dữ liệu được gán nhãn thủ công, tận dụng lượng lớn dữ liệu không có nhãn.",
+      "C. Tốc độ đào tạo nhanh hơn mọi phương pháp khác.",
+      "D. Chỉ hoạt động hiệu quả trên các tác vụ phân loại đơn giản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Self-Supervised Learning đặc biệt hữu ích khi dữ liệu được gán nhãn khan hiếm hoặc tốn kém để thu thập. Nó cho phép các mô hình học các biểu diễn mạnh mẽ từ lượng lớn dữ liệu không có nhãn, sau đó các biểu diễn này có thể được sử dụng cho các tác vụ giám sát (downstream tasks) với ít dữ liệu gán nhãn hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning", "Data Efficiency"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-032",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "Tác vụ 'Pretext Task' trong Self-Supervised Learning là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tác vụ chính mà mô hình cần giải quyết cuối cùng.",
+      "B. Một tác vụ phụ được thiết kế để tạo ra các nhãn tự động từ dữ liệu không có nhãn, giúp mô hình học được các biểu diễn hữu ích.",
+      "C. Tác vụ phân loại hình ảnh truyền thống.",
+      "D. Một tác vụ chỉ dùng để kiểm tra lỗi của mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tác vụ pretext là một tác vụ được thiết kế để mô hình có thể tự giám sát (tạo nhãn từ dữ liệu đầu vào) và học được các biểu diễn tổng quát mà không cần nhãn thủ công. Ví dụ: dự đoán xoay ảnh, sắp xếp các mảnh ghép ảnh.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning", "Pretext Task"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-033",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "Phương pháp Contrastive Learning (ví dụ: SimCLR, MoCo) trong Self-Supervised Learning hoạt động dựa trên nguyên tắc nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đảm bảo các đặc trưng của các mẫu khác nhau là giống hệt nhau.",
+      "B. Học cách đưa các biểu diễn của các phiên bản khác nhau của cùng một mẫu gần nhau, và các biểu diễn của các mẫu khác nhau ra xa nhau.",
+      "C. Dự đoán giá trị pixel bị thiếu trong ảnh.",
+      "D. Tạo ra ảnh mới từ mô tả văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Contrastive Learning là một phương pháp Self-Supervised Learning phổ biến, trong đó mô hình được đào tạo để tạo ra các embedding sao cho các phiên bản biến đổi của cùng một mẫu (positive pairs) được kéo gần lại với nhau trong không gian đặc trưng, trong khi các mẫu khác (negative pairs) được đẩy ra xa.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning", "Contrastive Learning", "SimCLR", "MoCo"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-034",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "Ứng dụng nào sau đây thường hưởng lợi trực tiếp từ các mô hình được huấn luyện bằng Self-Supervised Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các tác vụ với lượng dữ liệu gán nhãn dồi dào.",
+      "B. Các tác vụ cần học biểu diễn từ dữ liệu không có nhãn, như phân loại ảnh y tế hiếm, hoặc nhận diện hành động trong các bộ dữ liệu mới.",
+      "C. Các mô hình dựa trên quy tắc truyền thống.",
+      "D. Các ứng dụng chỉ cần phân loại đơn giản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Self-Supervised Learning đặc biệt có giá trị trong các lĩnh vực có dữ liệu gán nhãn khan hiếm (ví dụ: y tế, robot) hoặc khi việc gán nhãn tốn kém, vì nó cho phép học các biểu diễn mạnh mẽ từ dữ liệu không có nhãn, sau đó áp dụng cho các tác vụ cụ thể.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning", "Applications"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-035",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "Một trong những \"pretext tasks\" cơ bản nhất trong SSL là 'Context Prediction'. Nó liên quan đến việc gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dự đoán toàn bộ nội dung của bức ảnh.",
+      "B. Dự đoán vị trí tương đối của các vùng ảnh bị xáo trộn.",
+      "C. Dự đoán nhãn lớp của ảnh dựa trên ngữ cảnh toàn cục.",
+      "D. Dự đoán cảm xúc của người trong ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Context prediction (hoặc jigsaw puzzles) là một pretext task điển hình. Mô hình được cho các mảnh ghép của một hình ảnh bị xáo trộn và phải dự đoán vị trí ban đầu của chúng, buộc nó phải học các mối quan hệ không gian và đặc trưng cục bộ.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning", "Pretext Task"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-036",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Tác vụ nào sau đây KHÔNG phải là một tác vụ phổ biến trong 3D Vision?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. 3D Reconstruction (Tái tạo 3D).",
+      "B. Depth Estimation (Ước tính chiều sâu).",
+      "C. Image Classification trên ảnh 2D.",
+      "D. 3D Object Detection (Phát hiện đối tượng 3D)."
+    ],
+    "correct_answer": "C",
+    "explanation": "Image Classification trên ảnh 2D là một tác vụ thị giác máy tính 2D truyền thống, không thuộc phạm vi của 3D Vision, mặc dù các mô hình 2D có thể là một phần của hệ thống 3D lớn hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-037",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Point Cloud là một dạng dữ liệu phổ biến trong 3D Vision. Nó đại diện cho điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một tập hợp các hình ảnh 2D.",
+      "B. Một tập hợp các điểm trong không gian 3D, mỗi điểm có tọa độ (x, y, z) và có thể có thêm thuộc tính (màu sắc, cường độ).",
+      "C. Một mô hình 3D được tạo từ các tam giác.",
+      "D. Một video theo thời gian thực."
+    ],
+    "correct_answer": "B",
+    "explanation": "Point Cloud là một tập hợp dữ liệu gồm các điểm trong không gian 3D, thường được thu thập bởi các cảm biến như LiDAR hoặc camera chiều sâu. Mỗi điểm đại diện cho một vị trí trên bề mặt của một đối tượng hoặc môi trường.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "Point Cloud"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-038",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Kỹ thuật nào thường được sử dụng để ước tính chiều sâu (Depth Estimation) từ một hoặc nhiều ảnh 2D?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Object Detection.",
+      "B. Stereo Vision (Thị giác lập thể) hoặc Monocular Depth Estimation với mạng nơ-ron.",
+      "C. Image Classification.",
+      "D. Text Generation."
+    ],
+    "correct_answer": "B",
+    "explanation": "Ước tính chiều sâu là một tác vụ quan trọng trong 3D Vision. Stereo Vision sử dụng hai camera để tính toán chiều sâu dựa trên sự chênh lệch (disparity) giữa hai ảnh. Monocular Depth Estimation sử dụng một ảnh đơn và các mạng nơ-ron sâu để dự đoán bản đồ chiều sâu.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "Depth Estimation", "Stereo Vision"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-039",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "SLAM (Simultaneous Localization and Mapping) là gì trong bối cảnh 3D Vision và Robotics?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một phương pháp phân loại đối tượng trong ảnh tĩnh.",
+      "B. Một kỹ thuật cho phép một tác nhân (robot) xây dựng bản đồ của môi trường đồng thời xác định vị trí của chính nó trong bản đồ đó.",
+      "C. Một loại thuật toán tối ưu hóa cho mạng nơ-ron.",
+      "D. Một phương pháp nén dữ liệu 3D."
+    ],
+    "correct_answer": "B",
+    "explanation": "SLAM là một vấn đề cơ bản trong robotics và 3D Vision, cho phép một tác nhân (ví dụ: robot, xe tự lái) xây dựng bản đồ của môi trường xung quanh trong khi đồng thời xác định vị trí của chính nó trong bản đồ đó, thường dựa trên dữ liệu từ camera, LiDAR hoặc IMU.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "SLAM"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-040",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Neural Radiance Fields (NeRF) là một phương pháp mới nổi cho 3D Vision. Điểm đột phá của NeRF là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó chỉ có thể tái tạo các đối tượng đơn giản.",
+      "B. Nó học một biểu diễn liên tục (continuous) của cảnh 3D từ một tập hợp các ảnh 2D, cho phép tổng hợp các góc nhìn mới với độ chân thực cao.",
+      "C. Nó yêu cầu dữ liệu 3D được quét trước bởi máy quét chuyên dụng.",
+      "D. Nó chỉ có thể tạo ra các bản đồ chiều sâu thô."
+    ],
+    "correct_answer": "B",
+    "explanation": "NeRF là một kỹ thuật tiên tiến sử dụng mạng nơ-ron để học một biểu diễn hàm liên tục của một cảnh 3D từ các ảnh 2D có góc nhìn khác nhau. Điều này cho phép nó tổng hợp các góc nhìn mới của cảnh đó với độ chân thực và chi tiết đáng kinh ngạc, vượt xa các phương pháp tái tạo 3D truyền thống.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "NeRF"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-041",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Sensor nào sau đây thường được sử dụng để thu thập dữ liệu Point Cloud?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Camera RGB truyền thống.",
+      "B. Microphone.",
+      "C. LiDAR hoặc Camera chiều sâu (Depth Camera).",
+      "D. Gia tốc kế (Accelerometer)."
+    ],
+    "correct_answer": "C",
+    "explanation": "LiDAR (Light Detection and Ranging) và các loại camera chiều sâu (như camera ToF - Time-of-Flight hoặc camera hồng ngoại cấu trúc ánh sáng) là các cảm biến chính được sử dụng để thu thập dữ liệu point cloud, cung cấp thông tin về khoảng cách và hình dạng 3D của môi trường.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "LiDAR", "Depth Camera", "Point Cloud"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-042",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Phân biệt giữa '3D Object Detection' và '2D Object Detection'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. 3D Object Detection chỉ phát hiện đối tượng trong ảnh, còn 2D Object Detection trên video.",
+      "B. 3D Object Detection dự đoán hộp giới hạn 3D (bounding box 3D) cùng với nhãn lớp, trong khi 2D Object Detection chỉ dự đoán hộp giới hạn 2D.",
+      "C. 3D Object Detection không cần dữ liệu chiều sâu.",
+      "D. 2D Object Detection luôn chính xác hơn 3D Object Detection."
+    ],
+    "correct_answer": "B",
+    "explanation": "2D Object Detection xác định vị trí đối tượng bằng một hộp giới hạn hình chữ nhật trên mặt phẳng 2D của hình ảnh. 3D Object Detection phức tạp hơn, nó dự đoán một hộp giới hạn 3D (có chiều dài, rộng, cao, và góc quay) trong không gian 3D, cung cấp thông tin vị trí và định hướng đầy đủ hơn của đối tượng.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "3D Object Detection", "2D Object Detection"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-043",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Convolutional Neural Networks (CNNs) Architectures",
+    "question_text": "Lớp nào trong CNN thường được sử dụng để chuẩn hóa các giá trị đầu vào của batch dữ liệu, giúp ổn định và tăng tốc quá trình đào tạo?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Convolutional Layer",
+      "B. Pooling Layer",
+      "C. Batch Normalization Layer",
+      "D. Fully Connected Layer"
+    ],
+    "correct_answer": "C",
+    "explanation": "Batch Normalization là một kỹ thuật được sử dụng để chuẩn hóa các giá trị đầu vào của mỗi lớp trong một batch dữ liệu. Điều này giúp ổn định quá trình đào tạo, giảm sự phụ thuộc vào việc khởi tạo trọng số và cho phép sử dụng learning rates lớn hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "CNN Architectures", "Batch Normalization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-044",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Video Analysis",
+    "question_text": "Trong Video Analysis, 'Spatiotemporal Features' (đặc trưng không gian-thời gian) đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đặc trưng chỉ liên quan đến màu sắc của video.",
+      "B. Đặc trưng chỉ liên quan đến âm thanh của video.",
+      "C. Đặc trưng nắm bắt cả thông tin về vị trí trong không gian (spatial) và sự thay đổi theo thời gian (temporal) của các đối tượng/hành động.",
+      "D. Đặc trưng chỉ liên quan đến kích thước tệp video."
+    ],
+    "correct_answer": "C",
+    "explanation": "Đặc trưng không gian-thời gian là các biểu diễn học được từ video, bao gồm thông tin về hình dạng, kết cấu và vị trí của các đối tượng trong không gian (spatial) và cách chúng thay đổi hoặc tương tác theo thời gian (temporal), rất quan trọng cho các tác vụ như nhận diện hành động.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Video Analysis", "Spatiotemporal Features"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-045",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Transfer Learning",
+    "question_text": "Transfer Learning đặc biệt hữu ích khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn có một lượng dữ liệu đào tạo khổng lồ cho tác vụ mới.",
+      "B. Khi bạn không có quyền truy cập vào GPU.",
+      "C. Khi dataset cho tác vụ mới nhỏ hoặc tương tự với dataset mà mô hình đã được huấn luyện trước.",
+      "D. Khi bạn muốn huấn luyện mô hình từ đầu để đảm bảo tính độc lập."
+    ],
+    "correct_answer": "C",
+    "explanation": "Transfer Learning phát huy hiệu quả nhất khi dataset cho tác vụ mới tương đối nhỏ (để tránh overfitting) hoặc khi tác vụ mới có mối liên hệ mật thiết với tác vụ mà mô hình đã được huấn luyện trước (để tận dụng kiến thức đã học).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Transfer Learning", "Use Cases"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-046",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Action Recognition",
+    "question_text": "Để nhận diện các hành động dài hạn và phức tạp trong video, mô hình cần có khả năng nắm bắt được yếu tố nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Màu sắc chủ đạo của video.",
+      "B. Cấu trúc không gian của từng khung hình một cách độc lập.",
+      "C. Phụ thuộc thời gian (temporal dependencies) giữa các sự kiện và mối quan hệ ngữ cảnh.",
+      "D. Kích thước của tệp video."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các hành động phức tạp thường bao gồm một chuỗi các sự kiện hoặc chuyển động nhỏ hơn diễn ra theo thời gian. Do đó, mô hình nhận diện hành động cần khả năng nắm bắt các phụ thuộc thời gian dài hạn và hiểu ngữ cảnh của chuỗi sự kiện đó để đưa ra dự đoán chính xác.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Action Recognition", "Temporal Dependencies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-047",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "FID (Fréchet Inception Distance) trong đánh giá GANs đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ đào tạo của GAN.",
+      "B. Độ chính xác của Discriminator.",
+      "C. Khoảng cách giữa phân bố đặc trưng của ảnh thật và ảnh được sinh ra, phản ánh cả chất lượng và sự đa dạng.",
+      "D. Số lượng lớp trong mô hình."
+    ],
+    "correct_answer": "C",
+    "explanation": "FID là một chỉ số phổ biến để đánh giá chất lượng của ảnh được sinh ra bởi GANs và các mô hình sinh ảnh khác. Nó tính toán khoảng cách Fréchet giữa các phân bố đặc trưng của ảnh thật và ảnh giả (sử dụng Inception network để trích xuất đặc trưng), giá trị FID thấp hơn cho thấy chất lượng ảnh tốt hơn và đa dạng hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "Evaluation Metrics", "FID"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-048",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Self-Supervised Learning",
+    "question_text": "SimCLR là một framework Self-Supervised Learning. Nó sử dụng kỹ thuật 'data augmentation' như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bỏ qua hoàn toàn data augmentation.",
+      "B. Tạo ra hai phiên bản biến đổi khác nhau (augmented views) của cùng một ảnh đầu vào để tạo thành 'positive pair'.",
+      "C. Chỉ sử dụng một phiên bản ảnh duy nhất mà không biến đổi.",
+      "D. Áp dụng data augmentation chỉ cho ảnh giả (fake images)."
+    ],
+    "correct_answer": "B",
+    "explanation": "SimCLR (A Simple Framework for Contrastive Learning of Visual Representations) sử dụng các biến đổi dữ liệu mạnh mẽ (như cắt ngẫu nhiên, thay đổi màu sắc, làm mờ) để tạo ra hai phiên bản khác nhau của cùng một hình ảnh. Hai phiên bản này được xem là 'positive pair' và được kéo gần lại trong không gian embedding.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "Self-Supervised Learning", "SimCLR", "Data Augmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-049",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "3D Vision",
+    "question_text": "Tác vụ '3D Semantic Segmentation' trong Point Cloud nhằm mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ phân loại toàn bộ Point Cloud vào một danh mục duy nhất.",
+      "B. Gán nhãn lớp ngữ nghĩa cho từng điểm (point) trong Point Cloud.",
+      "C. Tạo ra một mô hình 3D từ các hình ảnh 2D.",
+      "D. Phát hiện các đối tượng 2D trong Point Cloud."
+    ],
+    "correct_answer": "B",
+    "explanation": "3D Semantic Segmentation trên Point Cloud là việc gán một nhãn ngữ nghĩa (ví dụ: 'đất', 'cây', 'tòa nhà', 'xe hơi') cho mỗi điểm riêng lẻ trong tập hợp điểm, cho phép hiểu chi tiết cấu trúc 3D của môi trường.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "3D Vision", "Point Cloud", "Semantic Segmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-ACVT-050",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Advanced Computer Vision Techniques",
+    "subskill_name": "Generative Adversarial Networks (GANs)",
+    "question_text": "Trong GANs, điều gì sẽ xảy ra nếu Discriminator quá mạnh ngay từ đầu quá trình đào tạo?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Generator sẽ học rất nhanh và hiệu quả.",
+      "B. Generator sẽ không thể học cách tạo ra ảnh chất lượng, vì Discriminator luôn dễ dàng nhận ra ảnh giả và cung cấp gradient kém hữu ích.",
+      "C. Quá trình đào tạo sẽ hội tụ ngay lập tức.",
+      "D. Cả hai mạng sẽ sụp đổ hoàn toàn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nếu Discriminator quá mạnh ngay từ đầu, nó sẽ dễ dàng phân biệt ảnh thật và ảnh giả. Điều này làm cho hàm mất mát của Generator gần như bằng 0 (hoặc gradient rất nhỏ), khiến Generator không nhận được tín hiệu học tập hiệu quả và không thể cải thiện khả năng sinh ảnh.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Advanced Computer Vision Techniques", "GANs", "Training Instability"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-001",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Markov Decision Processes (MDPs)",
+    "question_text": "Trong MDP, trạng thái tiếp theo của môi trường chỉ phụ thuộc vào trạng thái và hành động hiện tại. Thuộc tính này được gọi là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tính Markov",
+      "B. Tính độc lập",
+      "C. Tính ngẫu nhiên",
+      "D. Tính liên tục"
+    ],
+    "correct_answer": "A",
+    "explanation": "Tính Markov (Markov Property) là thuộc tính cơ bản của MDP, nơi trạng thái tương lai chỉ phụ thuộc vào trạng thái và hành động hiện tại.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Markov Decision Processes (MDPs)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-002",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Markov Decision Processes (MDPs)",
+    "question_text": "Thành phần nào không phải là một phần của Markov Decision Process?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tập hợp trạng thái S",
+      "B. Tập hợp hành động A",
+      "C. Hàm thưởng R",
+      "D. Hàm kích hoạt Activation Function"
+    ],
+    "correct_answer": "D",
+    "explanation": "Hàm kích hoạt (Activation Function) là khái niệm trong Neural Networks, không phải thành phần của MDP.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Markov Decision Processes (MDPs)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-003",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Markov Decision Processes (MDPs)",
+    "question_text": "Trong MDP, hệ số chiết khấu (discount factor) gamma ($\u03b3$) được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Điều chỉnh tốc độ học",
+      "B. Ưu tiên phần thưởng tức thì hơn phần thưởng tương lai",
+      "C. Đảm bảo hội tụ thuật toán",
+      "D. Giới hạn số lượng trạng thái"
+    ],
+    "correct_answer": "B",
+    "explanation": "Hệ số chiết khấu (discount factor) gamma ($\u03b3$) điều khiển mức độ quan trọng của phần thưởng tương lai. Một giá trị nhỏ hơn 1 ưu tiên phần thưởng tức thì.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Markov Decision Processes (MDPs)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-004",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Markov Decision Processes (MDPs)",
+    "question_text": "Mục tiêu của một agent trong MDP là tối đa hóa điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số lượng bước đi",
+      "B. Tổng phần thưởng chiết khấu",
+      "C. Kích thước không gian trạng thái",
+      "D. Thời gian huấn luyện"
+    ],
+    "correct_answer": "B",
+    "explanation": "Mục tiêu của agent trong MDP là tối đa hóa tổng phần thưởng chiết khấu (discounted cumulative reward) nhận được theo thời gian.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Markov Decision Processes (MDPs)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-005",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Markov Decision Processes (MDPs)",
+    "question_text": "Chính sách (policy) trong MDP là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một hàm ánh xạ trạng thái tới phần thưởng",
+      "B. Một tập hợp các trạng thái cuối cùng",
+      "C. Một hàm ánh xạ trạng thái tới hành động",
+      "D. Một quy tắc cập nhật giá trị"
+    ],
+    "correct_answer": "C",
+    "explanation": "Chính sách (policy) định nghĩa hành vi của agent, ánh xạ từ trạng thái đến hành động có thể thực hiện.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Markov Decision Processes (MDPs)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-006",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Dynamic Programming",
+    "question_text": "Phương pháp quy hoạch động (Dynamic Programming) yêu cầu điều gì về mô hình môi trường?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình phải là ngẫu nhiên",
+      "B. Mô hình phải được biết trước hoàn toàn",
+      "C. Mô hình có thể thay đổi trong quá trình học",
+      "D. Không yêu cầu mô hình môi trường"
+    ],
+    "correct_answer": "B",
+    "explanation": "Các phương pháp quy hoạch động yêu cầu một mô hình hoàn chỉnh của môi trường (tức là xác suất chuyển tiếp và hàm thưởng) để hoạt động.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Dynamic Programming"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-007",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Dynamic Programming",
+    "question_text": "Trong Dynamic Programming, 'Policy Evaluation' (đánh giá chính sách) dùng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tìm chính sách tối ưu",
+      "B. Tính giá trị trạng thái cho một chính sách đã cho",
+      "C. Cập nhật hàm thưởng",
+      "D. Khám phá các trạng thái mới"
+    ],
+    "correct_answer": "B",
+    "explanation": "Policy Evaluation là quá trình tính toán hàm giá trị trạng thái (Value Function) cho một chính sách cụ thể.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Dynamic Programming"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-008",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Dynamic Programming",
+    "question_text": "Quá trình nào được sử dụng để cải thiện chính sách trong Dynamic Programming?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Policy Evaluation",
+      "B. Value Iteration",
+      "C. Policy Improvement",
+      "D. Bellman Update"
+    ],
+    "correct_answer": "C",
+    "explanation": "Policy Improvement (cải thiện chính sách) là quá trình tạo ra một chính sách mới tốt hơn dựa trên hàm giá trị hiện tại.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Dynamic Programming"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-009",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Dynamic Programming",
+    "question_text": "Sự khác biệt chính giữa Policy Iteration và Value Iteration là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Policy Iteration không cần biết mô hình môi trường",
+      "B. Value Iteration chỉ tìm chính sách gần đúng",
+      "C. Policy Iteration xen kẽ đánh giá và cải thiện chính sách, trong khi Value Iteration cải thiện giá trị trạng thái trực tiếp cho đến khi hội tụ",
+      "D. Value Iteration luôn nhanh hơn Policy Iteration"
+    ],
+    "correct_answer": "C",
+    "explanation": "Policy Iteration bao gồm lặp đi lặp lại Policy Evaluation và Policy Improvement. Value Iteration kết hợp cả hai trong một lần cập nhật tổng hợp.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Dynamic Programming"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-010",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Dynamic Programming",
+    "question_text": "Dynamic Programming thích hợp nhất cho các bài toán Reinforcement Learning có đặc điểm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không gian trạng thái và hành động lớn",
+      "B. Mô hình môi trường không biết trước",
+      "C. Không gian trạng thái và hành động nhỏ, mô hình môi trường biết trước",
+      "D. Các vấn đề liên tục"
+    ],
+    "correct_answer": "C",
+    "explanation": "Dynamic Programming hiệu quả cho các bài toán có không gian trạng thái và hành động rời rạc, hữu hạn và khi mô hình môi trường được biết trước.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Dynamic Programming"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-011",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Bellman Equations",
+    "question_text": "Bellman Equation biểu thị mối quan hệ giữa giá trị của một trạng thái hiện tại với giá trị của các trạng thái nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trạng thái ban đầu",
+      "B. Trạng thái cuối cùng",
+      "C. Các trạng thái tiếp theo có thể đạt được",
+      "D. Các trạng thái đã ghé thăm trước đó"
+    ],
+    "correct_answer": "C",
+    "explanation": "Bellman Equation mô tả giá trị của một trạng thái (hoặc cặp trạng thái-hành động) dưới dạng tổng phần thưởng tức thì và giá trị chiết khấu của các trạng thái tiếp theo có thể đạt được.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Bellman Equations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-012",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Bellman Equations",
+    "question_text": "Bellman Optimality Equation tìm kiếm điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một chính sách bất kỳ",
+      "B. Hàm giá trị cho một chính sách cho trước",
+      "C. Hàm giá trị tối ưu và chính sách tối ưu",
+      "D. Hàm chuyển tiếp trạng thái"
+    ],
+    "correct_answer": "C",
+    "explanation": "Bellman Optimality Equation cho phép chúng ta tìm kiếm hàm giá trị tối ưu, từ đó suy ra chính sách tối ưu.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Bellman Equations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-013",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Bellman Equations",
+    "question_text": "Sự khác biệt chính giữa Bellman Equation cho V-value và Q-value là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. V-value chỉ dùng cho môi trường xác định, Q-value cho môi trường ngẫu nhiên",
+      "B. V-value đại diện cho giá trị của một trạng thái, Q-value đại diện cho giá trị của việc thực hiện một hành động trong một trạng thái cụ thể",
+      "C. Q-value không sử dụng hệ số chiết khấu",
+      "D. V-value được tính toán trước, Q-value được học online"
+    ],
+    "correct_answer": "B",
+    "explanation": "Hàm giá trị trạng thái V(s) là giá trị kỳ vọng của tổng phần thưởng tích lũy khi bắt đầu từ trạng thái s. Hàm giá trị hành động Q(s,a) là giá trị kỳ vọng của tổng phần thưởng tích lũy khi thực hiện hành động a trong trạng thái s và sau đó tuân theo chính sách.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Bellman Equations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-014",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Bellman Equations",
+    "question_text": "Giải Bellman Equation thường liên quan đến phương pháp lặp. Tại sao?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tránh quá khớp",
+      "B. Vì không có giải pháp đóng cho tất cả các trường hợp",
+      "C. Để đảm bảo agent khám phá toàn bộ không gian trạng thái",
+      "D. Để giảm thiểu chi phí tính toán"
+    ],
+    "correct_answer": "B",
+    "explanation": "Bellman Equation thường không có giải pháp đóng (closed-form solution) cho các MDP phức tạp, nên chúng ta sử dụng các phương pháp lặp (iterative methods) để tìm ra lời giải xấp xỉ hoặc chính xác.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Bellman Equations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-015",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Bellman Equations",
+    "question_text": "Bellman Equation là nền tảng của nhiều thuật toán trong Reinforcement Learning vì nó cung cấp một cách để:",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình hóa môi trường mà không cần dữ liệu",
+      "B. Định nghĩa giá trị của các trạng thái và hành động theo cách đệ quy",
+      "C. Tạo ra phần thưởng một cách ngẫu nhiên",
+      "D. Chỉ áp dụng cho các trò chơi hai người chơi"
+    ],
+    "correct_answer": "B",
+    "explanation": "Bellman Equation định nghĩa hàm giá trị của các trạng thái và hành động một cách đệ quy, liên hệ giá trị hiện tại với giá trị của các trạng thái/hành động tiếp theo.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Bellman Equations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-016",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Monte Carlo Methods",
+    "question_text": "Monte Carlo Methods trong RL học từ điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình môi trường đã biết trước",
+      "B. Kinh nghiệm hoàn chỉnh từ các episode",
+      "C. Hàm thưởng tức thì",
+      "D. Các giá trị trạng thái ngẫu nhiên"
+    ],
+    "correct_answer": "B",
+    "explanation": "Monte Carlo Methods học từ kinh nghiệm hoàn chỉnh, tức là sau khi một episode (tập) đã kết thúc, bằng cách tính tổng phần thưởng chiết khấu từ thời điểm hiện tại trở đi.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Monte Carlo Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-017",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Monte Carlo Methods",
+    "question_text": "Ưu điểm chính của Monte Carlo Methods so với Dynamic Programming là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tính toán nhanh hơn",
+      "B. Không cần mô hình môi trường",
+      "C. Đảm bảo hội tụ nhanh chóng",
+      "D. Áp dụng cho không gian trạng thái liên tục"
+    ],
+    "correct_answer": "B",
+    "explanation": "Một ưu điểm lớn của Monte Carlo Methods là chúng không yêu cầu mô hình môi trường, chúng học trực tiếp từ các tương tác (kinh nghiệm).",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Monte Carlo Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-018",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Monte Carlo Methods",
+    "question_text": "Khi nào thì Monte Carlo Methods cập nhật giá trị?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mỗi bước thời gian",
+      "B. Sau mỗi 100 bước",
+      "C. Khi một episode kết thúc",
+      "D. Khi agent thay đổi chính sách"
+    ],
+    "correct_answer": "C",
+    "explanation": "Monte Carlo Methods cập nhật giá trị sau khi một episode hoàn chỉnh đã kết thúc, sử dụng tổng phần thưởng thu được trong episode đó.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Monte Carlo Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-019",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Monte Carlo Methods",
+    "question_text": "'First-visit MC' và 'Every-visit MC' khác nhau ở điểm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ hội tụ",
+      "B. Cách tính phần thưởng",
+      "C. Cách xử lý nhiều lần ghé thăm cùng một trạng thái trong một episode",
+      "D. Loại môi trường áp dụng"
+    ],
+    "correct_answer": "C",
+    "explanation": "First-visit MC ước tính giá trị dựa trên lần đầu tiên ghé thăm một trạng thái trong một episode, trong khi Every-visit MC sử dụng tất cả các lần ghé thăm trạng thái đó.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Monte Carlo Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-020",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Monte Carlo Methods",
+    "question_text": "Monte Carlo Control tìm kiếm điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một chính sách ngẫu nhiên",
+      "B. Một chính sách gần tối ưu bằng cách ước lượng Q-value",
+      "C. Một ước tính của hàm chuyển đổi",
+      "D. Chỉ hàm giá trị trạng thái"
+    ],
+    "correct_answer": "B",
+    "explanation": "Monte Carlo Control ước lượng hàm Q-value (giá trị hành động) và sau đó sử dụng ước tính này để cải thiện chính sách, dần dần hội tụ đến chính sách tối ưu.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Monte Carlo Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-021",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Exploration vs. Exploitation",
+    "question_text": "Sự cân bằng giữa 'Exploration' (khám phá) và 'Exploitation' (khai thác) đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Lựa chọn giữa các thuật toán khác nhau",
+      "B. Quyết định khi nào nên kết thúc huấn luyện",
+      "C. Sự lựa chọn giữa việc thử các hành động mới và sử dụng các hành động đã biết là tốt nhất",
+      "D. Cách lưu trữ dữ liệu kinh nghiệm"
+    ],
+    "correct_answer": "C",
+    "explanation": "Exploration là việc thử các hành động mới để tìm kiếm phần thưởng tiềm năng, trong khi Exploitation là việc sử dụng các hành động đã biết để nhận được phần thưởng cao nhất hiện có.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Exploration vs. Exploitation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-022",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Exploration vs. Exploitation",
+    "question_text": "Phương pháp phổ biến nào để giải quyết vấn đề cân bằng Exploration-Exploitation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Greedy policy",
+      "B. Epsilon-Greedy policy",
+      "C. Deterministic policy",
+      "D. Random policy"
+    ],
+    "correct_answer": "B",
+    "explanation": "Epsilon-Greedy policy là một phương pháp phổ biến: với xác suất epsilon, agent chọn một hành động ngẫu nhiên (exploration), và với xác suất 1-epsilon, agent chọn hành động tốt nhất hiện tại (exploitation).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Exploration vs. Exploitation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-023",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Exploration vs. Exploitation",
+    "question_text": "Nếu một agent chỉ thực hiện 'Exploitation', điều gì có thể xảy ra?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Agent sẽ tìm thấy chính sách tối ưu nhanh chóng",
+      "B. Agent có thể bị mắc kẹt trong một tối ưu cục bộ",
+      "C. Agent sẽ không bao giờ học được gì",
+      "D. Agent sẽ luôn nhận được phần thưởng cao nhất"
+    ],
+    "correct_answer": "B",
+    "explanation": "Nếu agent chỉ khai thác (exploitation), nó có thể bị mắc kẹt trong một tối ưu cục bộ (local optimum) và không bao giờ khám phá được các hành động hoặc con đường tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Exploration vs. Exploitation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-024",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Exploration vs. Exploitation",
+    "question_text": "Giảm giá trị epsilon trong Epsilon-Greedy theo thời gian có tác dụng gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng cường khám phá",
+      "B. Tăng cường khai thác",
+      "C. Giảm tốc độ học",
+      "D. Không có tác dụng rõ rệt"
+    ],
+    "correct_answer": "B",
+    "explanation": "Giảm giá trị epsilon theo thời gian (epsilon decay) khiến agent từ từ chuyển từ việc khám phá nhiều hơn sang việc khai thác nhiều hơn khi nó đã học được đủ về môi trường.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Exploration vs. Exploitation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-025",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Exploration vs. Exploitation",
+    "question_text": "Giải pháp nào sau đây không trực tiếp liên quan đến vấn đề Exploration-Exploitation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Upper Confidence Bound (UCB)",
+      "B. Thompson Sampling",
+      "C. Monte Carlo Tree Search (MCTS)",
+      "D. Batch Normalization"
+    ],
+    "correct_answer": "D",
+    "explanation": "Batch Normalization là một kỹ thuật trong Neural Networks để cải thiện hiệu suất huấn luyện, không liên quan trực tiếp đến vấn đề Exploration-Exploitation.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Exploration vs. Exploitation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-026",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Temporal Difference Learning (SARSA, Q-learning)",
+    "question_text": "Temporal Difference (TD) Learning học từ điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kinh nghiệm hoàn chỉnh sau mỗi episode",
+      "B. Sự khác biệt giữa các ước tính liên tiếp của giá trị",
+      "C. Mô hình môi trường chi tiết",
+      "D. Các biến ngẫu nhiên"
+    ],
+    "correct_answer": "B",
+    "explanation": "TD Learning học bằng cách bootstrap, tức là cập nhật ước tính giá trị dựa trên các ước tính giá trị tiếp theo (sự khác biệt thời gian).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Temporal Difference Learning (SARSA, Q-learning)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-027",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Temporal Difference Learning (SARSA, Q-learning)",
+    "question_text": "Q-learning là một thuật toán 'off-policy' vì lý do gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó không cần chính sách để học",
+      "B. Nó học giá trị của chính sách tối ưu trong khi theo dõi một chính sách khác (exploration policy)",
+      "C. Nó cập nhật sau mỗi bước",
+      "D. Nó chỉ áp dụng cho các môi trường xác định"
+    ],
+    "correct_answer": "B",
+    "explanation": "Q-learning là off-policy vì nó học giá trị của chính sách tối ưu (greedy policy) trong khi vẫn thực hiện các hành động theo một chính sách khác (ví dụ, epsilon-greedy policy) để đảm bảo khám phá.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Temporal Difference Learning (SARSA, Q-learning)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-028",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Temporal Difference Learning (SARSA, Q-learning)",
+    "question_text": "SARSA là một thuật toán 'on-policy' vì lý do gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó không sử dụng Q-value",
+      "B. Nó cập nhật Q-value dựa trên hành động được chọn bởi chính sách hiện tại",
+      "C. Nó cần mô hình môi trường",
+      "D. Nó chỉ cập nhật khi episode kết thúc"
+    ],
+    "correct_answer": "B",
+    "explanation": "SARSA là on-policy vì nó cập nhật giá trị Q(s,a) dựa trên hành động a' tiếp theo được chọn bởi chính sách hiện tại.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Temporal Difference Learning (SARSA, Q-learning)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-029",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Temporal Difference Learning (SARSA, Q-learning)",
+    "question_text": "Yếu tố nào trong công thức cập nhật TD cho biết 'tốc độ học'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Gamma ($\u03b3$)",
+      "B. Phần thưởng R",
+      "C. Tốc độ học alpha ($\u03b1$)",
+      "D. Trạng thái S"
+    ],
+    "correct_answer": "C",
+    "explanation": "Tốc độ học (learning rate) alpha ($\u03b1$) điều khiển mức độ cập nhật giá trị Q hoặc V sau mỗi bước học.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Temporal Difference Learning (SARSA, Q-learning)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-030",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Temporal Difference Learning (SARSA, Q-learning)",
+    "question_text": "Ưu điểm chính của TD Learning so với Monte Carlo Methods là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn tìm được chính sách tối ưu nhanh hơn",
+      "B. Có thể học liên tục (online) mà không cần chờ episode kết thúc",
+      "C. Không yêu cầu khám phá",
+      "D. Hoạt động tốt hơn trên các bài toán có không gian trạng thái liên tục"
+    ],
+    "correct_answer": "B",
+    "explanation": "TD Learning có thể học liên tục (online) sau mỗi bước, không cần chờ cho đến khi một episode kết thúc như Monte Carlo Methods.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Temporal Difference Learning (SARSA, Q-learning)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-031",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Policy and Value Iteration",
+    "question_text": "Mục tiêu của Policy Iteration là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ tìm hàm giá trị của một chính sách ngẫu nhiên",
+      "B. Tìm chính sách tối ưu bằng cách xen kẽ đánh giá và cải thiện chính sách",
+      "C. Chỉ cải thiện hàm giá trị mà không thay đổi chính sách",
+      "D. Đảm bảo tốc độ hội tụ nhanh nhất có thể"
+    ],
+    "correct_answer": "B",
+    "explanation": "Policy Iteration xen kẽ giữa Policy Evaluation (đánh giá chính sách hiện tại) và Policy Improvement (cải thiện chính sách dựa trên đánh giá đó) cho đến khi hội tụ về chính sách tối ưu.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Policy and Value Iteration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-032",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Policy and Value Iteration",
+    "question_text": "Trong Value Iteration, quá trình cập nhật diễn ra như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Cập nhật chính sách trước, sau đó là giá trị",
+      "B. Cập nhật trực tiếp hàm giá trị tối ưu bằng cách lấy giá trị lớn nhất trong số các hành động có thể",
+      "C. Chỉ cập nhật hàm giá trị khi episode kết thúc",
+      "D. Chỉ áp dụng cho không gian trạng thái liên tục"
+    ],
+    "correct_answer": "B",
+    "explanation": "Value Iteration cập nhật hàm giá trị tối ưu trực tiếp bằng cách lấy giá trị tối đa trên tất cả các hành động có thể từ trạng thái tiếp theo, không tách rời thành các bước đánh giá và cải thiện chính sách riêng biệt.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Policy and Value Iteration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-033",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Policy and Value Iteration",
+    "question_text": "Cả Policy Iteration và Value Iteration đều giả định điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Môi trường không có phần thưởng",
+      "B. Môi trường là xác định",
+      "C. Mô hình môi trường được biết đầy đủ",
+      "D. Không gian trạng thái là vô hạn"
+    ],
+    "correct_answer": "C",
+    "explanation": "Cả hai phương pháp này đều thuộc nhóm quy hoạch động và yêu cầu mô hình môi trường (xác suất chuyển tiếp và hàm thưởng) phải được biết đầy đủ.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Policy and Value Iteration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-034",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Policy and Value Iteration",
+    "question_text": "Thuật toán nào có xu hướng hội tụ nhanh hơn trong thực tế đối với các bài toán lớn hơn?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Policy Iteration",
+      "B. Value Iteration",
+      "C. Cả hai đều như nhau",
+      "D. Không thể xác định"
+    ],
+    "correct_answer": "B",
+    "explanation": "Value Iteration thường hội tụ nhanh hơn trong thực tế đối với các bài toán lớn hơn vì nó không yêu cầu một lần đánh giá chính sách đầy đủ ở mỗi lần lặp.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Policy and Value Iteration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-035",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Policy and Value Iteration",
+    "question_text": "Làm thế nào để xác định khi nào Policy Iteration đã hội tụ?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi số bước đạt một ngưỡng nhất định",
+      "B. Khi hàm giá trị thay đổi rất ít giữa các lần lặp",
+      "C. Khi chính sách được tạo ra không còn cải thiện được nữa",
+      "D. Khi tất cả các phần thưởng đều dương"
+    ],
+    "correct_answer": "C",
+    "explanation": "Policy Iteration hội tụ khi chính sách được tạo ra trong bước cải thiện chính sách không còn khác với chính sách trước đó nữa (tức là chính sách không còn được cải thiện).",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL", "Policy and Value Iteration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-036",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Trong Reinforcement Learning, 'agent' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Môi trường tương tác",
+      "B. Một tập hợp các trạng thái",
+      "C. Thực thể học hỏi và đưa ra quyết định",
+      "D. Phần thưởng nhận được"
+    ],
+    "correct_answer": "C",
+    "explanation": "Agent là thực thể học hỏi và đưa ra quyết định trong môi trường RL.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-037",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "'Môi trường' trong RL chịu trách nhiệm về điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đưa ra quyết định cho agent",
+      "B. Cung cấp trạng thái và phần thưởng cho agent sau mỗi hành động",
+      "C. Huấn luyện agent",
+      "D. Đặt ra mục tiêu cho agent"
+    ],
+    "correct_answer": "B",
+    "explanation": "Môi trường là nơi agent tương tác, cung cấp trạng thái mới và phần thưởng sau khi agent thực hiện một hành động.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-038",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Phần thưởng (Reward) trong RL là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một giá trị số ngẫu nhiên",
+      "B. Một tín hiệu phản hồi từ môi trường cho biết mức độ tốt của một hành động",
+      "C. Số lượng trạng thái đã ghé thăm",
+      "D. Thời gian chạy thuật toán"
+    ],
+    "correct_answer": "B",
+    "explanation": "Phần thưởng là tín hiệu số từ môi trường mà agent nhận được sau mỗi hành động, cho biết mức độ mong muốn của hành động đó.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-039",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Reinforcement Learning khác gì so với Supervised Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. RL cần nhãn dữ liệu rõ ràng cho mỗi đầu vào",
+      "B. RL học từ tương tác và phần thưởng, không có nhãn rõ ràng cho hành động tối ưu",
+      "C. Supervised Learning học bằng cách thử và lỗi",
+      "D. RL chỉ áp dụng cho dữ liệu văn bản"
+    ],
+    "correct_answer": "B",
+    "explanation": "Reinforcement Learning học thông qua tương tác với môi trường và nhận phần thưởng, không giống như Supervised Learning yêu cầu nhãn đầu ra rõ ràng cho mỗi đầu vào.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-040",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Chính sách (Policy) trong Reinforcement Learning định nghĩa điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước của không gian trạng thái",
+      "B. Hàm thưởng của môi trường",
+      "C. Cách agent ánh xạ trạng thái sang hành động",
+      "D. Tổng phần thưởng tối đa có thể đạt được"
+    ],
+    "correct_answer": "C",
+    "explanation": "Chính sách là chiến lược của agent, xác định hành động nào sẽ được thực hiện trong một trạng thái nhất định.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-041",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Episodic tasks là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các nhiệm vụ không bao giờ kết thúc",
+      "B. Các nhiệm vụ có điểm bắt đầu và điểm kết thúc rõ ràng",
+      "C. Các nhiệm vụ mà agent không nhận được phần thưởng",
+      "D. Các nhiệm vụ mà trạng thái ban đầu luôn giống nhau"
+    ],
+    "correct_answer": "B",
+    "explanation": "Episodic tasks là các nhiệm vụ có điểm bắt đầu và kết thúc tự nhiên, tạo thành các 'episode' (tập).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-042",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Continuing tasks là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các nhiệm vụ chỉ có một phần thưởng duy nhất",
+      "B. Các nhiệm vụ kết thúc sau một số bước cố định",
+      "C. Các nhiệm vụ không có điểm kết thúc tự nhiên",
+      "D. Các nhiệm vụ không liên quan đến thời gian"
+    ],
+    "correct_answer": "C",
+    "explanation": "Continuing tasks là các nhiệm vụ không có điểm kết thúc tự nhiên, chúng tiếp diễn vô thời hạn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-043",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Hàm giá trị (Value Function) trong RL ước tính điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số lượng hành động có thể thực hiện",
+      "B. Phần thưởng tức thì mà agent nhận được",
+      "C. Tổng phần thưởng dự kiến từ một trạng thái (hoặc cặp trạng thái-hành động) trở đi",
+      "D. Độ phức tạp của môi trường"
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàm giá trị ước tính tổng phần thưởng tích lũy mà agent có thể nhận được từ một trạng thái hoặc khi thực hiện một hành động trong một trạng thái cụ thể.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-044",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Sự khác biệt giữa Model-based và Model-free RL là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Model-based cần dữ liệu lớn, Model-free thì không",
+      "B. Model-based học một mô hình của môi trường, Model-free học trực tiếp từ kinh nghiệm mà không xây dựng mô hình",
+      "C. Model-free luôn nhanh hơn Model-based",
+      "D. Model-based chỉ dùng cho không gian trạng thái rời rạc"
+    ],
+    "correct_answer": "B",
+    "explanation": "Model-based RL xây dựng hoặc học một mô hình của môi trường để lập kế hoạch, trong khi Model-free RL học trực tiếp chính sách hoặc hàm giá trị từ kinh nghiệm mà không xây dựng mô hình môi trường.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-045",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Tại sao hệ số chiết khấu (discount factor) lại quan trọng trong Reinforcement Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để đảm bảo agent luôn chọn phần thưởng lớn nhất",
+      "B. Để ngăn chặn tổng phần thưởng tích lũy trở nên vô hạn trong các nhiệm vụ tiếp diễn",
+      "C. Để làm cho việc học nhanh hơn",
+      "D. Để loại bỏ nhu cầu khám phá"
+    ],
+    "correct_answer": "B",
+    "explanation": "Hệ số chiết khấu ($\u03b3$) được sử dụng để điều chỉnh giá trị của phần thưởng tương lai và ngăn chặn tổng phần thưởng tích lũy trở thành vô hạn trong các nhiệm vụ không có điểm kết thúc (continuing tasks).",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-046",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Tầm quan trọng của 'Target Policy' và 'Behavior Policy' trong các thuật toán off-policy là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng là cùng một chính sách",
+      "B. Target Policy là chính sách đang được học, Behavior Policy là chính sách được sử dụng để tạo dữ liệu",
+      "C. Behavior Policy luôn tối ưu",
+      "D. Target Policy chỉ dùng cho Monte Carlo"
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong các thuật toán off-policy, Target Policy là chính sách mà chúng ta muốn học (thường là chính sách tối ưu), còn Behavior Policy là chính sách được agent sử dụng để tương tác và thu thập dữ liệu (thường là chính sách khám phá).",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-047",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Bootstrapping trong Reinforcement Learning là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Quá trình bắt đầu lại từ đầu một episode",
+      "B. Cập nhật giá trị dựa trên các ước tính giá trị khác",
+      "C. Phương pháp lựa chọn hành động ngẫu nhiên",
+      "D. Kỹ thuật để xử lý các không gian trạng thái liên tục"
+    ],
+    "correct_answer": "B",
+    "explanation": "Bootstrapping là việc cập nhật ước tính hàm giá trị hoặc chính sách dựa trên các ước tính hiện tại của chính nó hoặc các giá trị khác.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-048",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Sự khác biệt chính giữa Bellman Equation và Bellman Optimality Equation là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bellman Equation chỉ áp dụng cho V-value, Bellman Optimality cho Q-value",
+      "B. Bellman Equation mô tả giá trị của một chính sách cụ thể, Bellman Optimality mô tả giá trị tối ưu mà agent có thể đạt được",
+      "C. Bellman Equation là một phép tính, Bellman Optimality là một thuật toán",
+      "D. Không có sự khác biệt đáng kể"
+    ],
+    "correct_answer": "B",
+    "explanation": "Bellman Equation mô tả hàm giá trị cho một chính sách *cụ thể*, trong khi Bellman Optimality Equation mô tả hàm giá trị *tối ưu* bất kể chính sách nào đang được tuân theo.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-049",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Ý nghĩa của 'state-action value function' (Q-value) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phần thưởng tức thì nhận được tại một trạng thái",
+      "B. Khả năng agent thực hiện một hành động cụ thể",
+      "C. Tổng phần thưởng dự kiến khi thực hiện một hành động cụ thể trong một trạng thái và sau đó theo chính sách",
+      "D. Tổng số hành động đã thực hiện"
+    ],
+    "correct_answer": "C",
+    "explanation": "Q-value, hay hàm giá trị trạng thái-hành động, ước tính tổng phần thưởng dự kiến khi thực hiện một hành động cụ thể trong một trạng thái cụ thể và sau đó tuân theo một chính sách nhất định.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-FRL-050",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Fundamentals of RL",
+    "subskill_name": "Fundamentals of RL",
+    "question_text": "Thuật ngữ 'Return' trong RL đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phần thưởng cuối cùng trong một episode",
+      "B. Tổng phần thưởng tích lũy (chiết khấu) từ một thời điểm nhất định trở đi",
+      "C. Số lần agent quay lại một trạng thái",
+      "D. Thời gian hoàn thành một nhiệm vụ"
+    ],
+    "correct_answer": "B",
+    "explanation": "Return là tổng phần thưởng chiết khấu (discounted cumulative reward) mà agent nhận được từ một thời điểm nhất định trong một episode cho đến khi kết thúc.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Fundamentals of RL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-001",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Q-Networks (DQN)",
+    "question_text": "DQN sử dụng thành phần nào để xấp xỉ hàm Q-value?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Decision Tree",
+      "B. Support Vector Machine",
+      "C. Neural Network",
+      "D. Linear Regression"
+    ],
+    "correct_answer": "C",
+    "explanation": "DQN sử dụng một mạng nơ-ron sâu (Deep Neural Network) để xấp xỉ hàm Q-value, cho phép xử lý không gian trạng thái lớn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Deep Q-Networks (DQN)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-002",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Q-Networks (DQN)",
+    "question_text": "Hai kỹ thuật chính được DQN sử dụng để ổn định huấn luyện là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Normalization và Batching",
+      "B. Experience Replay và Target Network",
+      "C. Dropout và L1 Regularization",
+      "D. Gradient Clipping và Learning Rate Scheduling"
+    ],
+    "correct_answer": "B",
+    "explanation": "Experience Replay giúp phá vỡ mối tương quan giữa các mẫu dữ liệu, và Target Network ổn định mục tiêu cập nhật Q-value, cả hai đều giúp ổn định quá trình huấn luyện DQN.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Deep Q-Networks (DQN)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-003",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Q-Networks (DQN)",
+    "question_text": "Mục đích của 'Experience Replay' trong DQN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng tốc độ thu thập dữ liệu",
+      "B. Giảm sự phụ thuộc lẫn nhau của các mẫu dữ liệu và tái sử dụng kinh nghiệm",
+      "C. Chỉ để lưu trữ các phần thưởng lớn",
+      "D. Đảm bảo agent luôn thắng"
+    ],
+    "correct_answer": "B",
+    "explanation": "Experience Replay lưu trữ các chuyển đổi (trạng thái, hành động, phần thưởng, trạng thái tiếp theo) và lấy mẫu ngẫu nhiên từ đó để huấn luyện, giúp phá vỡ mối tương quan và sử dụng hiệu quả dữ liệu.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Deep Q-Networks (DQN)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-004",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Q-Networks (DQN)",
+    "question_text": "Mục đích của 'Target Network' trong DQN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tạo ra các hành động ngẫu nhiên",
+      "B. Để cung cấp một mục tiêu ổn định hơn cho quá trình huấn luyện Q-network",
+      "C. Để lưu trữ mô hình môi trường",
+      "D. Để tính toán phần thưởng"
+    ],
+    "correct_answer": "B",
+    "explanation": "Target Network là một bản sao của Q-network chính được cập nhật chậm hơn, cung cấp một mục tiêu ổn định cho quá trình huấn luyện, giảm biến động và giúp hội tụ tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Deep Q-Networks (DQN)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-005",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Q-Networks (DQN)",
+    "question_text": "Tại sao DQN lại khó huấn luyện hơn Q-learning truyền thống?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Vì nó sử dụng nhiều dữ liệu hơn",
+      "B. Vì không gian trạng thái lớn hơn",
+      "C. Vì sử dụng Neural Network gây ra vấn đề hội tụ và không ổn định",
+      "D. Vì nó không sử dụng phần thưởng"
+    ],
+    "correct_answer": "C",
+    "explanation": "Sử dụng Neural Network để xấp xỉ hàm Q-value có thể dẫn đến sự không ổn định trong huấn luyện do các vấn đề như dữ liệu tương quan và mục tiêu thay đổi, điều mà DQN cố gắng giải quyết bằng Experience Replay và Target Network.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Deep Q-Networks (DQN)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-006",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Exploration Strategies",
+    "question_text": "Exploration trong DRL có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng các hành động đã biết là tốt nhất",
+      "B. Khám phá các trạng thái và hành động mới để thu thập thông tin",
+      "C. Chỉ học từ các phần thưởng tích cực",
+      "D. Giảm số lượng bước trong mỗi episode"
+    ],
+    "correct_answer": "B",
+    "explanation": "Exploration là quá trình agent thử các hành động mới và ghé thăm các trạng thái mới để thu thập thông tin về môi trường và tiềm năng phần thưởng.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Exploration Strategies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-007",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Exploration Strategies",
+    "question_text": "Chiến lược epsilon-greedy là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn chọn hành động tốt nhất",
+      "B. Chọn hành động ngẫu nhiên với xác suất epsilon, hành động tốt nhất với xác suất 1-epsilon",
+      "C. Luôn chọn hành động ngẫu nhiên",
+      "D. Chỉ chọn hành động đã được thử trước đó"
+    ],
+    "correct_answer": "B",
+    "explanation": "Epsilon-greedy là một chiến lược cân bằng giữa khám phá và khai thác: agent chọn một hành động ngẫu nhiên với xác suất epsilon và hành động được ước tính là tốt nhất với xác suất 1-epsilon.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Exploration Strategies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-008",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Exploration Strategies",
+    "question_text": "Tại sao cần giảm dần epsilon (epsilon decay) trong quá trình huấn luyện DRL?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tăng cường khám phá liên tục",
+      "B. Để agent chuyển từ khám phá sang khai thác khi đã học đủ",
+      "C. Để làm cho agent hoàn toàn ngẫu nhiên",
+      "D. Để tăng kích thước của mạng nơ-ron"
+    ],
+    "correct_answer": "B",
+    "explanation": "Giảm dần epsilon theo thời gian (epsilon decay) cho phép agent khám phá rộng rãi hơn ở giai đoạn đầu và sau đó chuyển sang khai thác các hành động đã học được tốt nhất.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Exploration Strategies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-009",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Exploration Strategies",
+    "question_text": "Một chiến lược khám phá nào tập trung vào việc ưu tiên các hành động chưa được thử hoặc ít được thử hơn?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Pure Exploitation",
+      "B. Upper Confidence Bound (UCB)",
+      "C. Greedy policy",
+      "D. Fixed Epsilon-Greedy"
+    ],
+    "correct_answer": "B",
+    "explanation": "Upper Confidence Bound (UCB) là một chiến lược khuyến khích khám phá các hành động có độ bất định cao (chưa được thử nhiều) hoặc có tiềm năng phần thưởng cao.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Exploration Strategies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-010",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Exploration Strategies",
+    "question_text": "Thách thức chính của khám phá trong không gian trạng thái/hành động liên tục là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không đủ bộ nhớ",
+      "B. Rất khó để đảm bảo khám phá hiệu quả các khu vực chưa biết",
+      "C. Tốc độ học quá chậm",
+      "D. Phần thưởng không bao giờ dương"
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong không gian trạng thái/hành động liên tục, việc khám phá hiệu quả trở nên rất khó khăn vì số lượng trạng thái và hành động tiềm năng là vô hạn, khó để agent bao quát đủ các khu vực chưa biết.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Exploration Strategies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-011",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Policy Gradient Methods (REINFORCE, A2C, A3C)",
+    "question_text": "Policy Gradient Methods học trực tiếp điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hàm giá trị",
+      "B. Mô hình môi trường",
+      "C. Một chính sách tham số hóa",
+      "D. Phần thưởng tối ưu"
+    ],
+    "correct_answer": "C",
+    "explanation": "Policy Gradient Methods học trực tiếp một chính sách tham số hóa (ví dụ, một mạng nơ-ron ánh xạ trạng thái sang phân phối xác suất trên các hành động).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Policy Gradient Methods (REINFORCE, A2C, A3C)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-012",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Policy Gradient Methods (REINFORCE, A2C, A3C)",
+    "question_text": "Ưu điểm chính của Policy Gradient Methods so với Value-based Methods (như DQN) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dễ huấn luyện hơn",
+      "B. Có thể xử lý không gian hành động liên tục",
+      "C. Luôn hội tụ nhanh hơn",
+      "D. Không cần khám phá"
+    ],
+    "correct_answer": "B",
+    "explanation": "Policy Gradient Methods tự nhiên xử lý không gian hành động liên tục bằng cách học một phân phối xác suất trên các hành động, trong khi Value-based Methods thường khó áp dụng trực tiếp cho không gian hành động liên tục.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Policy Gradient Methods (REINFORCE, A2C, A3C)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-013",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Policy Gradient Methods (REINFORCE, A2C, A3C)",
+    "question_text": "Thuật toán REINFORCE dựa trên nguyên lý nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bellman Optimality Equation",
+      "B. Policy Gradient Theorem",
+      "C. Q-value Iteration",
+      "D. Dynamic Programming"
+    ],
+    "correct_answer": "B",
+    "explanation": "Thuật toán REINFORCE (hay Monte Carlo Policy Gradient) dựa trên Policy Gradient Theorem để ước lượng gradient của hàm mục tiêu và cập nhật chính sách.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Policy Gradient Methods (REINFORCE, A2C, A3C)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-014",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Policy Gradient Methods (REINFORCE, A2C, A3C)",
+    "question_text": "Một vấn đề lớn của REINFORCE là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không thể xử lý không gian trạng thái lớn",
+      "B. Biến động gradient cao (high variance)",
+      "C. Chỉ áp dụng cho môi trường xác định",
+      "D. Yêu cầu mô hình môi trường"
+    ],
+    "correct_answer": "B",
+    "explanation": "REINFORCE có vấn đề về biến động gradient cao (high variance) vì nó sử dụng toàn bộ phần thưởng tích lũy từ một episode để cập nhật, điều này có thể dẫn đến sự không ổn định trong quá trình huấn luyện.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Policy Gradient Methods (REINFORCE, A2C, A3C)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-015",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Policy Gradient Methods (REINFORCE, A2C, A3C)",
+    "question_text": "A2C và A3C là các thuật toán thuộc họ nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Value-based",
+      "B. Model-based",
+      "C. Actor-Critic",
+      "D. Monte Carlo"
+    ],
+    "correct_answer": "C",
+    "explanation": "A2C (Advantage Actor-Critic) và A3C (Asynchronous Advantage Actor-Critic) là các thuật toán thuộc họ Actor-Critic, kết hợp lợi ích của cả Policy Gradient và Value-based methods.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Policy Gradient Methods (REINFORCE, A2C, A3C)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-016",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Reward Shaping",
+    "question_text": "Reward Shaping là kỹ thuật gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thay đổi cấu trúc của mạng nơ-ron",
+      "B. Thiết kế lại hàm thưởng để hướng dẫn agent học nhanh hơn",
+      "C. Giảm số lượng trạng thái",
+      "D. Tăng cường khả năng khám phá ngẫu nhiên"
+    ],
+    "correct_answer": "B",
+    "explanation": "Reward Shaping là kỹ thuật thêm các phần thưởng bổ sung vào hàm thưởng ban đầu để cung cấp tín hiệu học tập hữu ích hơn cho agent, hướng dẫn nó đạt được mục tiêu hiệu quả hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Reward Shaping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-017",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Reward Shaping",
+    "question_text": "Khi áp dụng Reward Shaping, điều quan trọng cần đảm bảo là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phần thưởng mới phải luôn dương",
+      "B. Phần thưởng mới không thay đổi chính sách tối ưu",
+      "C. Phần thưởng mới phải rất nhỏ",
+      "D. Phần thưởng mới phải được tạo ra ngẫu nhiên"
+    ],
+    "correct_answer": "B",
+    "explanation": "Điều quan trọng là Reward Shaping không được làm thay đổi chính sách tối ưu của bài toán ban đầu, chỉ nên giúp agent học chính sách đó nhanh hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Reward Shaping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-018",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Reward Shaping",
+    "question_text": "Reward Shaping có thể gây ra vấn đề gì nếu không được thực hiện cẩn thận?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Agent sẽ không học được gì",
+      "B. Agent có thể học một chính sách phụ tối ưu",
+      "C. Tăng thời gian huấn luyện",
+      "D. Giảm bộ nhớ cần thiết"
+    ],
+    "correct_answer": "B",
+    "explanation": "Nếu Reward Shaping không được thiết kế cẩn thận, nó có thể thay đổi chính sách tối ưu của bài toán, khiến agent học một chính sách không thực sự tốt cho mục tiêu cuối cùng.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Reward Shaping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-019",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Reward Shaping",
+    "question_text": "Kỹ thuật nào thường được sử dụng cùng với Reward Shaping để đảm bảo tính đúng đắn?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Epsilon-Greedy",
+      "B. Potentially Shaped Rewards (PSR)",
+      "C. Experience Replay",
+      "D. Target Network"
+    ],
+    "correct_answer": "B",
+    "explanation": "Potentially Shaped Rewards (PSR) là một framework lý thuyết để đảm bảo rằng Reward Shaping không làm thay đổi chính sách tối ưu, dựa trên khái niệm hàm tiềm năng.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Reward Shaping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-020",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Reward Shaping",
+    "question_text": "Reward Shaping được coi là một kỹ thuật 'kỹ thuật' (engineering technique) vì sao?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó không dựa trên lý thuyết toán học",
+      "B. Nó liên quan đến việc thêm kiến thức miền vào hàm thưởng để cải thiện hiệu suất",
+      "C. Nó chỉ áp dụng cho các vấn đề cụ thể",
+      "D. Nó là một phần của kiến trúc mạng nơ-ron"
+    ],
+    "correct_answer": "B",
+    "explanation": "Reward Shaping thường yêu cầu kiến thức chuyên môn về miền (domain knowledge) để thiết kế các phần thưởng bổ sung có ý nghĩa, giúp agent học hiệu quả hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Reward Shaping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-021",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Actor-Critic Methods (DDPG, TD3, SAC)",
+    "question_text": "Actor-Critic Methods kết hợp những gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ Value-based methods",
+      "B. Chỉ Policy Gradient methods",
+      "C. Cả Value-based và Policy Gradient methods",
+      "D. Chỉ Monte Carlo methods"
+    ],
+    "correct_answer": "C",
+    "explanation": "Actor-Critic Methods kết hợp hai thành phần: Actor (học chính sách) và Critic (học hàm giá trị để đánh giá chính sách của Actor).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Actor-Critic Methods (DDPG, TD3, SAC)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-022",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Actor-Critic Methods (DDPG, TD3, SAC)",
+    "question_text": "Vai trò của 'Actor' trong các phương pháp Actor-Critic là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ước tính hàm giá trị",
+      "B. Quyết định hành động dựa trên trạng thái hiện tại",
+      "C. Lưu trữ kinh nghiệm",
+      "D. Tính toán phần thưởng"
+    ],
+    "correct_answer": "B",
+    "explanation": "Actor là thành phần học và đưa ra chính sách, quyết định hành động nào sẽ được thực hiện dựa trên trạng thái hiện tại.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Actor-Critic Methods (DDPG, TD3, SAC)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-023",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Actor-Critic Methods (DDPG, TD3, SAC)",
+    "question_text": "Vai trò của 'Critic' trong các phương pháp Actor-Critic là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sinh ra các hành động ngẫu nhiên",
+      "B. Đánh giá hành động của Actor bằng cách ước tính hàm giá trị",
+      "C. Điều chỉnh tốc độ học của Actor",
+      "D. Quản lý bộ nhớ Experience Replay"
+    ],
+    "correct_answer": "B",
+    "explanation": "Critic là thành phần học một hàm giá trị (Value Function) để đánh giá các hành động do Actor thực hiện, cung cấp tín hiệu phản hồi cho Actor để cải thiện chính sách.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Actor-Critic Methods (DDPG, TD3, SAC)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-024",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Actor-Critic Methods (DDPG, TD3, SAC)",
+    "question_text": "DDPG (Deep Deterministic Policy Gradient) được thiết kế đặc biệt cho môi trường nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không gian hành động rời rạc",
+      "B. Không gian hành động liên tục",
+      "C. Môi trường có phần thưởng thưa thớt",
+      "D. Các trò chơi bàn cờ"
+    ],
+    "correct_answer": "B",
+    "explanation": "DDPG là một thuật toán Actor-Critic được thiết kế để hoạt động trong không gian hành động liên tục, bằng cách học một chính sách xác định (deterministic policy).",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Actor-Critic Methods (DDPG, TD3, SAC)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-025",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Actor-Critic Methods (DDPG, TD3, SAC)",
+    "question_text": "Sự cải tiến chính của TD3 (Twin Delayed DDPG) so với DDPG là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng nhiều Actor hơn",
+      "B. Giải quyết vấn đề 'overestimation' của Q-values và tăng cường ổn định bằng nhiều mạng Critic",
+      "C. Chỉ áp dụng cho môi trường đa tác tử",
+      "D. Huấn luyện nhanh hơn 10 lần"
+    ],
+    "correct_answer": "B",
+    "explanation": "TD3 cải thiện DDPG bằng cách sử dụng hai mạng Critic để ước tính Q-value (giảm overestimation) và trì hoãn cập nhật Actor so với Critic, giúp tăng cường sự ổn định.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Actor-Critic Methods (DDPG, TD3, SAC)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-026",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Actor-Critic Methods (DDPG, TD3, SAC)",
+    "question_text": "SAC (Soft Actor-Critic) nổi bật với đặc điểm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn tìm chính sách xác định",
+      "B. Tối đa hóa tổng phần thưởng và entropy của chính sách",
+      "C. Chỉ hoạt động trong môi trường giả lập",
+      "D. Không cần Experience Replay"
+    ],
+    "correct_answer": "B",
+    "explanation": "SAC là một thuật toán Actor-Critic off-policy tối đa hóa tổng phần thưởng kết hợp với entropy của chính sách, khuyến khích khám phá và giúp chính sách trở nên mạnh mẽ hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Actor-Critic Methods (DDPG, TD3, SAC)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-027",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Multi-Agent Reinforcement Learning",
+    "question_text": "MARL (Multi-Agent Reinforcement Learning) nghiên cứu điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện một agent trong nhiều môi trường khác nhau",
+      "B. Huấn luyện nhiều agent tương tác trong cùng một môi trường",
+      "C. Tối ưu hóa một chính sách cho nhiều tác vụ",
+      "D. Học từ các chuyên gia con người"
+    ],
+    "correct_answer": "B",
+    "explanation": "MARL tập trung vào việc huấn luyện nhiều agent cùng tương tác với nhau và với môi trường để đạt được mục tiêu chung hoặc riêng lẻ.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Multi-Agent Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-028",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Multi-Agent Reinforcement Learning",
+    "question_text": "Một thách thức lớn trong MARL là 'non-stationarity'. Điều này có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Môi trường không thay đổi",
+      "B. Chính sách tối ưu của một agent thay đổi khi các agent khác học và thay đổi hành vi",
+      "C. Phần thưởng không ổn định",
+      "D. Kích thước không gian trạng thái thay đổi theo thời gian"
+    ],
+    "correct_answer": "B",
+    "explanation": "Non-stationarity (không ổn định) là một thách thức trong MARL, nơi môi trường của một agent thay đổi khi các agent khác học và thay đổi chính sách của chúng, làm cho việc học trở nên khó khăn hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Multi-Agent Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-029",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Multi-Agent Reinforcement Learning",
+    "question_text": "Chiến lược nào không phải là một cách tiếp cận phổ biến trong MARL?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Centralized Training Decentralized Execution (CTDE)",
+      "B. Independent Learners (IL)",
+      "C. Single-Agent Learning (SAL)",
+      "D. Learning in games (Game Theory)"
+    ],
+    "correct_answer": "C",
+    "explanation": "Single-Agent Learning (SAL) không phải là một chiến lược trong MARL, vì nó chỉ xem xét một agent duy nhất. Các phương pháp khác đều là cách tiếp cận trong MARL.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Multi-Agent Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-030",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Multi-Agent Reinforcement Learning",
+    "question_text": "Trong MARL, 'cooperative agents' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các agent cạnh tranh với nhau",
+      "B. Các agent làm việc cùng nhau để tối đa hóa một phần thưởng chung",
+      "C. Các agent không tương tác",
+      "D. Các agent chỉ học từ các quan sát riêng lẻ"
+    ],
+    "correct_answer": "B",
+    "explanation": "Cooperative agents (agent hợp tác) là những agent làm việc cùng nhau để tối đa hóa một hàm phần thưởng chung.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Multi-Agent Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-031",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Multi-Agent Reinforcement Learning",
+    "question_text": "Trong MARL, 'competitive agents' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các agent không ảnh hưởng đến nhau",
+      "B. Các agent tối đa hóa phần thưởng cá nhân mà không quan tâm đến agent khác",
+      "C. Các agent cố gắng đạt được mục tiêu riêng lẻ bằng cách cạnh tranh với nhau",
+      "D. Các agent chia sẻ cùng một chính sách"
+    ],
+    "correct_answer": "C",
+    "explanation": "Competitive agents (agent cạnh tranh) là những agent mà lợi ích của một agent đối lập với lợi ích của các agent khác, thường dẫn đến trò chơi tổng bằng không (zero-sum games).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning", "Multi-Agent Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-032",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "DRL ra đời để giải quyết hạn chế nào của RL truyền thống?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ học chậm",
+      "B. Khó khăn trong việc xử lý không gian trạng thái/hành động lớn và phức tạp",
+      "C. Không thể học từ kinh nghiệm",
+      "D. Chỉ áp dụng cho trò chơi"
+    ],
+    "correct_answer": "B",
+    "explanation": "DRL sử dụng Deep Learning để giải quyết vấn đề về không gian trạng thái và hành động lớn, phức tạp mà RL truyền thống gặp khó khăn khi biểu diễn và học.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-033",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Deep Learning mang lại lợi ích gì cho Reinforcement Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm chi phí tính toán",
+      "B. Khả năng học các biểu diễn phức tạp từ dữ liệu đầu vào thô",
+      "C. Loại bỏ nhu cầu về phần thưởng",
+      "D. Giới hạn số lượng hành động"
+    ],
+    "correct_answer": "B",
+    "explanation": "Deep Learning cho phép các thuật toán RL học các biểu diễn đặc trưng (feature representations) cấp cao từ dữ liệu đầu vào thô (ví dụ: hình ảnh, âm thanh), giúp xử lý các vấn đề phức tạp hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-034",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Thuật toán DRL nào đã đạt được thành công đáng kể trong việc chơi game Atari từ đầu vào hình ảnh thô?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Q-learning truyền thống",
+      "B. SARSA",
+      "C. DQN",
+      "D. Monte Carlo"
+    ],
+    "correct_answer": "C",
+    "explanation": "DQN (Deep Q-Network) là thuật toán tiên phong đã chứng minh khả năng học chơi nhiều trò chơi Atari chỉ từ đầu vào hình ảnh và phần thưởng trò chơi, đạt hiệu suất siêu việt so với con người.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-035",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Overfitting là một vấn đề trong DRL. Làm thế nào để giảm thiểu nó?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng kích thước mạng",
+      "B. Giảm số lượng kinh nghiệm",
+      "C. Sử dụng Regularization, Dropout hoặc tăng cường khám phá",
+      "D. Tăng tốc độ học"
+    ],
+    "correct_answer": "C",
+    "explanation": "Overfitting có thể được giảm thiểu bằng các kỹ thuật như Regularization (L1/L2), Dropout, hoặc bằng cách khuyến khích khám phá để thu thập dữ liệu đa dạng hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-036",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Vấn đề 'Curse of Dimensionality' trong Reinforcement Learning đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khó khăn khi huấn luyện các mạng sâu",
+      "B. Sự tăng trưởng hàm mũ của không gian trạng thái/hành động khi số lượng biến tăng lên",
+      "C. Vấn đề với phần thưởng âm",
+      "D. Tốc độ thu thập dữ liệu chậm"
+    ],
+    "correct_answer": "B",
+    "explanation": "Curse of Dimensionality là hiện tượng khi không gian trạng thái hoặc hành động trở nên quá lớn (tăng trưởng hàm mũ với số lượng biến), khiến việc học hiệu quả trở nên bất khả thi đối với các phương pháp truyền thống.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-037",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "DRL thường được áp dụng trong lĩnh vực nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xử lý ngôn ngữ tự nhiên (NLP)",
+      "B. Thị giác máy tính (Computer Vision)",
+      "C. Robotics, trò chơi, hệ thống khuyến nghị",
+      "D. Tất cả các lĩnh vực trên"
+    ],
+    "correct_answer": "C",
+    "explanation": "DRL đã cho thấy thành công lớn trong nhiều lĩnh vực như điều khiển robot, chơi game, hệ thống khuyến nghị và các ứng dụng điều khiển phức tạp khác.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-038",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Kỹ thuật 'Prioritized Experience Replay' cải thiện Experience Replay như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ lưu trữ các kinh nghiệm có phần thưởng dương",
+      "B. Ưu tiên lấy mẫu các kinh nghiệm có lỗi TD lớn hơn",
+      "C. Tăng kích thước bộ đệm",
+      "D. Giảm số lượng kinh nghiệm cần lưu trữ"
+    ],
+    "correct_answer": "B",
+    "explanation": "Prioritized Experience Replay ưu tiên lấy mẫu các kinh nghiệm mà agent học được nhiều nhất (những kinh nghiệm có lỗi TD lớn hơn), giúp tăng tốc độ hội tụ và hiệu quả học tập.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-039",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Double DQN (DDQN) giải quyết vấn đề gì của DQN gốc?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Quá trình khám phá chậm",
+      "B. Việc ước tính quá mức (overestimation) của Q-values",
+      "C. Khó khăn khi áp dụng cho không gian hành động liên tục",
+      "D. Kích thước mạng quá nhỏ"
+    ],
+    "correct_answer": "B",
+    "explanation": "Double DQN giải quyết vấn đề overestimation của Q-values bằng cách tách biệt việc lựa chọn hành động tốt nhất và việc đánh giá giá trị của hành động đó, sử dụng hai mạng để ước tính.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-040",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Điểm khác biệt chính giữa on-policy và off-policy DRL là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. On-policy học một chính sách duy nhất, off-policy học nhiều chính sách",
+      "B. On-policy học trên dữ liệu được tạo ra bởi chính sách đang được học, off-policy có thể học trên dữ liệu được tạo ra bởi một chính sách khác",
+      "C. Off-policy luôn nhanh hơn on-policy",
+      "D. On-policy yêu cầu mô hình môi trường"
+    ],
+    "correct_answer": "B",
+    "explanation": "On-policy learning học một chính sách từ dữ liệu được tạo ra bởi chính sách đó. Off-policy learning có thể học một chính sách khác với chính sách được sử dụng để tạo ra dữ liệu, cho phép tái sử dụng kinh nghiệm hiệu quả hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-041",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Mạng nơ-ron được sử dụng trong DRL thường là loại nào cho đầu vào hình ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Recurrent Neural Network (RNN)",
+      "B. Long Short-Term Memory (LSTM)",
+      "C. Convolutional Neural Network (CNN)",
+      "D. Generative Adversarial Network (GAN)"
+    ],
+    "correct_answer": "C",
+    "explanation": "Convolutional Neural Network (CNN) rất hiệu quả trong việc xử lý dữ liệu hình ảnh, vì vậy chúng thường được sử dụng làm bộ trích xuất đặc trưng trong các mô hình DRL khi đầu vào là hình ảnh (ví dụ: trong DQN).",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-042",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Việc sử dụng 'replay buffer' trong DRL giúp giảm vấn đề nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Gradient Vanishing",
+      "B. High Variance",
+      "C. Dữ liệu huấn luyện tương quan",
+      "D. Overfitting"
+    ],
+    "correct_answer": "C",
+    "explanation": "Replay buffer (bộ đệm kinh nghiệm) giúp phá vỡ mối tương quan thời gian giữa các mẫu dữ liệu bằng cách lấy mẫu ngẫu nhiên từ bộ đệm, điều này ổn định quá trình huấn luyện mạng nơ-ron.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-043",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Sự khác biệt chính giữa Value-based DRL và Policy-based DRL là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Value-based học trực tiếp chính sách, Policy-based học hàm giá trị",
+      "B. Value-based học hàm giá trị, Policy-based học trực tiếp chính sách",
+      "C. Value-based chỉ dùng cho không gian rời rạc, Policy-based chỉ dùng cho không gian liên tục",
+      "D. Không có sự khác biệt đáng kể"
+    ],
+    "correct_answer": "B",
+    "explanation": "Value-based DRL (như DQN) học một hàm giá trị để suy ra chính sách, trong khi Policy-based DRL (như REINFORCE) học trực tiếp chính sách.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-044",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Tại sao việc huấn luyện DRL thường tốn nhiều tài nguyên tính toán?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Vì thuật toán rất đơn giản",
+      "B. Vì yêu cầu tương tác lớn với môi trường và huấn luyện mạng nơ-ron lớn",
+      "C. Vì không cần GPU",
+      "D. Vì dữ liệu rất nhỏ"
+    ],
+    "correct_answer": "B",
+    "explanation": "Huấn luyện DRL thường tốn nhiều tài nguyên do cần lượng lớn tương tác với môi trường để thu thập dữ liệu và do chi phí tính toán cao của việc huấn luyện các mạng nơ-ron sâu.",
+    "difficulty_level": "easy",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-045",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Một lợi thế của các phương pháp Actor-Critic so với Policy Gradient thuần túy là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Loại bỏ hoàn toàn vấn đề biến động gradient",
+      "B. Giảm biến động gradient bằng cách sử dụng baseline (giá trị dự đoán từ Critic)",
+      "C. Không yêu cầu khám phá",
+      "D. Luôn có chính sách xác định"
+    ],
+    "correct_answer": "B",
+    "explanation": "Các phương pháp Actor-Critic giảm biến động gradient của ước tính policy gradient bằng cách sử dụng giá trị của Critic (baseline) để làm chuẩn mực, giúp việc học ổn định hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-046",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Sự khác biệt chính giữa A2C và A3C là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. A2C chỉ dùng CPU, A3C dùng GPU",
+      "B. A3C sử dụng nhiều agent không đồng bộ để thu thập kinh nghiệm song song, A2C đồng bộ",
+      "C. A2C là off-policy, A3C là on-policy",
+      "D. A3C không có Critic"
+    ],
+    "correct_answer": "B",
+    "explanation": "A3C (Asynchronous Advantage Actor-Critic) sử dụng nhiều agent/luồng làm việc không đồng bộ để thu thập kinh nghiệm và cập nhật mạng chung, giúp tăng tốc độ và ổn định huấn luyện. A2C (Advantage Actor-Critic) là phiên bản đồng bộ của A3C.",
+    "difficulty_level": "hard",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-047",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Proximal Policy Optimization (PPO) là một thuật toán phổ biến trong DRL vì lý do gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Rất chậm và không ổn định",
+      "B. Cân bằng giữa hiệu quả và tính ổn định, thường hoạt động tốt trong nhiều môi trường",
+      "C. Chỉ áp dụng cho các trò chơi đơn giản",
+      "D. Không sử dụng mạng nơ-ron"
+    ],
+    "correct_answer": "B",
+    "explanation": "PPO là một trong những thuật toán DRL phổ biến và hiệu quả nhất, nổi tiếng vì sự cân bằng tốt giữa hiệu suất, ổn định và dễ triển khai.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-048",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Kỹ thuật 'Curriculum Learning' trong DRL có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện agent trên các nhiệm vụ ngẫu nhiên",
+      "B. Tổ chức các nhiệm vụ từ dễ đến khó để agent học dần dần",
+      "C. Chỉ học từ các chuyên gia",
+      "D. Giảm số lượng lớp trong mạng nơ-ron"
+    ],
+    "correct_answer": "B",
+    "explanation": "Curriculum Learning là một kỹ thuật huấn luyện DRL mà trong đó agent được trình bày các nhiệm vụ theo một trình tự tăng dần độ khó, giúp nó học hiệu quả hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-049",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Ý nghĩa của 'Sparse Rewards' (phần thưởng thưa thớt) trong DRL là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Agent nhận được phần thưởng ở mỗi bước",
+      "B. Phần thưởng chỉ được nhận rất hiếm khi hoặc chỉ ở cuối nhiệm vụ",
+      "C. Phần thưởng luôn dương",
+      "D. Phần thưởng có giá trị rất lớn"
+    ],
+    "correct_answer": "B",
+    "explanation": "Sparse Rewards là khi agent chỉ nhận được phần thưởng (đặc biệt là phần thưởng đáng kể) rất hiếm khi, thường là chỉ khi đạt được một mục tiêu cuối cùng. Điều này khiến việc học trở nên khó khăn vì thiếu tín hiệu phản hồi thường xuyên.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "RL-DRL-050",
+    "target": "AI Engineer",
+    "skill_category": "Reinforcement Learning",
+    "skill_name": "Deep Reinforcement Learning",
+    "subskill_name": "Deep Reinforcement Learning",
+    "question_text": "Trong DRL, việc sử dụng các mạng nơ-ron lớn có thể dẫn đến vấn đề nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm chi phí tính toán",
+      "B. Tăng khả năng hội tụ",
+      "C. Overfitting và đòi hỏi nhiều dữ liệu/tài nguyên tính toán",
+      "D. Giảm độ phức tạp của môi trường"
+    ],
+    "correct_answer": "C",
+    "explanation": "Mạng nơ-ron lớn có thể dẫn đến overfitting nếu không có đủ dữ liệu hoặc kỹ thuật điều hòa phù hợp, đồng thời đòi hỏi nhiều tài nguyên tính toán để huấn luyện.",
+    "difficulty_level": "medium",
+    "tags": ["Reinforcement Learning", "Deep Reinforcement Learning"],
+    "date_created": "2025-07-28"
+  }
+]

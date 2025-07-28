@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "FK-MATH-001",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Ma trận đơn vị (Identity Matrix) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ma trận có tất cả các phần tử bằng 0.",
+      "B. Ma trận vuông có đường chéo chính bằng 1 và các phần tử khác bằng 0.",
+      "C. Ma trận chỉ có một hàng hoặc một cột.",
+      "D. Ma trận mà tổng các phần tử của mỗi hàng bằng 1."
+    ],
+    "correct_answer": "B",
+    "explanation": "Ma trận đơn vị (ký hiệu là $I$) là ma trận vuông đặc biệt có các phần tử trên đường chéo chính bằng 1 và tất cả các phần tử còn lại bằng 0. Nó có vai trò như '1' trong phép nhân ma trận.",
+    "difficulty_level": "easy",
+    "tags": ["Linear Algebra", "Matrix", "Foundations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-002",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Phép nhân ma trận (Matrix Multiplication) có tính chất giao hoán (commutative) không?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Có, luôn luôn.",
+      "B. Không, trừ một số trường hợp đặc biệt.",
+      "C. Chỉ khi các ma trận là ma trận đơn vị.",
+      "D. Chỉ khi các ma trận là ma trận vuông."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phép nhân ma trận nói chung **không** có tính chất giao hoán, tức là $AB \\ne BA$. Chỉ có một số trường hợp đặc biệt như khi nhân với ma trận đơn vị thì tính chất giao hoán mới đúng.",
+    "difficulty_level": "medium",
+    "tags": ["Linear Algebra", "Matrix", "Properties"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-003",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Vector riêng (Eigenvector) của một ma trận là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một vector mà khi nhân với ma trận, nó trở thành vector 0.",
+      "B. Một vector mà khi nhân với ma trận, nó chỉ thay đổi độ lớn (scal), không thay đổi hướng.",
+      "C. Một vector chỉ chứa các phần tử 1.",
+      "D. Một vector trực giao với tất cả các vector khác."
+    ],
+    "correct_answer": "B",
+    "explanation": "Một eigenvector của một phép biến đổi tuyến tính là một vector khác không mà khi phép biến đổi được áp dụng, nó chỉ bị co giãn bởi một yếu tố vô hướng (eigenvalue) mà không thay đổi hướng.",
+    "difficulty_level": "hard",
+    "tags": ["Linear Algebra", "Eigenvalues", "Eigenvectors"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-004",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Định thức (Determinant) của một ma trận vuông cho biết điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước của ma trận.",
+      "B. Khả năng biến đổi không gian của ma trận, đặc biệt là liệu nó có khả năng nghịch đảo hay không.",
+      "C. Tổng các phần tử trên đường chéo chính.",
+      "D. Hạng của ma trận."
+    ],
+    "correct_answer": "B",
+    "explanation": "Định thức của một ma trận vuông là một giá trị vô hướng cho biết ma trận đó có khả năng đảo ngược hay không. Nếu định thức bằng 0, ma trận không thể đảo ngược (singular).",
+    "difficulty_level": "medium",
+    "tags": ["Linear Algebra", "Determinant", "Invertibility"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-005",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Hạng (Rank) của một ma trận cho biết điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số hàng của ma trận.",
+      "B. Số cột của ma trận.",
+      "C. Số lượng các hàng (hoặc cột) độc lập tuyến tính tối đa.",
+      "D. Tổng các phần tử của ma trận."
+    ],
+    "correct_answer": "C",
+    "explanation": "Hạng của một ma trận là số lượng hàng (hoặc cột) độc lập tuyến tính tối đa. Nó cũng là số chiều của không gian cột (hoặc không gian hàng) của ma trận.",
+    "difficulty_level": "medium",
+    "tags": ["Linear Algebra", "Matrix Rank", "Linear Independence"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-006",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Không gian vector (Vector Space) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một tập hợp chỉ chứa các số nguyên.",
+      "B. Một tập hợp các vector cùng với hai phép toán (cộng vector và nhân vô hướng) thỏa mãn một số tiên đề nhất định.",
+      "C. Một tập hợp các ma trận.",
+      "D. Một tập hợp các hàm số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Không gian vector là một cấu trúc cơ bản trong đại số tuyến tính, bao gồm một tập hợp các vector và các phép toán cộng vector, nhân vô hướng, thỏa mãn 10 tiên đề.",
+    "difficulty_level": "hard",
+    "tags": ["Linear Algebra", "Vector Space", "Abstract Algebra"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-007",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Phép chiếu (Projection) trong không gian vector là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thay đổi kích thước của một vector.",
+      "B. Biến đổi một vector thành một vector khác có cùng hướng nhưng độ lớn khác.",
+      "C. Tìm hình chiếu vuông góc của một vector lên một không gian con hoặc một vector khác.",
+      "D. Phép quay một vector quanh một trục."
+    ],
+    "correct_answer": "C",
+    "explanation": "Phép chiếu trong đại số tuyến tính là quá trình tìm hình chiếu vuông góc của một vector lên một đường thẳng, một mặt phẳng hoặc một không gian con, thường được dùng trong các bài toán tối ưu và phân tích dữ liệu (như PCA).",
+    "difficulty_level": "hard",
+    "tags": ["Linear Algebra", "Projection", "Vector Space"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-008",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Information Theory",
+    "question_text": "Khái niệm Entropy trong Lý thuyết Thông tin đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Lượng thông tin chứa trong một sự kiện chắc chắn xảy ra.",
+      "B. Lượng thông tin cần thiết để nén dữ liệu.",
+      "C. Mức độ không chắc chắn hoặc ngẫu nhiên của một biến ngẫu nhiên.",
+      "D. Tốc độ truyền tải thông tin qua một kênh."
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong Lý thuyết Thông tin, entropy đo lường mức độ không chắc chắn hoặc ngẫu nhiên của một biến ngẫu nhiên. Entropy càng cao thì mức độ không chắc chắn càng lớn.",
+    "difficulty_level": "medium",
+    "tags": ["Information Theory", "Entropy", "Uncertainty"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-009",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Information Theory",
+    "question_text": "Kullback-Leibler Divergence (KL Divergence) được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tính toán khoảng cách Euclidean giữa hai vector.",
+      "B. Đo lường sự khác biệt giữa hai phân phối xác suất.",
+      "C. Mã hóa thông tin hiệu quả hơn.",
+      "D. Giảm chiều dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "KL Divergence là một thước đo bất đối xứng về sự khác biệt giữa hai phân phối xác suất. Nó thường được sử dụng trong Machine Learning để đo lường mức độ một phân phối dự đoán khác với phân phối thực tế.",
+    "difficulty_level": "hard",
+    "tags": ["Information Theory", "KL Divergence", "Probability Distributions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-010",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Information Theory",
+    "question_text": "Cross-Entropy là một hàm mất mát phổ biến trong học sâu, đặc biệt cho các bài toán phân loại. Nó đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khoảng cách Euclidean giữa các điểm dữ liệu.",
+      "B. Sự tương đồng giữa hai vector.",
+      "C. Sự khác biệt giữa phân phối xác suất dự đoán của mô hình và phân phối thực tế của nhãn.",
+      "D. Tổng bình phương lỗi."
+    ],
+    "correct_answer": "C",
+    "explanation": "Cross-Entropy đo lường sự khác biệt giữa hai phân phối xác suất. Trong Machine Learning, nó thường được dùng để đo lường mức độ dự đoán của mô hình phù hợp với phân phối nhãn thực tế của dữ liệu huấn luyện.",
+    "difficulty_level": "hard",
+    "tags": ["Information Theory", "Cross-Entropy", "Loss Function"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-011",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Information Theory",
+    "question_text": "Information Gain (Thông tin đạt được) là một khái niệm quan trọng trong việc xây dựng cây quyết định (Decision Trees). Nó đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Độ phức tạp tính toán của thuật toán.",
+      "B. Mức độ giảm entropy (hoặc sự không chắc chắn) của dữ liệu sau khi chia nhỏ dựa trên một thuộc tính.",
+      "C. Số lượng các nút trong cây quyết định.",
+      "D. Sai số dự đoán của cây quyết định."
+    ],
+    "correct_answer": "B",
+    "explanation": "Information Gain đo lường sự giảm entropy của một tập dữ liệu sau khi chia nó thành các tập con dựa trên giá trị của một thuộc tính. Nó được sử dụng để chọn thuộc tính tốt nhất để chia tách tại mỗi nút trong cây quyết định.",
+    "difficulty_level": "hard",
+    "tags": ["Information Theory", "Decision Trees", "Information Gain"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-012",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Information Theory",
+    "question_text": "Mutual Information (Thông tin tương hỗ) đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tổng entropy của hai biến ngẫu nhiên.",
+      "B. Lượng thông tin mà việc biết giá trị của một biến ngẫu nhiên cung cấp về biến ngẫu nhiên khác.",
+      "C. Khoảng cách giữa hai phân phối xác suất.",
+      "D. Độ phức tạp của một thuật toán nén dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Thông tin tương hỗ là một thước đo về sự phụ thuộc lẫn nhau giữa hai biến ngẫu nhiên. Nó định lượng lượng thông tin (tính bằng bit) thu được về một biến ngẫu nhiên khi biết biến ngẫu nhiên kia.",
+    "difficulty_level": "hard",
+    "tags": ["Information Theory", "Mutual Information", "Dependency"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-013",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Information Theory",
+    "question_text": "Nén dữ liệu không mất mát (Lossless Compression) có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước dữ liệu luôn được giảm đến mức tối thiểu.",
+      "B. Khi dữ liệu được giải nén, nó hoàn toàn giống với dữ liệu gốc.",
+      "C. Một số thông tin bị mất trong quá trình nén để giảm kích thước.",
+      "D. Quá trình nén không cần thuật toán phức tạp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nén không mất mát là phương pháp nén dữ liệu mà từ dữ liệu đã nén, bạn có thể tái tạo hoàn toàn chính xác dữ liệu gốc mà không có bất kỳ mất mát thông tin nào. Ví dụ: ZIP, PNG.",
+    "difficulty_level": "medium",
+    "tags": ["Information Theory", "Data Compression", "Lossless"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-014",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Đạo hàm của một hàm số tại một điểm biểu thị điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Diện tích dưới đồ thị hàm số.",
+      "B. Tốc độ thay đổi tức thời của hàm số tại điểm đó.",
+      "C. Giá trị lớn nhất của hàm số.",
+      "D. Giá trị nhỏ nhất của hàm số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đạo hàm của một hàm số tại một điểm cho biết độ dốc của tiếp tuyến với đồ thị hàm số tại điểm đó, hay nói cách khác là tốc độ thay đổi tức thời của hàm số.",
+    "difficulty_level": "medium",
+    "tags": ["Calculus", "Derivative", "Rate of Change"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-015",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Tích phân xác định (Definite Integral) của một hàm số biểu thị điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Độ dốc của đường tiếp tuyến tại một điểm.",
+      "B. Tốc độ thay đổi của hàm số.",
+      "C. Diện tích dưới đồ thị của hàm số trong một khoảng nhất định.",
+      "D. Điểm cực trị của hàm số."
+    ],
+    "correct_answer": "C",
+    "explanation": "Tích phân xác định của một hàm số trong một khoảng $[a, b]$ biểu diễn diện tích giới hạn bởi đồ thị hàm số, trục hoành và hai đường thẳng $x=a$, $x=b$.",
+    "difficulty_level": "medium",
+    "tags": ["Calculus", "Integral", "Area Under Curve"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-016",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Quy tắc chuỗi (Chain Rule) trong vi tích phân được sử dụng khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tính đạo hàm của tổng hai hàm số.",
+      "B. Để tính đạo hàm của một hàm hợp (composition of functions).",
+      "C. Để tính tích phân của một hàm số.",
+      "D. Để tìm giới hạn của một hàm số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Quy tắc chuỗi được sử dụng để tính đạo hàm của một hàm hợp, tức là một hàm được tạo thành từ việc lồng ghép hai hoặc nhiều hàm khác vào nhau, ví dụ $f(g(x))$.",
+    "difficulty_level": "medium",
+    "tags": ["Calculus", "Chain Rule", "Derivative"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-017",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Điểm uốn (Inflection Point) của một hàm số là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Điểm mà đạo hàm bậc nhất bằng 0.",
+      "B. Điểm mà hàm số đạt cực đại hoặc cực tiểu.",
+      "C. Điểm mà tại đó đồ thị của hàm số thay đổi độ lõm (concavity).",
+      "D. Điểm mà đường tiếp tuyến song song với trục hoành."
+    ],
+    "correct_answer": "C",
+    "explanation": "Điểm uốn là một điểm trên đồ thị hàm số mà tại đó độ lõm của hàm số thay đổi (từ lõm xuống sang lõm lên hoặc ngược lại). Tại điểm này, đạo hàm bậc hai bằng 0 hoặc không xác định.",
+    "difficulty_level": "medium",
+    "tags": ["Calculus", "Inflection Point", "Concavity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-018",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Đạo hàm riêng (Partial Derivative) được sử dụng khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi hàm số chỉ có một biến độc lập.",
+      "B. Khi hàm số có nhiều biến và chúng ta muốn tính đạo hàm theo một biến cụ thể, giữ các biến khác cố định.",
+      "C. Khi hàm số là một đường thẳng.",
+      "D. Khi hàm số không thể tích phân được."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đạo hàm riêng được dùng để tìm tốc độ thay đổi của một hàm đa biến đối với một trong các biến của nó, trong khi giữ các biến khác không đổi.",
+    "difficulty_level": "medium",
+    "tags": ["Calculus", "Partial Derivative", "Multivariable Calculus"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-019",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Chuỗi Taylor (Taylor Series) của một hàm số là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một phương trình tuyến tính mô tả hàm số.",
+      "B. Một đa thức vô hạn biểu diễn một hàm số như tổng các đạo hàm của nó tại một điểm duy nhất.",
+      "C. Một cách để tính tích phân của hàm số.",
+      "D. Một phương pháp để tìm cực trị toàn cục của hàm số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Chuỗi Taylor là một cách biểu diễn một hàm số dưới dạng một chuỗi vô hạn của các số hạng được tính từ các giá trị của các đạo hàm của hàm số tại một điểm duy nhất. Nó được sử dụng để xấp xỉ các hàm phức tạp bằng các đa thức đơn giản hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Calculus", "Taylor Series", "Approximation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-020",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Phép tính vi phân và tích phân là hai nhánh chính của giải tích. Mối quan hệ giữa chúng là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng là hai khái niệm hoàn toàn không liên quan.",
+      "B. Chúng là các phép toán nghịch đảo lẫn nhau.",
+      "C. Vi phân chỉ được dùng cho hàm rời rạc, tích phân cho hàm liên tục.",
+      "D. Chúng chỉ áp dụng cho các hàm tuyến tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "Định lý cơ bản của giải tích khẳng định mối quan hệ nghịch đảo giữa vi phân và tích phân. Tích phân có thể được dùng để tìm hàm số có đạo hàm cho trước, và đạo hàm có thể được dùng để tìm tốc độ thay đổi của tích phân.",
+    "difficulty_level": "medium",
+    "tags": ["Calculus", "Differentiation", "Integration", "Fundamental Theorem"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-021",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Optimization Techniques",
+    "question_text": "Mục tiêu chính của các thuật toán tối ưu hóa trong Machine Learning là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng kích thước của tập dữ liệu.",
+      "B. Giảm thiểu hàm mất mát (loss function) hoặc tối đa hóa hàm mục tiêu.",
+      "C. Tạo ra các đặc trưng mới từ dữ liệu hiện có.",
+      "D. Trực quan hóa dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các thuật toán tối ưu hóa (như Gradient Descent) được sử dụng để điều chỉnh các tham số của mô hình sao cho hàm mất mát (sai số dự đoán) được giảm thiểu, hoặc hàm mục tiêu (hiệu suất) được tối đa hóa.",
+    "difficulty_level": "easy",
+    "tags": ["Optimization", "Loss Function", "Gradient Descent"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-022",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Optimization Techniques",
+    "question_text": "Phương pháp Gradient Descent hoạt động như thế nào để tìm cực tiểu của một hàm?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Di chuyển ngẫu nhiên trên bề mặt hàm số cho đến khi tìm thấy điểm thấp nhất.",
+      "B. Di chuyển ngược lại theo hướng của đạo hàm (gradient) của hàm số.",
+      "C. Di chuyển theo hướng của đạo hàm bậc hai của hàm số.",
+      "D. Chia không gian tìm kiếm thành các vùng nhỏ hơn và tìm cực tiểu cục bộ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Gradient Descent là một thuật toán tối ưu hóa lặp đi lặp lại di chuyển theo hướng dốc nhất xuống (ngược hướng với gradient) để tìm cực tiểu của một hàm số.",
+    "difficulty_level": "medium",
+    "tags": ["Optimization", "Gradient Descent", "Calculus"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-023",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Optimization Techniques",
+    "question_text": "Learning Rate (Tốc độ học) trong các thuật toán tối ưu hóa như Gradient Descent có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xác định số lượng epoch huấn luyện.",
+      "B. Kiểm soát kích thước bước đi trong quá trình cập nhật tham số.",
+      "C. Thay đổi kiến trúc của mô hình.",
+      "D. Tăng tốc độ thu thập dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Learning Rate là một siêu tham số quan trọng quyết định kích thước của bước mà thuật toán tối ưu hóa (như Gradient Descent) di chuyển theo hướng ngược lại của gradient để tìm cực tiểu. Learning rate quá lớn có thể khiến thuật toán vượt qua điểm cực tiểu, quá nhỏ có thể khiến thuật toán hội tụ chậm.",
+    "difficulty_level": "easy",
+    "tags": ["Optimization", "Learning Rate", "Gradient Descent"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-024",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Optimization Techniques",
+    "question_text": "Điều gì có thể xảy ra nếu Learning Rate quá cao trong Gradient Descent?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thuật toán sẽ hội tụ nhanh chóng đến cực tiểu toàn cục.",
+      "B. Thuật toán có thể hội tụ rất chậm.",
+      "C. Thuật toán có thể dao động hoặc phân kỳ, không hội tụ được.",
+      "D. Mô hình sẽ bị overfitting."
+    ],
+    "correct_answer": "C",
+    "explanation": "Nếu Learning Rate quá cao, các bước cập nhật tham số sẽ quá lớn, khiến thuật toán có thể 'nhảy' qua điểm cực tiểu và không bao giờ hội tụ, hoặc thậm chí phân kỳ.",
+    "difficulty_level": "medium",
+    "tags": ["Optimization", "Learning Rate", "Gradient Descent", "Convergence"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-025",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Optimization Techniques",
+    "question_text": "Khái niệm 'Local Minimum' (Cực tiểu cục bộ) trong tối ưu hóa nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Điểm thấp nhất tuyệt đối trên toàn bộ bề mặt hàm số.",
+      "B. Một điểm mà tại đó hàm số đạt giá trị thấp nhất trong một vùng lân cận của điểm đó.",
+      "C. Điểm mà gradient của hàm số không xác định.",
+      "D. Điểm mà tại đó hàm số tăng giá trị."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cực tiểu cục bộ là một điểm trên bề mặt hàm số mà tại đó giá trị của hàm là thấp nhất so với các điểm lân cận của nó, nhưng có thể không phải là điểm thấp nhất trên toàn bộ hàm số (cực tiểu toàn cục).",
+    "difficulty_level": "medium",
+    "tags": ["Optimization", "Local Minimum", "Gradient Descent"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-026",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Độ lệch chuẩn (Standard Deviation) đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giá trị trung bình của tập dữ liệu.",
+      "B. Mức độ phân tán của dữ liệu so với giá trị trung bình.",
+      "C. Giá trị xuất hiện nhiều nhất trong tập dữ liệu.",
+      "D. Tổng tất cả các giá trị trong tập dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Độ lệch chuẩn là một thước đo mức độ phân tán của các điểm dữ liệu so với giá trị trung bình của tập dữ liệu. Độ lệch chuẩn thấp cho thấy các điểm dữ liệu có xu hướng rất gần với giá trị trung bình.",
+    "difficulty_level": "medium",
+    "tags": ["Probability", "Statistics", "Data Dispersion"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-027",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Định lý Bayes (Bayes' Theorem) cho phép chúng ta tính toán điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xác suất xảy ra của hai sự kiện độc lập.",
+      "B. Xác suất có điều kiện của một sự kiện dựa trên kiến thức về các sự kiện liên quan.",
+      "C. Xác suất hợp của hai sự kiện.",
+      "D. Giá trị kỳ vọng của một biến ngẫu nhiên."
+    ],
+    "correct_answer": "B",
+    "explanation": "Định lý Bayes mô tả cách cập nhật xác suất của một giả thuyết khi có thêm bằng chứng hoặc thông tin liên quan, tức là tính xác suất có điều kiện.",
+    "difficulty_level": "medium",
+    "tags": ["Probability", "Bayes' Theorem", "Conditional Probability"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-028",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Phân phối chuẩn (Normal Distribution), còn được gọi là phân phối Gaussian, có hình dạng đặc trưng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hình chữ nhật.",
+      "B. Hình chuông đối xứng.",
+      "C. Hình tam giác.",
+      "D. Hình tròn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân phối chuẩn là một trong những phân phối xác suất quan trọng nhất, có đồ thị hình chuông đối xứng và được đặc trưng bởi giá trị trung bình (mean) và độ lệch chuẩn (standard deviation).",
+    "difficulty_level": "easy",
+    "tags": ["Probability", "Statistics", "Normal Distribution"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-029",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Giá trị P (P-value) trong kiểm định giả thuyết thống kê cho biết điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xác suất của giả thuyết không (null hypothesis) là đúng.",
+      "B. Khả năng quan sát được dữ liệu (hoặc dữ liệu cực đoan hơn) nếu giả thuyết không là đúng.",
+      "C. Kích thước của hiệu ứng được quan sát.",
+      "D. Độ tin cậy của kết quả."
+    ],
+    "correct_answer": "B",
+    "explanation": "P-value là xác suất của việc quan sát một kết quả cực đoan như hoặc cực đoan hơn kết quả đã quan sát được, giả sử giả thuyết không (null hypothesis) là đúng. P-value nhỏ (thường < 0.05) thường dẫn đến việc bác bỏ giả thuyết không.",
+    "difficulty_level": "hard",
+    "tags": ["Probability", "Statistics", "Hypothesis Testing", "P-value"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-030",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Sự kiện độc lập (Independent Events) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hai sự kiện không thể xảy ra cùng lúc.",
+      "B. Sự kiện mà xác suất xảy ra của một sự kiện không ảnh hưởng đến xác suất xảy ra của sự kiện kia.",
+      "C. Hai sự kiện luôn xảy ra cùng lúc.",
+      "D. Sự kiện mà tổng xác suất của chúng bằng 1."
+    ],
+    "correct_answer": "B",
+    "explanation": "Hai sự kiện A và B được gọi là độc lập nếu xác suất xảy ra của A không bị ảnh hưởng bởi việc B đã xảy ra hay chưa, và ngược lại. $P(A|B) = P(A)$ và $P(B|A) = P(B)$.",
+    "difficulty_level": "easy",
+    "tags": ["Probability", "Independent Events", "Statistics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-031",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Central Limit Theorem (Định lý Giới hạn Trung tâm) phát biểu điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tổng của hai biến ngẫu nhiên chuẩn là một biến ngẫu nhiên chuẩn.",
+      "B. Với một cỡ mẫu đủ lớn, phân phối mẫu của trung bình mẫu sẽ xấp xỉ phân phối chuẩn, bất kể phân phối ban đầu của quần thể.",
+      "C. Xác suất của một sự kiện luôn nằm giữa 0 và 1.",
+      "D. Mọi tập dữ liệu đều tuân theo phân phối chuẩn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Định lý Giới hạn Trung tâm (CLT) là một trong những định lý quan trọng nhất trong thống kê. Nó cho biết rằng, với một cỡ mẫu đủ lớn, phân phối của trung bình mẫu sẽ có hình dạng gần như phân phối chuẩn, bất kể hình dạng phân phối của quần thể ban đầu.",
+    "difficulty_level": "hard",
+    "tags": ["Probability", "Statistics", "Central Limit Theorem"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-032",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Khái niệm 'Covariance' (Hiệp phương sai) trong thống kê đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mức độ phân tán của một biến riêng lẻ.",
+      "B. Mức độ hai biến thay đổi cùng chiều với nhau.",
+      "C. Giá trị trung bình của hai biến.",
+      "D. Khoảng cách giữa hai biến trong không gian."
+    ],
+    "correct_answer": "B",
+    "explanation": "Hiệp phương sai đo lường mức độ hai biến ngẫu nhiên thay đổi cùng nhau. Hiệp phương sai dương chỉ ra rằng chúng có xu hướng tăng hoặc giảm cùng nhau; hiệp phương sai âm chỉ ra rằng một biến tăng thì biến kia giảm.",
+    "difficulty_level": "medium",
+    "tags": ["Probability", "Statistics", "Covariance", "Relationship"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-033",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Hệ số tương quan Pearson (Pearson Correlation Coefficient) có giá trị nằm trong khoảng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. [0, 1]",
+      "B. [-1, 1]",
+      "C. [0, $\\infty$)",
+      "D. (-$\\infty$, +$\\infty$)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Hệ số tương quan Pearson đo lường mức độ và chiều hướng của mối quan hệ tuyến tính giữa hai biến, với giá trị nằm trong khoảng từ -1 (tương quan nghịch biến hoàn hảo) đến +1 (tương quan đồng biến hoàn hảo), và 0 là không có mối quan hệ tuyến tính.",
+    "difficulty_level": "medium",
+    "tags": ["Probability", "Statistics", "Correlation", "Pearson"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-034",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Numerical Analysis",
+    "question_text": "Mục đích của Phân tích Số (Numerical Analysis) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nghiên cứu các khái niệm toán học trừu tượng.",
+      "B. Phát triển các thuật toán để giải gần đúng các bài toán toán học phức tạp.",
+      "C. Tìm kiếm các giải pháp chính xác cho mọi phương trình.",
+      "D. Chỉ tập trung vào các bài toán liên quan đến số nguyên."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân tích số học (Numerical Analysis) là lĩnh vực nghiên cứu các thuật toán sử dụng xấp xỉ số để giải quyết các vấn đề liên tục trong toán học (như tích phân, phương trình vi phân) mà không thể giải được chính xác bằng các phương pháp giải tích.",
+    "difficulty_level": "medium",
+    "tags": ["Numerical Analysis", "Approximation", "Algorithms"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-035",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Numerical Analysis",
+    "question_text": "Phương pháp Newton-Raphson được sử dụng để giải quyết vấn đề gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tìm kiếm tích phân xác định.",
+      "B. Tìm nghiệm gần đúng của một phương trình (roots of a function).",
+      "C. Thực hiện phép nhân ma trận nhanh.",
+      "D. Tính toán đạo hàm của một hàm số phức tạp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phương pháp Newton-Raphson là một thuật toán lặp để tìm nghiệm (root) của một hàm số thực. Nó sử dụng đạo hàm để tìm ra các xấp xỉ liên tiếp của nghiệm.",
+    "difficulty_level": "hard",
+    "tags": ["Numerical Analysis", "Newton-Raphson", "Root Finding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-036",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Numerical Analysis",
+    "question_text": "Phương pháp Euler là một kỹ thuật được sử dụng để giải quyết loại bài toán nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hệ phương trình tuyến tính.",
+      "B. Phương trình vi phân thường (Ordinary Differential Equations - ODEs).",
+      "C. Tìm giá trị riêng của ma trận.",
+      "D. Bài toán tối ưu hóa không ràng buộc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phương pháp Euler là một phương pháp số đơn giản để giải gần đúng các phương trình vi phân thường với một giá trị ban đầu.",
+    "difficulty_level": "medium",
+    "tags": ["Numerical Analysis", "Euler Method", "ODEs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-037",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Numerical Analysis",
+    "question_text": "Sai số làm tròn (Round-off Error) xảy ra khi nào trong phân tích số?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi công thức toán học bị viết sai.",
+      "B. Do việc làm tròn số trong các phép tính dấu phẩy động của máy tính.",
+      "C. Khi mô hình toán học không chính xác.",
+      "D. Khi dữ liệu đầu vào không đủ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sai số làm tròn là sai số phát sinh do giới hạn về số chữ số mà máy tính có thể lưu trữ cho một số thực, dẫn đến việc phải làm tròn các giá trị trong quá trình tính toán.",
+    "difficulty_level": "medium",
+    "tags": ["Numerical Analysis", "Error Analysis", "Floating Point"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-038",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Numerical Analysis",
+    "question_text": "Phương pháp Runge-Kutta (RK4) được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tìm nghiệm của hệ phương trình đại số tuyến tính.",
+      "B. Ước tính tích phân xác định của một hàm số.",
+      "C. Giải các phương trình vi phân thường (ODEs) với độ chính xác cao hơn phương pháp Euler.",
+      "D. Giảm số chiều dữ liệu trong các bài toán Machine Learning."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các phương pháp Runge-Kutta, đặc biệt là RK4, là một nhóm các kỹ thuật lặp để giải quyết xấp xỉ các phương trình vi phân thường (ODEs) với độ chính xác và ổn định cao.",
+    "difficulty_level": "hard",
+    "tags": ["Numerical Analysis", "Runge-Kutta", "ODEs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-039",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Tập hợp rỗng (Empty Set) là tập hợp như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tập hợp chứa tất cả các số nguyên.",
+      "B. Tập hợp không chứa phần tử nào.",
+      "C. Tập hợp chỉ chứa một phần tử duy nhất.",
+      "D. Tập hợp chứa vô số phần tử."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tập hợp rỗng là một tập hợp không có bất kỳ phần tử nào. Nó được ký hiệu là $\\emptyset$ hoặc ${}$.",
+    "difficulty_level": "easy",
+    "tags": ["Discrete Mathematics", "Set Theory", "Basic Concepts"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-040",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Trong Lý thuyết Đồ thị (Graph Theory), một 'Đỉnh' (Vertex) biểu thị điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một kết nối giữa hai điểm.",
+      "B. Một vị trí hoặc điểm trong đồ thị.",
+      "C. Một con đường đi qua đồ thị.",
+      "D. Trọng số của một cạnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong lý thuyết đồ thị, một đỉnh (vertex hoặc node) là một trong những thực thể cơ bản tạo nên đồ thị, đại diện cho một đối tượng hoặc một điểm.",
+    "difficulty_level": "easy",
+    "tags": ["Discrete Mathematics", "Graph Theory", "Vertex"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-041",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Một hàm băm (Hash Function) có mục đích chính là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sắp xếp các phần tử trong một danh sách.",
+      "B. Mã hóa thông tin để bảo mật.",
+      "C. Chuyển đổi dữ liệu đầu vào có kích thước tùy ý thành một giá trị có kích thước cố định.",
+      "D. Nén dữ liệu mà không làm mất thông tin."
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàm băm là một hàm toán học ánh xạ dữ liệu đầu vào (thuộc tính khóa) của kích thước tùy ý thành một giá trị băm (hash value) có kích thước cố định. Nó được dùng để tạo chỉ mục dữ liệu trong bảng băm, kiểm tra tính toàn vẹn dữ liệu, v.v.",
+    "difficulty_level": "medium",
+    "tags": ["Discrete Mathematics", "Hash Function", "Data Structures"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-042",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Một quan hệ tương đương (Equivalence Relation) phải thỏa mãn những tính chất nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ có tính phản xạ (reflexive) và đối xứng (symmetric).",
+      "B. Chỉ có tính đối xứng (symmetric) và bắc cầu (transitive).",
+      "C. Tính phản xạ (reflexive), đối xứng (symmetric) và bắc cầu (transitive).",
+      "D. Chỉ có tính phản xạ (reflexive)."
+    ],
+    "correct_answer": "C",
+    "explanation": "Một quan hệ tương đương trên một tập hợp phải thỏa mãn ba tính chất: phản xạ (mỗi phần tử quan hệ với chính nó), đối xứng (nếu a quan hệ với b thì b cũng quan hệ với a), và bắc cầu (nếu a quan hệ với b và b quan hệ với c thì a quan hệ với c).",
+    "difficulty_level": "hard",
+    "tags": ["Discrete Mathematics", "Equivalence Relation", "Set Theory"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-043",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Nguyên lý chuồng bồ câu (Pigeonhole Principle) phát biểu điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mọi bồ câu đều phải có một chuồng.",
+      "B. Nếu có nhiều bồ câu hơn chuồng, thì ít nhất một chuồng phải chứa nhiều hơn một con bồ câu.",
+      "C. Số lượng bồ câu luôn bằng số lượng chuồng.",
+      "D. Không thể đặt nhiều hơn một bồ câu vào mỗi chuồng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nguyên lý chuồng bồ câu là một nguyên tắc cơ bản trong toán học tổ hợp. Nó phát biểu rằng nếu n vật phẩm được đặt vào m hộp, với n > m, thì ít nhất một hộp phải chứa nhiều hơn một vật phẩm.",
+    "difficulty_level": "medium",
+    "tags": ["Discrete Mathematics", "Combinatorics", "Pigeonhole Principle"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-044",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Thuật toán Euclid được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tìm số nguyên tố.",
+      "B. Tìm ước số chung lớn nhất (Greatest Common Divisor - GCD) của hai số nguyên.",
+      "C. Tính giai thừa của một số.",
+      "D. Sắp xếp một danh sách các số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Thuật toán Euclid là một phương pháp hiệu quả để tính toán ước số chung lớn nhất (GCD) của hai số nguyên.",
+    "difficulty_level": "easy",
+    "tags": ["Discrete Mathematics", "Number Theory", "Euclidean Algorithm"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-045",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Một đồ thị vô hướng (Undirected Graph) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đồ thị mà các cạnh có hướng từ đỉnh này sang đỉnh khác.",
+      "B. Đồ thị mà các cạnh không có hướng, nghĩa là kết nối là hai chiều.",
+      "C. Đồ thị không có chu trình.",
+      "D. Đồ thị mà tất cả các đỉnh đều được kết nối với nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong đồ thị vô hướng, các cạnh không có hướng cụ thể, cho phép di chuyển cả hai chiều giữa hai đỉnh được kết nối.",
+    "difficulty_level": "easy",
+    "tags": ["Discrete Mathematics", "Graph Theory", "Undirected Graph"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-046",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Probability and Statistics",
+    "question_text": "Phân phối Poisson được sử dụng để mô hình hóa điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số lần một sự kiện xảy ra liên tục trong một khoảng thời gian hoặc không gian nhất định.",
+      "B. Kết quả của một chuỗi các thử nghiệm Bernoulli.",
+      "C. Phân bố của dữ liệu liên tục.",
+      "D. Mối quan hệ tuyến tính giữa hai biến."
+    ],
+    "correct_answer": "A",
+    "explanation": "Phân phối Poisson là một phân phối xác suất rời rạc mô hình hóa số lần một sự kiện xảy ra trong một khoảng thời gian hoặc không gian cố định, biết rằng các sự kiện này xảy ra với một tốc độ trung bình cố định và độc lập với thời gian kể từ sự kiện cuối cùng.",
+    "difficulty_level": "hard",
+    "tags": ["Probability", "Statistics", "Poisson Distribution"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-047",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Linear Algebra",
+    "question_text": "Phân tích Giá trị Riêng (Eigenvalue Decomposition) được ứng dụng trong Machine Learning để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thực hiện phân loại dữ liệu.",
+      "B. Giảm chiều dữ liệu và phân tích thành phần chính (PCA).",
+      "C. Tính toán đạo hàm của các hàm phức tạp.",
+      "D. Nén hình ảnh không mất mát."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân tích giá trị riêng (Eigenvalue Decomposition) là nền tảng toán học của PCA (Principal Component Analysis), một kỹ thuật giảm chiều dữ liệu quan trọng trong Machine Learning.",
+    "difficulty_level": "hard",
+    "tags": ["Linear Algebra", "Eigenvalue Decomposition", "PCA"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-048",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Optimization Techniques",
+    "question_text": "Momentum trong các thuật toán tối ưu hóa (ví dụ: Adam, RMSprop) giúp ích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng tốc độ thu thập dữ liệu huấn luyện.",
+      "B. Giúp thuật toán thoát khỏi các điểm cực tiểu cục bộ và tăng tốc độ hội tụ bằng cách tích lũy gradient trước đó.",
+      "C. Giảm kích thước mô hình để tăng hiệu suất.",
+      "D. Đảm bảo mô hình không bị overfitting."
+    ],
+    "correct_answer": "B",
+    "explanation": "Momentum giúp thuật toán tối ưu hóa không bị mắc kẹt ở các cực tiểu cục bộ và tăng tốc độ hội tụ bằng cách tích lũy hướng của các gradient trước đó, giúp di chuyển ổn định hơn về phía cực tiểu toàn cục.",
+    "difficulty_level": "hard",
+    "tags": ["Optimization", "Momentum", "Deep Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-049",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Calculus",
+    "question_text": "Định lý Giá trị Trung bình (Mean Value Theorem) phát biểu điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn có một điểm mà đạo hàm của hàm số bằng 0.",
+      "B. Nếu một hàm liên tục trên $[a,b]$ và khả vi trên $(a,b)$, thì tồn tại ít nhất một điểm $c$ trong $(a,b)$ sao cho tiếp tuyến tại $c$ song song với đường thẳng nối $f(a)$ và $f(b)$.",
+      "C. Giá trị trung bình của hàm số luôn là 0.",
+      "D. Tích phân của một hàm số luôn dương."
+    ],
+    "correct_answer": "B",
+    "explanation": "Định lý Giá trị Trung bình là một định lý quan trọng trong giải tích, liên hệ giá trị của hàm số với giá trị đạo hàm của nó trên một khoảng.",
+    "difficulty_level": "hard",
+    "tags": ["Calculus", "Mean Value Theorem", "Theorems"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "FK-MATH-050",
+    "target": "AI Engineer",
+    "skill_category": "Foundational Knowledge",
+    "skill_name": "Mathematics",
+    "subskill_name": "Discrete Mathematics",
+    "question_text": "Trong Lý thuyết Tập hợp, 'phép hợp' (Union) của hai tập hợp A và B là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tập hợp các phần tử chung của A và B.",
+      "B. Tập hợp chứa tất cả các phần tử thuộc A hoặc thuộc B (hoặc cả hai).",
+      "C. Tập hợp các phần tử chỉ thuộc A mà không thuộc B.",
+      "D. Tập hợp tất cả các tập con của A."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phép hợp của hai tập hợp A và B, ký hiệu $A \\cup B$, là tập hợp chứa tất cả các phần tử thuộc A, hoặc thuộc B, hoặc thuộc cả hai.",
+    "difficulty_level": "easy",
+    "tags": ["Discrete Mathematics", "Set Theory", "Union"],
+    "date_created": "2025-07-28"
+  }
+]
