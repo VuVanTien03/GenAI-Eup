@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "DL-DL-001",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Mạng neural sâu (Deep Neural Network) khác gì so với mạng neural truyền thống?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Deep Neural Network chỉ có một lớp ẩn.",
+      "B. Deep Neural Network có nhiều hơn một lớp ẩn giữa lớp đầu vào và lớp đầu ra.",
+      "C. Deep Neural Network không sử dụng hàm kích hoạt.",
+      "D. Deep Neural Network chỉ dùng cho bài toán phân loại."
+    ],
+    "correct_answer": "B",
+    "explanation": "Điểm khác biệt chính của mạng neural sâu là sự tồn tại của nhiều lớp ẩn, cho phép mô hình học các biểu diễn phức tạp và trừu tượng hơn từ dữ liệu.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Neural Networks Basics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-002",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Trong một mạng neural, 'trọng số' (weights) và 'độ lệch' (biases) có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng là các giá trị đầu vào của mạng.",
+      "B. Chúng là các tham số có thể học được của mô hình, được điều chỉnh trong quá trình huấn luyện để mạng có thể đưa ra dự đoán chính xác.",
+      "C. Chúng là các hàm kích hoạt.",
+      "D. Chúng xác định số lượng lớp trong mạng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trọng số và độ lệch là các tham số mà mạng neural điều chỉnh trong quá trình huấn luyện thông qua thuật toán lan truyền ngược (backpropagation) để tối thiểu hóa hàm mất mát.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Weights", "Biases"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-003",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Backpropagation",
+    "question_text": "Thuật toán Backpropagation (Lan truyền ngược) được sử dụng để làm gì trong huấn luyện mạng neural?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ra dữ liệu huấn luyện mới.",
+      "B. Tính toán gradient của hàm mất mát đối với các trọng số và độ lệch của mạng, cho phép cập nhật chúng để giảm lỗi dự đoán.",
+      "C. Chọn hàm kích hoạt phù hợp.",
+      "D. Giảm chiều dữ liệu đầu vào."
+    ],
+    "correct_answer": "B",
+    "explanation": "Backpropagation là thuật toán cốt lõi để huấn luyện mạng neural, nó sử dụng quy tắc chuỗi để tính toán gradient của lỗi đầu ra ngược trở lại qua các lớp, từ đó điều chỉnh trọng số.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Backpropagation", "Gradient"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-004",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Activation Functions",
+    "question_text": "Vai trò của 'hàm kích hoạt' (Activation Function) trong một nơ-ron là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tính tổng trọng số đầu vào.",
+      "B. Đảm bảo mô hình luôn tuyến tính.",
+      "C. Giới thiệu phi tuyến tính vào mạng, cho phép mạng học các mối quan hệ phức tạp và không tuyến tính trong dữ liệu.",
+      "D. Chuẩn hóa dữ liệu đầu vào."
+    ],
+    "correct_answer": "C",
+    "explanation": "Nếu không có hàm kích hoạt phi tuyến tính, mạng neural sẽ chỉ là một chuỗi các phép biến đổi tuyến tính, giới hạn khả năng học các mẫu dữ liệu phức tạp.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Activation Functions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-005",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Activation Functions",
+    "question_text": "Hàm kích hoạt nào sau đây thường được sử dụng trong lớp đầu ra của bài toán phân loại nhị phân?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. ReLU",
+      "B. Tanh",
+      "C. Sigmoid",
+      "D. Leaky ReLU"
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàm Sigmoid ánh xạ đầu ra về khoảng [0, 1], thích hợp để biểu diễn xác suất cho hai lớp.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Activation Functions", "Binary Classification", "Sigmoid"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-006",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "CNNs (Convolutional Neural Networks) đặc biệt phù hợp cho loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dữ liệu chuỗi thời gian.",
+      "B. Dữ liệu văn bản.",
+      "C. Dữ liệu hình ảnh và video.",
+      "D. Dữ liệu dạng bảng (tabular data)."
+    ],
+    "correct_answer": "C",
+    "explanation": "CNNs được thiết kế để xử lý dữ liệu có cấu trúc lưới (grid-like topology), như pixel trong hình ảnh, bằng cách sử dụng các lớp tích chập để học các đặc trưng cục bộ.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "CNNs", "Image Processing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-007",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "Lớp 'Pooling' trong CNNs có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thực hiện phép nhân ma trận.",
+      "B. Giới thiệu phi tuyến tính.",
+      "C. Giảm chiều không gian (spatial dimensions) của biểu diễn đặc trưng, giúp giảm số lượng tham số và tính toán, cũng như tăng khả năng bất biến với dịch chuyển nhỏ.",
+      "D. Cộng các giá trị lại với nhau."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các lớp pooling (như Max Pooling) tổng hợp thông tin từ các vùng nhỏ, giảm kích thước của bản đồ đặc trưng trong khi vẫn giữ lại các đặc trưng quan trọng nhất.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "CNNs", "Pooling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-008",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Hàm mất mát (Loss Function) có vai trò gì trong quá trình huấn luyện mạng neural?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Quyết định tốc độ học của mô hình.",
+      "B. Đo lường sự khác biệt giữa giá trị dự đoán của mô hình và giá trị thực tế, cung cấp tín hiệu lỗi để Backpropagation tối ưu hóa mạng.",
+      "C. Chuẩn hóa đầu vào của mạng.",
+      "D. Trực quan hóa kết quả."
+    ],
+    "correct_answer": "B",
+    "explanation": "Hàm mất mát định lượng 'mức độ tệ' của mô hình. Mục tiêu của quá trình huấn luyện là tối thiểu hóa giá trị của hàm mất mát này.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Loss Functions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-009",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Hàm mất mát nào thường được sử dụng cho các bài toán hồi quy (regression)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Categorical Cross-Entropy",
+      "B. Binary Cross-Entropy",
+      "C. Mean Squared Error (MSE)",
+      "D. Softmax Loss"
+    ],
+    "correct_answer": "C",
+    "explanation": "MSE là hàm mất mát phổ biến cho hồi quy, tính trung bình bình phương của sự khác biệt giữa giá trị dự đoán và giá trị thực tế.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Loss Functions", "Regression", "MSE"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-010",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "RNNs (Recurrent Neural Networks) đặc biệt hiệu quả trong việc xử lý loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hình ảnh tĩnh.",
+      "B. Dữ liệu không có thứ tự.",
+      "C. Dữ liệu chuỗi có tính chất phụ thuộc thời gian hoặc trình tự (ví dụ: chuỗi thời gian, văn bản, âm thanh).",
+      "D. Dữ liệu dạng bảng."
+    ],
+    "correct_answer": "C",
+    "explanation": "RNNs có 'bộ nhớ' cho phép chúng xử lý các chuỗi dữ liệu, nơi đầu ra hiện tại phụ thuộc vào các đầu vào và trạng thái trước đó.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "RNNs", "Sequential Data"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-011",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "Vấn đề 'Vanishing Gradient' trong RNNs được giải quyết như thế nào bởi LSTMs và GRUs?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bằng cách loại bỏ hoàn toàn các lớp ẩn.",
+      "B. Bằng cách sử dụng các 'cổng' (gates) để kiểm soát dòng thông tin, giúp duy trì gradient và học các phụ thuộc dài hạn.",
+      "C. Bằng cách thêm nhiều lớp đầu ra hơn.",
+      "D. Bằng cách giảm số lượng nơ-ron."
+    ],
+    "correct_answer": "B",
+    "explanation": "LSTM và GRU giới thiệu các cấu trúc cổng (input, forget, output gates trong LSTM; reset, update gates trong GRU) giúp chúng kiểm soát việc lưu trữ và truyền thông tin qua các bước thời gian, giảm thiểu vấn đề vanishing/exploding gradient.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "RNNs", "LSTMs", "GRUs", "Vanishing Gradient"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-012",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Mục tiêu của thuật toán tối ưu hóa (Optimizer) trong Deep Learning là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chọn kích thước của tập dữ liệu huấn luyện.",
+      "B. Điều chỉnh các trọng số và độ lệch của mạng để tối thiểu hóa hàm mất mát.",
+      "C. Quyết định cấu trúc của mạng neural.",
+      "D. Tiền xử lý dữ liệu đầu vào."
+    ],
+    "correct_answer": "B",
+    "explanation": "Optimizer là 'bộ não' của quá trình học, sử dụng gradient được tính toán bởi backpropagation để cập nhật các tham số của mô hình một cách hiệu quả.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Optimizer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-013",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "SGD (Stochastic Gradient Descent) khác gì so với Batch Gradient Descent?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. SGD sử dụng toàn bộ tập dữ liệu để tính toán gradient trong mỗi lần cập nhật, còn Batch GD sử dụng từng mẫu dữ liệu một.",
+      "B. SGD cập nhật trọng số sau mỗi mẫu dữ liệu, trong khi Batch GD cập nhật sau khi tính toán gradient trên toàn bộ lô (batch) dữ liệu huấn luyện.",
+      "C. SGD không yêu cầu tốc độ học.",
+      "D. SGD chỉ được dùng cho mạng neural nông."
+    ],
+    "correct_answer": "B",
+    "explanation": "SGD cập nhật tham số thường xuyên hơn (sau mỗi mẫu hoặc mini-batch), dẫn đến đường đi của hàm mất mát 'ồn ào' hơn nhưng thường nhanh hơn và có thể thoát khỏi các cực tiểu cục bộ tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Optimization Algorithms", "SGD", "Batch Gradient Descent"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-014",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Thuật toán tối ưu hóa Adam (Adaptive Moment Estimation) nổi bật với ưu điểm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó không yêu cầu bất kỳ siêu tham số nào.",
+      "B. Nó kết hợp những lợi ích của AdaGrad và RMSprop, thích nghi tốc độ học riêng cho từng tham số và duy trì tốc độ học trung bình.",
+      "C. Nó luôn hội tụ đến cực tiểu toàn cục.",
+      "D. Nó chỉ hoạt động với các mạng neural rất nông."
+    ],
+    "correct_answer": "B",
+    "explanation": "Adam là một trong những optimizer phổ biến nhất do khả năng thích nghi tốc độ học cho từng tham số dựa trên ước tính động lượng bậc nhất và bậc hai của gradient, thường cho kết quả tốt và hội tụ nhanh.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Adam"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-015",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Điều gì xảy ra trong quá trình 'Forward Propagation' (Lan truyền xuôi) của mạng neural?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tính toán lỗi và cập nhật trọng số.",
+      "B. Dữ liệu đi qua mạng từ lớp đầu vào đến lớp đầu ra, tạo ra dự đoán.",
+      "C. Chọn các tham số tối ưu.",
+      "D. Thu thập dữ liệu huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Forward propagation là bước tính toán đầu ra của mạng cho một đầu vào nhất định, dựa trên các trọng số và độ lệch hiện tại.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Forward Propagation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-016",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Hiện tượng 'Overfitting' trong mạng neural là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình không đủ phức tạp để học dữ liệu.",
+      "B. Mô hình hoạt động tốt trên dữ liệu huấn luyện nhưng kém trên dữ liệu mới, chưa thấy.",
+      "C. Mô hình không thể học bất kỳ điều gì từ dữ liệu.",
+      "D. Mô hình hội tụ quá nhanh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Overfitting xảy ra khi mô hình học quá 'chặt' vào dữ liệu huấn luyện, bao gồm cả nhiễu, làm mất khả năng tổng quát hóa trên dữ liệu không nhìn thấy.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-017",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Backpropagation",
+    "question_text": "Vấn đề 'Exploding Gradients' trong huấn luyện mạng neural đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Gradient trở nên quá nhỏ, khiến việc học chậm lại hoặc dừng hẳn.",
+      "B. Gradient trở nên quá lớn, dẫn đến cập nhật trọng số lớn và không ổn định, khiến mô hình khó hội tụ.",
+      "C. Không có gradient nào được tính toán.",
+      "D. Gradient chỉ xuất hiện ở lớp đầu tiên."
+    ],
+    "correct_answer": "B",
+    "explanation": "Exploding gradients gây ra bởi các gradient tích lũy nhanh chóng, dẫn đến việc cập nhật trọng số quá lớn và khiến mô hình dao động hoặc phân kỳ.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Backpropagation", "Exploding Gradients"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-018",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Activation Functions",
+    "question_text": "Hàm kích hoạt ReLU (Rectified Linear Unit) có ưu điểm gì so với Sigmoid và Tanh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. ReLU luôn trả về giá trị trong khoảng [0,1].",
+      "B. ReLU giúp giải quyết vấn đề Vanishing Gradient ở đầu dương và đơn giản trong tính toán, thường dẫn đến huấn luyện nhanh hơn.",
+      "C. ReLU có đạo hàm mượt mà tại mọi điểm.",
+      "D. ReLU không giới thiệu phi tuyến tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "ReLU trả về 0 cho đầu vào âm và đầu vào đó cho đầu vào dương. Nó tránh vanishing gradient ở phía dương và tính toán nhanh, mặc dù nó có thể gặp vấn đề 'chết' nơ-ron cho đầu vào âm.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Activation Functions", "ReLU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-019",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "Lớp 'Convolutional' trong CNNs sử dụng các 'bộ lọc' (filters) hoặc 'kernels' để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nén hình ảnh.",
+      "B. Phát hiện các đặc trưng cục bộ (local features) như cạnh, kết cấu, hoặc các mẫu nhỏ trong hình ảnh bằng cách trượt qua dữ liệu đầu vào và thực hiện tích chập.",
+      "C. Thay đổi kích thước của hình ảnh.",
+      "D. Chuẩn hóa pixel."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lớp tích chập là thành phần cốt lõi của CNN, nơi các bộ lọc học để nhận diện các đặc trưng cấp thấp đến cấp cao trong dữ liệu hình ảnh.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "CNNs", "Convolutional Layer", "Filters"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-020",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Hàm mất mát nào thường được sử dụng cho các bài toán phân loại đa lớp (multi-class classification) khi đầu ra của mạng là xác suất cho mỗi lớp và các lớp là loại trừ lẫn nhau?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Absolute Error (MAE)",
+      "B. Categorical Cross-Entropy (CCE)",
+      "C. Huber Loss",
+      "D. Log-likelihood"
+    ],
+    "correct_answer": "B",
+    "explanation": "Categorical Cross-Entropy (thường đi kèm với hàm kích hoạt Softmax ở lớp đầu ra) được sử dụng để đo lường hiệu suất của mô hình phân loại đa lớp có đầu ra xác suất, nơi mỗi mẫu thuộc về đúng một lớp.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Loss Functions", "Multi-class Classification", "Cross-Entropy"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-021",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "Sự khác biệt chính giữa một LSTM và một GRU là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. LSTM không có cổng, còn GRU có.",
+      "B. LSTM có ba cổng (input, forget, output), trong khi GRU có hai cổng (reset, update), làm cho GRU đơn giản hơn và có ít tham số hơn.",
+      "C. GRU luôn chậm hơn LSTM.",
+      "D. LSTM chỉ dùng cho văn bản, GRU chỉ dùng cho âm thanh."
+    ],
+    "correct_answer": "B",
+    "explanation": "GRU được coi là một phiên bản đơn giản hóa của LSTM, giảm số lượng cổng để giảm độ phức tạp tính toán trong khi vẫn giải quyết hiệu quả vấn đề vanishing gradient.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "RNNs", "LSTMs", "GRUs", "Comparison"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-022",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Tại sao việc sử dụng 'learning rate schedule' (lịch trình tốc độ học) thường hiệu quả hơn việc dùng một 'learning rate' cố định?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tránh các cực tiểu cục bộ.",
+      "B. Để tăng tốc độ huấn luyện ở giai đoạn đầu và giảm dần để hội tụ ổn định hơn về cuối quá trình huấn luyện.",
+      "C. Để mô hình hoạt động tốt hơn trên CPU.",
+      "D. Để loại bỏ nhu cầu về dữ liệu huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Learning rate cao hơn ở giai đoạn đầu giúp khám phá không gian tham số nhanh chóng, trong khi giảm learning rate về sau giúp fine-tune mô hình và tránh dao động quanh điểm cực tiểu.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Learning Rate Schedule"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-023",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Trong mạng neural, một 'Epoch' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một lần cập nhật trọng số.",
+      "B. Một lần toàn bộ tập dữ liệu huấn luyện được truyền qua mạng và các trọng số được cập nhật.",
+      "C. Kích thước của một lớp ẩn.",
+      "D. Số lượng nơ-ron trong một lớp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Một epoch đại diện cho một lần lặp hoàn chỉnh trên toàn bộ tập dữ liệu huấn luyện. Quá trình huấn luyện thường kéo dài nhiều epoch.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Epoch"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-024",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Backpropagation",
+    "question_text": "Thuật toán Backpropagation dựa trên nguyên tắc toán học nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Định lý Bayes.",
+      "B. Quy tắc chuỗi (chain rule) của đạo hàm.",
+      "C. Phương pháp Monte Carlo.",
+      "D. Phân tích thành phần chính (PCA)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Quy tắc chuỗi cho phép tính toán đạo hàm của hàm mất mát đối với từng trọng số trong mạng bằng cách nhân các đạo hàm riêng lẻ qua các lớp.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Backpropagation", "Chain Rule"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-025",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Activation Functions",
+    "question_text": "Khi nào thì hàm kích hoạt Softmax được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trong các lớp ẩn để giới thiệu phi tuyến tính.",
+      "B. Trong lớp đầu ra của bài toán phân loại đa lớp để chuyển đổi đầu ra thành phân phối xác suất.",
+      "C. Trong các lớp đầu vào để chuẩn hóa dữ liệu.",
+      "D. Để giải quyết vấn đề vanishing gradient."
+    ],
+    "correct_answer": "B",
+    "explanation": "Softmax biến đổi một vector các số thực thành một phân phối xác suất, trong đó tổng của các giá trị bằng 1, làm cho nó lý tưởng cho các bài toán phân loại đa lớp.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Activation Functions", "Softmax", "Multi-class Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-026",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "Kỹ thuật 'Data Augmentation' (Tăng cường dữ liệu) thường được áp dụng trong huấn luyện CNNs để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng tốc độ huấn luyện.",
+      "B. Tạo ra các biến thể mới của dữ liệu huấn luyện hiện có (ví dụ: lật, xoay, cắt ảnh) để tăng kích thước tập dữ liệu và cải thiện khả năng tổng quát hóa của mô hình.",
+      "C. Giảm số lượng lớp trong mạng.",
+      "D. Lựa chọn các đặc trưng quan trọng nhất."
+    ],
+    "correct_answer": "B",
+    "explanation": "Data Augmentation giúp chống overfitting và cải thiện hiệu suất của mô hình bằng cách giới thiệu sự đa dạng vào tập huấn luyện mà không cần thu thập thêm dữ liệu thực tế.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "CNNs", "Data Augmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-027",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Trong bài toán phân loại nhị phân, khi sử dụng Logistic Regression hoặc mạng neural với đầu ra Sigmoid, hàm mất mát nào thường được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Absolute Error.",
+      "B. Categorical Cross-Entropy.",
+      "C. Binary Cross-Entropy (Log Loss).",
+      "D. Hinge Loss."
+    ],
+    "correct_answer": "C",
+    "explanation": "Binary Cross-Entropy đo lường hiệu suất của mô hình phân loại có đầu ra xác suất giữa 0 và 1, là lựa chọn chuẩn cho phân loại nhị phân.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Loss Functions", "Binary Classification", "Cross-Entropy"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-028",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "Vấn đề 'Exploding Gradient' có thể được giảm nhẹ trong RNNs bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng tốc độ học.",
+      "B. Giảm số lượng lớp ẩn.",
+      "C. Cắt gradient (Gradient Clipping) hoặc sử dụng kiến trúc như LSTM/GRU.",
+      "D. Sử dụng hàm kích hoạt ReLU."
+    ],
+    "correct_answer": "C",
+    "explanation": "Gradient clipping giới hạn ngưỡng tối đa cho gradient, ngăn chúng trở nên quá lớn và gây ra sự cập nhật trọng số không ổn định. LSTMs và GRUs cũng tự nhiên chống lại vấn đề này tốt hơn RNNs truyền thống.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "RNNs", "Exploding Gradient", "Gradient Clipping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-029",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Momentum trong các thuật toán tối ưu hóa (như SGD with Momentum) giúp gì cho quá trình huấn luyện?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm thiểu bộ nhớ cần thiết.",
+      "B. Giúp tăng tốc quá trình tối ưu hóa theo hướng nhất quán và vượt qua các cực tiểu cục bộ nhỏ hoặc các điểm yên ngựa (saddle points) bằng cách thêm một phần của gradient trước đó vào bản cập nhật hiện tại.",
+      "C. Đảm bảo tốc độ học không đổi.",
+      "D. Giảm số lượng tham số của mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Momentum giúp thuật toán tiếp tục di chuyển theo cùng một hướng ngay cả khi gradient hiện tại nhỏ hoặc thay đổi hướng, giúp ổn định và tăng tốc hội tụ.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Momentum"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-030",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Dropout là một kỹ thuật được sử dụng để làm gì trong mạng neural?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng số lượng nơ-ron.",
+      "B. Giới thiệu nhiễu vào dữ liệu huấn luyện.",
+      "C. Ngăn chặn overfitting bằng cách ngẫu nhiên vô hiệu hóa một phần các nơ-ron trong các lớp ẩn trong quá trình huấn luyện.",
+      "D. Đảm bảo mô hình hội tụ nhanh hơn."
+    ],
+    "correct_answer": "C",
+    "explanation": "Dropout buộc mạng phải học các biểu diễn mạnh mẽ hơn và ít phụ thuộc vào bất kỳ nơ-ron cụ thể nào, giảm nguy cơ overfitting.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Dropout", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-031",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Backpropagation",
+    "question_text": "Làm thế nào để đảm bảo rằng Backpropagation hoạt động ổn định và hiệu quả hơn?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng số lượng lớp ẩn một cách không kiểm soát.",
+      "B. Chuẩn hóa dữ liệu đầu vào, sử dụng khởi tạo trọng số hợp lý và lựa chọn hàm kích hoạt/optimizer phù hợp.",
+      "C. Chỉ sử dụng hàm kích hoạt Sigmoid.",
+      "D. Giảm kích thước batch xuống 1."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các kỹ thuật này giúp duy trì gradient trong một phạm vi ổn định, ngăn chặn vanishing/exploding gradients và cho phép mạng học hiệu quả hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Backpropagation", "Stabilization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-032",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Activation Functions",
+    "question_text": "Tại sao một hàm kích hoạt phi tuyến tính lại cần thiết trong mạng neural sâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để giảm số lượng tham số.",
+      "B. Để mạng có thể học các mối quan hệ phức tạp và không tuyến tính giữa các đầu vào và đầu ra. Nếu không, mạng sẽ chỉ là một chuỗi các phép biến đổi tuyến tính, không thể học được các hàm phức tạp hơn.",
+      "C. Để tăng tốc độ lan truyền ngược.",
+      "D. Để giải quyết vấn đề overfitting."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nếu tất cả các hàm kích hoạt là tuyến tính, mạng neural, dù sâu đến mấy, cũng sẽ chỉ là một hàm tuyến tính. Phi tuyến tính là chìa khóa cho khả năng học các biểu diễn phức tạp của mạng sâu.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Activation Functions", "Non-linearity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-033",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "Lớp nào thường theo sau một lớp Convolutional trong kiến trúc CNN?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Lớp đầu vào.",
+      "B. Lớp Pooling (ví dụ: Max Pooling) hoặc một lớp Convolutional khác.",
+      "C. Lớp đầu ra.",
+      "D. Lớp tái tạo (recurrent layer)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các lớp Convolutional thường được xen kẽ với các lớp Pooling. Pooling giúp giảm chiều và trích xuất các đặc trưng quan trọng hơn, trong khi một lớp Convolutional khác có thể học các đặc trưng phức tạp hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "CNNs", "Architecture"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-034",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Khi huấn luyện một mạng neural, mục tiêu là tối thiểu hóa hàm mất mát. Điều này được thực hiện thông qua quá trình nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng kích thước tập dữ liệu.",
+      "B. Điều chỉnh siêu tham số thủ công.",
+      "C. Gradient Descent và các biến thể của nó, sử dụng Backpropagation để cập nhật trọng số.",
+      "D. Chỉ bằng cách thay đổi hàm kích hoạt."
+    ],
+    "correct_answer": "C",
+    "explanation": "Gradient Descent là thuật toán tối ưu hóa chính, sử dụng gradient của hàm mất mát (được tính bằng backpropagation) để tìm ra hướng cập nhật trọng số hiệu quả nhất.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Loss Functions", "Optimization", "Gradient Descent"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-035",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "Khả năng của RNNs để xử lý các 'phụ thuộc dài hạn' (long-term dependencies) trong chuỗi là một thách thức. Điều này có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. RNNs không thể xử lý các chuỗi dài hơn 10 phần tử.",
+      "B. RNNs gặp khó khăn trong việc duy trì thông tin từ các bước thời gian xa hơn trong quá khứ để đưa ra dự đoán hiện tại.",
+      "C. RNNs chỉ có thể dự đoán các giá trị tương lai gần.",
+      "D. RNNs yêu cầu bộ nhớ lớn để lưu trữ toàn bộ chuỗi."
+    ],
+    "correct_answer": "B",
+    "explanation": "Do vấn đề vanishing gradient, RNNs truyền thống thường gặp khó khăn trong việc học và ghi nhớ thông tin từ các phần đầu của một chuỗi dài, điều này được khắc phục bởi LSTMs và GRUs.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "RNNs", "Long-term Dependencies"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-036",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Khi nào nên chọn Adam optimizer thay vì SGD (hoặc các biến thể đơn giản hơn)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn muốn có tốc độ học cố định.",
+      "B. Khi bạn muốn một optimizer thường hoạt động tốt trong nhiều trường hợp mà không cần điều chỉnh siêu tham số quá nhiều, và khi hiệu suất hội tụ nhanh là quan trọng.",
+      "C. Khi bạn có một tập dữ liệu rất nhỏ.",
+      "D. Khi bạn muốn một thuật toán tối ưu hóa hoàn toàn tuyến tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "Adam là một optimizer thích nghi mạnh mẽ, thường được ưa chuộng vì khả năng tự động điều chỉnh tốc độ học cho từng tham số, giúp nó hoạt động tốt trên nhiều loại bài toán và cấu trúc mạng.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Adam", "SGD"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-037",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Chuẩn hóa dữ liệu (Normalization/Standardization) trước khi huấn luyện mạng neural có lợi ích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm số lượng tham số của mô hình.",
+      "B. Đảm bảo tất cả các thuộc tính có cùng thang đo, giúp quá trình tối ưu hóa ổn định và nhanh hơn, cũng như ngăn chặn một số thuộc tính chi phối quá trình học.",
+      "C. Tăng độ sâu của mạng.",
+      "D. Giới thiệu phi tuyến tính vào mạng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nếu các thuộc tính có thang đo rất khác nhau, các trọng số liên quan đến các thuộc tính có giá trị lớn hơn có thể bị ảnh hưởng nhiều hơn bởi gradient, làm quá trình hội tụ kém hiệu quả. Chuẩn hóa khắc phục điều này.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Normalization", "Preprocessing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-038",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Backpropagation",
+    "question_text": "Gradient Descent là gì trong ngữ cảnh của Backpropagation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một cách để chọn hàm kích hoạt.",
+      "B. Một thuật toán tối ưu hóa sử dụng gradient của hàm mất mát để điều chỉnh các tham số của mô hình theo hướng giảm lỗi.",
+      "C. Một phương pháp để tạo ra dữ liệu tổng hợp.",
+      "D. Một kỹ thuật để đo lường độ phức tạp của mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Backpropagation tính toán gradient, và Gradient Descent sử dụng những gradient đó để cập nhật trọng số và độ lệch, di chuyển dần về phía cực tiểu của hàm mất mát.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Backpropagation", "Gradient Descent"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-039",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "Tại sao các lớp Convolutional lại hiệu quả trong việc xử lý hình ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng chỉ sử dụng một nơ-ron cho mỗi pixel.",
+      "B. Chúng tận dụng tính chất cục bộ (local connectivity) và chia sẻ trọng số (parameter sharing), cho phép học các đặc trưng vị trí bất biến và giảm số lượng tham số đáng kể.",
+      "C. Chúng yêu cầu ít dữ liệu huấn luyện hơn bất kỳ mạng nào khác.",
+      "D. Chúng chỉ xử lý các hình ảnh có màu đen trắng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Local connectivity cho phép các bộ lọc tập trung vào các vùng nhỏ của hình ảnh, trong khi parameter sharing giúp các bộ lọc nhận diện cùng một đặc trưng ở các vị trí khác nhau trong hình ảnh, giảm overfitting và tăng hiệu quả.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "CNNs", "Efficiency", "Local Connectivity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-040",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Nếu hàm mất mát không giảm trong quá trình huấn luyện, điều này có thể chỉ ra vấn đề gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình đã hội tụ hoàn hảo.",
+      "B. Mô hình đang bị overfitting.",
+      "C. Mô hình đang gặp khó khăn trong việc học (ví dụ: tốc độ học quá thấp, vanishing gradient, hoặc kiến trúc không phù hợp).",
+      "D. Hàm mất mát đang bị lỗi."
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàm mất mát không giảm thường là dấu hiệu cho thấy quá trình tối ưu hóa không diễn ra hiệu quả, cần kiểm tra các siêu tham số, kiến trúc mạng, hoặc vấn đề gradient.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Loss Functions", "Training Issues"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-041",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "Ứng dụng phổ biến của LSTMs và GRUs là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại hình ảnh.",
+      "B. Nhận dạng giọng nói, dịch máy, và dự đoán chuỗi thời gian.",
+      "C. Phát hiện đối tượng trong hình ảnh.",
+      "D. Gom nhóm dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "LSTMs và GRUs rất phù hợp cho các tác vụ xử lý ngôn ngữ tự nhiên (NLP) và chuỗi thời gian do khả năng xử lý các phụ thuộc dài hạn.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "RNNs", "LSTMs", "GRUs", "Applications"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-042",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Batch Normalization (Chuẩn hóa Batch) là kỹ thuật được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nén kích thước mô hình.",
+      "B. Chuẩn hóa các đầu vào của lớp ẩn trong một mạng neural, giúp ổn định quá trình huấn luyện, tăng tốc độ hội tụ và giảm sự nhạy cảm với khởi tạo trọng số.",
+      "C. Tăng số lượng epochs huấn luyện.",
+      "D. Thêm nhiễu vào dữ liệu đầu vào."
+    ],
+    "correct_answer": "B",
+    "explanation": "Batch Normalization giải quyết vấn đề 'Internal Covariate Shift' bằng cách chuẩn hóa đầu ra của mỗi lớp ẩn trong một mini-batch, giúp gradient ổn định hơn và cho phép sử dụng tốc độ học lớn hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Batch Normalization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-043",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Kích thước 'Batch Size' (kích thước lô) trong huấn luyện mạng neural có ảnh hưởng gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó ảnh hưởng đến số lượng lớp trong mạng.",
+      "B. Nó ảnh hưởng đến số lượng mẫu dữ liệu được xử lý trước mỗi lần cập nhật trọng số; batch size lớn có thể ổn định gradient hơn nhưng chậm hơn, batch size nhỏ có thể nhanh hơn nhưng 'ồn ào' hơn.",
+      "C. Nó xác định loại hàm kích hoạt.",
+      "D. Nó quyết định số lượng epochs."
+    ],
+    "correct_answer": "B",
+    "explanation": "Batch size là một siêu tham số quan trọng ảnh hưởng đến sự ổn định của quá trình tối ưu hóa, tốc độ hội tụ và yêu cầu bộ nhớ.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Batch Size"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-044",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Backpropagation",
+    "question_text": "Backpropagation tính toán các gradient của hàm mất mát đối với ____ của mạng.",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các hàm kích hoạt.",
+      "B. Các trọng số và độ lệch.",
+      "C. Các giá trị đầu vào.",
+      "D. Số lượng lớp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mục tiêu của Backpropagation là tìm ra hướng để điều chỉnh các tham số có thể học được (trọng số và độ lệch) nhằm giảm lỗi.",
+    "difficulty_level": "easy",
+    "tags": ["Deep Learning", "Backpropagation", "Gradient"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-045",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Activation Functions",
+    "question_text": "Hàm kích hoạt Tanh (Hyperbolic Tangent) có phạm vi đầu ra là bao nhiêu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. [0, 1]",
+      "B. [-1, 1]",
+      "C. [0, vô cực)",
+      "D. (-vô cực, vô cực)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Tanh là phiên bản trung tâm tại 0 của Sigmoid, đầu ra nằm trong khoảng [-1, 1].",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Activation Functions", "Tanh"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-046",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Convolutional Neural Networks (CNNs)",
+    "question_text": "Kỹ thuật 'Transfer Learning' (Học chuyển giao) trong CNNs là gì và tại sao nó lại hữu ích?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện một CNN từ đầu với tập dữ liệu rất lớn.",
+      "B. Sử dụng một mô hình CNN đã được huấn luyện trước trên một tập dữ liệu lớn (ví dụ: ImageNet) và điều chỉnh nó cho một tác vụ mới với tập dữ liệu nhỏ hơn, giúp tăng tốc độ huấn luyện và cải thiện hiệu suất.",
+      "C. Chuyển đổi một CNN thành một RNN.",
+      "D. Áp dụng cùng một mô hình cho nhiều tác vụ khác nhau mà không cần huấn luyện lại."
+    ],
+    "correct_answer": "B",
+    "explanation": "Transfer Learning tận dụng các đặc trưng cấp thấp và trung gian mà mô hình đã học được từ một tác vụ lớn, giúp nó học hiệu quả hơn cho các tác vụ tương tự với ít dữ liệu hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "CNNs", "Transfer Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-047",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Loss Functions",
+    "question_text": "Hàm mất mát 'Sparse Categorical Cross-Entropy' được sử dụng khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi nhãn mục tiêu là one-hot encoded.",
+      "B. Khi nhãn mục tiêu là các số nguyên (integer labels) thay vì one-hot encoded vector cho bài toán phân loại đa lớp.",
+      "C. Khi bài toán là hồi quy.",
+      "D. Khi dữ liệu đầu vào là thưa thớt."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sparse Categorical Cross-Entropy tiện lợi hơn khi các nhãn lớp được cung cấp dưới dạng số nguyên (ví dụ: 0, 1, 2) thay vì phải chuyển đổi chúng thành one-hot encoding.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Loss Functions", "Sparse Categorical Cross-Entropy"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-048",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+    "question_text": "Một 'Cell State' (trạng thái ô) trong LSTM đóng vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó là đầu ra của nơ-ron.",
+      "B. Nó là một kênh thông tin chính chạy qua toàn bộ chuỗi, cho phép LSTM lưu trữ và truy xuất thông tin trong các bước thời gian dài.",
+      "C. Nó chỉ được sử dụng cho các phép tính ngắn hạn.",
+      "D. Nó là tham số duy nhất được cập nhật."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cell State là 'bộ nhớ dài hạn' của LSTM, được điều chỉnh bởi các cổng (forget, input, output gates) để thêm hoặc xóa thông tin một cách có chọn lọc.",
+    "difficulty_level": "hard",
+    "tags": ["Deep Learning", "RNNs", "LSTMs", "Cell State"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-049",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Optimization Algorithms (SGD, Adam, RMSprop)",
+    "question_text": "Regularization (Chính quy hóa), như L1 hoặc L2, được sử dụng trong Deep Learning để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng tốc độ hội tụ của mô hình.",
+      "B. Ngăn chặn overfitting bằng cách thêm một hình phạt cho độ lớn của các trọng số của mô hình vào hàm mất mát.",
+      "C. Giảm số lượng lớp ẩn.",
+      "D. Đảm bảo mô hình luôn đạt 100% độ chính xác."
+    ],
+    "correct_answer": "B",
+    "explanation": "Regularization hạn chế độ phức tạp của mô hình bằng cách phạt các trọng số lớn, buộc mô hình phải học các biểu diễn đơn giản hơn và tổng quát hóa tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Optimization Algorithms", "Regularization", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-DL-050",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "Deep Learning",
+    "subskill_name": "Neural Networks Basics",
+    "question_text": "Trong mạng neural, 'Underfitting' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình quá phức tạp.",
+      "B. Mô hình không đủ phức tạp để nắm bắt các mối quan hệ cơ bản trong dữ liệu, dẫn đến hiệu suất kém trên cả dữ liệu huấn luyện và dữ liệu mới.",
+      "C. Mô hình huấn luyện quá nhanh.",
+      "D. Mô hình có quá nhiều trọng số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Underfitting xảy ra khi mô hình quá đơn giản hoặc không được huấn luyện đủ, không thể học được các mẫu cần thiết từ dữ liệu, dẫn đến hiệu suất thấp ở mọi khía cạnh.",
+    "difficulty_level": "medium",
+    "tags": ["Deep Learning", "Neural Networks Basics", "Underfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-001",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "TensorFlow Core là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một API cấp cao để xây dựng mô hình Deep Learning nhanh chóng.",
+      "B. Nền tảng cơ bản của TensorFlow, cung cấp các API cấp thấp để thực hiện các phép toán trên tensor và xây dựng đồ thị tính toán.",
+      "C. Một công cụ để trực quan hóa dữ liệu huấn luyện.",
+      "D. Một thư viện để triển khai mô hình trên thiết bị di động."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Core cung cấp các khối xây dựng cơ bản, cho phép kiểm soát chi tiết hơn đối với các hoạt động và cấu trúc mô hình.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorFlow Core"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-002",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "Trong TensorFlow, 'Tensor' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một lớp trong mạng neural.",
+      "B. Một đơn vị dữ liệu cơ bản, là một mảng đa chiều (multi-dimensional array) có thể chứa số vô hướng, vector, ma trận, v.v.",
+      "C. Một hàm kích hoạt.",
+      "D. Một loại mô hình học máy."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tensor là cấu trúc dữ liệu chính trong TensorFlow, đại diện cho tất cả các loại dữ liệu được truyền qua đồ thị tính toán.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorFlow Core", "Tensor"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-003",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "TensorFlow Serving được sử dụng cho mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện mô hình trên quy mô lớn.",
+      "B. Triển khai (serving) các mô hình học máy đã huấn luyện vào môi trường sản xuất một cách hiệu quả và linh hoạt.",
+      "C. Tiền xử lý dữ liệu.",
+      "D. Trực quan hóa quá trình huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Serving là một hệ thống hiệu suất cao để phục vụ các mô hình học máy đã được huấn luyện, được thiết kế để dễ dàng triển khai các phiên bản mô hình mới mà không làm gián đoạn ứng dụng.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Serving", "Deployment"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-004",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Keras là gì trong hệ sinh thái TensorFlow?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một công cụ để theo dõi GPU.",
+      "B. Một API cấp cao được tích hợp trong TensorFlow, giúp xây dựng và huấn luyện các mô hình neural network một cách nhanh chóng và dễ dàng.",
+      "C. Một thư viện để xử lý dữ liệu.",
+      "D. Một công cụ để phân tích hiệu suất mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Keras cung cấp một giao diện đơn giản và thân thiện với người dùng, lý tưởng cho việc prototyping nhanh và triển khai các mô hình Deep Learning phổ biến.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "Keras API"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-005",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Chế độ lập trình 'eager execution' trong TensorFlow và Keras mang lại lợi ích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn nhanh hơn 'graph execution'.",
+      "B. Cho phép lập trình và debug dễ dàng hơn do các phép toán được thực thi ngay lập tức, giống như Python thông thường.",
+      "C. Giảm đáng kể bộ nhớ cần thiết.",
+      "D. Chỉ được sử dụng cho các mô hình rất nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Eager execution giúp gỡ lỗi và phát triển mô hình nhanh hơn bằng cách cho phép kiểm tra kết quả của các phép toán ngay lập tức, trái ngược với việc xây dựng một đồ thị tĩnh rồi mới chạy.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "Keras API", "Eager Execution"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-006",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "TensorFlow Lite được thiết kế cho mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện mô hình trên đám mây.",
+      "B. Triển khai (deployment) các mô hình TensorFlow trên thiết bị di động và thiết bị biên (edge devices) với tài nguyên tính toán và bộ nhớ hạn chế.",
+      "C. Phát triển các mô hình Deep Learning mới từ đầu.",
+      "D. Phân tích dữ liệu lớn."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Lite tối ưu hóa các mô hình Deep Learning để chạy hiệu quả trên các thiết bị tài nguyên thấp như điện thoại thông minh, IoT, v.v.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Mobile", "Edge Devices"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-007",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "TensorFlow Datasets (TFDS) có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xây dựng mô hình Deep Learning.",
+      "B. Cung cấp một bộ sưu tập các tập dữ liệu đã được chuẩn bị sẵn, sẵn sàng để sử dụng với TensorFlow, giúp đơn giản hóa quá trình tải và tiền xử lý dữ liệu.",
+      "C. Trực quan hóa mô hình.",
+      "D. Triển khai mô hình vào sản xuất."
+    ],
+    "correct_answer": "B",
+    "explanation": "TFDS giúp nhà phát triển dễ dàng truy cập và sử dụng các tập dữ liệu phổ biến mà không cần phải tự mình tải xuống và tiền xử lý.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "Data Management"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-008",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorBoard",
+    "question_text": "TensorBoard được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Viết code TensorFlow.",
+      "B. Cung cấp bộ công cụ trực quan hóa để hiểu, gỡ lỗi và tối ưu hóa các chương trình TensorFlow, bao gồm biểu đồ mô hình, độ lỗi, độ chính xác, phân phối trọng số, v.v.",
+      "C. Triển khai mô hình lên web.",
+      "D. Huấn luyện mô hình trên nhiều GPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorBoard là một công cụ mạnh mẽ để giám sát quá trình huấn luyện, phân tích hiệu suất mô hình và gỡ lỗi bằng cách trực quan hóa các số liệu và biểu đồ.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorBoard", "Visualization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-009",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Hub",
+    "question_text": "TensorFlow Hub là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một công cụ để tạo tập dữ liệu mới.",
+      "B. Một thư viện để khám phá và tái sử dụng các mô-đun học máy đã được huấn luyện trước (pre-trained machine learning modules).",
+      "C. Một nền tảng để lưu trữ dữ liệu thô.",
+      "D. Một trình biên dịch cho các mô hình TensorFlow."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Hub cho phép người dùng dễ dàng tải xuống và tích hợp các mô hình đã được huấn luyện sẵn hoặc các phần của mô hình, giúp tăng tốc độ phát triển và tận dụng kiến thức từ các mô hình lớn.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Hub", "Pre-trained Models", "Transfer Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-010",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "Cách tốt nhất để xây dựng và quản lý đồ thị tính toán (computational graph) trong TensorFlow 2.x là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ sử dụng TF1.x sessions.",
+      "B. Sử dụng `tf.function` để tự động chuyển đổi code Python thành đồ thị TensorFlow hiệu suất cao.",
+      "C. Viết tất cả các phép toán thủ công trong C++.",
+      "D. Tránh hoàn toàn việc sử dụng đồ thị tính toán."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong TensorFlow 2.x, `tf.function` cho phép bạn viết mã Python thông thường và TensorFlow sẽ tự động biên dịch nó thành một đồ thị tính toán tối ưu, kết hợp lợi ích của cả eager execution và graph mode.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Core", "tf.function", "Computational Graph"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-011",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "Lợi ích chính của TensorFlow Serving là gì so với việc triển khai mô hình thủ công?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó giúp huấn luyện mô hình nhanh hơn.",
+      "B. Nó cung cấp API chuẩn hóa, khả năng quản lý phiên bản mô hình, tải/dỡ tải mô hình động, và hiệu suất cao cho việc phục vụ inference.",
+      "C. Nó hoàn toàn miễn phí.",
+      "D. Nó chỉ hỗ trợ các mô hình CNN."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Serving là một giải pháp mạnh mẽ cho việc triển khai ML trong môi trường sản xuất, đơn giản hóa các tác vụ phức tạp như cập nhật mô hình và xử lý các yêu cầu inference.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Serving", "Benefits"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-012",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Loại mô hình Keras nào cho phép bạn xây dựng mạng neural bằng cách xếp chồng các lớp lên nhau một cách tuần tự?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Functional API",
+      "B. Subclassing API",
+      "C. Sequential API",
+      "D. Custom Layer API"
+    ],
+    "correct_answer": "C",
+    "explanation": "Sequential API là cách đơn giản nhất để xây dựng các mô hình tuyến tính (stack of layers), phù hợp cho các mạng neural cơ bản.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "Keras API", "Sequential API"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-013",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Khi nào bạn nên sử dụng Keras Functional API thay vì Sequential API?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn cần xây dựng một mô hình rất đơn giản.",
+      "B. Khi bạn cần xây dựng các mô hình phức tạp hơn với nhiều đầu vào/đầu ra, các lớp được chia sẻ (shared layers), hoặc các kết nối phi tuyến tính (non-linear connections) như ResNet hoặc Inception.",
+      "C. Khi bạn muốn mô hình chạy chậm hơn.",
+      "D. Khi bạn chỉ làm việc với dữ liệu hình ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Functional API cung cấp sự linh hoạt cao hơn để tạo ra các kiến trúc mạng phức tạp, phi tuyến tính, và chia sẻ các lớp, không thể thực hiện được bằng Sequential API.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "Keras API", "Functional API"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-014",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "Một mô hình TensorFlow phải được 'chuyển đổi' (convert) sang định dạng nào để sử dụng với TensorFlow Lite?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. .pb (protobuf)",
+      "B. .tflite",
+      "C. .h5",
+      "D. .ckpt"
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Lite Converter chuyển đổi các mô hình TensorFlow tiêu chuẩn sang định dạng .tflite, được tối ưu hóa cho các thiết bị di động và biên.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Conversion"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-015",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "TFDS cung cấp dữ liệu ở định dạng nào, giúp tối ưu cho việc huấn luyện TensorFlow?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Pandas DataFrames.",
+      "B. NumPy arrays.",
+      "C. `tf.data.Dataset` objects.",
+      "D. Python lists."
+    ],
+    "correct_answer": "C",
+    "explanation": "`tf.data.Dataset` là API khuyến nghị của TensorFlow để xây dựng các pipelines nhập liệu hiệu quả, cho phép streaming dữ liệu và các phép biến đổi tối ưu hóa.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "tf.data.Dataset"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-016",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorBoard",
+    "question_text": "Để ghi log dữ liệu cho TensorBoard trong Keras, bạn cần sử dụng Callback nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. EarlyStopping",
+      "B. ModelCheckpoint",
+      "C. TensorBoard",
+      "D. ReduceLROnPlateau"
+    ],
+    "correct_answer": "C",
+    "explanation": "Keras cung cấp một `TensorBoard` callback, cho phép bạn chỉ định thư mục log và tự động ghi các sự kiện để TensorBoard có thể đọc và hiển thị.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorBoard", "Keras", "Callbacks"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-017",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Hub",
+    "question_text": "Khi sử dụng một mô hình từ TensorFlow Hub, bạn thường sử dụng kỹ thuật học máy nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Học không giám sát (Unsupervised Learning).",
+      "B. Học chuyển giao (Transfer Learning).",
+      "C. Học tăng cường (Reinforcement Learning).",
+      "D. Phân tích thành phần chính (PCA)."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Hub tập trung vào việc tái sử dụng các mô hình đã được huấn luyện, một trụ cột của Transfer Learning để áp dụng kiến thức từ một tác vụ sang tác vụ khác.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Hub", "Transfer Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-018",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "Trong TensorFlow 2.x, cách phổ biến để tạo một tensor là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng `tf.Session().run()`",
+      "B. Sử dụng `tf.constant()`, `tf.Variable()`, hoặc `tf.convert_to_tensor()`.",
+      "C. Chỉ thông qua NumPy arrays.",
+      "D. Bằng cách định nghĩa một đồ thị tĩnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow 2.x khuyến khích lập trình theo kiểu eager execution, cho phép tạo và thao tác tensor trực tiếp.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorFlow Core", "Tensor Creation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-019",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "TensorFlow Serving hỗ trợ định dạng mô hình nào để triển khai?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ các mô hình Keras .h5.",
+      "B. Định dạng SavedModel của TensorFlow.",
+      "C. Chỉ các checkpoint của TensorFlow 1.x.",
+      "D. Chỉ các mô hình PyTorch."
+    ],
+    "correct_answer": "B",
+    "explanation": "SavedModel là định dạng được khuyến nghị và hỗ trợ đầy đủ trong TensorFlow 2.x để lưu trữ và triển khai mô hình, bao gồm cả kiến trúc, trọng số và logic tính toán.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Serving", "SavedModel"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-020",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Cách tốt nhất để huấn luyện một mô hình Keras là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ sử dụng vòng lặp huấn luyện tùy chỉnh.",
+      "B. Sử dụng phương thức `model.fit()` với dữ liệu NumPy arrays hoặc `tf.data.Dataset` objects.",
+      "C. Chỉ sử dụng `model.predict()`.",
+      "D. Chỉ huấn luyện trên một CPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phương thức `model.fit()` trong Keras là cách đơn giản và hiệu quả nhất để huấn luyện mô hình, tích hợp sẵn các tính năng như callbacks, validation, v.v.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "Keras API", "Model Training"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-021",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "Lợi ích chính của việc sử dụng TensorFlow Lite so với việc chạy mô hình TensorFlow đầy đủ trên thiết bị di động là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước mô hình lớn hơn.",
+      "B. Kích thước nhị phân nhỏ hơn, độ trễ thấp hơn, và hiệu suất nhanh hơn, được tối ưu hóa cho môi trường tài nguyên hạn chế.",
+      "C. Yêu cầu nhiều RAM hơn.",
+      "D. Chỉ hỗ trợ iOS."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Lite được thiết kế đặc biệt để giảm kích thước mô hình, tăng tốc độ inference và giảm mức tiêu thụ tài nguyên trên các thiết bị giới hạn.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Benefits"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-022",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "Bạn có thể tìm kiếm và khám phá các tập dữ liệu có sẵn trong TensorFlow Datasets ở đâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ trong code Python.",
+      "B. Trên trang web chính thức của TensorFlow Datasets (tensorflow.org/datasets) hoặc thông qua lệnh `tfds.list_builders()`.",
+      "C. Chỉ trong TensorBoard.",
+      "D. Bằng cách tải xuống tất cả các tập dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trang web TFDS và API `list_builders()` là những tài nguyên tốt nhất để khám phá các tập dữ liệu được hỗ trợ.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "Discovery"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-023",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorBoard",
+    "question_text": "Bạn có thể sử dụng TensorBoard để theo dõi những loại dữ liệu nào trong quá trình huấn luyện?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ lỗi huấn luyện.",
+      "B. Các số liệu huấn luyện và validation (loss, accuracy), biểu đồ đồ thị mô hình, phân phối trọng số, hình ảnh đầu ra, và embedding visualizations.",
+      "C. Chỉ thời gian chạy của CPU.",
+      "D. Chỉ số lượng GPU đang sử dụng."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorBoard cung cấp một bộ công cụ toàn diện để theo dõi và trực quan hóa nhiều khía cạnh khác nhau của quá trình huấn luyện và cấu trúc mô hình.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorBoard", "Monitoring"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-024",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Hub",
+    "question_text": "Khi nào thì việc sử dụng TensorFlow Hub là một lựa chọn tốt?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn muốn huấn luyện một mô hình từ đầu và có rất nhiều dữ liệu.",
+      "B. Khi bạn có một tập dữ liệu nhỏ hoặc trung bình và muốn tận dụng các mô hình đã được huấn luyện trên các tập dữ liệu lớn, hoặc khi bạn muốn nhanh chóng thử nghiệm các kiến trúc đã được chứng minh.",
+      "C. Khi bạn cần xây dựng một mô hình rất đơn giản chỉ với vài lớp.",
+      "D. Khi bạn không có quyền truy cập Internet."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Hub lý tưởng để tăng tốc phát triển và cải thiện hiệu suất với lượng dữ liệu hạn chế bằng cách tận dụng kiến thức từ các mô hình đã được huấn luyện trước.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Hub", "Use Case"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-025",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "API nào của TensorFlow 2.x cung cấp khả năng tự động tạo gradient (automatic differentiation), rất quan trọng cho backpropagation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `tf.constant`",
+      "B. `tf.Variable`",
+      "C. `tf.GradientTape`",
+      "D. `tf.Tensor`"
+    ],
+    "correct_answer": "C",
+    "explanation": "`tf.GradientTape` là một API mạnh mẽ trong TensorFlow 2.x cho phép bạn theo dõi các phép toán và tính toán gradient của chúng một cách tự động.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Core", "GradientTape"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-026",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "Để cập nhật một mô hình trong TensorFlow Serving mà không cần downtime, bạn sẽ làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dừng server, thay thế file mô hình, rồi khởi động lại server.",
+      "B. TensorFlow Serving tự động phát hiện và tải phiên bản mô hình mới khi nó được đặt vào thư mục đã cấu hình, cho phép chuyển đổi liền mạch mà không có downtime.",
+      "C. Sử dụng một API khác hoàn toàn.",
+      "D. Gửi email cho người quản trị server."
+    ],
+    "correct_answer": "B",
+    "explanation": "Khả năng quản lý phiên bản và tải động là một trong những tính năng cốt lõi của TensorFlow Serving, giúp duy trì hoạt động liên tục trong môi trường sản xuất.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Serving", "Model Updates", "Downtime"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-027",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Keras cho phép bạn tạo các lớp tùy chỉnh (custom layers) bằng cách kế thừa lớp cơ sở nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `tf.Tensor`",
+      "B. `tf.Module`",
+      "C. `tf.keras.layers.Layer`",
+      "D. `tf.Variable`"
+    ],
+    "correct_answer": "C",
+    "explanation": "Kế thừa từ `tf.keras.layers.Layer` cho phép bạn định nghĩa các lớp phức tạp với logic riêng, có thể chứa các biến có thể học được và các phép toán tùy chỉnh.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "Keras API", "Custom Layers"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-028",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "TensorFlow Lite hỗ trợ những loại phần cứng nào trên thiết bị biên?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ CPU.",
+      "B. CPU, GPU (thông qua delegate), và các bộ tăng tốc phần cứng chuyên dụng (ví dụ: Edge TPU).",
+      "C. Chỉ FPGA.",
+      "D. Chỉ TPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Lite cung cấp các 'delegate' để tận dụng khả năng tăng tốc phần cứng trên các thiết bị, bao gồm GPU và các chip AI chuyên dụng.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Hardware Acceleration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-029",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "Sau khi tải một tập dữ liệu bằng TFDS, dữ liệu thường được trả về dưới dạng `tf.data.Dataset`. Làm thế nào để bạn có thể lặp qua dữ liệu này để huấn luyện mô hình?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trực tiếp chuyển đổi thành NumPy array và lặp.",
+      "B. Sử dụng vòng lặp `for` trực tiếp trên đối tượng `tf.data.Dataset` hoặc sử dụng phương thức `.as_numpy_iterator()` để truy cập các batch.",
+      "C. Chỉ có thể truy cập từng mẫu một.",
+      "D. Không thể lặp qua dữ liệu này."
+    ],
+    "correct_answer": "B",
+    "explanation": "`tf.data.Dataset` được thiết kế để dễ dàng lặp qua dữ liệu, cung cấp các batch để huấn luyện mà không cần tải toàn bộ dữ liệu vào bộ nhớ.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "Data Iteration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-030",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorBoard",
+    "question_text": "Để so sánh hiệu suất của nhiều lần chạy huấn luyện khác nhau trong TensorBoard, bạn nên làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chạy mỗi lần huấn luyện trong một thư mục log riêng biệt.",
+      "B. Ghi tất cả các log vào cùng một thư mục.",
+      "C. Chỉ có thể so sánh hai lần chạy một lúc.",
+      "D. Không thể so sánh các lần chạy khác nhau."
+    ],
+    "correct_answer": "A",
+    "explanation": "TensorBoard được thiết kế để đọc các thư mục log khác nhau và hiển thị chúng cùng nhau trên cùng một biểu đồ, cho phép so sánh dễ dàng.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorBoard", "Experiment Tracking"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-031",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Hub",
+    "question_text": "Khi tải một mô hình từ TensorFlow Hub, làm thế nào để bạn điều chỉnh nó (fine-tune) cho tác vụ cụ thể của mình?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thay đổi mã nguồn của mô hình gốc.",
+      "B. Thêm các lớp mới ở cuối mô hình đã tải, 'đóng băng' (freeze) các lớp gốc, và huấn luyện các lớp mới; hoặc 'rã đông' (unfreeze) một số lớp gốc và huấn luyện toàn bộ mô hình với tốc độ học nhỏ.",
+      "C. Huấn luyện lại toàn bộ mô hình từ đầu với tốc độ học cao.",
+      "D. Nó không thể được điều chỉnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Fine-tuning là một kỹ thuật phổ biến trong transfer learning, cho phép bạn điều chỉnh một mô hình đã huấn luyện trước để phù hợp hơn với dữ liệu và tác vụ mới.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Hub", "Fine-tuning", "Transfer Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-032",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "Trong TensorFlow Core, 'Variable' (`tf.Variable`) khác gì với 'Constant' (`tf.constant`)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Variable có thể thay đổi giá trị sau khi được tạo, trong khi Constant thì không thể; Variable thường được dùng cho các tham số có thể học được của mô hình.",
+      "B. Constant luôn lớn hơn Variable.",
+      "C. Variable chỉ được dùng cho dữ liệu đầu vào.",
+      "D. Constant chỉ được dùng cho các phép toán."
+    ],
+    "correct_answer": "A",
+    "explanation": "Sự khác biệt cơ bản là khả năng thay đổi giá trị. Variable là các đối tượng trạng thái (stateful objects) mà mô hình học cách điều chỉnh trong quá trình huấn luyện.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Core", "Variable", "Constant"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-033",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "Để gửi yêu cầu dự đoán (inference request) tới TensorFlow Serving, bạn thường sử dụng giao thức nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. HTTP GET requests.",
+      "B. REST API (HTTP) hoặc gRPC API.",
+      "C. FTP.",
+      "D. SMTP."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow Serving cung cấp cả giao diện RESTful API và gRPC API để khách hàng có thể gửi các yêu cầu dự đoán.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Serving", "API"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-034",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Phương thức `model.compile()` trong Keras được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện mô hình.",
+      "B. Cấu hình mô hình cho quá trình huấn luyện bằng cách chỉ định optimizer, hàm mất mát (loss function) và các chỉ số (metrics) cần theo dõi.",
+      "C. Lưu mô hình vào đĩa.",
+      "D. Thực hiện dự đoán."
+    ],
+    "correct_answer": "B",
+    "explanation": "`compile()` là bước cần thiết để định nghĩa cách mô hình sẽ được huấn luyện trước khi gọi `fit()`.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "Keras API", "Compile"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-035",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "Sau khi mô hình được chuyển đổi sang định dạng .tflite, bạn sẽ sử dụng lớp nào để chạy inference trên thiết bị?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `tf.keras.Model`",
+      "B. `tf.compat.v1.Session`",
+      "C. `tf.lite.Interpreter`",
+      "D. `tf.saved_model.load`"
+    ],
+    "correct_answer": "C",
+    "explanation": "`tf.lite.Interpreter` là API được sử dụng để tải và chạy các mô hình TensorFlow Lite trên các thiết bị mục tiêu.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Interpreter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-036",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "Khi nào việc sử dụng TensorFlow Datasets mang lại lợi thế đáng kể?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn cần tạo tập dữ liệu tùy chỉnh từ đầu.",
+      "B. Khi bạn làm việc với các tập dữ liệu công cộng phổ biến và muốn một cách chuẩn hóa, hiệu quả để tải và tiền xử lý chúng mà không cần lo lắng về việc quản lý file.",
+      "C. Khi bạn cần triển khai mô hình vào sản xuất.",
+      "D. Khi bạn chỉ có các tập dữ liệu rất nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "TFDS giúp tiết kiệm thời gian và công sức trong việc chuẩn bị dữ liệu, đặc biệt khi làm việc với các tập dữ liệu lớn và phức tạp thường được sử dụng trong cộng đồng nghiên cứu.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "Benefits"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-037",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorBoard",
+    "question_text": "Ngoài việc hiển thị biểu đồ và số liệu, TensorBoard còn có thể hiển thị điều gì khác để hiểu mô hình?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Code Python của mô hình.",
+      "B. Biểu đồ tính toán của mô hình, phân phối trọng số và thiên vị, hình ảnh (ví dụ: đầu ra của lớp), và nhúng (embeddings) dữ liệu.",
+      "C. Giá CPU hiện tại.",
+      "D. Tên của các nhà khoa học dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorBoard cung cấp nhiều bảng điều khiển (dashboards) khác nhau để cung cấp cái nhìn sâu sắc về cấu trúc mô hình, hoạt động của trọng số, và cách dữ liệu được nhúng trong không gian chiều thấp.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorBoard", "Features"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-038",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Hub",
+    "question_text": "Khi sử dụng một mô-đun từ TensorFlow Hub, bạn có thể tải về mô-đun dưới dạng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một file văn bản đơn giản.",
+      "B. Một đối tượng `tf.Module` hoặc `tf.keras.Layer` có thể được tích hợp trực tiếp vào mô hình của bạn.",
+      "C. Một thư viện độc lập.",
+      "D. Một tập hợp các hình ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các mô-đun trên TF Hub được đóng gói theo cách cho phép tích hợp dễ dàng vào các mô hình TensorFlow/Keras hiện có, làm cho việc tái sử dụng trở nên thuận tiện.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Hub", "Module Format"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-039",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "TensorFlow có hỗ trợ phân phối huấn luyện (distributed training) trên nhiều thiết bị hoặc máy chủ không? Nếu có, thông qua API nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không, TensorFlow chỉ hỗ trợ huấn luyện trên một thiết bị duy nhất.",
+      "B. Có, thông qua `tf.distribute.Strategy` API.",
+      "C. Chỉ thông qua việc sao chép code huấn luyện sang nhiều máy.",
+      "D. Chỉ thông qua việc sử dụng các thiết bị di động."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorFlow cung cấp API `tf.distribute.Strategy` mạnh mẽ để dễ dàng mở rộng quy mô huấn luyện trên nhiều GPU, CPU, hoặc TPU, trên một máy hoặc nhiều máy.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Core", "Distributed Training"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-040",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "TensorFlow Serving có thể phục vụ nhiều phiên bản của cùng một mô hình cùng lúc không? Tại sao lại hữu ích?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không, chỉ một phiên bản có thể hoạt động tại một thời điểm.",
+      "B. Có, nó có thể phục vụ nhiều phiên bản (ví dụ: phiên bản đang hoạt động và một phiên bản mới đang được thử nghiệm) để cho phép thử nghiệm A/B hoặc cập nhật không gián đoạn.",
+      "C. Có, nhưng nó làm chậm đáng kể quá trình phục vụ.",
+      "D. Có, nhưng chỉ khi các phiên bản rất khác nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "Khả năng quản lý nhiều phiên bản của cùng một mô hình cùng lúc là một tính năng quan trọng cho việc triển khai sản xuất, cho phép thử nghiệm an toàn các phiên bản mới trước khi chuyển toàn bộ lưu lượng truy cập sang chúng.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Serving", "Model Versions", "A/B Testing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-041",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Khi nào thì Keras Subclassing API (kế thừa `tf.keras.Model`) là lựa chọn tốt nhất để xây dựng mô hình?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi mô hình có cấu trúc rất đơn giản và tuần tự.",
+      "B. Khi bạn cần sự linh hoạt cao nhất trong việc định nghĩa cấu trúc và luồng dữ liệu của mô hình, đặc biệt cho các kiến trúc phi tiêu chuẩn hoặc khi bạn muốn kiểm soát hoàn toàn vòng lặp huấn luyện.",
+      "C. Khi bạn không muốn sử dụng Keras.",
+      "D. Khi bạn chỉ muốn sử dụng các lớp Convolutional."
+    ],
+    "correct_answer": "B",
+    "explanation": "Subclassing API là cấp độ linh hoạt cao nhất trong Keras, cho phép bạn hoàn toàn tùy chỉnh kiến trúc và logic `call` của mô hình, phù hợp cho nghiên cứu và các kiến trúc rất tùy chỉnh.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "Keras API", "Subclassing API"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-042",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "Để giảm kích thước mô hình TensorFlow Lite, bạn có thể sử dụng kỹ thuật nào trong quá trình chuyển đổi?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thêm nhiều lớp ẩn hơn.",
+      "B. Lượng tử hóa (Quantization), nơi trọng số và kích hoạt được biểu diễn bằng độ chính xác thấp hơn (ví dụ: 8-bit integer thay vì 32-bit float).",
+      "C. Tăng số lượng epochs huấn luyện.",
+      "D. Loại bỏ tất cả các lớp pooling."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lượng tử hóa là một kỹ thuật mạnh mẽ để giảm đáng kể kích thước mô hình và tăng tốc độ inference bằng cách giảm độ chính xác của các số học, thường ít ảnh hưởng đến độ chính xác.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Quantization", "Model Optimization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-043",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "TFDS xử lý việc chia dữ liệu thành các tập huấn luyện, validation và kiểm tra như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bạn phải tự chia thủ công sau khi tải toàn bộ dữ liệu.",
+      "B. TFDS thường cung cấp các 'splits' (phân tách) được định nghĩa trước cho các tập dữ liệu, cho phép bạn dễ dàng tải các phần cụ thể (ví dụ: `train`, `test`, `validation`).",
+      "C. Nó chỉ cung cấp dữ liệu huấn luyện.",
+      "D. Nó luôn trộn ngẫu nhiên toàn bộ dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nhiều tập dữ liệu trong TFDS đã được chia trước thành các tập con theo tiêu chuẩn, giúp đảm bảo tính nhất quán và dễ dàng sử dụng cho các giai đoạn huấn luyện, đánh giá và kiểm thử.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "Data Splits"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-044",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorBoard",
+    "question_text": "Điều gì xảy ra nếu bạn không sử dụng TensorBoard trong quá trình huấn luyện Deep Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình sẽ không thể huấn luyện được.",
+      "B. Bạn sẽ mất đi khả năng trực quan hóa và theo dõi chi tiết quá trình huấn luyện, khiến việc gỡ lỗi, hiểu hiệu suất và so sánh các lần chạy trở nên khó khăn hơn.",
+      "C. Mô hình sẽ luôn bị overfitting.",
+      "D. Tốc độ huấn luyện sẽ tăng lên đáng kể."
+    ],
+    "correct_answer": "B",
+    "explanation": "TensorBoard không phải là bắt buộc để huấn luyện mô hình, nhưng nó là một công cụ cực kỳ hữu ích để có cái nhìn sâu sắc về những gì đang xảy ra trong quá trình học và ra quyết định tối ưu hóa.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorBoard", "Importance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-045",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Hub",
+    "question_text": "TensorFlow Hub cung cấp các mô-đun đã huấn luyện sẵn cho những loại tác vụ nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ phân loại hình ảnh.",
+      "B. Nhiều tác vụ khác nhau như phân loại hình ảnh, phát hiện đối tượng, xử lý ngôn ngữ tự nhiên (embeddings, dịch thuật), và xử lý âm thanh.",
+      "C. Chỉ các tác vụ hồi quy.",
+      "D. Chỉ các tác vụ yêu cầu mô hình rất nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "TF Hub là một kho lưu trữ đa dạng, cung cấp các mô-đun cho nhiều lĩnh vực và tác vụ khác nhau, hỗ trợ nhiều ứng dụng Deep Learning.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Hub", "Tasks"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-046",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Core",
+    "question_text": "Làm thế nào để bạn có thể kiểm tra xem TensorFlow đang sử dụng GPU hay không?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kiểm tra dung lượng RAM.",
+      "B. Sử dụng `tf.config.list_physical_devices('GPU')` hoặc `tf.test.is_gpu_available()` (cho TF < 2.5).",
+      "C. Chỉ thông qua Task Manager.",
+      "D. Nếu cài đặt TensorFlow, GPU sẽ tự động được sử dụng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các hàm này cho phép bạn kiểm tra và liệt kê các thiết bị GPU khả dụng mà TensorFlow đang nhận diện và có thể sử dụng.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "TensorFlow Core", "GPU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-047",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Serving",
+    "question_text": "Khi bạn muốn thay đổi mô hình đang được phục vụ bởi TensorFlow Serving mà không làm gián đoạn dịch vụ, bạn có thể làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Gửi tín hiệu dừng (kill signal) đến server và khởi động lại.",
+      "B. Đặt phiên bản mô hình mới vào thư mục được cấu hình, và TensorFlow Serving sẽ tự động tải và chuyển đổi lưu lượng truy cập một cách mượt mà.",
+      "C. Chạy một phiên bản Serving mới hoàn toàn trên một cổng khác.",
+      "D. Sử dụng một API khác để tạm dừng dịch vụ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đây là một trong những tính năng cốt lõi của TensorFlow Serving, cho phép cập nhật mô hình linh hoạt trong môi trường sản xuất.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Serving", "Seamless Updates"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-048",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "Keras API",
+    "question_text": "Bạn có thể lưu trữ mô hình Keras đã huấn luyện dưới định dạng nào để sau này tải lại và sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. .txt",
+      "B. .csv",
+      "C. Định dạng `SavedModel` của TensorFlow (được khuyến nghị) hoặc file HDF5 (.h5).",
+      "D. .json"
+    ],
+    "correct_answer": "C",
+    "explanation": "`SavedModel` là định dạng tiêu chuẩn mới của TensorFlow để lưu toàn bộ mô hình (kiến trúc, trọng số, logic), còn .h5 là định dạng truyền thống của Keras.",
+    "difficulty_level": "easy",
+    "tags": ["TensorFlow", "Keras API", "Model Saving"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-049",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Lite",
+    "question_text": "Khi nào thì việc sử dụng TensorFlow Lite Delegate có lợi?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn chỉ muốn chạy mô hình trên CPU.",
+      "B. Khi bạn muốn tận dụng các bộ tăng tốc phần cứng chuyên dụng (như GPU, DSP, NPU) trên thiết bị di động/biên để tăng tốc độ inference và giảm tiêu thụ năng lượng.",
+      "C. Khi bạn muốn gỡ lỗi mô hình.",
+      "D. Khi bạn cần mô hình lớn hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các delegate cho phép TensorFlow Lite 'ủy quyền' các phép toán của mô hình cho các bộ tăng tốc phần cứng, mang lại hiệu suất vượt trội so với việc chỉ chạy trên CPU.",
+    "difficulty_level": "medium",
+    "tags": ["TensorFlow", "TensorFlow Lite", "Delegate", "Acceleration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "DL-TF-050",
+    "target": "AI Engineer",
+    "skill_category": "Deep Learning Frameworks",
+    "skill_name": "TensorFlow",
+    "subskill_name": "TensorFlow Datasets",
+    "question_text": "Sau khi tải dữ liệu bằng TFDS, bạn cần thực hiện bước nào để tạo các batch dữ liệu hiệu quả cho quá trình huấn luyện Deep Learning?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chuyển đổi toàn bộ dữ liệu thành một list Python.",
+      "B. Sử dụng các phương thức của `tf.data.Dataset` như `.batch()`, `.shuffle()`, `.map()`, và `.prefetch()` để xây dựng một pipeline dữ liệu hiệu quả.",
+      "C. Lưu dữ liệu vào file CSV mới.",
+      "D. Huấn luyện trực tiếp trên từng mẫu dữ liệu một."
+    ],
+    "correct_answer": "B",
+    "explanation": "`tf.data.Dataset` cung cấp một API phong phú để xây dựng các pipelines dữ liệu mạnh mẽ và hiệu quả, cho phép bạn xáo trộn, batch, tiền xử lý và prefetch dữ liệu để tối ưu hóa việc sử dụng tài nguyên và tăng tốc độ huấn luyện.",
+    "difficulty_level": "hard",
+    "tags": ["TensorFlow", "TensorFlow Datasets", "Data Pipeline", "Performance"],
+    "date_created": "2025-07-28"
+  }
+]

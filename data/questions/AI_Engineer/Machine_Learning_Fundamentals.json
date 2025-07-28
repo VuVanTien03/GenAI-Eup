@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "PROG-PY-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Trong Python, cú pháp nào được dùng để định nghĩa một hàm?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. function my_func():",
+      "B. define my_func():",
+      "C. def my_func():",
+      "D. func my_func():"
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong Python, từ khóa `def` được sử dụng để định nghĩa một hàm, theo sau là tên hàm và dấu ngoặc đơn chứa các tham số (nếu có), kết thúc bằng dấu hai chấm.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Function", "Syntax"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để lưu các thay đổi đã staged vào lịch sử repository?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git push",
+      "B. git add",
+      "C. git commit",
+      "D. git branch"
+    ],
+    "correct_answer": "C",
+    "explanation": "Lệnh `git commit` được dùng để tạo một snapshot của các thay đổi đã được thêm vào staging area và lưu nó vào lịch sử của repository.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Version Control", "Commit"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Kiểu dữ liệu nào trong Python là tập hợp các phần tử không thể thay đổi (immutable), có thứ tự và cho phép các phần tử trùng lặp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. List",
+      "B. Dictionary",
+      "C. Set",
+      "D. Tuple"
+    ],
+    "correct_answer": "D",
+    "explanation": "Tuple là một tập hợp các phần tử có thứ tự, không thể thay đổi (immutable) và cho phép các phần tử trùng lặp.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Data Types", "Immutable"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Trong Python, từ khóa nào được dùng để xử lý ngoại lệ (exception) khi có lỗi xảy ra?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. catch",
+      "B. throw",
+      "C. except",
+      "D. error"
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong Python, khối `except` được dùng để bắt và xử lý các ngoại lệ (lỗi) xảy ra trong khối `try`.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Exception Handling", "Error"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Độ phức tạp thời gian (time complexity) của thuật toán tìm kiếm nhị phân (binary search) trên một mảng đã sắp xếp là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. O(n)",
+      "B. O(n^2)",
+      "C. O(log n)",
+      "D. O(1)"
+    ],
+    "correct_answer": "C",
+    "explanation": "Tìm kiếm nhị phân loại bỏ một nửa không gian tìm kiếm ở mỗi bước, dẫn đến độ phức tạp thời gian là $O(\\log n)$.",
+    "difficulty_level": "medium",
+    "tags": ["Algorithms", "Time Complexity", "Binary Search"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Khái niệm OOP nào đề cập đến việc đóng gói dữ liệu và các phương thức hoạt động trên dữ liệu đó trong một đơn vị duy nhất (object)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kế thừa (Inheritance)",
+      "B. Đa hình (Polymorphism)",
+      "C. Đóng gói (Encapsulation)",
+      "D. Trừu tượng (Abstraction)"
+    ],
+    "correct_answer": "C",
+    "explanation": "Đóng gói là nguyên tắc ẩn chi tiết triển khai bên trong một đối tượng và chỉ cung cấp giao diện công khai để tương tác với nó.",
+    "difficulty_level": "medium",
+    "tags": ["OOP", "Encapsulation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Để tạo một môi trường ảo (virtual environment) mới trong Python, lệnh nào thường được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. pip install virtualenv",
+      "B. python -m env venv_name",
+      "C. python -m venv myenv",
+      "D. conda create --name myenv"
+    ],
+    "correct_answer": "C",
+    "explanation": "Lệnh `python -m venv myenv` là cách chuẩn để tạo một môi trường ảo mới có tên 'myenv' trong Python 3.3 trở lên.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Virtual Environment", "venv"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để xem trạng thái của thư mục làm việc và staging area?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git log",
+      "B. git diff",
+      "C. git status",
+      "D. git show"
+    ],
+    "correct_answer": "C",
+    "explanation": "Lệnh `git status` hiển thị các file đã được sửa đổi, đã thêm vào staging area, và các file chưa được theo dõi.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Version Control", "Status"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Đâu là ưu điểm chính của việc sử dụng Tuple so với List trong Python?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tuple cho phép thêm, xóa phần tử dễ dàng hơn.",
+      "B. Tuple tiêu tốn ít bộ nhớ hơn và nhanh hơn trong một số trường hợp.",
+      "C. Tuple cho phép truy cập phần tử bằng khóa.",
+      "D. Tuple hỗ trợ các phép toán tập hợp (union, intersection)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Do immutable, Tuple thường có hiệu suất tốt hơn và tiêu tốn ít bộ nhớ hơn List trong các tác vụ nhất định.",
+    "difficulty_level": "medium",
+    "tags": ["Python", "Data Types", "Tuple", "List"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Phương pháp nào sau đây không phải là một loại cấu trúc dữ liệu tuyến tính?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Array",
+      "B. Linked List",
+      "C. Tree",
+      "D. Stack"
+    ],
+    "correct_answer": "C",
+    "explanation": "Cây (Tree) là cấu trúc dữ liệu phi tuyến tính, trong khi Array, Linked List và Stack là các cấu trúc dữ liệu tuyến tính.",
+    "difficulty_level": "easy",
+    "tags": ["Data Structures", "Linear", "Non-linear"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Khi một lớp con (subclass) kế thừa từ một lớp cha (superclass) và cung cấp cách triển khai riêng cho một phương thức đã tồn tại trong lớp cha, đây được gọi là gì trong OOP?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Quá tải phương thức (Method Overloading)",
+      "B. Ghi đè phương thức (Method Overriding)",
+      "C. Đóng gói (Encapsulation)",
+      "D. Trừu tượng (Abstraction)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Ghi đè phương thức (Method Overriding) là việc định nghĩa lại một phương thức trong lớp con đã được định nghĩa trong lớp cha.",
+    "difficulty_level": "medium",
+    "tags": ["OOP", "Inheritance", "Method Overriding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để chuyển đổi giữa các nhánh (branches)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git merge",
+      "B. git checkout",
+      "C. git branch -d",
+      "D. git switch"
+    ],
+    "correct_answer": "B",
+    "explanation": "Lệnh `git checkout <branch_name>` được sử dụng để chuyển đổi sang một nhánh khác. (Lưu ý: `git switch` cũng có thể dùng nhưng `checkout` là phổ biến hơn và đa năng hơn).",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Branching", "Checkout"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Kết quả của biểu thức Python sau là gì: `[i*2 for i in range(3)]`?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. [0, 1, 2]",
+      "B. [0, 2, 4]",
+      "C. [2, 4, 6]",
+      "D. Lỗi cú pháp"
+    ],
+    "correct_answer": "B",
+    "explanation": "`range(3)` tạo ra chuỗi 0, 1, 2. Mỗi số này được nhân với 2, tạo ra 0, 2, 4. Đây là một ví dụ về List Comprehension.",
+    "difficulty_level": "medium",
+    "tags": ["Python", "List Comprehension", "Syntax"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc 'Vào trước ra sau' (First-In, Last-Out - FILO)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hàng đợi (Queue)",
+      "B. Ngăn xếp (Stack)",
+      "C. Danh sách liên kết (Linked List)",
+      "D. Mảng (Array)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Ngăn xếp (Stack) là cấu trúc dữ liệu tuân theo nguyên tắc LIFO (Last-In, First-Out), hay còn gọi là FILO (First-In, Last-Out) nếu nhìn từ góc độ phần tử đầu tiên bị 'chôn vùi' dưới cùng.",
+    "difficulty_level": "easy",
+    "tags": ["Data Structures", "Stack", "FILO"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Trong Python, phương thức khởi tạo (constructor) của một lớp được định nghĩa bằng tên nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `__new__`",
+      "B. `__init__`",
+      "C. `__create__`",
+      "D. `__start__`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong Python, phương thức `__init__` là phương thức khởi tạo, được tự động gọi khi một đối tượng mới của lớp được tạo.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "OOP", "Constructor"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Kỹ thuật gỡ lỗi (debugging) nào liên quan đến việc thêm các câu lệnh in (print statements) vào mã nguồn để theo dõi giá trị biến hoặc luồng thực thi?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng debugger tương tác",
+      "B. Debugging bằng cách in (Print Debugging)",
+      "C. Test-Driven Development (TDD)",
+      "D. Phân tích tĩnh (Static Analysis)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Debugging bằng cách in là một kỹ thuật phổ biến và đơn giản, trong đó các câu lệnh in được chèn vào code để xuất ra thông tin về trạng thái của chương trình tại các điểm khác nhau.",
+    "difficulty_level": "easy",
+    "tags": ["Debugging", "Print Debugging"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Tại sao việc sử dụng các thuật toán hiệu quả lại quan trọng hơn việc tối ưu hóa mã nguồn cấp thấp (low-level code optimization) trong nhiều trường hợp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thuật toán hiệu quả luôn dễ viết và đọc hơn.",
+      "B. Tối ưu hóa thuật toán có thể mang lại cải thiện hiệu suất theo cấp số nhân (exponential), trong khi tối ưu hóa mã nguồn cấp thấp thường chỉ là cải thiện tuyến tính (linear) hoặc hằng số.",
+      "C. Tối ưu hóa mã nguồn cấp thấp có thể làm giảm tính di động của code.",
+      "D. Các trình biên dịch (compilers) hiện đại đã tự động tối ưu hóa mã nguồn cấp thấp rất tốt."
+    ],
+    "correct_answer": "B",
+    "explanation": "Thay đổi thuật toán có thể giảm độ phức tạp thời gian từ $O(n^2)$ xuống $O(n \\log n)$, mang lại lợi ích lớn hơn nhiều so với việc tinh chỉnh từng dòng code.",
+    "difficulty_level": "hard",
+    "tags": ["Code Optimization", "Algorithms", "Performance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Nguyên tắc 'Don't Repeat Yourself' (DRY) trong kỹ thuật phần mềm có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không nên sử dụng vòng lặp trong code.",
+      "B. Mỗi phần kiến thức nên có một biểu diễn duy nhất, không rõ ràng và có thẩm quyền trong một hệ thống.",
+      "C. Tránh viết các đoạn code quá dài.",
+      "D. Luôn tái sử dụng code từ các dự án trước."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nguyên tắc DRY khuyến khích việc tránh sự trùng lặp code, đảm bảo rằng mỗi phần logic hoặc dữ liệu chỉ được định nghĩa một lần, giúp code dễ bảo trì và mở rộng hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Software Engineering", "DRY", "Principles"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Để đọc toàn bộ nội dung của một file văn bản vào một chuỗi (string) trong Python, phương thức nào sau đây được sử dụng phổ biến nhất?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `file.readline()`",
+      "B. `file.readlines()`",
+      "C. `file.read()`",
+      "D. `file.load()`"
+    ],
+    "correct_answer": "C",
+    "explanation": "Phương thức `file.read()` đọc toàn bộ nội dung của file và trả về dưới dạng một chuỗi duy nhất.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "File I/O"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để hợp nhất (merge) các thay đổi từ một nhánh khác vào nhánh hiện tại?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git rebase",
+      "B. git branch",
+      "C. git merge",
+      "D. git push"
+    ],
+    "correct_answer": "C",
+    "explanation": "Lệnh `git merge` được dùng để kết hợp lịch sử của một nhánh vào nhánh hiện tại.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Merge", "Branching"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Độ phức tạp thời gian trung bình của thuật toán sắp xếp nhanh (Quicksort) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. O(n)",
+      "B. O(n log n)",
+      "C. O(n^2)",
+      "D. O(log n)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Quicksort có độ phức tạp thời gian trung bình là $O(n \\log n)$, mặc dù trường hợp xấu nhất là $O(n^2)$.",
+    "difficulty_level": "medium",
+    "tags": ["Algorithms", "Sorting", "Quicksort", "Time Complexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Tính chất đa hình (Polymorphism) trong OOP cho phép điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một lớp có thể có nhiều constructor với các tham số khác nhau.",
+      "B. Các đối tượng của các lớp khác nhau có thể phản ứng khác nhau với cùng một thông điệp hoặc phương thức.",
+      "C. Một lớp con có thể kế thừa nhiều lớp cha.",
+      "D. Ẩn đi các chi tiết triển khai phức tạp của một đối tượng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đa hình cho phép một giao diện duy nhất được sử dụng cho các kiểu dữ liệu khác nhau hoặc các đối tượng của các lớp khác nhau.",
+    "difficulty_level": "medium",
+    "tags": ["OOP", "Polymorphism"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Test-Driven Development (TDD) là một phương pháp phát triển phần mềm mà bạn ______.",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Viết code trước, sau đó viết các bài kiểm tra để đảm bảo code hoạt động.",
+      "B. Viết các bài kiểm tra tự động trước, sau đó viết code tối thiểu để làm cho các bài kiểm tra đó vượt qua.",
+      "C. Chỉ viết bài kiểm tra khi phát hiện ra lỗi.",
+      "D. Gỡ lỗi bằng cách từng bước thực thi code."
+    ],
+    "correct_answer": "B",
+    "explanation": "TDD là một quy trình phát triển lặp lại: viết một bài kiểm tra thất bại, viết code để làm bài kiểm tra vượt qua, sau đó tái cấu trúc code.",
+    "difficulty_level": "medium",
+    "tags": ["Testing", "TDD", "Software Development"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Kỹ thuật nào sau đây không phải là một cách để tối ưu hóa mã Python?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng list comprehension thay vì vòng lặp for truyền thống khi thích hợp.",
+      "B. Sử dụng các cấu trúc dữ liệu hiệu quả hơn (ví dụ: set thay vì list cho các kiểm tra thành viên).",
+      "C. Tăng số lượng biến toàn cục để truy cập dễ dàng hơn.",
+      "D. Sử dụng các thư viện C/C++ được tối ưu hóa (như NumPy) cho các phép toán tính toán nặng."
+    ],
+    "correct_answer": "C",
+    "explanation": "Tăng số lượng biến toàn cục có thể gây ra vấn đề về quản lý bộ nhớ và hiệu suất, cũng như làm giảm tính dễ đọc và bảo trì của code.",
+    "difficulty_level": "medium",
+    "tags": ["Code Optimization", "Python Performance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Nguyên tắc 'KISS' (Keep It Simple, Stupid) trong kỹ thuật phần mềm đề cao điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Viết code càng ít dòng càng tốt.",
+      "B. Thiết kế và triển khai các hệ thống càng đơn giản càng tốt.",
+      "C. Chỉ sử dụng các thuật toán đơn giản nhất.",
+      "D. Tránh sử dụng các thư viện của bên thứ ba."
+    ],
+    "correct_answer": "B",
+    "explanation": "Nguyên tắc KISS khuyến khích việc giữ cho thiết kế và giải pháp càng đơn giản càng tốt, để giảm độ phức tạp, tăng tính dễ đọc và dễ bảo trì.",
+    "difficulty_level": "easy",
+    "tags": ["Software Engineering", "KISS", "Principles"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-008",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Đâu là cách chính xác để mở một file để ghi (write) nội dung trong Python, đảm bảo file được đóng đúng cách ngay cả khi có lỗi?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `f = open('file.txt', 'w'); f.write('Hello')`",
+      "B. `with open('file.txt', 'w') as f: f.write('Hello')`",
+      "C. `file.open('file.txt', 'w').write('Hello')`",
+      "D. `f = File('file.txt', 'w'); f.write('Hello'); f.close()`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Cấu trúc `with open(...) as ...` là cách Pythonic để xử lý file, đảm bảo file tự động được đóng sau khi khối `with` kết thúc, ngay cả khi có lỗi xảy ra.",
+    "difficulty_level": "medium",
+    "tags": ["Python", "File I/O", "Context Manager"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để tạo một nhánh mới và tự động chuyển sang nhánh đó?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git branch -b new-branch",
+      "B. git new-branch new-branch",
+      "C. git checkout -b new-branch",
+      "D. git create branch new-branch"
+    ],
+    "correct_answer": "C",
+    "explanation": "Lệnh `git checkout -b new-branch` là viết tắt của việc tạo một nhánh mới (`git branch new-branch`) và sau đó chuyển sang nhánh đó (`git checkout new-branch`).",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Branching", "Checkout"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Cấu trúc dữ liệu nào lưu trữ các cặp khóa-giá trị (key-value pairs) và cho phép truy cập nhanh chóng các giá trị dựa trên khóa của chúng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. List",
+      "B. Tuple",
+      "C. Set",
+      "D. Hash Table (Dictionary in Python)"
+    ],
+    "correct_answer": "D",
+    "explanation": "Hash Table, được triển khai dưới dạng Dictionary trong Python, là cấu trúc dữ liệu lý tưởng để lưu trữ và truy xuất dữ liệu dựa trên khóa, với thời gian trung bình $O(1)$ cho các thao tác này.",
+    "difficulty_level": "easy",
+    "tags": ["Data Structures", "Hash Table", "Dictionary"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Điều gì mô tả đúng nhất về thuộc tính `__private_attribute` trong một lớp Python?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó hoàn toàn không thể truy cập được từ bên ngoài lớp.",
+      "B. Nó chỉ có thể được truy cập bởi các phương thức bên trong lớp.",
+      "C. Nó là một quy ước đặt tên để chỉ ra rằng thuộc tính đó là 'private', nhưng vẫn có thể truy cập được từ bên ngoài thông qua 'name mangling'.",
+      "D. Nó tự động được ẩn khỏi tất cả các lớp con."
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong Python, thuộc tính bắt đầu bằng hai dấu gạch dưới (`__`) được 'name mangling' để tránh xung đột tên trong lớp con, nhưng không thực sự là private theo nghĩa đen của các ngôn ngữ khác.",
+    "difficulty_level": "hard",
+    "tags": ["Python", "OOP", "Encapsulation", "Name Mangling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Mục đích chính của việc viết unit test là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kiểm tra toàn bộ hệ thống để tìm lỗi tích hợp.",
+      "B. Xác minh từng đơn vị code nhỏ (ví dụ: một hàm hoặc một lớp) hoạt động đúng như mong đợi một cách độc lập.",
+      "C. Đảm bảo rằng giao diện người dùng hoạt động chính xác.",
+      "D. Đo lường hiệu suất của ứng dụng dưới tải nặng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Unit test tập trung vào việc kiểm tra các thành phần nhỏ nhất của code một cách riêng biệt để đảm bảo chúng hoạt động chính xác.",
+    "difficulty_level": "easy",
+    "tags": ["Testing", "Unit Testing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Thuật toán nào sau đây có độ phức tạp thời gian xấu nhất là $O(N^2)$ nhưng có thể được tối ưu hóa trong thực tế để đạt hiệu suất tốt hơn với các tập dữ liệu gần như đã sắp xếp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Merge Sort",
+      "B. Quick Sort",
+      "C. Heap Sort",
+      "D. Insertion Sort"
+    ],
+    "correct_answer": "D",
+    "explanation": "Insertion Sort có độ phức tạp $O(N^2)$ trong trường hợp xấu nhất và trung bình, nhưng có thể đạt gần $O(N)$ trong trường hợp mảng đã gần như sắp xếp.",
+    "difficulty_level": "medium",
+    "tags": ["Algorithms", "Sorting", "Time Complexity", "Optimization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Nguyên tắc 'SOLID' trong thiết kế hướng đối tượng là viết tắt của các nguyên tắc nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Simple, Observable, Loosely coupled, Independent, Durable",
+      "B. Single responsibility, Open/closed, Liskov substitution, Interface segregation, Dependency inversion",
+      "C. Secure, Optimized, Lightweight, Integrated, Deployable",
+      "D. Structured, Object-oriented, Logical, Intuitive, Documented"
+    ],
+    "correct_answer": "B",
+    "explanation": "SOLID là một bộ năm nguyên tắc thiết kế hướng đối tượng nhằm giúp các nhà phát triển tạo ra phần mềm dễ hiểu, linh hoạt và dễ bảo trì.",
+    "difficulty_level": "hard",
+    "tags": ["Software Engineering", "SOLID", "OOP Principles"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-009",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Trong Python, cú pháp nào sau đây là một cách đúng để tạo một lambda function (hàm ẩn danh) để tính tổng hai số?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `def add(a, b): return a + b`",
+      "B. `lambda a, b: a + b`",
+      "C. `func add(a, b): a + b`",
+      "D. `(a, b) => a + b`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Lambda functions trong Python được định nghĩa bằng từ khóa `lambda`, theo sau là các tham số, dấu hai chấm và biểu thức trả về.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Lambda", "Functions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Để loại bỏ một file khỏi staging area nhưng vẫn giữ nó trong thư mục làm việc, lệnh Git nào được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git rm filename.txt",
+      "B. git reset filename.txt",
+      "C. git clean -f",
+      "D. git revert HEAD"
+    ],
+    "correct_answer": "B",
+    "explanation": "Lệnh `git reset <file>` hoặc `git reset HEAD <file>` sẽ bỏ chọn file khỏi staging area mà không xóa nó khỏi thư mục làm việc.",
+    "difficulty_level": "medium",
+    "tags": ["Git", "Staging Area", "Reset"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Trong một cây nhị phân tìm kiếm (Binary Search Tree - BST), mọi node con bên trái của một node đều có giá trị _____, và mọi node con bên phải đều có giá trị _____.",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Lớn hơn, nhỏ hơn",
+      "B. Bằng, khác",
+      "C. Nhỏ hơn, lớn hơn",
+      "D. Không liên quan, không liên quan"
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong BST, tất cả các node trong cây con bên trái của một node đều có giá trị nhỏ hơn node đó, và tất cả các node trong cây con bên phải đều có giá trị lớn hơn node đó.",
+    "difficulty_level": "medium",
+    "tags": ["Data Structures", "Tree", "BST"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Khái niệm trừu tượng (Abstraction) trong OOP có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khả năng một đối tượng có nhiều hành vi khác nhau.",
+      "B. Ẩn các chi tiết triển khai phức tạp và chỉ hiển thị các chức năng cần thiết cho người dùng.",
+      "C. Tạo ra một lớp mới từ một lớp hiện có.",
+      "D. Đảm bảo dữ liệu của một đối tượng chỉ có thể được truy cập thông qua các phương thức của chính nó."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trừu tượng là việc đơn giản hóa các hệ thống phức tạp bằng cách chỉ tập trung vào các chi tiết cần thiết và bỏ qua các chi tiết triển khai không quan trọng.",
+    "difficulty_level": "medium",
+    "tags": ["OOP", "Abstraction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-010",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Phương thức nào của Dictionary trong Python được dùng để lấy giá trị của một khóa, và nếu khóa không tồn tại, nó sẽ trả về một giá trị mặc định thay vì gây lỗi KeyError?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `dict.get(key, default_value)`",
+      "B. `dict.find(key, default_value)`",
+      "C. `dict.lookup(key, default_value)`",
+      "D. `dict.fetch(key, default_value)`"
+    ],
+    "correct_answer": "A",
+    "explanation": "Phương thức `get()` của dictionary cho phép bạn cung cấp một giá trị mặc định sẽ được trả về nếu khóa không được tìm thấy, tránh lỗi `KeyError`.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Dictionary", "Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "File `.gitignore` được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ định các file và thư mục mà Git nên theo dõi.",
+      "B. Liệt kê các file và thư mục mà Git nên bỏ qua, không thêm vào repository.",
+      "C. Lưu trữ các tin nhắn commit mặc định.",
+      "D. Cấu hình thông tin xác thực cho Git."
+    ],
+    "correct_answer": "B",
+    "explanation": "File `.gitignore` chứa các mẫu để Git bỏ qua các file và thư mục cụ thể, ngăn chúng không bị thêm vào repository.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "gitignore", "Configuration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Độ phức tạp thời gian của việc thêm (insertion) một phần tử vào cuối một mảng động (dynamic array) như Python List, trong trường hợp tốt nhất, là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. O(1)",
+      "B. O(N)",
+      "C. O(log N)",
+      "D. O(N log N)"
+    ],
+    "correct_answer": "A",
+    "explanation": "Trong hầu hết các trường hợp, việc thêm một phần tử vào cuối một mảng động (nếu còn chỗ) là thao tác $O(1)$ (hằng số). Tuy nhiên, khi mảng cần được mở rộng (reallocation), nó có thể trở thành $O(N)$. Do đó, trung bình là $O(1)$.",
+    "difficulty_level": "medium",
+    "tags": ["Data Structures", "Array", "List", "Time Complexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Sự khác biệt chính giữa biến lớp (class variable) và biến thể hiện (instance variable) trong Python là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Biến lớp chỉ có thể được truy cập bởi các phương thức lớp, biến thể hiện chỉ bởi các phương thức thể hiện.",
+      "B. Biến lớp thuộc về lớp và được chia sẻ bởi tất cả các thể hiện của lớp đó, trong khi biến thể hiện thuộc về từng thể hiện cụ thể.",
+      "C. Biến lớp là mutable, biến thể hiện là immutable.",
+      "D. Biến lớp được khởi tạo trong `__init__`, biến thể hiện được khởi tạo bên ngoài `__init__`."
+    ],
+    "correct_answer": "B",
+    "explanation": "Biến lớp được định nghĩa trực tiếp trong thân lớp và được chia sẻ giữa tất cả các thể hiện. Biến thể hiện được định nghĩa bên trong `__init__` và là duy nhất cho mỗi thể hiện.",
+    "difficulty_level": "medium",
+    "tags": ["Python", "OOP", "Class Variable", "Instance Variable"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Trong Python, module tiêu chuẩn nào cung cấp framework để viết unit test?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `pytest`",
+      "B. `nose`",
+      "C. `unittest`",
+      "D. `doctest`"
+    ],
+    "correct_answer": "C",
+    "explanation": "`unittest` là framework kiểm thử đơn vị tích hợp sẵn của Python, dựa trên mô hình của JUnit.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Testing", "unittest"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Kỹ thuật tối ưu hóa nào liên quan đến việc xác định các 'nút cổ chai' (bottlenecks) trong code bằng cách đo lường thời gian thực thi của các phần khác nhau của chương trình?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Refactoring",
+      "B. Profiling",
+      "C. Debugging",
+      "D. Unit Testing"
+    ],
+    "correct_answer": "B",
+    "explanation": "Profiling là quá trình đo lường hiệu suất của chương trình để xác định các phần code tiêu tốn nhiều tài nguyên nhất, giúp định hướng cho việc tối ưu hóa.",
+    "difficulty_level": "medium",
+    "tags": ["Code Optimization", "Profiling", "Performance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Nguyên tắc 'Single Responsibility Principle' (SRP) trong SOLID đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mỗi lớp chỉ nên có một lý do để thay đổi.",
+      "B. Mỗi phương thức chỉ nên thực hiện một tác vụ duy nhất.",
+      "C. Mỗi lập trình viên chỉ nên chịu trách nhiệm về một phần của dự án.",
+      "D. Mỗi module nên có một điểm vào (entry point) duy nhất."
+    ],
+    "correct_answer": "A",
+    "explanation": "SRP nói rằng mỗi module, lớp hoặc hàm chỉ nên có một trách nhiệm duy nhất, tức là chỉ có một lý do để thay đổi.",
+    "difficulty_level": "medium",
+    "tags": ["Software Engineering", "SRP", "SOLID"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-011",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Câu lệnh `break` trong vòng lặp Python được dùng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bỏ qua phần còn lại của lần lặp hiện tại và chuyển sang lần lặp tiếp theo.",
+      "B. Thoát hoàn toàn khỏi vòng lặp hiện tại.",
+      "C. Thoát khỏi chương trình.",
+      "D. Tạm dừng vòng lặp trong một khoảng thời gian."
+    ],
+    "correct_answer": "B",
+    "explanation": "Câu lệnh `break` sẽ ngay lập tức kết thúc vòng lặp chứa nó.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Control Flow", "Loops"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-008",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Để cập nhật repository cục bộ của bạn với các thay đổi từ repository từ xa, lệnh Git nào được dùng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git push",
+      "B. git commit",
+      "C. git pull",
+      "D. git fetch"
+    ],
+    "correct_answer": "C",
+    "explanation": "Lệnh `git pull` là sự kết hợp của `git fetch` (tải xuống các thay đổi từ remote) và `git merge` (hợp nhất chúng vào nhánh cục bộ hiện tại).",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Remote", "Pull"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-008",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Hàng đợi (Queue) là cấu trúc dữ liệu hoạt động theo nguyên tắc nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. LIFO (Last-In, First-Out)",
+      "B. FILO (First-In, Last-Out)",
+      "C. FIFO (First-In, First-Out)",
+      "D. Random Access"
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàng đợi (Queue) tuân theo nguyên tắc FIFO (First-In, First-Out), nghĩa là phần tử được thêm vào đầu tiên sẽ được loại bỏ đầu tiên.",
+    "difficulty_level": "easy",
+    "tags": ["Data Structures", "Queue", "FIFO"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-008",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Trong Python, làm thế nào để khai báo một lớp kế thừa từ một lớp khác?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `class ChildClass extends ParentClass:`",
+      "B. `class ChildClass implements ParentClass:`",
+      "C. `class ChildClass(ParentClass):`",
+      "D. `class ChildClass from ParentClass:`"
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong Python, để khai báo một lớp kế thừa từ một lớp khác, tên lớp cha được đặt trong dấu ngoặc đơn sau tên lớp con.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "OOP", "Inheritance", "Syntax"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Khi sử dụng một debugger, 'breakpoint' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một điểm trong code mà tại đó chương trình sẽ tự động sửa lỗi.",
+      "B. Một điểm trong code mà tại đó chương trình sẽ tạm dừng thực thi, cho phép lập trình viên kiểm tra trạng thái.",
+      "C. Một lỗi cú pháp trong code.",
+      "D. Một vị trí trong bộ nhớ nơi lưu trữ biến."
+    ],
+    "correct_answer": "B",
+    "explanation": "Breakpoint là một điểm được đặt trong code để tạm dừng quá trình thực thi chương trình tại đó, giúp lập trình viên kiểm tra giá trị của biến và theo dõi luồng chương trình.",
+    "difficulty_level": "easy",
+    "tags": ["Debugging", "Breakpoint"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Tại sao việc sử dụng các hàm tích hợp sẵn của Python (built-in functions) và các thư viện chuẩn (standard libraries) thường hiệu quả hơn việc tự viết lại logic tương tự?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng luôn dễ nhớ hơn.",
+      "B. Chúng đã được tối ưu hóa cao về hiệu suất (thường được viết bằng C) và đã được kiểm tra kỹ lưỡng.",
+      "C. Chúng tự động xử lý tất cả các trường hợp ngoại lệ.",
+      "D. Chúng làm cho code trông 'Pythonic' hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các hàm và thư viện tích hợp sẵn của Python thường được triển khai bằng các ngôn ngữ cấp thấp hơn (như C) và được tối ưu hóa nghiêm ngặt, mang lại hiệu suất vượt trội so với code Python thuần túy cho cùng một chức năng.",
+    "difficulty_level": "medium",
+    "tags": ["Code Optimization", "Python", "Built-in Functions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Mục tiêu chính của việc viết tài liệu code (code documentation) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Làm cho code dài hơn để đáp ứng yêu cầu dự án.",
+      "B. Giải thích cách code hoạt động, mục đích của nó và cách sử dụng cho các lập trình viên khác (và bản thân bạn trong tương lai).",
+      "C. Giúp biên dịch code nhanh hơn.",
+      "D. Ngăn chặn các lỗi cú pháp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tài liệu code giúp cải thiện tính dễ đọc và khả năng bảo trì của code, làm cho nó dễ hiểu và dễ làm việc hơn cho bất kỳ ai đọc nó.",
+    "difficulty_level": "easy",
+    "tags": ["Software Engineering", "Documentation", "Code Readability"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-012",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Để lặp qua cả chỉ mục (index) và giá trị (value) của một list trong Python, phương thức nào sau đây được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `list.items()`",
+      "B. `list.keys()`",
+      "C. `enumerate(list)`",
+      "D. `zip(list)`"
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàm `enumerate()` trả về một đối tượng chứa các cặp chỉ mục và giá trị cho các phần tử trong một đối tượng có thể lặp (iterable).",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Loops", "enumerate"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-009",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Nếu bạn muốn hoàn tác một commit cụ thể mà không xóa lịch sử commit sau đó, lệnh Git nào bạn nên sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git reset --hard HEAD~1",
+      "B. git revert <commit_hash>",
+      "C. git clean -f",
+      "D. git checkout <commit_hash>"
+    ],
+    "correct_answer": "B",
+    "explanation": "`git revert` tạo một commit mới để hoàn tác các thay đổi của commit đã cho, giữ nguyên lịch sử dự án.",
+    "difficulty_level": "medium",
+    "tags": ["Git", "Revert", "Commit History"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-009",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Một đồ thị (Graph) vô hướng mà không có chu trình (cycle) được gọi là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Directed Acyclic Graph (DAG)",
+      "B. Tree",
+      "C. Complete Graph",
+      "D. Weighted Graph"
+    ],
+    "correct_answer": "B",
+    "explanation": "Một cây (Tree) là một loại đồ thị vô hướng, liên thông và không có chu trình.",
+    "difficulty_level": "medium",
+    "tags": ["Data Structures", "Graph", "Tree"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-009",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Một phương thức được đánh dấu bằng `@classmethod` trong Python có thể truy cập thuộc tính nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ các thuộc tính thể hiện (instance attributes).",
+      "B. Chỉ các thuộc tính lớp (class attributes).",
+      "C. Cả thuộc tính thể hiện và thuộc tính lớp.",
+      "D. Không có thuộc tính nào."
+    ],
+    "correct_answer": "B",
+    "explanation": "Một class method nhận tham số đầu tiên là lớp (thường là `cls`) và có thể truy cập các thuộc tính lớp, nhưng không thể truy cập trực tiếp các thuộc tính thể hiện.",
+    "difficulty_level": "hard",
+    "tags": ["Python", "OOP", "Class Method"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Ưu điểm chính của việc sử dụng một trình gỡ lỗi (debugger) chuyên dụng so với việc chỉ sử dụng các câu lệnh `print` để gỡ lỗi là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trình gỡ lỗi luôn nhanh hơn.",
+      "B. Trình gỡ lỗi cho phép bạn thực thi code từng bước, kiểm tra giá trị biến tại bất kỳ điểm nào, và thay đổi luồng thực thi.",
+      "C. Trình gỡ lỗi tự động sửa lỗi cho bạn.",
+      "D. Trình gỡ lỗi không yêu cầu thay đổi code."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trình gỡ lỗi cung cấp khả năng kiểm soát mạnh mẽ hơn nhiều so với `print` statements, bao gồm khả năng đặt breakpoint, bước qua code, xem/thay đổi biến và thay đổi luồng thực thi.",
+    "difficulty_level": "medium",
+    "tags": ["Debugging", "Debugger"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Thư viện Python nào thường được sử dụng để thao tác mảng số học hiệu quả, đặc biệt quan trọng trong Machine Learning và AI?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Pandas",
+      "B. Matplotlib",
+      "C. NumPy",
+      "D. SciPy"
+    ],
+    "correct_answer": "C",
+    "explanation": "NumPy cung cấp các đối tượng mảng đa chiều hiệu quả và các công cụ để làm việc với chúng, được tối ưu hóa cao cho các phép toán số học và đại số tuyến tính.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Optimization", "NumPy", "ML"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Ý nghĩa của việc 'refactoring' code là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Viết lại toàn bộ ứng dụng từ đầu.",
+      "B. Thay đổi hành vi bên ngoài của code để sửa lỗi.",
+      "C. Cải thiện cấu trúc bên trong của code mà không thay đổi hành vi bên ngoài của nó.",
+      "D. Thêm các tính năng mới vào code hiện có."
+    ],
+    "correct_answer": "C",
+    "explanation": "Refactoring là quá trình tái cấu trúc code để làm cho nó dễ đọc, dễ hiểu và dễ bảo trì hơn, mà không làm thay đổi chức năng hiện có của nó.",
+    "difficulty_level": "medium",
+    "tags": ["Software Engineering", "Refactoring"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-013",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Đâu là cách chính xác để tạo một Set rỗng trong Python?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `{}`",
+      "B. `set()`",
+      "C. `new set()`",
+      "D. `Set([])`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Sử dụng `set()` để tạo một Set rỗng. `{}` tạo một dictionary rỗng.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Data Types", "Set"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-010",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Trong trường hợp xảy ra xung đột hợp nhất (merge conflict) trong Git, bạn cần làm gì để giải quyết nó?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xóa tất cả các file bị xung đột và bắt đầu lại.",
+      "B. Chạy `git commit --amend` để sửa lỗi.",
+      "C. Chỉnh sửa thủ công các file bị xung đột để chọn các thay đổi mong muốn, sau đó `git add` và `git commit`.",
+      "D. Sử dụng `git revert` để quay lại trước khi xung đột xảy ra."
+    ],
+    "correct_answer": "C",
+    "explanation": "Khi có xung đột hợp nhất, Git đánh dấu các phần bị xung đột trong file. Bạn phải chỉnh sửa chúng thủ công, sau đó `git add` các file đã sửa và `git commit` để hoàn tất việc hợp nhất.",
+    "difficulty_level": "medium",
+    "tags": ["Git", "Merge Conflict", "Resolution"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-010",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Thuật toán sắp xếp nào có độ phức tạp thời gian tốt nhất là $O(N \\log N)$ và độ phức tạp thời gian xấu nhất là $O(N \\log N)$?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bubble Sort",
+      "B. Selection Sort",
+      "C. Merge Sort",
+      "D. Quick Sort"
+    ],
+    "correct_answer": "C",
+    "explanation": "Merge Sort luôn có độ phức tạp thời gian $O(N \\log N)$ trong mọi trường hợp (tốt nhất, trung bình, xấu nhất), nhờ vào cách tiếp cận chia để trị (divide and conquer) và hợp nhất hiệu quả.",
+    "difficulty_level": "medium",
+    "tags": ["Algorithms", "Sorting", "Merge Sort", "Time Complexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-010",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Trong OOP, 'Interface Segregation Principle' (ISP) thuộc SOLID khuyến nghị điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các client không nên bị buộc phải phụ thuộc vào các giao diện mà họ không sử dụng.",
+      "B. Các lớp nên mở rộng (open for extension) nhưng đóng để sửa đổi (closed for modification).",
+      "C. Các lớp nên có một và chỉ một lý do để thay đổi.",
+      "D. Các module cấp cao không nên phụ thuộc vào các module cấp thấp."
+    ],
+    "correct_answer": "A",
+    "explanation": "ISP nói rằng nên chia các giao diện lớn thành các giao diện nhỏ hơn, cụ thể hơn để các lớp không phải triển khai các phương thức mà chúng không cần.",
+    "difficulty_level": "hard",
+    "tags": ["OOP", "SOLID", "ISP"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-014",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Điều gì sẽ xảy ra nếu bạn cố gắng thay đổi một phần tử trong một chuỗi (string) trong Python?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phần tử sẽ được thay đổi thành công.",
+      "B. Sẽ có lỗi `TypeError` vì chuỗi là immutable.",
+      "C. Python sẽ tự động tạo một chuỗi mới với thay đổi đó.",
+      "D. Giá trị của chuỗi sẽ được gán lại."
+    ],
+    "correct_answer": "B",
+    "explanation": "Chuỗi (string) trong Python là kiểu dữ liệu bất biến (immutable). Bạn không thể thay đổi từng phần tử của nó sau khi nó đã được tạo. Mọi thao tác 'thay đổi' chuỗi thực chất tạo ra một chuỗi mới.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "String", "Immutable", "TypeError"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-011",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh `git remote -v` dùng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hiển thị lịch sử commit chi tiết.",
+      "B. Liệt kê tất cả các remote repository đã cấu hình cùng với URL của chúng.",
+      "C. Xóa một remote repository.",
+      "D. Tải xuống các thay đổi từ remote mà không hợp nhất."
+    ],
+    "correct_answer": "B",
+    "explanation": "`git remote -v` (viết tắt của `--verbose`) hiển thị danh sách các remote đã cấu hình và địa chỉ URL tương ứng của chúng.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Remote", "Configuration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-011",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Khái niệm 'Big O notation' trong khoa học máy tính dùng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đo lường kích thước của một chương trình tính bằng số dòng code.",
+      "B. Mô tả độ phức tạp về thời gian hoặc không gian của một thuật toán khi kích thước đầu vào tăng lên.",
+      "C. Đánh giá chất lượng của code dựa trên khả năng đọc hiểu.",
+      "D. Xác định số lượng lỗi trong một chương trình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Big O notation là một ký hiệu toán học dùng để mô tả giới hạn trên của một hàm, thường được dùng để phân tích hiệu suất của thuật toán.",
+    "difficulty_level": "easy",
+    "tags": ["Algorithms", "Big O Notation", "Time Complexity", "Space Complexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-011",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Trong Python, từ khóa `super()` được dùng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để gọi một phương thức tĩnh (static method) từ lớp cha.",
+      "B. Để truy cập các phương thức và thuộc tính của lớp cha từ lớp con, đặc biệt trong trường hợp ghi đè phương thức.",
+      "C. Để định nghĩa một lớp trừu tượng.",
+      "D. Để buộc một lớp con phải triển khai một phương thức cụ thể."
+    ],
+    "correct_answer": "B",
+    "explanation": "`super()` cho phép truy cập tạm thời vào các phương thức và thuộc tính của lớp cha, rất hữu ích khi bạn muốn mở rộng hoặc gọi hành vi của lớp cha trong lớp con.",
+    "difficulty_level": "medium",
+    "tags": ["Python", "OOP", "Inheritance", "super()"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-015",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Loại lỗi nào xảy ra trong Python khi bạn cố gắng truy cập một chỉ mục không hợp lệ trong một list (ví dụ: `my_list[10]` khi list chỉ có 5 phần tử)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. ValueError",
+      "B. KeyError",
+      "C. IndexError",
+      "D. AttributeError"
+    ],
+    "correct_answer": "C",
+    "explanation": "`IndexError` xảy ra khi bạn cố gắng truy cập một chỉ mục (index) nằm ngoài phạm vi của một chuỗi, list, hoặc tuple.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Errors", "IndexError"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-012",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để xem lịch sử commit của repository?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git status",
+      "B. git diff",
+      "C. git show",
+      "D. git log"
+    ],
+    "correct_answer": "D",
+    "explanation": "`git log` hiển thị các commit trong lịch sử của nhánh hiện tại, bao gồm thông tin về tác giả, ngày và tin nhắn commit.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Log", "Commit History"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-012",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Trong thuật toán sắp xếp nổi bọt (Bubble Sort), các phần tử được so sánh và hoán đổi như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phần tử nhỏ nhất được chọn và đặt vào vị trí đầu tiên.",
+      "B. Các cặp phần tử liền kề được so sánh và hoán đổi nếu chúng không đúng thứ tự.",
+      "C. Mảng được chia thành hai nửa và sắp xếp riêng biệt.",
+      "D. Một phần tử được chọn và chèn vào vị trí đúng trong phần đã sắp xếp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Bubble Sort hoạt động bằng cách liên tục so sánh và hoán đổi các phần tử liền kề để đưa phần tử lớn nhất (hoặc nhỏ nhất) đến vị trí cuối cùng trong mỗi lần lặp.",
+    "difficulty_level": "easy",
+    "tags": ["Algorithms", "Sorting", "Bubble Sort"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-012",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Một lớp được gọi là 'trừu tượng' (abstract class) khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó không có bất kỳ phương thức nào.",
+      "B. Nó chứa ít nhất một phương thức trừu tượng (abstract method) và không thể được khởi tạo trực tiếp.",
+      "C. Nó được khai báo bằng từ khóa `private`.",
+      "D. Nó chỉ chứa các biến lớp (class variables)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Một lớp trừu tượng được thiết kế để trở thành lớp cha cho các lớp khác, không thể tạo đối tượng trực tiếp từ nó và thường chứa các phương thức trừu tượng phải được lớp con triển khai.",
+    "difficulty_level": "medium",
+    "tags": ["OOP", "Abstract Class"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-016",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Đâu là cách chính xác để import toàn bộ module `math` trong Python và sau đó gọi hàm `sqrt` từ nó?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `import math; math.sqrt(16)`",
+      "B. `from math import *; sqrt(16)`",
+      "C. `include math; math.sqrt(16)`",
+      "D. `use math; math.sqrt(16)`"
+    ],
+    "correct_answer": "A",
+    "explanation": "Câu lệnh `import math` sẽ import toàn bộ module. Để truy cập các hàm hoặc biến trong module, bạn sử dụng `math.function_name`.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Modules", "Import"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-013",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để tạo một bản sao cục bộ (local copy) của một repository từ xa?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git init",
+      "B. git fork",
+      "C. git clone",
+      "D. git pull"
+    ],
+    "correct_answer": "C",
+    "explanation": "`git clone` tạo một bản sao đầy đủ của repository từ xa, bao gồm tất cả các file, lịch sử commit và nhánh.",
+    "difficulty_level": "easy",
+    "tags": ["Git", "Clone", "Repository"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-013",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Trong thuật toán sắp xếp chọn (Selection Sort), ở mỗi lần lặp, điều gì xảy ra?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phần tử đầu tiên được so sánh với tất cả các phần tử khác.",
+      "B. Phần tử lớn nhất được đưa về cuối mảng.",
+      "C. Phần tử nhỏ nhất trong phần chưa sắp xếp được tìm thấy và hoán đổi với phần tử ở vị trí đầu tiên của phần chưa sắp xếp.",
+      "D. Các cặp phần tử liền kề được hoán đổi nếu sai thứ tự."
+    ],
+    "correct_answer": "C",
+    "explanation": "Selection Sort hoạt động bằng cách tìm phần tử nhỏ nhất từ phần chưa sắp xếp của mảng và đặt nó vào vị trí đúng của nó trong phần đã sắp xếp.",
+    "difficulty_level": "medium",
+    "tags": ["Algorithms", "Sorting", "Selection Sort"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-013",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Trong Python, một phương thức được đánh dấu bằng `@staticmethod` không nhận tham số đặc biệt nào (như `self` hoặc `cls`). Mục đích của nó là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để truy cập các thuộc tính thể hiện.",
+      "B. Để truy cập các thuộc tính lớp.",
+      "C. Để thực hiện một chức năng không phụ thuộc vào trạng thái của thể hiện hoặc lớp, hoạt động như một hàm thông thường nhưng nằm trong không gian tên của lớp.",
+      "D. Để buộc các lớp con phải triển khai một phương thức."
+    ],
+    "correct_answer": "C",
+    "explanation": "Static method là các hàm thuộc về một lớp nhưng không yêu cầu thể hiện của lớp để gọi và không nhận tham chiếu đến thể hiện (`self`) hoặc lớp (`cls`). Chúng hoạt động như các hàm độc lập được nhóm lại với lớp.",
+    "difficulty_level": "medium",
+    "tags": ["Python", "OOP", "Static Method"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DBUG-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Testing and Debugging",
+    "question_text": "Khái niệm 'code coverage' trong kiểm thử phần mềm đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số lượng lập trình viên làm việc trên một dự án.",
+      "B. Tỷ lệ phần trăm code của ứng dụng được thực thi bởi bộ kiểm thử.",
+      "C. Thời gian cần thiết để chạy tất cả các bài kiểm tra.",
+      "D. Số lượng lỗi được tìm thấy trong code."
+    ],
+    "correct_answer": "B",
+    "explanation": "Code coverage là một thước đo cho biết bao nhiêu phần của code đã được thực thi khi chạy các bài kiểm thử.",
+    "difficulty_level": "medium",
+    "tags": ["Testing", "Code Coverage"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OPT-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Code Optimization",
+    "question_text": "Trong Python, khi nào bạn nên cân nhắc sử dụng `__slots__` trong định nghĩa lớp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để thêm thuộc tính động vào đối tượng.",
+      "B. Khi bạn cần tạo một lượng lớn thể hiện của lớp và muốn giảm mức tiêu thụ bộ nhớ.",
+      "C. Để tạo các thuộc tính private thực sự.",
+      "D. Khi bạn muốn lớp của mình không thể kế thừa được."
+    ],
+    "correct_answer": "B",
+    "explanation": "`__slots__` được sử dụng để tối ưu hóa bộ nhớ bằng cách ngăn Python tạo `__dict__` cho mỗi thể hiện, thay vào đó chỉ cho phép các thuộc tính được liệt kê trong `__slots__`.",
+    "difficulty_level": "hard",
+    "tags": ["Python", "Optimization", "Memory", "__slots__"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-SE-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Software Engineering Principles",
+    "question_text": "Tại sao việc duy trì khả năng đọc code (code readability) lại quan trọng trong các dự án phần mềm?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Code dễ đọc chạy nhanh hơn.",
+      "B. Code dễ đọc giúp phát hiện và sửa lỗi nhanh hơn, và cho phép các thành viên trong nhóm hiểu và cộng tác hiệu quả hơn.",
+      "C. Code dễ đọc yêu cầu ít bộ nhớ hơn.",
+      "D. Code dễ đọc có ít lỗi hơn ngay từ đầu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Code dễ đọc là nền tảng cho việc bảo trì, gỡ lỗi và cộng tác nhóm hiệu quả, vì nó giúp các nhà phát triển nhanh chóng hiểu được logic và mục đích của code.",
+    "difficulty_level": "easy",
+    "tags": ["Software Engineering", "Readability", "Maintenance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-017",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Đâu là cách chính xác để thêm một phần tử vào cuối một list trong Python?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `my_list.add(item)`",
+      "B. `my_list.insert(item)`",
+      "C. `my_list.append(item)`",
+      "D. `my_list.extend(item)`"
+    ],
+    "correct_answer": "C",
+    "explanation": "Phương thức `append()` được sử dụng để thêm một phần tử duy nhất vào cuối list.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "List", "Methods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-014",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Khi bạn đang làm việc trên một nhánh và muốn tạm thời lưu các thay đổi của mình mà không commit chúng, lệnh Git nào nên dùng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git stash",
+      "B. git save",
+      "C. git hold",
+      "D. git cache"
+    ],
+    "correct_answer": "A",
+    "explanation": "`git stash` tạm thời lưu trữ các thay đổi chưa commit trong thư mục làm việc và staging area, cho phép bạn chuyển đổi nhánh hoặc làm việc trên thứ khác.",
+    "difficulty_level": "medium",
+    "tags": ["Git", "Stash", "Work-in-progress"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-014",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Độ phức tạp không gian (space complexity) của thuật toán sắp xếp hợp nhất (Merge Sort) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. O(1)",
+      "B. O(log N)",
+      "C. O(N)",
+      "D. O(N^2)"
+    ],
+    "correct_answer": "C",
+    "explanation": "Merge Sort yêu cầu không gian phụ trợ $O(N)$ để lưu trữ các mảng con trong quá trình hợp nhất.",
+    "difficulty_level": "medium",
+    "tags": ["Algorithms", "Sorting", "Merge Sort", "Space Complexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-014",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Trong OOP, khái niệm 'composition' (tổng hợp/kết hợp) đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một lớp có thể được tạo thành từ nhiều đối tượng của các lớp khác.",
+      "B. Một lớp kế thừa từ nhiều lớp cha.",
+      "C. Một lớp có nhiều constructor.",
+      "D. Một đối tượng có thể thay đổi hành vi của nó tại thời gian chạy."
+    ],
+    "correct_answer": "A",
+    "explanation": "Composition là một nguyên tắc thiết kế nơi một lớp chứa các đối tượng của các lớp khác làm thành phần của nó, thể hiện mối quan hệ 'has-a' (có một).",
+    "difficulty_level": "hard",
+    "tags": ["OOP", "Composition", "Design Patterns"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-PY-018",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Python Fundamentals",
+    "question_text": "Kết quả của đoạn code Python sau là gì: `print('Hello' + ' ' + 'World!')`?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. 'HelloWorld!'",
+      "B. 'Hello World!'",
+      "C. 'Hello' 'World!'",
+      "D. Lỗi cú pháp"
+    ],
+    "correct_answer": "B",
+    "explanation": "Toán tử `+` được dùng để nối chuỗi (string concatenation) trong Python. Kết quả sẽ là 'Hello World!'.",
+    "difficulty_level": "easy",
+    "tags": ["Python", "Strings", "Operators"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-GIT-015",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Version Control (Git)",
+    "question_text": "Lệnh Git nào được dùng để hủy bỏ các thay đổi chưa staged trong thư mục làm việc và quay về trạng thái của commit gần nhất?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. git revert HEAD",
+      "B. git reset --hard HEAD",
+      "C. git clean -f",
+      "D. git checkout ."
+    ],
+    "correct_answer": "D",
+    "explanation": "`git checkout .` hoặc `git restore .` (Git 2.23+) sẽ khôi phục tất cả các file trong thư mục làm việc về trạng thái của HEAD (commit cuối cùng), hủy bỏ mọi thay đổi chưa staged.",
+    "difficulty_level": "medium",
+    "tags": ["Git", "Revert", "Working Directory"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-DSA-015",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Data Structures and Algorithms",
+    "question_text": "Độ phức tạp thời gian của việc tìm kiếm một phần tử trong một danh sách liên kết đơn (singly linked list) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. O(1)",
+      "B. O(log N)",
+      "C. O(N)",
+      "D. O(N log N)"
+    ],
+    "correct_answer": "C",
+    "explanation": "Để tìm kiếm một phần tử trong danh sách liên kết đơn, bạn có thể phải duyệt qua tất cả các phần tử trong trường hợp xấu nhất, dẫn đến độ phức tạp $O(N)$.",
+    "difficulty_level": "easy",
+    "tags": ["Data Structures", "Linked List", "Time Complexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "PROG-OOP-015",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Programming",
+    "subskill_name": "Object-Oriented Programming",
+    "question_text": "Nguyên tắc 'Dependency Inversion Principle' (DIP) trong SOLID đề cao điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các module cấp cao nên phụ thuộc vào các module cấp thấp.",
+      "B. Các module cấp cao và cấp thấp nên phụ thuộc vào sự trừu tượng, không phải vào các triển khai cụ thể.",
+      "C. Tránh sử dụng các thư viện của bên thứ ba.",
+      "D. Các đối tượng nên được khởi tạo bên trong lớp mà chúng được sử dụng."
+    ],
+    "correct_answer": "B",
+    "explanation": "DIP nói rằng các module cấp cao (high-level modules) không nên phụ thuộc vào các module cấp thấp (low-level modules). Cả hai nên phụ thuộc vào các abstraction (trừu tượng). Các abstraction không nên phụ thuộc vào các chi tiết. Các chi tiết nên phụ thuộc vào các abstraction.",
+    "difficulty_level": "hard",
+    "tags": ["OOP", "SOLID", "DIP"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Mục tiêu chính của Linear Regression là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại dữ liệu thành các nhóm riêng biệt.",
+      "B. Tìm kiếm mối quan hệ tuyến tính giữa biến độc lập và biến phụ thuộc để dự đoán giá trị liên tục.",
+      "C. Giảm chiều dữ liệu.",
+      "D. Phát hiện các điểm bất thường (anomalies) trong dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Linear Regression (Hồi quy tuyến tính) là một thuật toán học có giám sát được sử dụng để dự đoán một biến phụ thuộc liên tục dựa trên một hoặc nhiều biến độc lập, giả định mối quan hệ tuyến tính giữa chúng.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Linear Regression", "Regression"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Hàm mất mát (loss function) phổ biến nhất được sử dụng trong Linear Regression là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Cross-Entropy Loss",
+      "B. Mean Squared Error (MSE)",
+      "C. Hinge Loss",
+      "D. Log Loss"
+    ],
+    "correct_answer": "B",
+    "explanation": "Mean Squared Error (MSE) tính toán trung bình bình phương của sự khác biệt giữa giá trị dự đoán và giá trị thực tế, là một hàm mất mát chuẩn cho các bài toán hồi quy.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Linear Regression", "Loss Function", "MSE"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Random Forest là một ví dụ của thuật toán học máy dựa trên kỹ thuật nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Single Decision Tree",
+      "B. Ensemble Learning (Bagging)",
+      "C. Boosting",
+      "D. Clustering"
+    ],
+    "correct_answer": "B",
+    "explanation": "Random Forest là một thuật toán học kết hợp (ensemble learning) sử dụng kỹ thuật Bagging (Bootstrap Aggregating), trong đó nhiều cây quyết định được huấn luyện độc lập và kết quả của chúng được tổng hợp lại.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Random Forests", "Ensemble Learning", "Bagging"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Hai yếu tố chính tạo nên sự 'ngẫu nhiên' trong thuật toán Random Forest là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ngẫu nhiên hóa thứ tự dữ liệu và ngẫu nhiên hóa số lượng cây.",
+      "B. Lấy mẫu ngẫu nhiên có thay thế (bootstrapping) từ dữ liệu huấn luyện và lựa chọn ngẫu nhiên các tập con thuộc tính (features) tại mỗi node khi xây dựng cây.",
+      "C. Ngẫu nhiên hóa trọng số ban đầu và ngẫu nhiên hóa tốc độ học.",
+      "D. Ngẫu nhiên hóa các siêu tham số và ngẫu nhiên hóa hàm mất mát."
+    ],
+    "correct_answer": "B",
+    "explanation": "Random Forest tạo sự ngẫu nhiên bằng cách lấy mẫu bootstrapping dữ liệu (mỗi cây huấn luyện trên một tập con dữ liệu khác nhau) và chọn một tập con ngẫu nhiên các thuộc tính để xem xét tại mỗi lần phân chia node.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Random Forests", "Randomness", "Bootstrapping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Logistic Regression được sử dụng chủ yếu cho loại bài toán nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hồi quy tuyến tính (Linear Regression)",
+      "B. Phân loại nhị phân (Binary Classification)",
+      "C. Gom nhóm (Clustering)",
+      "D. Giảm chiều (Dimensionality Reduction)"
+    ],
+    "correct_answer": "B",
+    "explanation": "Logistic Regression là một thuật toán phân loại, thường được sử dụng cho các bài toán phân loại nhị phân (ví dụ: có/không, đúng/sai, 0/1).",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Logistic Regression", "Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Hàm kích hoạt (activation function) nào được Logistic Regression sử dụng để chuyển đổi đầu ra thành xác suất?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. ReLU",
+      "B. Tanh",
+      "C. Sigmoid",
+      "D. Softmax"
+    ],
+    "correct_answer": "C",
+    "explanation": "Hàm Sigmoid (còn gọi là hàm logistic function) chuyển đổi một số thực bất kỳ thành một giá trị trong khoảng [0, 1], thích hợp để biểu diễn xác suất trong phân loại nhị phân.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Logistic Regression", "Activation Function", "Sigmoid"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "Gradient Boosting là một kỹ thuật ensemble learning hoạt động bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện nhiều mô hình độc lập và lấy trung bình các dự đoán của chúng.",
+      "B. Xây dựng một chuỗi các mô hình yếu, mỗi mô hình cố gắng sửa chữa lỗi của mô hình trước đó.",
+      "C. Tạo ra một mô hình duy nhất từ toàn bộ dữ liệu.",
+      "D. Chia dữ liệu thành các cụm và xây dựng mô hình cho từng cụm."
+    ],
+    "correct_answer": "B",
+    "explanation": "Gradient Boosting xây dựng mô hình một cách tuần tự, nơi mỗi mô hình mới được thêm vào để bù đắp những thiếu sót (residual errors) của các mô hình đã xây dựng trước đó.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Gradient Boosting", "Ensemble Learning", "Boosting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-008",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "Trong các thư viện Gradient Boosting như XGBoost, LightGBM, và CatBoost, đâu là loại mô hình cơ sở (base estimator) thường được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Linear Regression",
+      "B. Support Vector Machine",
+      "C. Decision Trees (thường là 'weak learners')",
+      "D. Neural Networks"
+    ],
+    "correct_answer": "C",
+    "explanation": "Các thuật toán Gradient Boosting thường sử dụng các cây quyết định 'yếu' (weak learners) làm mô hình cơ sở, học từ các sai số của các cây trước đó.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Gradient Boosting", "XGBoost", "LightGBM", "CatBoost"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-009",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Mục tiêu chính của Support Vector Machine (SVM) trong bài toán phân loại là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tìm một siêu phẳng (hyperplane) có khoảng cách lớn nhất (maximum margin) giữa các lớp dữ liệu.",
+      "B. Dự đoán giá trị liên tục.",
+      "C. Gom nhóm các điểm dữ liệu tương tự nhau.",
+      "D. Xây dựng một cây quyết định để phân loại."
+    ],
+    "correct_answer": "A",
+    "explanation": "SVM tìm kiếm siêu phẳng tối ưu có khoảng cách lớn nhất (maximum margin) từ các điểm dữ liệu gần nhất của mỗi lớp (support vectors), giúp tối ưu hóa khả năng tổng quát hóa.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "SVM", "Classification", "Hyperplane"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-010",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Kỹ thuật 'kernel trick' trong SVM được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm số lượng Support Vectors.",
+      "B. Chuyển đổi dữ liệu từ không gian đầu vào sang không gian có chiều cao hơn để tìm một siêu phẳng phân tách tuyến tính.",
+      "C. Tăng tốc độ hội tụ của thuật toán.",
+      "D. Xử lý dữ liệu bị thiếu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Kernel trick cho phép SVM hoạt động hiệu quả trong không gian có chiều cao hơn mà không cần tính toán các tọa độ một cách rõ ràng, giúp tìm siêu phẳng phân tách tuyến tính cho dữ liệu không phân tách tuyến tính trong không gian gốc.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "SVM", "Kernel Trick"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-011",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Trong bài toán phân loại nhị phân, số lượng các trường hợp dương tính thực sự được phân loại đúng là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. True Negative (TN)",
+      "B. False Positive (FP)",
+      "C. True Positive (TP)",
+      "D. False Negative (FN)"
+    ],
+    "correct_answer": "C",
+    "explanation": "True Positive (TP) là số lượng các trường hợp dương tính thực sự được mô hình dự đoán là dương tính.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Model Evaluation", "Metrics", "TP"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-012",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Chỉ số đánh giá nào sau đây được dùng để đo lường tỷ lệ các dự đoán dương tính của mô hình thực sự đúng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Recall (Sensitivity)",
+      "B. F1-Score",
+      "C. Precision",
+      "D. Accuracy"
+    ],
+    "correct_answer": "C",
+    "explanation": "Precision (độ chính xác) được tính bằng $TP / (TP + FP)$, cho biết tỷ lệ các dự đoán dương tính thực sự là dương tính.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Model Evaluation", "Precision", "Metrics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-013",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Decision Trees",
+    "question_text": "Một lợi thế chính của Decision Trees so với nhiều thuật toán học máy khác là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng luôn đạt được độ chính xác cao nhất.",
+      "B. Chúng dễ hiểu và diễn giải (interpretable).",
+      "C. Chúng miễn nhiễm với vấn đề overfitting.",
+      "D. Chúng yêu cầu ít dữ liệu huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Decision Trees tạo ra một cấu trúc giống cây, dễ dàng hình dung và giải thích cách mô hình đưa ra quyết định.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Decision Trees", "Interpretability"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-014",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Decision Trees",
+    "question_text": "Kỹ thuật nào được sử dụng để ngăn chặn overfitting trong Decision Trees?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng chiều sâu cây (depth).",
+      "B. Giảm số lượng mẫu tối thiểu cho một node lá (min_samples_leaf).",
+      "C. Cắt tỉa cây (Pruning) hoặc giới hạn độ sâu/kích thước cây.",
+      "D. Tăng số lượng thuộc tính được xem xét tại mỗi lần phân chia."
+    ],
+    "correct_answer": "C",
+    "explanation": "Pruning là quá trình loại bỏ các nhánh hoặc node không cần thiết từ cây để giảm độ phức tạp và cải thiện khả năng tổng quát hóa.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Decision Trees", "Overfitting", "Pruning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-015",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Giả định cơ bản của Linear Regression về mối quan hệ giữa biến độc lập và biến phụ thuộc là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mối quan hệ logarit.",
+      "B. Mối quan hệ phi tuyến tính.",
+      "C. Mối quan hệ tuyến tính.",
+      "D. Mối quan hệ hàm mũ."
+    ],
+    "correct_answer": "C",
+    "explanation": "Linear Regression, đúng như tên gọi, giả định rằng có một mối quan hệ tuyến tính giữa các biến độc lập và biến phụ thuộc.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Linear Regression", "Assumptions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-016",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Hiện tượng 'multicollinearity' trong Linear Regression là gì và nó ảnh hưởng thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi dữ liệu quá nhiều, làm chậm quá trình huấn luyện.",
+      "B. Khi các biến độc lập có tương quan cao với nhau, gây ra ước lượng không ổn định của các hệ số hồi quy.",
+      "C. Khi mô hình quá đơn giản để nắm bắt mối quan hệ của dữ liệu.",
+      "D. Khi có quá nhiều outliers trong dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Multicollinearity xảy ra khi hai hoặc nhiều biến độc lập trong mô hình hồi quy có tương quan cao với nhau, làm cho việc xác định tác động riêng lẻ của từng biến lên biến phụ thuộc trở nên khó khăn và dẫn đến hệ số hồi quy không đáng tin cậy.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Linear Regression", "Multicollinearity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-017",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Ưu điểm của Random Forest so với một cây quyết định đơn lẻ là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ít bị overfitting hơn và thường có độ chính xác cao hơn.",
+      "B. Luôn nhanh hơn khi huấn luyện.",
+      "C. Dễ diễn giải hơn nhiều.",
+      "D. Có thể xử lý các bài toán hồi quy và phân loại mà không cần thay đổi thuật toán cốt lõi."
+    ],
+    "correct_answer": "A",
+    "explanation": "Bằng cách kết hợp nhiều cây và sử dụng ngẫu nhiên, Random Forest giảm thiểu rủi ro overfitting của từng cây đơn lẻ và thường đạt được hiệu suất tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Random Forests", "Overfitting", "Performance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-018",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Random Forest tính toán dự đoán cuối cùng cho bài toán phân loại như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Lấy trung bình dự đoán của tất cả các cây.",
+      "B. Dựa vào dự đoán của cây đầu tiên.",
+      "C. Sử dụng một cây duy nhất có hiệu suất tốt nhất.",
+      "D. Thực hiện bỏ phiếu đa số (majority vote) từ các dự đoán của từng cây."
+    ],
+    "correct_answer": "D",
+    "explanation": "Đối với bài toán phân loại, Random Forest tổng hợp kết quả của các cây con bằng cách lấy phiếu bầu đa số từ dự đoán của từng cây.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Random Forests", "Classification", "Ensemble"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-019",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Logistic Regression có thể được sử dụng cho phân loại đa lớp (multi-class classification) không? Nếu có, bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không, nó chỉ dành cho phân loại nhị phân.",
+      "B. Có, bằng cách sử dụng kỹ thuật One-vs-Rest (OvR) hoặc multinomial Logistic Regression.",
+      "C. Có, bằng cách thêm nhiều lớp ẩn vào mô hình.",
+      "D. Có, nếu sử dụng hàm kích hoạt Softmax thay vì Sigmoid."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mặc dù Logistic Regression ban đầu là mô hình phân loại nhị phân, nó có thể được mở rộng cho đa lớp thông qua các chiến lược như One-vs-Rest (huấn luyện một mô hình nhị phân cho mỗi lớp) hoặc sử dụng trực tiếp hồi quy logistic đa thức (multinomial Logistic Regression).",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Logistic Regression", "Multi-class Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-020",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Hàm mất mát nào thường được sử dụng cho Logistic Regression?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Absolute Error (MAE)",
+      "B. Huber Loss",
+      "C. Binary Cross-Entropy (Log Loss)",
+      "D. Squared Error"
+    ],
+    "correct_answer": "C",
+    "explanation": "Binary Cross-Entropy (còn gọi là Log Loss) là hàm mất mát tiêu chuẩn cho các bài toán phân loại nhị phân sử dụng Logistic Regression, vì nó đo lường hiệu quả của mô hình phân loại có đầu ra xác suất.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Logistic Regression", "Loss Function", "Cross-Entropy"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-021",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "Một lợi thế của Boosting so với Bagging (như Random Forest) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Boosting luôn đơn giản hơn để triển khai.",
+      "B. Boosting thường đạt được hiệu suất cao hơn, đặc biệt với dữ liệu phức tạp.",
+      "C. Boosting ít bị overfitting hơn.",
+      "D. Boosting có thể dễ dàng song song hóa quá trình huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Boosting thường có khả năng đạt được hiệu suất cao hơn Random Forest vì nó học từ các lỗi của các mô hình trước đó và tập trung vào các điểm dữ liệu khó hơn. Tuy nhiên, nó cũng dễ bị overfitting hơn nếu không được điều chỉnh đúng cách.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Gradient Boosting", "Boosting", "Bagging"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-022",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "Thuộc tính quan trọng của CatBoost là gì, đặc biệt trong việc xử lý các thuộc tính phân loại (categorical features)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó yêu cầu mã hóa one-hot cho tất cả các thuộc tính phân loại.",
+      "B. Nó có khả năng xử lý các thuộc tính phân loại một cách tự động và hiệu quả, thường mà không cần mã hóa trước.",
+      "C. Nó chỉ hỗ trợ các thuộc tính số.",
+      "D. Nó sử dụng một phương pháp gom nhóm đặc biệt cho các thuộc tính phân loại."
+    ],
+    "correct_answer": "B",
+    "explanation": "CatBoost nổi bật với khả năng xử lý các thuộc tính phân loại một cách tự nhiên và hiệu quả, giảm thiểu nhu cầu tiền xử lý thủ công như mã hóa one-hot.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "CatBoost", "Categorical Features"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-023",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Thuật ngữ 'Support Vectors' trong SVM đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tất cả các điểm dữ liệu được sử dụng để huấn luyện mô hình.",
+      "B. Các điểm dữ liệu nằm gần nhất với siêu phẳng phân tách và ảnh hưởng trực tiếp đến vị trí của siêu phẳng đó.",
+      "C. Các điểm dữ liệu bị phân loại sai.",
+      "D. Các thuộc tính quan trọng nhất trong tập dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Support Vectors là các điểm dữ liệu 'quan trọng' nhất, nằm trên hoặc gần rìa (margin) của các lớp, quyết định vị trí của siêu phẳng phân tách tối ưu.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "SVM", "Support Vectors"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-024",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Khi nào việc sử dụng SVM với một kernel phi tuyến tính (ví dụ: Radial Basis Function - RBF kernel) trở nên cần thiết?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi dữ liệu có thể được phân tách tuyến tính.",
+      "B. Khi số lượng thuộc tính rất lớn.",
+      "C. Khi dữ liệu không thể được phân tách tuyến tính trong không gian ban đầu.",
+      "D. Khi mô hình cần huấn luyện nhanh chóng."
+    ],
+    "correct_answer": "C",
+    "explanation": "Kernel phi tuyến tính cho phép SVM ánh xạ dữ liệu vào một không gian có chiều cao hơn để tìm một siêu phẳng phân tách, hữu ích khi dữ liệu không thể phân tách tuyến tính trong không gian gốc.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "SVM", "Kernel", "Non-linear"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-025",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Chỉ số nào sau đây là giá trị trung bình có trọng số của Precision và Recall, thường được sử dụng khi có sự mất cân bằng lớp (class imbalance)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Accuracy",
+      "B. AUC-ROC",
+      "C. F1-Score",
+      "D. Mean Absolute Error"
+    ],
+    "correct_answer": "C",
+    "explanation": "F1-Score là harmonic mean của Precision và Recall, cung cấp một thước đo cân bằng hơn về hiệu suất của mô hình, đặc biệt hữu ích khi các lớp có số lượng mẫu khác nhau đáng kể.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Model Evaluation", "F1-Score", "Class Imbalance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-026",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Đường cong ROC (Receiver Operating Characteristic) và giá trị AUC (Area Under the Curve) được sử dụng để đánh giá điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hiệu suất của mô hình hồi quy.",
+      "B. Khả năng của mô hình phân loại trong việc phân biệt giữa các lớp, đặc biệt khi thay đổi ngưỡng phân loại.",
+      "C. Độ phức tạp của mô hình.",
+      "D. Tốc độ huấn luyện của mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đường cong ROC biểu diễn True Positive Rate (Sensitivity) so với False Positive Rate ở các ngưỡng phân loại khác nhau, và AUC là diện tích dưới đường cong, đánh giá khả năng tổng thể của mô hình trong việc phân biệt các lớp.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Model Evaluation", "ROC", "AUC", "Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-027",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Decision Trees",
+    "question_text": "Mục tiêu của một thuật toán Decision Tree là tìm kiếm các quy tắc phân chia (splitting rules) để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tối đa hóa độ sâu của cây.",
+      "B. Tạo ra các node lá có sự tinh khiết (purity) cao nhất (các mẫu thuộc cùng một lớp).",
+      "C. Giảm thiểu số lượng node trong cây.",
+      "D. Đảm bảo mỗi node chỉ chứa một mẫu dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Decision Tree tìm kiếm các phân chia tốt nhất để tạo ra các node con ngày càng 'tinh khiết' hơn, nghĩa là các mẫu trong mỗi node con ngày càng thuộc cùng một lớp.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Decision Trees", "Splitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-028",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Decision Trees",
+    "question_text": "Trong Decision Trees, 'Information Gain' và 'Gini Impurity' là các tiêu chí được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đánh giá độ chính xác cuối cùng của mô hình.",
+      "B. Xác định cách tốt nhất để phân chia (split) một node.",
+      "C. Xử lý các giá trị bị thiếu trong dữ liệu.",
+      "D. Cắt tỉa cây sau khi huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Information Gain và Gini Impurity là các thước đo được sử dụng để đánh giá 'chất lượng' của một phân chia tiềm năng tại mỗi node, giúp thuật toán chọn thuộc tính và ngưỡng phân chia tốt nhất.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Decision Trees", "Information Gain", "Gini Impurity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-029",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Sự khác biệt chính giữa Simple Linear Regression và Multiple Linear Regression là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Simple Linear Regression dùng cho dữ liệu phân loại, Multiple Linear Regression dùng cho dữ liệu liên tục.",
+      "B. Simple Linear Regression có một biến độc lập, Multiple Linear Regression có nhiều biến độc lập.",
+      "C. Simple Linear Regression chỉ có thể dự đoán một biến, Multiple Linear Regression có thể dự đoán nhiều biến.",
+      "D. Simple Linear Regression yêu cầu ít dữ liệu hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Simple Linear Regression mô hình hóa mối quan hệ giữa một biến độc lập và một biến phụ thuộc. Multiple Linear Regression mở rộng điều này để bao gồm nhiều biến độc lập.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Linear Regression", "Simple", "Multiple"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-030",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Regularization (Chính quy hóa) trong Linear Regression (ví dụ: Ridge, Lasso) được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đảm bảo mô hình luôn hội tụ.",
+      "B. Giảm thiểu lỗi huấn luyện (training error).",
+      "C. Ngăn chặn overfitting bằng cách thêm một hình phạt cho độ lớn của các hệ số hồi quy.",
+      "D. Tăng độ phức tạp của mô hình để nắm bắt các mối quan hệ phi tuyến tính."
+    ],
+    "correct_answer": "C",
+    "explanation": "Regularization thêm một thuật ngữ hình phạt vào hàm mất mát để hạn chế độ lớn của các hệ số, giúp giảm overfitting và cải thiện khả năng tổng quát hóa của mô hình.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Linear Regression", "Regularization", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-031",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Khi nào thì một mô hình Random Forest có thể gặp vấn đề về overfitting?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi số lượng cây quá ít.",
+      "B. Khi `max_depth` của các cây riêng lẻ quá nhỏ.",
+      "C. Khi số lượng cây quá lớn và các cây không đủ đa dạng, hoặc khi `max_features` quá cao.",
+      "D. Random Forest không bao giờ bị overfitting."
+    ],
+    "correct_answer": "C",
+    "explanation": "Mặc dù Random Forest có khả năng chống overfitting tốt hơn so với một cây đơn lẻ, nhưng vẫn có thể xảy ra khi số lượng cây quá lớn (làm cho mô hình quá cụ thể với tập huấn luyện) hoặc khi các tham số như `max_features` không được điều chỉnh đúng cách, làm giảm sự đa dạng giữa các cây.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Random Forests", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-032",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Độ quan trọng của thuộc tính (Feature Importance) trong Random Forest được tính toán dựa trên tiêu chí nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số lần một thuộc tính xuất hiện trong dữ liệu.",
+      "B. Mức độ giảm bất đẳng thức (gini impurity) hoặc tăng thông tin (information gain) mà thuộc tính đó mang lại khi được dùng để phân chia các node trong tất cả các cây.",
+      "C. Tương quan của thuộc tính với biến mục tiêu.",
+      "D. Số lượng outliers mà thuộc tính đó có."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong Random Forest, độ quan trọng của thuộc tính được đo bằng cách tính toán mức độ mà mỗi thuộc tính đóng góp vào việc giảm bất đẳng thức Gini hoặc tăng Information Gain trên tất cả các cây trong rừng.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Random Forests", "Feature Importance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-033",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Logistic Regression là một mô hình tuyến tính hay phi tuyến tính?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phi tuyến tính hoàn toàn.",
+      "B. Tuyến tính trong mối quan hệ giữa các đầu vào và log-odds của xác suất, nhưng phi tuyến tính ở đầu ra xác suất.",
+      "C. Tuyến tính hoàn toàn.",
+      "D. Tùy thuộc vào hàm kích hoạt được sử dụng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Logistic Regression là tuyến tính trong log-odds (logarithm của tỷ lệ cược) của xác suất lớp, nhưng đầu ra xác suất thực tế qua hàm sigmoid là phi tuyến tính.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Logistic Regression", "Linearity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-034",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "Điểm khác biệt chính giữa LightGBM và XGBoost về cách xử lý cây là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. LightGBM xây dựng cây theo chiều ngang (level-wise), XGBoost xây dựng theo chiều sâu (leaf-wise).",
+      "B. LightGBM xây dựng cây theo chiều sâu (leaf-wise), XGBoost xây dựng theo chiều ngang (level-wise).",
+      "C. LightGBM chỉ hỗ trợ phân loại, XGBoost hỗ trợ hồi quy.",
+      "D. LightGBM yêu cầu GPU, XGBoost không yêu cầu."
+    ],
+    "correct_answer": "B",
+    "explanation": "LightGBM sử dụng chiến lược phát triển cây 'leaf-wise' (lấy lá theo định hướng tốt nhất), trong khi XGBoost ban đầu sử dụng 'level-wise' (xây dựng cây theo từng cấp độ). Chiến lược 'leaf-wise' của LightGBM thường dẫn đến huấn luyện nhanh hơn cho các dataset lớn.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Gradient Boosting", "LightGBM", "XGBoost"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-035",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Tham số 'C' trong SVM có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước của kernel được sử dụng.",
+      "B. Độ lớn của khoảng cách (margin) giữa các lớp.",
+      "C. Mức độ hình phạt cho các điểm dữ liệu bị phân loại sai hoặc nằm trong lề (margin).",
+      "D. Tốc độ học của thuật toán."
+    ],
+    "correct_answer": "C",
+    "explanation": "Tham số `C` trong SVM kiểm soát sự đánh đổi giữa việc phân loại đúng các điểm dữ liệu huấn luyện và việc có một khoảng cách phân tách lớn. Giá trị C cao hơn có nghĩa là hình phạt lớn hơn cho các lỗi phân loại.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "SVM", "Hyperparameters", "C-parameter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-036",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Khi nào thì Accuracy (độ chính xác) có thể là một chỉ số đánh giá gây hiểu lầm cho mô hình phân loại?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi số lượng lớp quá lớn.",
+      "B. Khi dữ liệu được phân bố đều giữa các lớp.",
+      "C. Khi có sự mất cân bằng lớp (class imbalance) nghiêm trọng.",
+      "D. Khi mô hình là Linear Regression."
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong trường hợp mất cân bằng lớp, một mô hình có thể đạt độ chính xác cao bằng cách đơn giản là dự đoán lớp đa số cho tất cả các trường hợp, trong khi thực tế lại hoàn toàn thất bại trong việc xác định lớp thiểu số.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Model Evaluation", "Accuracy", "Class Imbalance"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-037",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Decision Trees",
+    "question_text": "Một node trong cây quyết định được gọi là 'node lá' (leaf node) khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi nó không có bất kỳ thuộc tính nào để phân chia.",
+      "B. Khi nó không có bất kỳ node con nào và chứa dự đoán cuối cùng.",
+      "C. Khi nó chỉ chứa một mẫu dữ liệu.",
+      "D. Khi nó ở độ sâu tối đa của cây."
+    ],
+    "correct_answer": "B",
+    "explanation": "Node lá là node cuối cùng trong một nhánh của cây, không có node con và đại diện cho đầu ra hoặc dự đoán của cây.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Decision Trees", "Leaf Node"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-038",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Khái niệm 'Residuals' (phần dư) trong Linear Regression là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các giá trị dự đoán của mô hình.",
+      "B. Sự khác biệt giữa giá trị thực tế và giá trị dự đoán.",
+      "C. Các tham số (hệ số) của mô hình.",
+      "D. Các điểm dữ liệu bị loại bỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Residuals là lỗi dự đoán cho mỗi điểm dữ liệu, tức là sự khác biệt giữa giá trị quan sát (thực tế) của biến phụ thuộc và giá trị dự đoán của mô hình.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Linear Regression", "Residuals"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-039",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Random Forest đặc biệt hiệu quả trong việc xử lý loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dữ liệu tuyến tính cao.",
+      "B. Dữ liệu có nhiều nhiễu và thuộc tính không liên quan.",
+      "C. Dữ liệu có rất ít thuộc tính.",
+      "D. Dữ liệu chuỗi thời gian."
+    ],
+    "correct_answer": "B",
+    "explanation": "Khả năng ngẫu nhiên hóa của Random Forest giúp nó giảm thiểu ảnh hưởng của nhiễu và các thuộc tính không liên quan, làm cho nó mạnh mẽ hơn với các tập dữ liệu phức tạp.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Random Forests", "Robustness"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-040",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Ưu điểm chính của Logistic Regression so với các mô hình phân loại phức tạp hơn là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn đạt được độ chính xác cao hơn.",
+      "B. Tính toán nhanh hơn và dễ diễn giải hơn.",
+      "C. Có thể xử lý các mối quan hệ phi tuyến tính phức tạp một cách tự động.",
+      "D. Miễn nhiễm với outliers."
+    ],
+    "correct_answer": "B",
+    "explanation": "Logistic Regression là một mô hình tuyến tính đơn giản, do đó nó nhanh chóng để huấn luyện và các hệ số của nó cung cấp cái nhìn trực tiếp về mối quan hệ giữa các biến đầu vào và xác suất dự đoán.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Logistic Regression", "Interpretability", "Speed"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-041",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "XGBoost thường được ưa chuộng trong các cuộc thi Kaggle vì những lý do nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dễ dàng thiết lập mà không cần điều chỉnh siêu tham số.",
+      "B. Khả năng xử lý tốt các tập dữ liệu thưa thớt, hiệu suất cao, và tích hợp các kỹ thuật regularization.",
+      "C. Tốc độ huấn luyện siêu nhanh ngay cả trên CPU.",
+      "D. Nó chỉ hỗ trợ hồi quy, làm cho nó đơn giản hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "XGBoost nổi tiếng với hiệu suất cao, khả năng xử lý nhiều loại dữ liệu (bao gồm cả dữ liệu thưa thớt), và các tính năng nâng cao như regularization tích hợp, giúp nó trở thành lựa chọn hàng đầu trong các cuộc thi học máy.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "XGBoost", "Performance", "Kaggle"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-042",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Trong SVM, các 'kernel function' (hàm kernel) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các hàm dùng để tính toán khoảng cách giữa các điểm dữ liệu.",
+      "B. Các hàm ánh xạ dữ liệu từ không gian đầu vào sang không gian có chiều cao hơn mà không cần tính toán tọa độ rõ ràng.",
+      "C. Các hàm dùng để chuẩn hóa dữ liệu đầu vào.",
+      "D. Các hàm tối ưu hóa được sử dụng để tìm siêu phẳng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Kernel functions (như Linear, Polynomial, RBF) cho phép SVM hoạt động hiệu quả trong không gian có chiều cao hơn để tìm kiếm siêu phẳng phân tách, ngay cả khi dữ liệu không thể phân tách tuyến tính trong không gian ban đầu.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "SVM", "Kernel Function"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-043",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Khi nào thì Recall (Sensitivity) trở nên đặc biệt quan trọng hơn Precision?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi chi phí của False Positive (dự đoán sai dương tính) rất cao.",
+      "B. Khi chi phí của False Negative (bỏ sót dương tính) rất cao.",
+      "C. Khi mô hình cần phải rất chính xác.",
+      "D. Khi dữ liệu cân bằng hoàn hảo."
+    ],
+    "correct_answer": "B",
+    "explanation": "Recall đo lường khả năng của mô hình trong việc tìm tất cả các trường hợp dương tính thực sự ($TP / (TP + FN)$). Nó quan trọng khi bỏ sót một trường hợp dương tính có hậu quả nghiêm trọng (ví dụ: phát hiện bệnh, phát hiện gian lận).",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Model Evaluation", "Recall", "Metrics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-044",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Model Evaluation Metrics",
+    "question_text": "Ma trận nhầm lẫn (Confusion Matrix) là một công cụ trực quan hóa hữu ích cho việc đánh giá mô hình nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hồi quy (Regression).",
+      "B. Phân loại (Classification).",
+      "C. Gom nhóm (Clustering).",
+      "D. Giảm chiều (Dimensionality Reduction)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Confusion Matrix tóm tắt hiệu suất của một thuật toán phân loại bằng cách hiển thị số lượng True Positives, True Negatives, False Positives và False Negatives.",
+    "difficulty_level": "easy",
+    "tags": ["Supervised Learning", "Model Evaluation", "Confusion Matrix", "Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-045",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Decision Trees",
+    "question_text": "Overfitting trong Decision Trees thường xảy ra khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Cây quá nông (shallow) và đơn giản.",
+      "B. Cây quá sâu (deep) và phức tạp, học cả nhiễu trong dữ liệu huấn luyện.",
+      "C. Khi dữ liệu huấn luyện rất nhỏ.",
+      "D. Khi sử dụng quá nhiều thuộc tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "Một cây quá sâu có thể học các chi tiết cụ thể và nhiễu của tập huấn luyện, dẫn đến hiệu suất kém trên dữ liệu mới chưa thấy.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Decision Trees", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-046",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Linear Regression",
+    "question_text": "Giả định về 'homoscedasticity' (phương sai đồng nhất) trong Linear Regression có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các phần dư (residuals) có phân phối chuẩn.",
+      "B. Các phần dư có phương sai không đổi trên tất cả các mức độ của biến độc lập.",
+      "C. Các phần dư không có tương quan với nhau.",
+      "D. Không có mối quan hệ tuyến tính giữa các biến độc lập."
+    ],
+    "correct_answer": "B",
+    "explanation": "Homoscedasticity là giả định rằng phương sai của các sai số (residuals) là như nhau cho tất cả các giá trị của biến độc lập. Vi phạm giả định này (heteroscedasticity) có thể làm giảm hiệu quả của các ước lượng hồi quy.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Linear Regression", "Assumptions", "Homoscedasticity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-047",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Random Forests",
+    "question_text": "Thuộc tính 'OOB (Out-Of-Bag) Score' trong Random Forest được dùng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đo lường hiệu suất của mô hình trên dữ liệu kiểm tra độc lập.",
+      "B. Ước tính hiệu suất tổng quát hóa của mô hình mà không cần một tập validation riêng biệt.",
+      "C. Chỉ ra số lượng cây đã được huấn luyện.",
+      "D. Đánh giá độ phù hợp của từng cây riêng lẻ trong rừng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Do Bagging (bootstrap aggregating) lấy mẫu có thay thế, một số mẫu không bao giờ được sử dụng để huấn luyện một cây cụ thể. Các mẫu 'Out-Of-Bag' này có thể được dùng để đánh giá hiệu suất của mô hình một cách không thiên vị.",
+    "difficulty_level": "hard",
+    "tags": ["Supervised Learning", "Random Forests", "OOB Score", "Evaluation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-048",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Logistic Regression",
+    "question_text": "Tại sao Logistic Regression không phù hợp cho các bài toán hồi quy (dự đoán giá trị liên tục)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Vì nó chỉ hoạt động với dữ liệu phân loại.",
+      "B. Vì đầu ra của hàm Sigmoid luôn nằm trong khoảng [0, 1], không thể dự đoán một dải giá trị liên tục rộng lớn.",
+      "C. Vì nó yêu cầu quá nhiều dữ liệu.",
+      "D. Vì nó không thể xử lý các biến số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Hàm Sigmoid giới hạn đầu ra của Logistic Regression trong khoảng từ 0 đến 1, làm cho nó lý tưởng cho việc mô hình hóa xác suất và phân loại, nhưng không phù hợp cho việc dự đoán các giá trị liên tục bên ngoài khoảng này.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Logistic Regression", "Limitations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-049",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+    "question_text": "Tham số 'learning rate' trong Gradient Boosting có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Điều khiển độ sâu tối đa của mỗi cây.",
+      "B. Xác định tốc độ mà mô hình học từ các sai số, hay nói cách khác là đóng góp của mỗi cây vào tổng thể mô hình.",
+      "C. Số lượng cây trong ensemble.",
+      "D. Tỷ lệ lấy mẫu của các thuộc tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "Learning rate (tốc độ học) là một siêu tham số quan trọng kiểm soát kích thước bước mà thuật toán gradient descent thực hiện khi cập nhật các mô hình. Giá trị nhỏ hơn sẽ giúp mô hình hội tụ chậm hơn nhưng có thể chính xác hơn và chống overfitting tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "Gradient Boosting", "Learning Rate", "Hyperparameters"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-SL-050",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Supervised Learning",
+    "subskill_name": "Support Vector Machines (SVM)",
+    "question_text": "Phương pháp nào sau đây có thể được sử dụng để điều chỉnh siêu tham số (hyperparameters) của một mô hình SVM?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ có Cross-validation.",
+      "B. Grid Search, Random Search, hoặc Bayesian Optimization kết hợp với Cross-validation.",
+      "C. Chỉ có thủ công (manual tuning).",
+      "D. Chỉ bằng cách tăng kích thước tập dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các kỹ thuật như Grid Search, Random Search, và Bayesian Optimization thường được sử dụng cùng với Cross-validation để tìm bộ siêu tham số tối ưu cho SVM (và nhiều mô hình khác).",
+    "difficulty_level": "medium",
+    "tags": ["Supervised Learning", "SVM", "Hyperparameter Tuning", "Cross-validation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-001",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Mục tiêu chính của các thuật toán gom nhóm (Clustering) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dự đoán một giá trị liên tục.",
+      "B. Phân loại dữ liệu vào các nhãn đã biết trước.",
+      "C. Tìm kiếm các cấu trúc ẩn hoặc nhóm tự nhiên trong dữ liệu mà không có nhãn đầu ra được cung cấp.",
+      "D. Giảm số chiều của dữ liệu."
+    ],
+    "correct_answer": "C",
+    "explanation": "Clustering là một kỹ thuật học không giám sát nhằm phân chia các điểm dữ liệu thành các nhóm (cụm) dựa trên sự tương đồng giữa chúng, mà không cần thông tin về nhãn.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Clustering"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-002",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Thuật toán K-Means Clustering yêu cầu bạn phải chỉ định siêu tham số nào trước khi chạy?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Learning rate.",
+      "B. Số lượng cụm (K).",
+      "C. Số lượng cây quyết định.",
+      "D. Khoảng cách (margin) tối đa giữa các điểm."
+    ],
+    "correct_answer": "B",
+    "explanation": "K-Means là một thuật toán 'partitioning' (phân vùng) yêu cầu người dùng chỉ định số lượng cụm (K) mong muốn trước khi thuật toán bắt đầu gán các điểm dữ liệu vào các cụm.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "K-Means", "Clustering", "Hyperparameters"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-003",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "Mục tiêu chính của Dimensionality Reduction (Giảm chiều dữ liệu) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng số lượng thuộc tính để cải thiện độ chính xác mô hình.",
+      "B. Giảm số lượng thuộc tính trong tập dữ liệu trong khi vẫn giữ lại càng nhiều thông tin quan trọng càng tốt.",
+      "C. Thay thế các giá trị thiếu trong dữ liệu.",
+      "D. Sắp xếp dữ liệu theo thứ tự."
+    ],
+    "correct_answer": "B",
+    "explanation": "Giảm chiều giúp đơn giản hóa dữ liệu, giảm thời gian tính toán, giảm nhiễu và đôi khi cải thiện hiệu suất mô hình bằng cách loại bỏ các thuộc tính ít thông tin.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Dimensionality Reduction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-004",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "PCA (Principal Component Analysis) là một kỹ thuật giảm chiều dựa trên nguyên tắc nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại dữ liệu bằng cách tìm siêu phẳng.",
+      "B. Biến đổi tuyến tính dữ liệu thành một hệ tọa độ mới, nơi các trục (thành phần chính) biểu thị phương sai tối đa trong dữ liệu.",
+      "C. Gom nhóm dữ liệu dựa trên mật độ.",
+      "D. Xây dựng một bản đồ hai chiều để trực quan hóa dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "PCA tìm các trục chính (principal components) là các tổ hợp tuyến tính của các thuộc tính gốc, sao cho các trục này nắm bắt được phương sai lớn nhất của dữ liệu.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "PCA", "Dimensionality Reduction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-005",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "Mục đích chính của Generative Adversarial Networks (GANs) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại hình ảnh thành các danh mục đã biết.",
+      "B. Tạo ra dữ liệu mới (ví dụ: hình ảnh, văn bản) giống với dữ liệu huấn luyện, thông qua sự cạnh tranh giữa hai mạng neural.",
+      "C. Dịch ngôn ngữ tự nhiên.",
+      "D. Nén dữ liệu mà không làm mất thông tin."
+    ],
+    "correct_answer": "B",
+    "explanation": "GANs bao gồm một bộ tạo (Generator) tạo ra dữ liệu giả và một bộ phân biệt (Discriminator) cố gắng phân biệt giữa dữ liệu thật và giả. Sự cạnh tranh này giúp bộ tạo tạo ra dữ liệu ngày càng giống thật hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Generative Models", "GANs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-006",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "VAE (Variational Autoencoders) thuộc loại mô hình nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình phân biệt (Discriminative Model).",
+      "B. Mô hình hồi quy (Regression Model).",
+      "C. Mô hình sinh (Generative Model).",
+      "D. Mô hình phân loại (Classification Model)."
+    ],
+    "correct_answer": "C",
+    "explanation": "VAEs là một loại autoencoder có khả năng sinh dữ liệu mới bằng cách học một phân phối xác suất tiềm ẩn (latent distribution) của dữ liệu huấn luyện.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Generative Models", "VAEs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-007",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Mục tiêu của Anomaly Detection (Phát hiện điểm bất thường) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dự đoán giá trị tiếp theo trong chuỗi thời gian.",
+      "B. Xác định các điểm dữ liệu hoặc mẫu hành vi khác biệt đáng kể so với phần lớn dữ liệu còn lại.",
+      "C. Phân nhóm các điểm dữ liệu tương tự nhau.",
+      "D. Tổng hợp dữ liệu để tìm ra xu hướng chung."
+    ],
+    "correct_answer": "B",
+    "explanation": "Anomaly Detection tập trung vào việc tìm kiếm các 'outliers' (ngoại lai) hoặc 'novelties' (mới lạ) mà không tuân theo hành vi hoặc mẫu điển hình của dữ liệu.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Anomaly Detection"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-008",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Một trường hợp sử dụng phổ biến của Anomaly Detection là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dự đoán doanh số bán hàng trong tương lai.",
+      "B. Phân loại email spam.",
+      "C. Phát hiện gian lận thẻ tín dụng.",
+      "D. Nhận dạng khuôn mặt."
+    ],
+    "correct_answer": "C",
+    "explanation": "Phát hiện gian lận là một ứng dụng điển hình của Anomaly Detection, nơi các giao dịch bất thường hoặc không tuân theo mẫu hành vi thông thường được xác định là có khả năng gian lận.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Anomaly Detection", "Use Case"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-009",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "Self-Organizing Maps (SOMs) được sử dụng chủ yếu cho mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại dữ liệu nhị phân.",
+      "B. Hồi quy tuyến tính.",
+      "C. Giảm chiều và trực quan hóa dữ liệu bằng cách ánh xạ dữ liệu nhiều chiều vào một không gian chiều thấp (thường là 2D) một cách bảo toàn cấu trúc topo.",
+      "D. Sinh dữ liệu mới."
+    ],
+    "correct_answer": "C",
+    "explanation": "SOMs (còn gọi là Kohonen Maps) là một loại mạng neural không giám sát được sử dụng để giảm chiều và trực quan hóa dữ liệu, duy trì cấu trúc tương tự của dữ liệu gốc trong không gian chiều thấp hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "Dimensionality Reduction", "Visualization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-010",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "SOMs học bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng thuật toán lan truyền ngược (backpropagation).",
+      "B. Cập nhật trọng số của các node trong bản đồ sao cho chúng phản ánh tốt nhất cấu trúc của dữ liệu đầu vào, thông qua một quá trình cạnh tranh và hợp tác giữa các node.",
+      "C. Bằng cách tính toán khoảng cách Euclidean giữa các điểm dữ liệu và gán chúng vào cụm gần nhất.",
+      "D. Bằng cách xây dựng cây phân cấp từ dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong SOMs, các 'best matching unit' (BMU) được chọn cho mỗi mẫu dữ liệu, và BMU cùng các node lân cận của nó được điều chỉnh để giống với mẫu dữ liệu đó, dần dần tạo ra một bản đồ tổ chức tự động.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "Learning Process"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-011",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Điểm dữ liệu nào được sử dụng để đại diện cho trung tâm của một cụm trong K-Means?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Điểm dữ liệu đầu tiên trong cụm.",
+      "B. Giá trị trung vị của các điểm trong cụm.",
+      "C. Tâm cụm (centroid), là trung bình cộng của tất cả các điểm trong cụm.",
+      "D. Điểm dữ liệu xa nhất từ các cụm khác."
+    ],
+    "correct_answer": "C",
+    "explanation": "K-Means tính toán tâm cụm (centroid) bằng cách lấy giá trị trung bình của tọa độ tất cả các điểm dữ liệu thuộc cụm đó.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "K-Means", "Centroid"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-012",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Hạn chế chính của K-Means Clustering là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không thể xử lý số lượng cụm lớn.",
+      "B. Yêu cầu số lượng cụm (K) phải được xác định trước và gặp khó khăn với các cụm có hình dạng phức tạp hoặc kích thước khác nhau.",
+      "C. Chỉ hoạt động với dữ liệu phân loại.",
+      "D. Không thể xử lý dữ liệu có nhiều chiều."
+    ],
+    "correct_answer": "B",
+    "explanation": "K-Means hoạt động tốt với các cụm hình cầu, nhưng kém hiệu quả với các cụm có hình dạng bất thường và yêu cầu K được biết trước, điều này không phải lúc nào cũng rõ ràng.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "K-Means", "Limitations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-013",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Thuật toán gom nhóm nào tạo ra một cây phân cấp (dendrogram) cho thấy các mối quan hệ phân cấp giữa các cụm?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. K-Means",
+      "B. DBSCAN",
+      "C. Hierarchical Clustering",
+      "D. Affinity Propagation"
+    ],
+    "correct_answer": "C",
+    "explanation": "Hierarchical Clustering xây dựng một phân cấp các cụm, có thể được biểu diễn dưới dạng một dendrogram, cho phép người dùng chọn số lượng cụm ở các mức độ khác nhau.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Hierarchical Clustering", "Dendrogram"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-014",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) có lợi thế gì so với K-Means?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn nhanh hơn K-Means.",
+      "B. Không yêu cầu số lượng cụm phải được xác định trước và có thể phát hiện các cụm có hình dạng bất thường, cũng như xác định các điểm nhiễu.",
+      "C. Chỉ hoạt động với các cụm hình cầu.",
+      "D. Đảm bảo tất cả các điểm đều thuộc về một cụm."
+    ],
+    "correct_answer": "B",
+    "explanation": "DBSCAN nhóm các điểm dựa trên mật độ lân cận, giúp nó phát hiện các cụm có hình dạng tùy ý và xác định các điểm nhiễu (outliers) mà không cần xác định trước số lượng cụm.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "DBSCAN", "Clustering"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-015",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Mục tiêu chính của Association Rule Mining (Khai thác luật kết hợp) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dự đoán giá trị liên tục trong chuỗi thời gian.",
+      "B. Tìm kiếm các mối quan hệ hoặc 'luật' ẩn giữa các mục trong tập dữ liệu lớn (ví dụ: 'nếu mua A thì thường mua B').",
+      "C. Giảm chiều dữ liệu hình ảnh.",
+      "D. Phân loại tài liệu thành các chủ đề."
+    ],
+    "correct_answer": "B",
+    "explanation": "Association Rule Mining (ví dụ: thuật toán Apriori) được sử dụng rộng rãi trong phân tích giỏ hàng để tìm các mặt hàng thường được mua cùng nhau.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Association Rule Mining"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-016",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Trong Association Rule Mining, 'Support' (hỗ trợ) của một tập mục (itemset) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tỷ lệ phần trăm số giao dịch chứa tập mục đó.",
+      "B. Mức độ thường xuyên tập mục đó xuất hiện một mình.",
+      "C. Số lần tập mục đó dẫn đến một kết quả cụ thể.",
+      "D. Khả năng một tập mục sẽ được mua trong tương lai."
+    ],
+    "correct_answer": "A",
+    "explanation": "Support là một thước đo về mức độ thường xuyên của một tập mục hoặc một luật trong tập dữ liệu, được tính là tỷ lệ số giao dịch chứa tập mục đó.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Association Rule Mining", "Support"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-017",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "Khi nào thì t-SNE (t-Distributed Stochastic Neighbor Embedding) được ưu tiên hơn PCA?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn muốn giảm chiều dữ liệu cho các tác vụ phân loại tuyến tính.",
+      "B. Khi bạn cần một phương pháp giảm chiều nhanh chóng cho dữ liệu lớn.",
+      "C. Khi mục tiêu chính là trực quan hóa dữ liệu đa chiều bằng cách duy trì cấu trúc cục bộ và toàn cục của các cụm phi tuyến tính.",
+      "D. Khi bạn muốn nén dữ liệu mà không làm mất thông tin quan trọng."
+    ],
+    "correct_answer": "C",
+    "explanation": "t-SNE đặc biệt hiệu quả trong việc tạo ra các biểu diễn chiều thấp (thường là 2D hoặc 3D) của dữ liệu đa chiều, làm nổi bật các cụm và cấu trúc phi tuyến tính, rất lý tưởng cho trực quan hóa.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "t-SNE", "Dimensionality Reduction", "Visualization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-018",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "Mạng nào trong cấu trúc GAN chịu trách nhiệm tạo ra dữ liệu giả (fake data)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Discriminator (Bộ phân biệt)",
+      "B. Generator (Bộ tạo)",
+      "C. Autoencoder",
+      "D. Classifier"
+    ],
+    "correct_answer": "B",
+    "explanation": "Generator (Bộ tạo) là thành phần của GAN nhận đầu vào là nhiễu ngẫu nhiên và biến đổi nó thành dữ liệu giả để lừa Discriminator.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "GANs", "Generator"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-019",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Một phương pháp phổ biến để phát hiện ngoại lai (outliers) trong dữ liệu đơn biến (univariate) là sử dụng 'Z-score'. Giá trị Z-score cao hoặc thấp bất thường cho thấy điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giá trị dữ liệu nằm gần trung bình.",
+      "B. Giá trị dữ liệu nằm gần một cụm khác.",
+      "C. Giá trị dữ liệu là một ngoại lai tiềm năng, nằm cách xa trung bình số độ lệch chuẩn.",
+      "D. Dữ liệu đã được chuẩn hóa."
+    ],
+    "correct_answer": "C",
+    "explanation": "Z-score đo lường số lượng độ lệch chuẩn mà một điểm dữ liệu cách xa giá trị trung bình. Một Z-score có giá trị tuyệt đối lớn (ví dụ: > 2 hoặc 3) thường được coi là dấu hiệu của một ngoại lai.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Anomaly Detection", "Z-score", "Outliers"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-020",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "Kết quả đầu ra của một SOM thường là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một vector các dự đoán xác suất.",
+      "B. Một tập hợp các trọng số mạng thần kinh đã được tối ưu hóa.",
+      "C. Một bản đồ lưới (grid map) hai chiều, nơi mỗi node đại diện cho một 'vector trọng số' và các node gần nhau trên bản đồ tương ứng với các mẫu dữ liệu tương tự trong không gian đầu vào.",
+      "D. Một cây phân cấp các cụm."
+    ],
+    "correct_answer": "C",
+    "explanation": "SOMs tạo ra một bản đồ lưới 2D (hoặc 1D) của các node, mỗi node có một vector trọng số. Các node gần nhau trên bản đồ đại diện cho các mẫu dữ liệu tương tự nhau, giúp trực quan hóa cấu trúc dữ liệu.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "Output"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-021",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Để xác định số lượng cụm (K) tối ưu cho K-Means, kỹ thuật 'Elbow Method' dựa trên tiêu chí nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Điểm mà độ chính xác đạt cực đại.",
+      "B. Điểm mà độ phức tạp thuật toán giảm đáng kể.",
+      "C. Điểm mà sự giảm thiểu của tổng bình phương khoảng cách từ các điểm đến tâm cụm (Within-Cluster Sum of Squares - WCSS) bắt đầu chậm lại, tạo thành 'khuỷu tay' trên biểu đồ.",
+      "D. Điểm mà tất cả các cụm đều có cùng kích thước."
+    ],
+    "correct_answer": "C",
+    "explanation": "Elbow Method vẽ biểu đồ WCSS so với số lượng cụm K. Điểm 'khuỷu tay' là nơi mà việc tăng thêm K không còn mang lại sự cải thiện đáng kể về WCSS, gợi ý K tối ưu.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "K-Means", "Elbow Method", "K"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-022",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Trong Hierarchical Clustering, 'agglomerative' và 'divisive' là hai phương pháp tiếp cận khác nhau. 'Agglomerative' bắt đầu từ đâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Từ một cụm duy nhất chứa tất cả các điểm.",
+      "B. Từ mỗi điểm dữ liệu là một cụm riêng biệt, sau đó hợp nhất chúng.",
+      "C. Từ các cụm được xác định ngẫu nhiên.",
+      "D. Từ một số cụm đã biết trước."
+    ],
+    "correct_answer": "B",
+    "explanation": "Agglomerative (từ dưới lên) Hierarchical Clustering bắt đầu với mỗi điểm dữ liệu là một cụm riêng, sau đó liên tục hợp nhất các cụm gần nhất cho đến khi chỉ còn một cụm lớn hoặc đạt được tiêu chí dừng.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Hierarchical Clustering", "Agglomerative"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-023",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Trong Association Rule Mining, 'Confidence' (độ tin cậy) của một luật $A \\Rightarrow B$ là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tỷ lệ phần trăm số giao dịch chứa A.",
+      "B. Tỷ lệ phần trăm số giao dịch chứa B.",
+      "C. Xác suất xảy ra B khi đã biết A xảy ra ($P(B|A)$).",
+      "D. Xác suất xảy ra A và B cùng lúc ($P(A \\cap B)$)."
+    ],
+    "correct_answer": "C",
+    "explanation": "Confidence của luật $A \\Rightarrow B$ được tính là Support$(A \\cup B)$ / Support$(A)$, biểu thị mức độ thường xuyên mà B xuất hiện trong các giao dịch có chứa A.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Association Rule Mining", "Confidence"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-024",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "Hạn chế của PCA là gì khi dữ liệu có cấu trúc phi tuyến tính phức tạp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. PCA yêu cầu dữ liệu phải có phân phối chuẩn.",
+      "B. PCA chỉ có thể giảm chiều xuống 2 hoặc 3 chiều.",
+      "C. PCA là một phương pháp giảm chiều tuyến tính và có thể không hiệu quả trong việc nắm bắt các mối quan hệ phi tuyến tính trong dữ liệu.",
+      "D. PCA không thể xử lý dữ liệu có nhiều thuộc tính."
+    ],
+    "correct_answer": "C",
+    "explanation": "PCA tìm kiếm các biến đổi tuyến tính. Nếu các mối quan hệ quan trọng trong dữ liệu là phi tuyến tính, PCA có thể không giảm chiều hiệu quả và có thể làm mất thông tin quan trọng.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "PCA", "Limitations", "Non-linear"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-025",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "Mạng nào trong cấu trúc GAN chịu trách nhiệm phân biệt giữa dữ liệu thật và dữ liệu giả?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Discriminator (Bộ phân biệt)",
+      "B. Generator (Bộ tạo)",
+      "C. Encoder",
+      "D. Decoder"
+    ],
+    "correct_answer": "A",
+    "explanation": "Discriminator (Bộ phân biệt) là một mạng phân loại được huấn luyện để phân biệt dữ liệu thật từ tập huấn luyện và dữ liệu giả được tạo ra bởi Generator.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "GANs", "Discriminator"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-026",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Khi sử dụng Anomaly Detection, điều gì thường xảy ra với dữ liệu huấn luyện?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dữ liệu huấn luyện phải được gắn nhãn đầy đủ với cả các điểm bình thường và bất thường.",
+      "B. Dữ liệu huấn luyện thường chứa chủ yếu các điểm bình thường, và mục tiêu là học 'bộ mặt' của dữ liệu bình thường.",
+      "C. Dữ liệu huấn luyện chỉ chứa các điểm bất thường.",
+      "D. Anomaly Detection không cần dữ liệu huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong nhiều trường hợp của Anomaly Detection, các điểm bất thường rất hiếm hoặc không có nhãn. Do đó, mô hình thường được huấn luyện trên dữ liệu 'bình thường' và sau đó xác định bất kỳ điểm nào lệch khỏi mẫu này là bất thường.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Anomaly Detection", "Training Data"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-027",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "Trong SOMs, 'Best Matching Unit' (BMU) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Node đầu ra dự đoán chính xác nhất.",
+      "B. Node trên bản đồ SOM có vector trọng số gần nhất với mẫu dữ liệu đầu vào hiện tại.",
+      "C. Node có số lượng kết nối cao nhất.",
+      "D. Node đại diện cho cụm lớn nhất."
+    ],
+    "correct_answer": "B",
+    "explanation": "BMU là node trên bản đồ SOM có vector trọng số tương tự nhất (thường đo bằng khoảng cách Euclidean) với mẫu dữ liệu đầu vào đang được xử lý.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "BMU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-028",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Ưu điểm chính của DBSCAN là gì khi so sánh với K-Means?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nhanh hơn trên các tập dữ liệu lớn.",
+      "B. Có khả năng phát hiện các cụm có hình dạng bất kỳ và nhận diện các điểm nhiễu (noise points).",
+      "C. Dễ dàng chọn siêu tham số hơn.",
+      "D. Luôn tạo ra các cụm có kích thước cân bằng."
+    ],
+    "correct_answer": "B",
+    "explanation": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) excels at finding arbitrarily shaped clusters and identifying outliers, which K-Means struggles with due to its centroid-based approach and assumption of spherical clusters.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "DBSCAN", "K-Means", "Comparison"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-029",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Trong Hierarchical Clustering, 'single linkage', 'complete linkage' và 'average linkage' là các phương pháp khác nhau để tính toán điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khoảng cách giữa các điểm dữ liệu cá nhân.",
+      "B. Khoảng cách giữa các cụm (clusters).",
+      "C. Số lượng điểm trong một cụm.",
+      "D. Độ tinh khiết của một cụm."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các phương pháp linkage này định nghĩa cách tính toán khoảng cách giữa hai cụm trong quá trình hợp nhất (agglomerative) hoặc phân chia (divisive) cụm.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Hierarchical Clustering", "Linkage"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-030",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Trong Association Rule Mining, 'Lift' (độ nâng) của một luật $A \\Rightarrow B$ đo lường điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tỷ lệ phần trăm số giao dịch chứa cả A và B.",
+      "B. Xác suất xảy ra B khi đã biết A xảy ra.",
+      "C. Mức độ mà sự xuất hiện của A làm tăng khả năng xuất hiện của B, vượt quá xác suất B xảy ra một cách ngẫu nhiên.",
+      "D. Số lần A và B cùng xuất hiện trong các giao dịch."
+    ],
+    "correct_answer": "C",
+    "explanation": "Lift của luật $A \\Rightarrow B$ được tính là Confidence$(A \\Rightarrow B)$ / Support$(B)$. Giá trị Lift lớn hơn 1 cho thấy A và B có mối quan hệ tích cực (mua A làm tăng khả năng mua B).",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Association Rule Mining", "Lift"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-031",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "Khi sử dụng PCA, 'eigenvectors' (vector riêng) và 'eigenvalues' (giá trị riêng) đại diện cho điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các cụm khác nhau trong dữ liệu.",
+      "B. Các thành phần chính (principal components) và lượng phương sai được giải thích bởi mỗi thành phần tương ứng.",
+      "C. Các trọng số của mô hình.",
+      "D. Khoảng cách giữa các điểm dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Eigenvectors của ma trận hiệp phương sai là các hướng của các thành phần chính (PCA components), và eigenvalues tương ứng cho biết lượng phương sai mà mỗi thành phần đó giải thích được.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "PCA", "Eigenvectors", "Eigenvalues"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-032",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "Một thách thức phổ biến khi huấn luyện GANs là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng yêu cầu dữ liệu huấn luyện có nhãn đầy đủ.",
+      "B. Chúng rất dễ hội tụ ổn định và tạo ra kết quả đa dạng.",
+      "C. Chế độ sụp đổ (mode collapse), nơi Generator chỉ tạo ra một số lượng nhỏ các mẫu đa dạng, và sự mất cân bằng giữa Generator và Discriminator.",
+      "D. Chúng chỉ hoạt động với dữ liệu số."
+    ],
+    "correct_answer": "C",
+    "explanation": "Mode collapse là một vấn đề phổ biến trong GANs, trong đó Generator tìm thấy một số ít mẫu mà nó có thể lừa Discriminator một cách dễ dàng và bỏ qua việc khám phá toàn bộ không gian dữ liệu tiềm năng.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "GANs", "Challenges", "Mode Collapse"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-033",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Phương pháp 'Isolation Forest' phát hiện ngoại lai bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tính toán khoảng cách Euclidean của mỗi điểm đến tâm cụm gần nhất.",
+      "B. Xây dựng các cây phân chia ngẫu nhiên và cô lập các điểm bất thường bằng cách tìm chúng ở các đường dẫn ngắn hơn trong cây.",
+      "C. Dựa trên mật độ cục bộ của các điểm dữ liệu.",
+      "D. Sử dụng một mô hình hồi quy để dự đoán các giá trị bất thường."
+    ],
+    "correct_answer": "B",
+    "explanation": "Isolation Forest hoạt động dựa trên ý tưởng rằng các điểm bất thường 'dễ cô lập' hơn (cần ít phân chia hơn để tách chúng ra) so với các điểm bình thường trong một tập hợp các cây ngẫu nhiên.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Anomaly Detection", "Isolation Forest"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-034",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "SOMs phù hợp nhất để trực quan hóa loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dữ liệu thời gian thực có tốc độ thay đổi cao.",
+      "B. Dữ liệu đa chiều, đặc biệt khi cần làm nổi bật các mối quan hệ tương đồng giữa các mẫu và hình thành các cụm một cách tự nhiên.",
+      "C. Dữ liệu văn bản phi cấu trúc.",
+      "D. Dữ liệu chỉ có hai thuộc tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "SOMs được thiết kế để ánh xạ dữ liệu từ không gian nhiều chiều vào một không gian chiều thấp (thường là 2D), giúp trực quan hóa cấu trúc ẩn và các cụm trong dữ liệu.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "Visualization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-035",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Làm thế nào K-Means xử lý các điểm ngoại lai (outliers)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó tự động loại bỏ chúng khỏi các cụm.",
+      "B. Nó cố gắng gán chúng vào cụm gần nhất, điều này có thể làm dịch chuyển tâm cụm và ảnh hưởng đến hình dạng cụm.",
+      "C. Nó tạo một cụm riêng cho tất cả các điểm ngoại lai.",
+      "D. Nó hoàn toàn bỏ qua chúng."
+    ],
+    "correct_answer": "B",
+    "explanation": "K-Means nhạy cảm với outliers vì chúng có thể kéo tâm cụm về phía mình, làm sai lệch ranh giới cụm. Các thuật toán như DBSCAN tốt hơn trong việc xử lý outliers.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "K-Means", "Outliers"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-036",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Chỉ số nào được sử dụng để đánh giá chất lượng của một giải pháp gom nhóm (clustering solution) khi nhãn thật không có sẵn, đo lường độ chặt chẽ của các cụm và sự phân tách giữa chúng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Accuracy",
+      "B. Precision",
+      "C. Silhouette Score",
+      "D. R-squared"
+    ],
+    "correct_answer": "C",
+    "explanation": "Silhouette Score là một chỉ số nội tại (intrinsic metric) để đánh giá chất lượng cụm mà không cần nhãn thật, nó đo lường mức độ tương tự của một đối tượng với cụm của chính nó so với các cụm khác.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Clustering", "Evaluation Metrics", "Silhouette Score"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-037",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Thuật toán Apriori được sử dụng trong Association Rule Mining để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại các giao dịch thành các loại khác nhau.",
+      "B. Tìm kiếm các tập mục thường xuyên (frequent itemsets) trong một tập dữ liệu giao dịch.",
+      "C. Dự đoán giá trị của một mặt hàng dựa trên các mặt hàng khác.",
+      "D. Gom nhóm khách hàng dựa trên hành vi mua sắm."
+    ],
+    "correct_answer": "B",
+    "explanation": "Thuật toán Apriori là một thuật toán cổ điển để tìm kiếm các tập mục thường xuyên (các tập hợp các mặt hàng xuất hiện cùng nhau đủ thường xuyên) trong cơ sở dữ liệu giao dịch.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Association Rule Mining", "Apriori"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-038",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "t-SNE đặc biệt hữu ích cho việc trực quan hóa dữ liệu có chiều cao vì nó tập trung vào việc duy trì điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khoảng cách Euclid tuyệt đối giữa tất cả các điểm.",
+      "B. Các mối quan hệ lân cận (neighbor relationships) của các điểm dữ liệu trong không gian gốc và không gian nhúng.",
+      "C. Các thành phần chính của phương sai.",
+      "D. Tỷ lệ chính xác của mô hình phân loại."
+    ],
+    "correct_answer": "B",
+    "explanation": "t-SNE cố gắng giữ các điểm 'gần' nhau trong không gian chiều cao vẫn 'gần' nhau trong không gian chiều thấp, và các điểm 'xa' vẫn 'xa', làm cho nó tuyệt vời để trực quan hóa các cụm phi tuyến tính.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "t-SNE", "Visualization", "Neighborhoods"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-039",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "Trong VAEs (Variational Autoencoders), 'encoder' chịu trách nhiệm làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ra dữ liệu mới từ không gian tiềm ẩn.",
+      "B. Ánh xạ dữ liệu đầu vào vào một không gian biểu diễn tiềm ẩn (latent space), thường là một phân phối xác suất.",
+      "C. Phân loại dữ liệu.",
+      "D. Đánh giá chất lượng của dữ liệu được tạo ra."
+    ],
+    "correct_answer": "B",
+    "explanation": "Encoder trong VAE nén dữ liệu đầu vào thành một biểu diễn chiều thấp (latent representation), thường là các tham số của một phân phối (mean và variance).",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "VAEs", "Encoder", "Latent Space"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-040",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Khi sử dụng thuật toán One-Class SVM cho Anomaly Detection, điều gì được học?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ranh giới phân loại giữa hai lớp.",
+      "B. Một siêu phẳng cô lập tất cả các điểm bình thường khỏi không gian, coi mọi thứ bên ngoài ranh giới đó là bất thường.",
+      "C. Các cụm khác nhau trong dữ liệu.",
+      "D. Một hàm hồi quy để dự đoán các giá trị tương lai."
+    ],
+    "correct_answer": "B",
+    "explanation": "One-Class SVM học một siêu phẳng bao quanh hầu hết các dữ liệu 'bình thường' trong không gian thuộc tính, và bất kỳ điểm nào nằm ngoài siêu phẳng này sẽ được coi là bất thường.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Anomaly Detection", "One-Class SVM"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-041",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "Sự khác biệt chính giữa SOMs và các thuật toán gom nhóm phân vùng (như K-Means) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. SOMs yêu cầu nhãn, trong khi K-Means thì không.",
+      "B. SOMs tạo ra một bản đồ topo, duy trì mối quan hệ lân cận của dữ liệu, trong khi K-Means tập trung vào việc gán điểm vào các tâm cụm mà không nhất thiết bảo toàn cấu trúc lân cận.",
+      "C. SOMs luôn nhanh hơn K-Means.",
+      "D. SOMs không thể xử lý dữ liệu số."
+    ],
+    "correct_answer": "B",
+    "explanation": "SOMs là độc đáo ở chỗ chúng tạo ra một bản đồ (thường là 2D) phản ánh cấu trúc topo của dữ liệu đầu vào, nghĩa là các điểm dữ liệu gần nhau trong không gian đầu vào sẽ được ánh xạ tới các node gần nhau trên bản đồ.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "K-Means", "Comparison"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-042",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Khi nào thì DBSCAN là lựa chọn tốt hơn K-Means?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn biết chính xác số lượng cụm (K).",
+      "B. Khi các cụm có hình dạng hình cầu rõ ràng và kích thước tương tự.",
+      "C. Khi các cụm có hình dạng bất thường, mật độ thay đổi, hoặc có nhiều điểm nhiễu.",
+      "D. Khi bạn cần một thuật toán phân cụm phân cấp."
+    ],
+    "correct_answer": "C",
+    "explanation": "DBSCAN excels in finding arbitrary-shaped clusters and is robust to noise, making it suitable for datasets where clusters aren't necessarily spherical or evenly sized.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "DBSCAN", "K-Means", "Use Cases"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-043",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Khái niệm 'Itemset' trong Association Rule Mining là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một giao dịch duy nhất.",
+      "B. Một tập hợp các mặt hàng riêng lẻ.",
+      "C. Một tập hợp gồm một hoặc nhiều mặt hàng.",
+      "D. Một tập hợp các khách hàng."
+    ],
+    "correct_answer": "C",
+    "explanation": "Itemset là một tập hợp các mặt hàng (items). Một 'frequent itemset' là một tập hợp các mặt hàng xuất hiện cùng nhau đủ thường xuyên trong các giao dịch.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "Association Rule Mining", "Itemset"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-044",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "Sau khi áp dụng PCA, bạn nên làm gì với các thành phần chính (principal components) nếu muốn xây dựng một mô hình học máy?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng tất cả các thành phần chính làm thuộc tính mới.",
+      "B. Loại bỏ tất cả các thành phần chính vì chúng không còn ý nghĩa.",
+      "C. Chọn một tập hợp con các thành phần chính giải thích phần lớn phương sai của dữ liệu gốc để làm thuộc tính mới cho mô hình.",
+      "D. Thêm chúng vào dữ liệu gốc để tăng số lượng thuộc tính."
+    ],
+    "correct_answer": "C",
+    "explanation": "Mục tiêu của PCA là giảm chiều. Bạn chọn một số thành phần chính nhất định (ví dụ: các thành phần giải thích 95% phương sai) và sử dụng chúng làm thuộc tính mới cho các tác vụ học máy tiếp theo.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "PCA", "Feature Engineering"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-045",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Generative Models (GANs, VAEs)",
+    "question_text": "Mạng nào trong cấu trúc GAN được huấn luyện để phân biệt dữ liệu 'thật' và 'giả'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Generator",
+      "B. Discriminator",
+      "C. Encoder",
+      "D. Decoder"
+    ],
+    "correct_answer": "B",
+    "explanation": "Discriminator đóng vai trò là một bộ phân loại, nhận cả dữ liệu thật và dữ liệu giả, và cố gắng dự đoán xem đầu vào là thật hay giả.",
+    "difficulty_level": "easy",
+    "tags": ["Unsupervised Learning", "GANs", "Discriminator"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-046",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Anomaly Detection",
+    "question_text": "Nguyên tắc cơ bản của Anomaly Detection dựa trên sự khác biệt so với các mô hình học máy giám sát là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó yêu cầu một tập dữ liệu lớn hơn.",
+      "B. Nó không có nhãn đầu ra để học; thay vào đó, nó học một 'hành vi bình thường' và xác định các điểm lệch lạc.",
+      "C. Nó luôn nhanh hơn các thuật toán có giám sát.",
+      "D. Nó chỉ hoạt động với dữ liệu phi tuyến tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong khi học có giám sát dựa vào nhãn để phân loại hoặc hồi quy, Anomaly Detection không có nhãn cho 'bất thường'. Nó học từ dữ liệu bình thường và đánh dấu những gì không khớp với đó.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Anomaly Detection", "Distinction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-047",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Self-Organizing Maps",
+    "question_text": "Tham số 'learning rate' trong huấn luyện SOMs ảnh hưởng đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước của bản đồ SOM.",
+      "B. Tốc độ mà các trọng số của node được cập nhật trong mỗi lần lặp, ảnh hưởng đến tốc độ học và hội tụ.",
+      "C. Số lượng node lân cận được cập nhật.",
+      "D. Hình dạng của các cụm."
+    ],
+    "correct_answer": "B",
+    "explanation": "Learning rate trong SOM quyết định mức độ các trọng số của BMU và các node lân cận của nó được điều chỉnh để khớp với mẫu dữ liệu đầu vào. Learning rate cao hơn dẫn đến thay đổi nhanh hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Self-Organizing Maps", "Learning Rate"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-048",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+    "question_text": "Phương pháp nào thường được sử dụng để xác định số lượng cụm tối ưu cho DBSCAN?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Elbow Method.",
+      "B. Silhouette Score.",
+      "C. Phân tích k-distance graph (biểu đồ khoảng cách đến k-lân cận gần nhất).",
+      "D. Chỉ bằng cách thử và sai."
+    ],
+    "correct_answer": "C",
+    "explanation": "DBSCAN yêu cầu tham số `eps` (bán kính lân cận) và `min_samples` (số lượng điểm tối thiểu trong lân cận). Biểu đồ k-distance có thể giúp chọn `eps` tối ưu bằng cách tìm điểm 'khuỷu tay' nơi khoảng cách tăng đột ngột.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "DBSCAN", "Hyperparameter Tuning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-049",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Association Rule Mining",
+    "question_text": "Sự khác biệt giữa 'Support' và 'Confidence' trong Association Rule Mining là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Support đo lường tần suất của tập mục trong toàn bộ dữ liệu, trong khi Confidence đo lường khả năng của luật trong các giao dịch chứa tiền đề.",
+      "B. Support chỉ áp dụng cho một mục, Confidence áp dụng cho nhiều mục.",
+      "C. Support chỉ cho hồi quy, Confidence chỉ cho phân loại.",
+      "D. Không có sự khác biệt lớn, chúng là các thuật ngữ có thể thay thế cho nhau."
+    ],
+    "correct_answer": "A",
+    "explanation": "Support là mức độ phổ biến của một tập mục hoặc luật. Confidence là xác suất có điều kiện của hậu quả đã cho tiền đề.",
+    "difficulty_level": "medium",
+    "tags": ["Unsupervised Learning", "Association Rule Mining", "Support", "Confidence"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "ML-UL-050",
+    "target": "AI Engineer",
+    "skill_category": "Machine Learning Fundamentals",
+    "skill_name": "Unsupervised Learning",
+    "subskill_name": "Dimensionality Reduction (PCA, t-SNE)",
+    "question_text": "Tại sao việc tiền xử lý dữ liệu (ví dụ: chuẩn hóa) thường rất quan trọng trước khi áp dụng PCA?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để đảm bảo dữ liệu có phân phối chuẩn.",
+      "B. Để đảm bảo PCA hội tụ nhanh hơn.",
+      "C. PCA nhạy cảm với thang đo của các thuộc tính; chuẩn hóa đảm bảo rằng các thuộc tính có phương sai lớn hơn không chi phối các thành phần chính.",
+      "D. Để loại bỏ các giá trị bị thiếu."
+    ],
+    "correct_answer": "C",
+    "explanation": "PCA hoạt động dựa trên phương sai. Nếu các thuộc tính có thang đo khác nhau đáng kể, thuộc tính với thang đo lớn hơn sẽ có phương sai lớn hơn và do đó sẽ chi phối các thành phần chính một cách không công bằng. Chuẩn hóa (scaling) giúp các thuộc tính đóng góp công bằng vào việc xác định các thành phần chính.",
+    "difficulty_level": "hard",
+    "tags": ["Unsupervised Learning", "PCA", "Preprocessing", "Standardization"],
+    "date_created": "2025-07-28"
+  }
+]
