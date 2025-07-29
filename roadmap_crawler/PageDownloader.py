@@ -5,7 +5,11 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import os
-from utils.DownloadTools import login  # giữ nguyên login cho thống nhất
+from utils.DownloadTools import login
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
+
 
 class PageDownloader:
     def __init__(self, driver, email=None, password=None):
@@ -13,11 +17,23 @@ class PageDownloader:
         self.password = password
         self.driver = driver
 
-    def download_page(self, url, save_name="frontend", folder="roadmap"):
+    def download_page(self, url, save_name, folder="roadmap"):
         self.driver.get(url)
-        time.sleep(3)  # đợi JS render
+        time.sleep(4)
 
-        save_dir = f"html_pages/{folder}"
+        target = "Tôi muốn trở thành " + save_name
+
+        input_box = WebDriverWait(self.driver, 3).until(
+            EC.presence_of_element_located((By.ID, "«r8R0»"))
+        )
+
+
+        input_box.send_keys(target)
+        input_box.send_keys(Keys.RETURN)
+        time.sleep(10)
+
+
+        save_dir = f"html_pages/{folder}/{save_name}"
         os.makedirs(save_dir, exist_ok=True)
         file_path = os.path.join(save_dir, f"{save_name}.html")
 
@@ -25,9 +41,11 @@ class PageDownloader:
             f.write(self.driver.page_source)
             print(f"✅ Đã lưu HTML vào: {file_path}")
 
+        return file_path
+
 if __name__ == "__main__":
-    # Dummy login info vì trang không yêu cầu
-    EMAIL = "vuvantien_t67@hus.edu.vn"
+    #login info
+    EMAIL = "vuvantien247@gmail.com"
     PASSWORD = "Anhyeuem2003"
 
     options = Options()
@@ -38,15 +56,18 @@ if __name__ == "__main__":
     options.add_argument("--allow-running-insecure-content")
     options.add_argument("--disable-web-security")
     options.add_argument("--ignore-ssl-errors")
-    options.add_argument("--headless")  # có thể bỏ nếu muốn xem trình duyệt
+    # options.add_argument("--headless")  # có thể bỏ nếu muốn xem trình duyệt
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
 
-    # Gọi login() như thường lệ (dù không cần cho roadmap.sh)
-    login(driver, "https://roadmap.sh/frontend", EMAIL, PASSWORD)
+    # Gọi login()
+    login(driver, "https://roadmap.sh/login", EMAIL, PASSWORD)
 
-    # Gọi PageDownloader như cũ
+    save_name = ["Data engineer", "Machine learning engineer", "Full-stack ", "Data Analyst", "Android", "Ios", "MLops"]
+
+    # Gọi PageDownloader
     bot = PageDownloader(driver, EMAIL, PASSWORD)
     print("_____________Start Download______________________")
-    bot.download_page("https://roadmap.sh/frontend")
+    for name in save_name:
+        bot.download_page("https://roadmap.sh/ai?format=roadmap", name)

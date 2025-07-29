@@ -1,12 +1,14 @@
 import os
 import pandas as pd
+import json
+from collections import defaultdict
 
 
 class DataTransformer:
     def __init__(self, base_dir: str):
         self.base_dir = base_dir
         self.csv_dir = os.path.join(base_dir, "csv")
-        self.output_dir = os.path.join(base_dir, "processed_csv")
+        self.output_dir = os.path.join(base_dir, "processed_json")
         os.makedirs(self.output_dir, exist_ok=True)
 
     def process_csv_files(self):
@@ -31,7 +33,7 @@ class DataTransformer:
                 self.process_csv_file(file_path, target_name, category, file)
 
     def process_csv_file(self, file_path: str, target_name: str, category: str, original_filename: str):
-        """Đọc file CSV, xử lý dữ liệu và lưu kết quả."""
+        """Đọc file CSV, xử lý dữ liệu và lưu kết quả dưới dạng JSON phân cấp."""
         try:
             df = pd.read_csv(file_path)
 
@@ -41,12 +43,61 @@ class DataTransformer:
             if "Category" not in df.columns:
                 df.insert(1, "Category", category)
 
-            # Tạo tên file mới
-            processed_filename = original_filename.replace(".csv", "_processed.csv")
+            # Tạo mapping phân cấp
+            skills_map = defaultdict(list)
+            subskills_map = defaultdict(list)
+            subsubskills_map = defaultdict(list)
+
+            for _, row in df.iterrows():
+                key = (row['Group'], row['Parent'])
+                item = row['Skill']
+                if row['Type'] == 'Skill':
+                    skills_map[key].append(item)
+                elif row['Type'] == 'Sub-skill':
+                    subskills_map[key].append(item)
+                elif row['Type'] == 'Sub-sub-skill':
+                    subsubskills_map[key].append(item)
+
+            # Hàm dựng cây phân cấp
+            def build_structure(group, parent):
+                result = []
+                for skill in skills_map.get((group, parent), []):
+                    skill_entry = {
+                        "name": skill,
+                        "subskills": []
+                    }
+
+                    for subskill in subskills_map.get((group, skill), []):
+                        subskill_entry = {
+                            "name": subskill,
+                            "subsubskills": subsubskills_map.get((group, subskill), [])
+                        }
+                        skill_entry["subskills"].append(subskill_entry)
+
+                    result.append(skill_entry)
+                return result
+
+            # Xây JSON đầu ra
+            results = []
+            targets_df = df[df["Type"] == "Target"]
+            for _, row in targets_df.iterrows():
+                group = row["Group"]
+                target = row["Skill"]
+                entry = {
+                    "target": target,
+                    "category": category,
+                    "skills": build_structure(group, target)
+                }
+                results.append(entry)
+
+            # Lưu file JSON
+            processed_filename = original_filename.replace(".csv", ".json")
             output_file = os.path.join(self.output_dir, processed_filename)
 
-            df.to_csv(output_file, index=False)
-            print(f"✅ Processed: {output_file}")
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(results, f, ensure_ascii=False, indent=2)
+
+            print(f"✅ Created hierarchy JSON: {output_file}")
         except Exception as e:
             print(f"❌ Error processing {file_path}: {e}")
 
