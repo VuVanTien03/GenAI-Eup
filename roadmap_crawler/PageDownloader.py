@@ -44,7 +44,7 @@ if __name__ == "__main__":
     driver = webdriver.Chrome(service=service, options=options)
 
     # Gọi login() như thường lệ (dù không cần cho roadmap.sh)
-    login(driver, "https://roadmap.sh/frontend", EMAIL, PASSWORD)
+    login(driver, "https://roadmap.sh/login", EMAIL, PASSWORD)
 
     # Gọi PageDownloader như cũ
     bot = PageDownloader(driver, EMAIL, PASSWORD)
