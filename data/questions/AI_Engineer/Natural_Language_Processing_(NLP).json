@@ -1,0 +1,3001 @@
+[
+  {
+    "id": "NLP-PT-001",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Trong PyTorch, 'Tensor' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một lớp của mạng neural.",
+      "B. Một mảng đa chiều tương tự như NumPy arrays, nhưng có thể chạy trên GPU và hỗ trợ tự động tính đạo hàm.",
+      "C. Một hàm kích hoạt.",
+      "D. Một đối tượng để trực quan hóa dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tensor là cấu trúc dữ liệu cơ bản trong PyTorch, cho phép thực hiện các phép toán hiệu quả trên CPU hoặc GPU.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "PyTorch Basics", "Tensor"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-002",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Làm thế nào để bạn chuyển một PyTorch Tensor từ CPU sang GPU (nếu có)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `my_tensor.to('cpu')`",
+      "B. `my_tensor.cuda()` hoặc `my_tensor.to('cuda')`",
+      "C. `my_tensor.gpu()`",
+      "D. Không thể chuyển đổi giữa CPU và GPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phương thức `.cuda()` hoặc `.to('cuda')` được sử dụng để chuyển tensor đến GPU. Ngược lại, `.to('cpu')` sẽ chuyển về CPU.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "PyTorch Basics", "GPU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-003",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Một 'Training Loop' cơ bản trong PyTorch bao gồm những bước chính nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ tiền xử lý dữ liệu và lưu mô hình.",
+      "B. Forward pass, tính toán loss, backward pass (tính gradient), và cập nhật trọng số (optimizer step).",
+      "C. Chỉ tải dữ liệu và trực quan hóa kết quả.",
+      "D. Chỉ xây dựng kiến trúc mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đây là chu trình lặp đi lặp lại trong mỗi epoch để huấn luyện mô hình.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Training Loops"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-004",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "PyTorch Autograd là gì và vai trò của nó?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một công cụ để tự động hóa việc tải dữ liệu.",
+      "B. Một động cơ tự động tính toán đạo hàm (gradients) của các phép toán trên tensor, rất cần thiết cho thuật toán lan truyền ngược (backpropagation) trong huấn luyện mạng neural.",
+      "C. Một API để triển khai mô hình.",
+      "D. Một thư viện để tạo mô hình ngẫu nhiên."
+    ],
+    "correct_answer": "B",
+    "explanation": "Autograd cho phép PyTorch tự động tính toán gradient của các phép toán, giúp đơn giản hóa quá trình triển khai thuật toán backpropagation.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Autograd", "Backpropagation", "Gradients"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-005",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Để bật/tắt tính năng theo dõi gradient của Autograd cho một tensor, bạn sử dụng thuộc tính nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `my_tensor.requires_grad = True/False`",
+      "B. `my_tensor.track_grad = True/False`",
+      "C. `my_tensor.enable_grad = True/False`",
+      "D. `my_tensor.set_grad_tracking(True/False)`"
+    ],
+    "correct_answer": "A",
+    "explanation": "Thuộc tính `requires_grad` kiểm soát việc Autograd có nên xây dựng đồ thị tính toán để theo dõi gradient cho tensor đó hay không.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Autograd", "requires_grad"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-006",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "PyTorch Lightning được tạo ra để giải quyết vấn đề gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm hiệu suất của mô hình Deep Learning.",
+      "B. Cung cấp một lớp trừu tượng cấp cao hơn PyTorch thuần túy để tổ chức và cấu trúc code huấn luyện, giảm boilerplate code và cho phép dễ dàng mở rộng quy mô (multi-GPU, TPU) mà không thay đổi logic huấn luyện cốt lõi.",
+      "C. Hạn chế khả năng debug của mô hình.",
+      "D. Loại bỏ hoàn toàn nhu cầu về GPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lightning tập trung vào việc tách biệt logic nghiên cứu khỏi logic kỹ thuật, giúp code sạch hơn và dễ bảo trì, tái sử dụng.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Lightning", "Code Organization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-007",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Trong PyTorch, một mạng neural thường được xây dựng bằng cách kế thừa lớp nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `torch.Tensor`",
+      "B. `torch.nn.Module`",
+      "C. `torch.optim`",
+      "D. `torch.utils.data.Dataset`"
+    ],
+    "correct_answer": "B",
+    "explanation": "`torch.nn.Module` là lớp cơ sở cho tất cả các mô-đun mạng neural trong PyTorch, bao gồm các lớp, hàm kích hoạt và toàn bộ mô hình.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "Neural Network Modules", "nn.Module"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-008",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Phương thức `forward()` trong một lớp kế thừa từ `torch.nn.Module` có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khởi tạo các tham số của mô hình.",
+      "B. Định nghĩa cách dữ liệu được truyền qua mạng từ lớp đầu vào đến lớp đầu ra để tạo ra dự đoán (forward pass).",
+      "C. Tính toán gradient.",
+      "D. Cập nhật trọng số của mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phương thức `forward()` là nơi bạn định nghĩa kiến trúc và luồng tính toán của mạng. Khi bạn gọi một instance của `nn.Module`, phương thức `forward()` sẽ được thực thi.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Neural Network Modules", "forward()"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-009",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "TorchServe",
+    "question_text": "TorchServe là gì và tại sao nó được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một công cụ để tự động viết mã PyTorch.",
+      "B. Một công cụ mã nguồn mở được phát triển bởi AWS và Facebook để triển khai (serve) các mô hình PyTorch đã huấn luyện trong môi trường sản xuất một cách dễ dàng và có khả năng mở rộng.",
+      "C. Một thư viện để tạo các biểu đồ dữ liệu.",
+      "D. Một bộ công cụ để gỡ lỗi mô hình PyTorch."
+    ],
+    "correct_answer": "B",
+    "explanation": "TorchServe đơn giản hóa quá trình đưa mô hình từ nghiên cứu sang sản xuất, cung cấp API phục vụ, quản lý phiên bản và khả năng mở rộng.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "TorchServe", "Deployment", "Serving"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-010",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Data Loading and Processing",
+    "question_text": "Các lớp `torch.utils.data.Dataset` và `torch.utils.data.DataLoader` có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `Dataset` là để lưu mô hình, `DataLoader` là để huấn luyện mô hình.",
+      "B. `Dataset` trừu tượng hóa logic để truy cập từng mẫu dữ liệu (data sample), và `DataLoader` bao bọc `Dataset` để cung cấp các batch dữ liệu, xáo trộn, và tải dữ liệu song song (multi-process data loading).",
+      "C. `Dataset` là để tạo tensor, `DataLoader` là để trực quan hóa tensor.",
+      "D. Cả hai đều dùng để tính toán gradient."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đây là hai thành phần cốt lõi của pipeline dữ liệu trong PyTorch, giúp xử lý và cung cấp dữ liệu hiệu quả cho quá trình huấn luyện.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Data Loading and Processing", "Dataset", "DataLoader"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-011",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Để lưu một mô hình PyTorch đã huấn luyện, bạn thường sử dụng phương thức nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `torch.save(model.state_dict(), 'model.pth')`",
+      "B. `model.save('model.pth')`",
+      "C. `torch.export(model, 'model.pth')`",
+      "D. `model.to_file('model.pth')`"
+    ],
+    "correct_answer": "A",
+    "explanation": "`torch.save()` được sử dụng để lưu trạng thái của mô hình (state_dict), đây là phương pháp khuyến nghị để lưu và tải mô hình trong PyTorch.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "PyTorch Basics", "Model Saving"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-012",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Tại sao bạn cần gọi `optimizer.zero_grad()` ở đầu mỗi bước huấn luyện trong PyTorch?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để xóa mô hình khỏi bộ nhớ.",
+      "B. Để đặt lại gradient về 0 cho tất cả các tham số có thể học được của mô hình, tránh việc gradient tích lũy từ các lần backward pass trước đó.",
+      "C. Để đặt lại tốc độ học.",
+      "D. Để xóa dữ liệu đầu vào."
+    ],
+    "correct_answer": "B",
+    "explanation": "Gradient trong PyTorch được tích lũy theo mặc định. Nếu không gọi `zero_grad()`, gradient từ các batch trước đó sẽ được cộng vào gradient hiện tại, dẫn đến cập nhật trọng số không chính xác.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Training Loops", "Optimizer", "zero_grad"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-013",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Để tính toán gradient của hàm mất mát đối với các tham số của mô hình trong PyTorch, bạn sử dụng phương thức nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `loss.calculate_grad()`",
+      "B. `loss.backward()`",
+      "C. `loss.compute_derivative()`",
+      "D. `loss.gradient()`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Phương thức `backward()` trên tensor chứa giá trị hàm mất mát sẽ kích hoạt quá trình lan truyền ngược và tính toán gradient cho tất cả các tensor có `requires_grad=True` trong đồ thị tính toán.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Autograd", "backward()", "Gradients"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-014",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "Trong PyTorch Lightning, bạn định nghĩa các bước huấn luyện, validation và kiểm tra ở đâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trong các hàm Python độc lập.",
+      "B. Trong các phương thức `training_step`, `validation_step`, và `test_step` của lớp `LightningModule`.",
+      "C. Trực tiếp trong vòng lặp huấn luyện chính.",
+      "D. Trong file cấu hình YAML."
+    ],
+    "correct_answer": "B",
+    "explanation": "LightningModule đóng gói toàn bộ logic của mô hình và vòng lặp huấn luyện, validation, test vào một lớp duy nhất, làm cho code dễ đọc và tổ chức hơn.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Lightning", "LightningModule"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-015",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Khi khởi tạo các lớp trong `__init__` của một `nn.Module`, bạn nên gọi `super().__init__()` để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để in ra một thông báo chào mừng.",
+      "B. Để đảm bảo rằng constructor của lớp cha (`nn.Module`) được gọi, điều này cần thiết để khởi tạo đúng các thành phần của module (ví dụ: đăng ký các tham số).",
+      "C. Để xóa bộ nhớ cache.",
+      "D. Để kết nối với GPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "Việc gọi `super().__init__()` là một mẫu thiết kế chuẩn trong Python khi kế thừa các lớp, đặc biệt quan trọng với `nn.Module` để PyTorch có thể theo dõi các tham số và module con đúng cách.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Neural Network Modules", "__init__"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-016",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "TorchServe",
+    "question_text": "TorchServe sử dụng file cấu hình nào để định nghĩa cách mô hình được phục vụ và các siêu tham số (hyperparameters)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `model.json`",
+      "B. `config.yaml` hoặc `config.properties`",
+      "C. `server.txt`",
+      "D. `deploy.xml`"
+    ],
+    "correct_answer": "B",
+    "explanation": "TorchServe sử dụng các file cấu hình này để kiểm soát hành vi của server và các thông số cụ thể cho việc phục vụ mô hình.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "TorchServe", "Configuration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-017",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Data Loading and Processing",
+    "question_text": "Làm thế nào để bạn đảm bảo rằng dữ liệu được tải song song (multi-process data loading) khi sử dụng `DataLoader`?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bằng cách đặt `shuffle=True`.",
+      "B. Bằng cách đặt tham số `num_workers` lớn hơn 0 khi khởi tạo `DataLoader`.",
+      "C. Bằng cách đặt `batch_size` rất lớn.",
+      "D. Điều này được xử lý tự động và không thể cấu hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tham số `num_workers` cho phép `DataLoader` sử dụng nhiều tiến trình để tải dữ liệu, giúp cải thiện hiệu suất bằng cách giảm tắc nghẽn I/O.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Data Loading and Processing", "DataLoader", "Multi-processing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-018",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Đâu là sự khác biệt chính giữa `torch.Tensor` và NumPy array?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. NumPy array có thể chạy trên GPU, còn Tensor thì không.",
+      "B. Tensor có thể hoạt động trên GPU và hỗ trợ tự động tính toán đạo hàm (Autograd), trong khi NumPy array thì không.",
+      "C. NumPy array hỗ trợ nhiều loại dữ liệu hơn.",
+      "D. Không có sự khác biệt đáng kể."
+    ],
+    "correct_answer": "B",
+    "explanation": "Khả năng tận dụng GPU và Autograd là hai ưu điểm chính của PyTorch Tensors so với NumPy arrays cho các tác vụ Deep Learning.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Basics", "Tensor", "NumPy"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-019",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Khi nào thì bạn gọi `model.eval()` trong một training loop và tại sao?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ở đầu mỗi epoch để khởi tạo mô hình.",
+      "B. Trước khi thực hiện validation hoặc test để đặt mô hình vào chế độ đánh giá, vô hiệu hóa các lớp như Dropout và Batch Normalization hoạt động khác trong quá trình inference.",
+      "C. Sau khi mỗi lần cập nhật trọng số.",
+      "D. Khi lưu mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "`model.eval()` đảm bảo rằng các lớp như Dropout không 'ngắt' các nơ-ron và Batch Normalization sử dụng các thống kê đã học được (mean và variance) thay vì các thống kê của batch hiện tại.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Training Loops", "model.eval()"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-020",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Làm thế nào để bạn ngăn Autograd tính toán gradient cho một phần của đồ thị tính toán (ví dụ: khi thực hiện inference hoặc đóng băng các lớp để học chuyển giao)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng `torch.enable_grad()`.",
+      "B. Sử dụng `with torch.no_grad():` block.",
+      "C. Đặt `requires_grad=True` cho tất cả các tensor.",
+      "D. Xóa tensor khỏi bộ nhớ."
+    ],
+    "correct_answer": "B",
+    "explanation": "`torch.no_grad()` là một context manager vô hiệu hóa việc theo dõi gradient trong khối code của nó, giúp tiết kiệm bộ nhớ và tăng tốc độ tính toán cho inference.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Autograd", "torch.no_grad"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-021",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "PyTorch Lightning tự động xử lý các khía cạnh nào của việc huấn luyện phân tán (distributed training)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ lưu/tải checkpoint.",
+      "B. Tự động xử lý thiết lập phân tán, chuyển mô hình/dữ liệu đến các thiết bị phù hợp, và tổng hợp gradient trên các GPU/node khác nhau.",
+      "C. Chỉ tối ưu hóa hiệu suất CPU.",
+      "D. Không hỗ trợ huấn luyện phân tán."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đây là một trong những ưu điểm lớn nhất của Lightning, nó trừu tượng hóa sự phức tạp của việc huấn luyện phân tán, cho phép người dùng tập trung vào logic mô hình.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "PyTorch Lightning", "Distributed Training"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-022",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Để thêm một lớp tuyến tính (linear layer) vào mô hình PyTorch, bạn sử dụng lớp nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `torch.nn.Linear`",
+      "B. `torch.Linear`",
+      "C. `torch.layers.Linear`",
+      "D. `torch.FullyConnected`"
+    ],
+    "correct_answer": "A",
+    "explanation": "`torch.nn.Linear` thực hiện phép biến đổi tuyến tính $y = xA^T + b$.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "Neural Network Modules", "Linear Layer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-023",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "TorchServe",
+    "question_text": "Làm thế nào để bạn đóng gói mô hình PyTorch của mình và các tệp hỗ trợ (ví dụ: handler) để triển khai với TorchServe?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sao chép tất cả các tệp vào thư mục của TorchServe.",
+      "B. Sử dụng công cụ `torch-model-archiver` để tạo một tệp `.mar` (model archive).",
+      "C. Đặt mô hình trực tiếp vào cơ sở dữ liệu.",
+      "D. Chỉ cần chia sẻ file `.pth`."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tệp `.mar` chứa tất cả những gì TorchServe cần để tải và phục vụ mô hình, bao gồm mô hình, handler, và các dependencies khác.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "TorchServe", "Model Archiver"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-024",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Data Loading and Processing",
+    "question_text": "Mục đích của việc sử dụng `torch.nn.utils.rnn.pack_padded_sequence` và `pad_packed_sequence` trong NLP với PyTorch là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để thêm padding ngẫu nhiên vào các chuỗi.",
+      "B. Để xử lý hiệu quả các chuỗi có độ dài khác nhau trong RNNs bằng cách đóng gói các chuỗi đã được padding và sau đó giải nén chúng để xử lý đầu ra.",
+      "C. Để mã hóa từ vựng.",
+      "D. Để loại bỏ các từ dừng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các hàm này giúp tối ưu hóa tính toán khi làm việc với các chuỗi được padding, tránh tính toán không cần thiết trên các phần tử padding và giúp RNN xử lý dữ liệu đúng cách.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Data Loading and Processing", "NLP", "Padding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-025",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "PyTorch hoạt động theo mô hình lập trình nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Static graph (đồ thị tĩnh).",
+      "B. Dynamic computational graph (đồ thị tính toán động) hay còn gọi là 'define-by-run'.",
+      "C. Hybrid (kết hợp cả tĩnh và động).",
+      "D. Không có đồ thị tính toán."
+    ],
+    "correct_answer": "B",
+    "explanation": "Chế độ 'define-by-run' của PyTorch cho phép người dùng xây dựng và sửa đổi đồ thị tính toán trong thời gian chạy, giúp debug dễ dàng hơn và linh hoạt hơn trong việc xây dựng các kiến trúc phức tạp.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Basics", "Dynamic Graph"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-026",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Tại sao việc đặt mô hình vào chế độ huấn luyện (`model.train()`) trước khi bắt đầu huấn luyện là quan trọng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tắt gradient.",
+      "B. Để đặt mô hình vào chế độ huấn luyện, kích hoạt các lớp như Dropout và Batch Normalization hoạt động như mong đợi trong quá trình huấn luyện (ví dụ: Dropout ngẫu nhiên bỏ qua các nơ-ron).",
+      "C. Để xóa tất cả các tham số.",
+      "D. Để thay đổi tốc độ học."
+    ],
+    "correct_answer": "B",
+    "explanation": "`model.train()` đảm bảo rằng các lớp như Dropout và Batch Normalization hoạt động ở chế độ huấn luyện, cho phép mô hình học hiệu quả hơn.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Training Loops", "model.train()"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-027",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Kết quả của `loss.backward()` được lưu trữ ở đâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trong một biến riêng biệt `gradients`.",
+      "B. Trong thuộc tính `.grad` của từng tensor mà `requires_grad=True` và là một phần của đồ thị tính toán dẫn đến `loss`.",
+      "C. Chỉ được in ra màn hình console.",
+      "D. Chỉ được lưu trữ tạm thời và không thể truy cập được."
+    ],
+    "correct_answer": "B",
+    "explanation": "Khi `backward()` được gọi, PyTorch sẽ tính toán và lưu trữ gradient vào thuộc tính `.grad` của các tensor liên quan.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Autograd", "Gradients", ".grad"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-028",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "PyTorch Lightning Trainer có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Định nghĩa kiến trúc của mô hình.",
+      "B. Là lớp chính để quản lý toàn bộ quá trình huấn luyện, validation, và test, bao gồm các hoạt động như logging, saving checkpoints, và phân phối huấn luyện.",
+      "C. Chỉ tải dữ liệu huấn luyện.",
+      "D. Chỉ tính toán loss function."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trainer là trái tim của PyTorch Lightning, giúp tự động hóa và quản lý các khía cạnh phức tạp của quá trình huấn luyện Deep Learning.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Lightning", "Trainer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-029",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Để tạo một mạng neural sâu với nhiều lớp, bạn thường kết hợp các lớp `nn.Linear` và hàm kích hoạt như thế nào trong PyTorch?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bằng cách nối chúng thủ công trong phương thức `__init__`.",
+      "B. Sử dụng `torch.nn.Sequential` để tạo một container tuần tự của các lớp và hàm kích hoạt.",
+      "C. Bằng cách định nghĩa từng lớp riêng biệt và gọi chúng theo thứ tự trong `forward()`.",
+      "D. PyTorch tự động kết hợp chúng."
+    ],
+    "correct_answer": "B",
+    "explanation": "`nn.Sequential` là một cách thuận tiện để xây dựng các mạng feedforward đơn giản bằng cách xếp chồng các lớp lên nhau theo một trình tự cụ thể.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Neural Network Modules", "nn.Sequential"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-030",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "TorchServe",
+    "question_text": "Lợi ích chính của việc sử dụng TorchServe so với việc viết server phục vụ mô hình tùy chỉnh là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm dung lượng ổ đĩa cần thiết.",
+      "B. Cung cấp các tính năng sẵn có như API inference REST/gRPC, quản lý phiên bản mô hình, logging, monitoring và scaling, giúp đơn giản hóa việc triển khai trong sản xuất.",
+      "C. Không cần GPU để phục vụ mô hình.",
+      "D. Chỉ hoạt động với các mô hình rất nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "TorchServe giải quyết nhiều thách thức phổ biến trong việc triển khai ML trong sản xuất, giảm công sức phát triển và bảo trì.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "TorchServe", "Benefits"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-031",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Data Loading and Processing",
+    "question_text": "Khi nào việc sử dụng `torchvision.datasets` (hoặc `torchaudio.datasets`, `torchtext.datasets`) mang lại lợi thế?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn cần tạo tập dữ liệu tùy chỉnh hoàn toàn.",
+      "B. Khi bạn làm việc với các tập dữ liệu tiêu chuẩn phổ biến trong lĩnh vực thị giác máy tính, âm thanh hoặc xử lý ngôn ngữ tự nhiên, vì chúng cung cấp sẵn các lớp `Dataset` và các tiện ích tiền xử lý.",
+      "C. Khi bạn muốn huấn luyện mô hình rất nhanh.",
+      "D. Khi bạn không có quyền truy cập internet."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các module `torchvision`, `torchaudio`, `torchtext` cung cấp các `Dataset` được xây dựng sẵn cho các tập dữ liệu công cộng, giúp đơn giản hóa quá trình tải và chuẩn bị dữ liệu.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Data Loading and Processing", "torchvision", "torchtext"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-032",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Làm thế nào để tạo một tensor với tất cả các phần tử là số 0 trong PyTorch?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `torch.ones((shape))`",
+      "B. `torch.rand((shape))`",
+      "C. `torch.zeros((shape))`",
+      "D. `torch.empty((shape))`"
+    ],
+    "correct_answer": "C",
+    "explanation": "`torch.zeros((shape))` tạo một tensor có kích thước đã cho và tất cả các phần tử được khởi tạo bằng 0.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "PyTorch Basics", "Tensor Creation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-033",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Callback trong PyTorch Lightning được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để định nghĩa kiến trúc mô hình.",
+      "B. Để thực hiện các hành động tùy chỉnh tại các điểm cụ thể trong quá trình huấn luyện (ví dụ: lưu checkpoint, điều chỉnh tốc độ học, dừng sớm).",
+      "C. Để tiền xử lý dữ liệu.",
+      "D. Để tính toán loss function."
+    ],
+    "correct_answer": "B",
+    "explanation": "Callbacks cung cấp một cách linh hoạt để mở rộng và tùy chỉnh hành vi của vòng lặp huấn luyện mà không cần sửa đổi logic cốt lõi của `LightningModule`.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Training Loops", "PyTorch Lightning", "Callbacks"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-034",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Nếu một tensor không có thuộc tính `grad_fn`, điều đó có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó là kết quả của một phép toán mà không có đạo hàm.",
+      "B. Nó là một leaf tensor (tensor lá) được tạo trực tiếp bởi người dùng (ví dụ: bằng `torch.tensor()` hoặc `torch.ones()`), không phải là kết quả của một phép toán đã theo dõi.",
+      "C. Nó đã bị xóa khỏi bộ nhớ.",
+      "D. Nó đang được theo dõi gradient."
+    ],
+    "correct_answer": "B",
+    "explanation": "`grad_fn` là một đối tượng tham chiếu đến hàm đã tạo ra tensor đó trong đồ thị tính toán. Các tensor lá không có `grad_fn`.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Autograd", "grad_fn"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-035",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "Khi nào việc sử dụng PyTorch Lightning được khuyến nghị?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn chỉ cần thử nghiệm một ý tưởng rất nhanh với ít code.",
+      "B. Khi bạn đang phát triển các mô hình Deep Learning phức tạp, cần khả năng mở rộng (multi-GPU, TPU), và muốn code sạch sẽ, dễ bảo trì và tái sử dụng.",
+      "C. Khi bạn không có kiến thức về PyTorch Core.",
+      "D. Khi bạn chỉ có CPU để huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lightning là một lựa chọn tuyệt vời cho các dự án quy mô lớn hơn hoặc khi bạn muốn áp dụng các phương pháp tốt nhất trong Deep Learning mà không phải viết lại nhiều boilerplate code.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Lightning", "Use Case"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-036",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Làm thế nào để bạn truy cập các tham số (ví dụ: trọng số) của một mô hình đã được định nghĩa là `torch.nn.Module`?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thông qua `model.weights`.",
+      "B. Sử dụng `model.parameters()` hoặc `model.named_parameters()` để lặp qua các tham số.",
+      "C. Bằng cách gọi `model.get_params()`.",
+      "D. Chúng không thể truy cập trực tiếp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các phương thức này cung cấp quyền truy cập vào các tensor `nn.Parameter` đã được đăng ký trong mô hình, cho phép bạn kiểm tra hoặc thao tác chúng.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "Neural Network Modules", "Parameters"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-037",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "TorchServe",
+    "question_text": "File `handler.py` trong TorchServe có chức năng gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó định nghĩa kiến trúc mô hình.",
+      "B. Nó chứa logic tùy chỉnh để tiền xử lý đầu vào, chạy inference với mô hình, và hậu xử lý đầu ra trước khi gửi lại phản hồi.",
+      "C. Nó lưu trữ các siêu tham số huấn luyện.",
+      "D. Nó là nơi bạn định nghĩa vòng lặp huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Handler là thành phần quan trọng trong TorchServe, tùy chỉnh hành vi phục vụ của mô hình để phù hợp với các loại dữ liệu và tác vụ khác nhau.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "TorchServe", "Handler"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-038",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Data Loading and Processing",
+    "question_text": "Khi nào bạn nên sử dụng `torch.optim` module?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để định nghĩa các lớp mạng neural.",
+      "B. Để triển khai các thuật toán tối ưu hóa (ví dụ: SGD, Adam, RMSprop) giúp cập nhật trọng số của mô hình trong quá trình huấn luyện.",
+      "C. Để tải dữ liệu.",
+      "D. Để tính toán loss function."
+    ],
+    "correct_answer": "B",
+    "explanation": "`torch.optim` cung cấp nhiều loại optimizer khác nhau, mỗi loại với các thuật toán cập nhật trọng số riêng để tối thiểu hóa hàm mất mát.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "Data Loading and Processing", "Optimizer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-039",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Khác biệt giữa `model.state_dict()` và `model` (toàn bộ mô hình) khi lưu trong PyTorch là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `model.state_dict()` lưu toàn bộ mô hình, còn `model` chỉ lưu trọng số.",
+      "B. `model.state_dict()` lưu các tham số học được của mô hình (trọng số và độ lệch), trong khi lưu toàn bộ `model` sẽ lưu cả kiến trúc và trạng thái của optimizer, v.v., làm cho tệp lớn hơn và kém linh hoạt hơn khi tải lại.",
+      "C. `model.state_dict()` chỉ lưu các lớp ẩn.",
+      "D. Không có sự khác biệt."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lưu `state_dict()` là phương pháp được khuyến nghị vì nó nhỏ gọn và cho phép bạn tải trọng số vào các mô hình có kiến trúc tương tự nhưng có thể khác biệt nhẹ (ví dụ: thêm hoặc bớt một số lớp).",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "PyTorch Basics", "Model Saving", "state_dict"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-040",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Chức năng của `scheduler.step()` (ví dụ: `torch.optim.lr_scheduler`) trong training loop là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để cập nhật trọng số của mô hình.",
+      "B. Để điều chỉnh tốc độ học (learning rate) của optimizer dựa trên một lịch trình hoặc các điều kiện định trước (ví dụ: sau mỗi epoch, khi validation loss ngừng cải thiện).",
+      "C. Để tính toán gradient.",
+      "D. Để lưu checkpoint của mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "Learning rate scheduler giúp tối ưu hóa quá trình huấn luyện bằng cách điều chỉnh tốc độ học động, thường giảm tốc độ học khi mô hình gần hội tụ.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Training Loops", "Learning Rate Scheduler"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-041",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Điều gì xảy ra nếu bạn gọi `loss.backward()` hai lần mà không gọi `optimizer.zero_grad()` ở giữa?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ gradient của lần gọi đầu tiên được giữ lại.",
+      "B. Gradient sẽ bị nhân đôi, dẫn đến việc cập nhật trọng số không chính xác và huấn luyện sai lệch.",
+      "C. Sẽ có lỗi runtime.",
+      "D. Quá trình huấn luyện sẽ nhanh hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Autograd tích lũy gradient. Nếu không reset, gradient từ lần backward pass trước sẽ được cộng dồn vào lần hiện tại, dẫn đến các cập nhật trọng số lớn gấp đôi so với mong muốn.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Autograd", "zero_grad"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-042",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "PyTorch Lightning DataModule có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Định nghĩa mô hình Deep Learning.",
+      "B. Tổ chức tất cả các bước liên quan đến dữ liệu (tải, tiền xử lý, chia tập, DataLoader) vào một lớp duy nhất, tách biệt logic dữ liệu khỏi logic mô hình và huấn luyện.",
+      "C. Chỉ trực quan hóa dữ liệu.",
+      "D. Triển khai mô hình."
+    ],
+    "correct_answer": "B",
+    "explanation": "DataModule giúp tái sử dụng pipeline dữ liệu giữa các dự án hoặc thử nghiệm, và dễ dàng chuyển đổi giữa các môi trường huấn luyện (ví dụ: cục bộ, đám mây).",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Lightning", "DataModule"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-043",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Làm thế nào để bạn thêm một lớp Dropout vào mô hình PyTorch của mình?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `torch.Dropout(p=0.5)`",
+      "B. `torch.nn.Dropout(p=0.5)`",
+      "C. `torch.layers.Dropout(p=0.5)`",
+      "D. `torch.func.Dropout(p=0.5)`"
+    ],
+    "correct_answer": "B",
+    "explanation": "`torch.nn.Dropout` là lớp chuẩn để thêm Dropout, với `p` là xác suất một nơ-ron bị vô hiệu hóa.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "Neural Network Modules", "Dropout"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-044",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "TorchServe",
+    "question_text": "TorchServe hỗ trợ phục vụ các mô hình được xuất khẩu (exported) từ PyTorch dưới định dạng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ các checkpoint của PyTorch.",
+      "B. Các mô hình được lưu dưới dạng `state_dict` hoặc JIT-traced scripts (`torch.jit.script` hoặc `torch.jit.trace`).",
+      "C. Chỉ các mô hình ONNX.",
+      "D. Chỉ các mô hình TensorFlow."
+    ],
+    "correct_answer": "B",
+    "explanation": "TorchServe hoạt động hiệu quả nhất với các mô hình PyTorch được JIT-traced hoặc saved state_dict, cho phép phục vụ hiệu suất cao.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "TorchServe", "Model Format"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-045",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Data Loading and Processing",
+    "question_text": "Phương thức `collate_fn` trong `DataLoader` được sử dụng cho mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để xáo trộn dữ liệu.",
+      "B. Để tùy chỉnh cách các mẫu riêng lẻ từ `Dataset` được tập hợp thành một batch duy nhất (ví dụ: padding các chuỗi có độ dài khác nhau trong NLP).",
+      "C. Để tiền xử lý dữ liệu trước khi tải.",
+      "D. Để lưu trữ dữ liệu vào đĩa."
+    ],
+    "correct_answer": "B",
+    "explanation": "`collate_fn` là một hook mạnh mẽ cho phép xử lý linh hoạt khi tạo các batch, đặc biệt quan trọng cho các tác vụ như NLP nơi các mẫu thường có kích thước không đồng đều.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Data Loading and Processing", "DataLoader", "collate_fn"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-046",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Basics",
+    "question_text": "Để thực hiện một phép nhân ma trận giữa hai tensor `A` và `B` trong PyTorch, bạn sử dụng toán tử hoặc hàm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `A * B`",
+      "B. `torch.matmul(A, B)` hoặc `A @ B`",
+      "C. `A.multiply(B)`",
+      "D. `A.dot(B)`"
+    ],
+    "correct_answer": "B",
+    "explanation": "`torch.matmul()` và toán tử `@` (từ Python 3.5 trở lên) thực hiện phép nhân ma trận. Toán tử `*` thực hiện phép nhân theo phần tử (element-wise multiplication).",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "PyTorch Basics", "Matrix Multiplication"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-047",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Training Loops",
+    "question_text": "Khi sử dụng gradient clipping (cắt gradient) trong PyTorch, bạn thường gọi phương thức nào của optimizer?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `optimizer.clip_grad()`",
+      "B. `torch.nn.utils.clip_grad_norm_()` hoặc `torch.nn.utils.clip_grad_value_()`",
+      "C. `optimizer.step_clip()`",
+      "D. `model.clip_gradients()`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Gradient clipping là một kỹ thuật để ngăn chặn hiện tượng 'exploding gradients' bằng cách giới hạn kích thước của gradient. Các hàm này được gọi sau `loss.backward()` và trước `optimizer.step()`.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Training Loops", "Gradient Clipping"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-048",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Autograd",
+    "question_text": "Bạn có thể sử dụng Autograd để tính toán đạo hàm của một hàm số đối với các biến đầu vào không?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không, Autograd chỉ tính đạo hàm cho các trọng số mô hình.",
+      "B. Có, Autograd có thể tính toán đạo hàm của bất kỳ phép toán nào được thực hiện trên các tensor mà `requires_grad=True`.",
+      "C. Chỉ khi hàm số là tuyến tính.",
+      "D. Chỉ khi bạn viết đạo hàm thủ công."
+    ],
+    "correct_answer": "B",
+    "explanation": "Autograd là một hệ thống đạo hàm tự động linh hoạt, có thể tính toán gradient cho bất kỳ đồ thị tính toán nào được tạo ra bởi các phép toán PyTorch.",
+    "difficulty_level": "medium",
+    "tags": ["PyTorch", "Autograd", "Arbitrary Functions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-049",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "PyTorch Lightning",
+    "question_text": "PyTorch Lightning có hỗ trợ ghi log các số liệu (metrics) trong quá trình huấn luyện và validation không? Nếu có, thông qua cơ chế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không, bạn phải tự triển khai logging.",
+      "B. Có, thông qua phương thức `self.log()` trong `LightningModule`, tích hợp với các logger như TensorBoard, Weights & Biases.",
+      "C. Chỉ thông qua việc in ra console.",
+      "D. Chỉ bằng cách sử dụng một thư viện bên thứ ba không tích hợp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lightning tích hợp sâu với các hệ thống logging, giúp dễ dàng theo dõi và so sánh các thử nghiệm.",
+    "difficulty_level": "easy",
+    "tags": ["PyTorch", "PyTorch Lightning", "Logging", "Metrics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-PT-050",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "PyTorch",
+    "subskill_name": "Neural Network Modules",
+    "question_text": "Sự khác biệt giữa `nn.Parameter` và `torch.Tensor` thông thường là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `nn.Parameter` không thể chạy trên GPU.",
+      "B. `nn.Parameter` là một `torch.Tensor` được đăng ký đặc biệt như một tham số của `nn.Module`, có nghĩa là nó sẽ tự động được thêm vào danh sách các tham số của mô hình và được tối ưu hóa bởi optimizer.",
+      "C. `torch.Tensor` là để lưu trọng số, còn `nn.Parameter` là để lưu đầu vào.",
+      "D. `nn.Parameter` không thể tính toán gradient."
+    ],
+    "correct_answer": "B",
+    "explanation": "`nn.Parameter` là cách PyTorch phân biệt giữa các tensor dữ liệu và các tensor là tham số có thể học được của mô hình.",
+    "difficulty_level": "hard",
+    "tags": ["PyTorch", "Neural Network Modules", "nn.Parameter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-001",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Mục tiêu chính của 'Tokenization' (Phân tách từ) trong xử lý ngôn ngữ tự nhiên là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xóa tất cả các số khỏi văn bản.",
+      "B. Chia một chuỗi văn bản lớn thành các đơn vị nhỏ hơn gọi là 'tokens' (thường là từ hoặc cụm từ).",
+      "C. Chuyển đổi văn bản thành số.",
+      "D. Sắp xếp các câu theo thứ tự bảng chữ cái."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tokenization là bước đầu tiên và quan trọng trong việc chuẩn bị văn bản cho hầu hết các tác vụ NLP.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Tokenization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-002",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Sự khác biệt giữa 'Word Tokenization' và 'Sentence Tokenization' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Word Tokenization chia văn bản thành từ, Sentence Tokenization chia văn bản thành câu.",
+      "B. Word Tokenization chia văn bản thành câu, Sentence Tokenization chia văn bản thành từ.",
+      "C. Cả hai đều giống nhau.",
+      "D. Word Tokenization chỉ dùng cho tiếng Anh, Sentence Tokenization chỉ dùng cho các ngôn ngữ khác."
+    ],
+    "correct_answer": "A",
+    "explanation": "Word Tokenization tạo ra các đơn vị nhỏ nhất (từ), trong khi Sentence Tokenization giúp phân chia tài liệu thành các đơn vị ngữ nghĩa lớn hơn (câu).",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Tokenization", "Word Tokenization", "Sentence Tokenization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-003",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Mục tiêu của 'Text Normalization' (Chuẩn hóa văn bản) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Loại bỏ các từ quan trọng khỏi văn bản.",
+      "B. Chuyển đổi văn bản thành một dạng chuẩn hoặc nhất quán để giảm sự biến đổi không cần thiết, ví dụ: chuyển về chữ thường, xử lý dấu câu, sửa lỗi chính tả đơn giản.",
+      "C. Mã hóa văn bản thành số.",
+      "D. Nén kích thước file văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Chuẩn hóa giúp đảm bảo rằng cùng một từ được biểu diễn nhất quán, bất kể cách viết hoa, dấu câu, hoặc các biến thể nhỏ khác, cải thiện chất lượng dữ liệu cho mô hình.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Text Normalization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-004",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stop Word Removal",
+    "question_text": "Tại sao việc 'Stop Word Removal' (Loại bỏ từ dừng) lại được thực hiện trong NLP?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để thêm các từ thông dụng vào văn bản.",
+      "B. Để loại bỏ các từ phổ biến, không mang nhiều ý nghĩa ngữ nghĩa (như 'the', 'a', 'is') để giảm nhiễu và tập trung vào các từ quan trọng hơn cho phân tích.",
+      "C. Để làm cho văn bản khó đọc hơn.",
+      "D. Để mã hóa văn bản thành định dạng nhị phân."
+    ],
+    "correct_answer": "B",
+    "explanation": "Loại bỏ từ dừng giúp giảm kích thước từ vựng, tăng tốc độ xử lý và cải thiện hiệu suất của một số mô hình NLP, đặc biệt là các mô hình dựa trên tần suất từ.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Stop Word Removal"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-005",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "'Bag of Words' (BoW) là kỹ thuật mã hóa văn bản như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. BoW tạo ra một biểu diễn văn bản dưới dạng danh sách các từ duy nhất.",
+      "B. BoW biểu diễn văn bản dưới dạng một vector, trong đó mỗi chiều tương ứng với một từ trong từ vựng và giá trị là tần suất xuất hiện của từ đó trong tài liệu, bỏ qua thứ tự từ.",
+      "C. BoW tạo ra một biểu diễn dựa trên ngữ cảnh của từng từ.",
+      "D. BoW chỉ sử dụng các số nguyên để biểu diễn văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "BoW là một cách đơn giản nhưng mạnh mẽ để biểu diễn văn bản, thường là bước đầu tiên trước khi áp dụng các thuật toán học máy truyền thống.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Bag of Words"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-006",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "'TF-IDF' (Term Frequency-Inverse Document Frequency) tính toán điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Số lượng từ duy nhất trong một tài liệu.",
+      "B. Mức độ quan trọng của một từ trong một tài liệu cụ thể so với toàn bộ tập tài liệu (corpus).",
+      "C. Vị trí của một từ trong câu.",
+      "D. Tổng số từ trong một corpus."
+    ],
+    "correct_answer": "B",
+    "explanation": "TF-IDF cân nhắc cả tần suất xuất hiện của từ trong tài liệu (TF) và độ hiếm của từ đó trong toàn bộ tập tài liệu (IDF), giúp nhấn mạnh các từ có ý nghĩa hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "TF-IDF"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-007",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "'Word Embeddings' (Nhúng từ) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một cách để đếm tần suất từ.",
+      "B. Các biểu diễn vector dày đặc, chiều thấp của các từ, trong đó các từ có ý nghĩa ngữ nghĩa hoặc ngữ pháp tương tự nhau được ánh xạ tới các vị trí gần nhau trong không gian vector.",
+      "C. Một phương pháp để loại bỏ các từ dừng.",
+      "D. Một kỹ thuật để chuyển đổi từ thành chữ thường."
+    ],
+    "correct_answer": "B",
+    "explanation": "Word Embeddings (ví dụ: Word2Vec, GloVe, FastText) nắm bắt ngữ nghĩa và mối quan hệ giữa các từ, vượt trội hơn BoW/TF-IDF trong việc thể hiện ý nghĩa.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Word Embeddings"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-008",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Mục đích của 'Stemming' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chuyển đổi từ thành dạng nguyên thể của chúng (lemma).",
+      "B. Cắt bỏ hậu tố hoặc tiền tố của một từ để đưa nó về dạng gốc (stem), thường không phải là một từ có nghĩa trong từ điển.",
+      "C. Loại bỏ các từ không liên quan.",
+      "D. Thêm hậu tố vào các từ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Stemming là một quá trình heuristic nhanh hơn Lemmatization nhưng có thể tạo ra các từ gốc không có nghĩa (ví dụ: 'running' -> 'runn').",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "Stemming"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-009",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Sự khác biệt chính giữa 'Stemming' và 'Lemmatization' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Stemming làm cho từ dài hơn, Lemmatization làm cho từ ngắn hơn.",
+      "B. Stemming là một quá trình heuristic cắt bỏ hậu tố, trong khi Lemmatization là một quá trình dựa trên từ điển và hình thái học, đưa từ về dạng nguyên thể (lemma) có nghĩa trong từ điển.",
+      "C. Cả hai đều giống nhau.",
+      "D. Stemming chỉ dùng cho số, Lemmatization chỉ dùng cho chữ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lemmatization thường chính xác hơn vì nó sử dụng ngữ cảnh và kiến thức từ điển, trong khi Stemming có thể tạo ra các kết quả không chính xác về mặt ngữ pháp.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "Lemmatization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-010",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "'Part-of-Speech (POS) Tagging' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Gán một số duy nhất cho mỗi từ.",
+      "B. Gán nhãn ngữ pháp (như danh từ, động từ, tính từ, trạng từ) cho mỗi từ trong một câu.",
+      "C. Loại bỏ các từ ít quan trọng.",
+      "D. Đếm số lượng câu."
+    ],
+    "correct_answer": "B",
+    "explanation": "POS tagging rất hữu ích cho nhiều tác vụ NLP khác như Named Entity Recognition, phân tích cú pháp, và dịch máy.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-011",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "'Regular Expressions' (Biểu thức chính quy) được sử dụng để làm gì trong tiền xử lý văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tạo ra văn bản mới.",
+      "B. Để tìm kiếm, khớp (match) và thao tác các chuỗi văn bản dựa trên các mẫu (patterns) cụ thể, ví dụ: loại bỏ ký tự đặc biệt, trích xuất địa chỉ email.",
+      "C. Để lưu trữ dữ liệu văn bản.",
+      "D. Để huấn luyện mô hình học máy."
+    ],
+    "correct_answer": "B",
+    "explanation": "Regular expressions là một công cụ mạnh mẽ và linh hoạt cho việc xử lý các tác vụ tiền xử lý văn bản dựa trên mẫu.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Regular Expressions"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-012",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Tại sao việc chuyển đổi tất cả văn bản thành chữ thường (lowercase) là một bước phổ biến trong chuẩn hóa văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để làm cho văn bản trông đẹp hơn.",
+      "B. Để giảm số lượng các từ duy nhất trong từ vựng và đảm bảo rằng cùng một từ không bị coi là khác nhau chỉ vì cách viết hoa (ví dụ: 'Apple' và 'apple').",
+      "C. Để tăng tốc độ hiển thị văn bản.",
+      "D. Để mã hóa văn bản thành số."
+    ],
+    "correct_answer": "B",
+    "explanation": "Chuyển về chữ thường giúp chuẩn hóa các từ, làm cho quá trình tokenization và mã hóa trở nên nhất quán hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Text Normalization", "Lowercasing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-013",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stop Word Removal",
+    "question_text": "Trong những trường hợp nào việc loại bỏ từ dừng có thể không được khuyến khích?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi làm việc với các mô hình BoW.",
+      "B. Khi thứ tự từ hoặc các từ chức năng (function words) mang thông tin quan trọng (ví dụ: phân tích cú pháp, dịch máy, hoặc khi các từ dừng có thể thay đổi sắc thái ý nghĩa trong phân tích cảm xúc).",
+      "C. Khi tập dữ liệu rất lớn.",
+      "D. Khi bạn chỉ muốn phân loại văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong một số tác vụ, các từ dừng có thể đóng vai trò ngữ pháp hoặc ngữ nghĩa quan trọng, việc loại bỏ chúng có thể làm mất thông tin.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stop Word Removal", "Considerations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-014",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Nhược điểm chính của mô hình 'Bag of Words' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó giữ lại thông tin về thứ tự từ.",
+      "B. Nó bỏ qua thứ tự từ và ngữ cảnh, dẫn đến mất mát thông tin ngữ nghĩa và không xử lý tốt các từ đồng nghĩa/đa nghĩa.",
+      "C. Nó quá chậm để tính toán.",
+      "D. Nó yêu cầu một lượng lớn bộ nhớ."
+    ],
+    "correct_answer": "B",
+    "explanation": "BoW chỉ quan tâm đến sự xuất hiện của từ, không quan tâm đến cách các từ được sắp xếp hoặc mối quan hệ giữa chúng, điều này có thể hạn chế khả năng của mô hình trong việc nắm bắt ý nghĩa phức tạp.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Bag of Words", "Limitations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-015",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Công cụ nào trong NLTK được sử dụng phổ biến cho Stemming?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `WordNetLemmatizer`",
+      "B. `PorterStemmer` hoặc `SnowballStemmer`",
+      "C. `Tokenizer`",
+      "D. `TextNormalizer`"
+    ],
+    "correct_answer": "B",
+    "explanation": "PorterStemmer là một trong những thuật toán stemming sớm nhất và được sử dụng rộng rãi.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "NLTK", "Stemmer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-016",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "Thông tin từ POS tagging có thể hữu ích cho tác vụ NLP nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nén dữ liệu văn bản.",
+      "B. Named Entity Recognition (NER), phân tích cú pháp, dịch máy, và disambiguation từ.",
+      "C. Tạo ra từ vựng mới.",
+      "D. Chỉ đếm số lượng từ."
+    ],
+    "correct_answer": "B",
+    "explanation": "POS tags cung cấp thông tin ngữ pháp quan trọng, giúp các mô hình hiểu rõ hơn cấu trúc và ý nghĩa của câu.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging", "Applications"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-017",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "Để tìm tất cả các số trong một chuỗi văn bản bằng biểu thức chính quy, bạn sẽ sử dụng mẫu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `[a-z]`",
+      "B. `\\d+`",
+      "C. `[A-Z]`",
+      "D. `.`"
+    ],
+    "correct_answer": "B",
+    "explanation": "`\\d` khớp với bất kỳ chữ số nào, và `+` khớp với một hoặc nhiều lần xuất hiện của mẫu trước đó.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Regular Expressions", "Numbers"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-018",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Tokenization có thể phức tạp ở các ngôn ngữ khác tiếng Anh như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không có sự khác biệt đáng kể.",
+      "B. Các ngôn ngữ như tiếng Trung, tiếng Nhật không có khoảng trắng để phân tách từ, đòi hỏi các thuật toán phân tách từ phức tạp hơn dựa trên ngữ pháp và từ điển.",
+      "C. Tất cả các ngôn ngữ đều sử dụng cùng một quy tắc tokenization.",
+      "D. Tokenization chỉ phức tạp cho các ngôn ngữ có ít hơn 1000 từ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Đặc điểm của các ngôn ngữ khác nhau tạo ra những thách thức độc đáo cho tokenization, yêu cầu các phương pháp chuyên biệt.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Tokenization", "Cross-lingual"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-019",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Xử lý các ký tự đặc biệt và dấu câu trong chuẩn hóa văn bản là gì và tại sao nó quan trọng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để thêm nhiều ký tự đặc biệt vào văn bản.",
+      "B. Để loại bỏ hoặc chuẩn hóa các ký tự không phải chữ và số (ví dụ: `!, ?, ., @`) để tránh chúng được coi là các token riêng biệt và giúp mô hình tập trung vào nội dung ý nghĩa của từ.",
+      "C. Để làm cho văn bản dài hơn.",
+      "D. Để mã hóa văn bản thành hình ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các ký tự đặc biệt thường không mang ý nghĩa ngữ nghĩa nhưng có thể ảnh hưởng đến quá trình tokenization và từ vựng, việc chuẩn hóa chúng là cần thiết.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Text Normalization", "Special Characters"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-020",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Ưu điểm chính của Word Embeddings so với Bag of Words và TF-IDF là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Word Embeddings đòi hỏi ít bộ nhớ hơn.",
+      "B. Word Embeddings nắm bắt được mối quan hệ ngữ nghĩa giữa các từ, xử lý tốt hơn các từ đồng nghĩa/đa nghĩa, và thường dẫn đến hiệu suất tốt hơn trên các tác vụ NLP phức tạp.",
+      "C. Word Embeddings luôn nhanh hơn để tính toán.",
+      "D. Word Embeddings chỉ dùng cho các ngôn ngữ có ít từ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Word Embeddings có khả năng học và biểu diễn ngữ nghĩa của từ dựa trên ngữ cảnh, vượt trội hơn các kỹ thuật đếm từ đơn giản.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Word Embeddings", "Advantages"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-021",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Khi nào bạn nên ưu tiên Lemmatization hơn Stemming?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi tốc độ là yếu tố quan trọng nhất.",
+      "B. Khi độ chính xác ngữ pháp và ngữ nghĩa của từ là quan trọng, và bạn cần các dạng từ gốc có nghĩa trong từ điển (ví dụ: cho các ứng dụng phân tích văn bản chuyên sâu).",
+      "C. Khi bạn có rất ít dữ liệu.",
+      "D. Khi bạn chỉ muốn giảm kích thước từ vựng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lemmatization phù hợp hơn khi bạn cần sự chính xác cao về mặt ngữ pháp và ngữ nghĩa, mặc dù nó có thể chậm hơn Stemming.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "Lemmatization Advantages"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-022",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "Thư viện Python phổ biến nào cung cấp chức năng POS Tagging?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `Scikit-learn`",
+      "B. `NLTK` hoặc `SpaCy`",
+      "C. `Pandas`",
+      "D. `Matplotlib`"
+    ],
+    "correct_answer": "B",
+    "explanation": "NLTK và SpaCy là hai thư viện NLP phổ biến nhất trong Python, cung cấp nhiều công cụ bao gồm POS tagging.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging", "Libraries"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-023",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "Để loại bỏ tất cả các URL khỏi một chuỗi văn bản bằng biểu thức chính quy, bạn sẽ sử dụng mẫu nào (mẫu đơn giản)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `[a-z0-9]`",
+      "B. `http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+` (mẫu phức tạp hơn)",
+      "C. `\\w+`",
+      "D. `[.,!?]`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Đây là một mẫu regex phức tạp hơn nhưng cần thiết để khớp với các cấu trúc URL điển hình. Các mẫu đơn giản hơn có thể bỏ sót hoặc khớp sai.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Regular Expressions", "URL Removal"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-024",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Byte Pair Encoding (BPE) là một kỹ thuật tokenization hiện đại được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để mã hóa các từ thành byte.",
+      "B. Để tạo ra các 'subword tokens' bằng cách xác định các cặp byte/ký tự thường xuyên xuất hiện nhất và kết hợp chúng, giúp xử lý các từ hiếm (OOV words) và từ mới.",
+      "C. Để phân tách văn bản thành các câu.",
+      "D. Để đếm số lượng ký tự trong văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "BPE và các biến thể của nó (như WordPiece, SentencePiece) là nền tảng của nhiều mô hình Transformer hiện đại, giải quyết hiệu quả vấn đề từ không có trong từ vựng (OOV).",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Tokenization", "BPE", "Subword Tokenization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-025",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Xử lý các số (Numerics) trong chuẩn hóa văn bản bao gồm những việc gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ xóa tất cả các số.",
+      "B. Có thể là loại bỏ số, thay thế chúng bằng một token đặc biệt (ví dụ: `<NUM>`), hoặc chuẩn hóa định dạng số (ví dụ: chuyển đổi '1,000' thành '1000').",
+      "C. Thêm số vào văn bản.",
+      "D. Chuyển đổi số thành chữ cái."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cách xử lý số phụ thuộc vào tác vụ NLP. Ví dụ, trong phân tích cảm xúc, số có thể ít quan trọng hơn, nhưng trong phân tích tài chính, chúng rất quan trọng.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Text Normalization", "Numerics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-026",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Kỹ thuật mã hóa nào sau đây phù hợp nhất cho các mô hình học máy truyền thống (ví dụ: SVM, Naive Bayes) cho tác vụ phân loại văn bản đơn giản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Word Embeddings (Word2Vec).",
+      "B. TF-IDF hoặc Bag of Words.",
+      "C. Contextual Embeddings (BERT).",
+      "D. One-hot encoding ký tự."
+    ],
+    "correct_answer": "B",
+    "explanation": "TF-IDF và BoW là các biểu diễn dựa trên tần suất từ, đơn giản và hiệu quả cho nhiều mô hình truyền thống.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Traditional ML"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-027",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Ví dụ về một từ gốc (stem) có thể không phải là một từ hợp lệ sau khi Stemming là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `running` -> `run`",
+      "B. `beautiful` -> `beauti`",
+      "C. `cities` -> `city`",
+      "D. `agreement` -> `agree`"
+    ],
+    "correct_answer": "B",
+    "explanation": "Stemming có thể chỉ đơn giản là cắt bỏ hậu tố, dẫn đến các từ gốc không có nghĩa như 'beauti' từ 'beautiful'.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "Stemming Example"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-028",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "POS Tagging có thể giúp giải quyết vấn đề đa nghĩa của từ (Word Sense Disambiguation) như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bằng cách loại bỏ các từ không rõ nghĩa.",
+      "B. Bằng cách cung cấp thông tin ngữ pháp của từ trong ngữ cảnh, giúp phân biệt các ý nghĩa khác nhau của một từ dựa trên loại từ của nó (ví dụ: 'bank' là danh từ chỉ ngân hàng hay động từ chỉ hành động nghiêng).",
+      "C. Bằng cách tăng số lượng từ trong văn bản.",
+      "D. Bằng cách giảm độ dài của văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "POS tagging cung cấp một tín hiệu ngữ pháp quan trọng để phân biệt ý nghĩa của các từ đồng âm khác nghĩa.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging", "Word Sense Disambiguation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-029",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "Bạn sẽ sử dụng `re.sub()` trong Python để làm gì trong tiền xử lý văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tìm kiếm một mẫu trong chuỗi.",
+      "B. Để thay thế tất cả các lần xuất hiện của một mẫu (pattern) bằng một chuỗi thay thế trong một văn bản.",
+      "C. Để chia chuỗi thành danh sách các phần tử.",
+      "D. Để kiểm tra xem một mẫu có tồn tại trong chuỗi hay không."
+    ],
+    "correct_answer": "B",
+    "explanation": "`re.sub()` là một hàm rất phổ biến để làm sạch hoặc biến đổi văn bản bằng cách sử dụng biểu thức chính quy.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Regular Expressions", "re.sub"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-030",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Kỹ thuật 'WordPiece Tokenization' được sử dụng trong mô hình BERT có đặc điểm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó chỉ chia văn bản thành các từ đầy đủ.",
+      "B. Nó phân tách các từ thành các 'subword units' dựa trên tần suất của các subword trong dữ liệu huấn luyện, cho phép xử lý các từ không có trong từ vựng và giảm kích thước từ vựng.",
+      "C. Nó chỉ hoạt động với các ký tự đơn lẻ.",
+      "D. Nó luôn giữ nguyên các từ nguyên bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "WordPiece, tương tự như BPE, là một kỹ thuật subword tokenization giúp các mô hình ngôn ngữ lớn xử lý hiệu quả các từ hiếm và biến thể của từ.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Tokenization", "WordPiece", "BERT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-031",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Việc xử lý viết tắt và từ viết tắt trong chuẩn hóa văn bản liên quan đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn xóa tất cả các viết tắt.",
+      "B. Có thể là mở rộng chúng (ví dụ: 'Dr.' thành 'Doctor', 'don't' thành 'do not') hoặc chuẩn hóa chúng để đảm bảo tính nhất quán.",
+      "C. Chuyển đổi chúng thành các biểu tượng.",
+      "D. Bỏ qua hoàn toàn các viết tắt."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cách xử lý viết tắt phụ thuộc vào tác vụ. Mở rộng chúng giúp mô hình hiểu rõ hơn ý nghĩa đầy đủ, trong khi chuẩn hóa chúng giúp giảm sự biến đổi.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Text Normalization", "Abbreviations"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-032",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stop Word Removal",
+    "question_text": "Để loại bỏ các từ dừng, bạn thường cần một danh sách các từ dừng. Danh sách này thường được lấy từ đâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tự tạo một danh sách ngẫu nhiên.",
+      "B. Các thư viện NLP phổ biến như NLTK hoặc SpaCy cung cấp các danh sách từ dừng đã được xác định trước cho nhiều ngôn ngữ.",
+      "C. Từ bất kỳ trang web nào.",
+      "D. Luôn phải đào tạo một mô hình để xác định từ dừng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các danh sách từ dừng được cung cấp bởi các thư viện NLP thường được phát triển tốt và bao phủ nhiều ngôn ngữ.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Stop Word Removal", "Stopword List"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-033",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Biểu diễn 'One-hot Encoding' của từ hoạt động như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Biểu diễn mỗi từ bằng một số nguyên duy nhất.",
+      "B. Mỗi từ được biểu diễn bằng một vector nhị phân, trong đó chỉ có một phần tử là 1 (tại vị trí tương ứng với từ đó trong từ vựng) và tất cả các phần tử khác là 0.",
+      "C. Mỗi từ được biểu diễn bằng tần suất xuất hiện của nó.",
+      "D. Mỗi từ được biểu diễn bằng một vector có giá trị thực dày đặc."
+    ],
+    "correct_answer": "B",
+    "explanation": "One-hot encoding là một cách đơn giản để chuyển đổi các từ thành biểu diễn số, nhưng nó không nắm bắt được mối quan hệ giữa các từ và dẫn đến các vector rất thưa thớt cho từ vựng lớn.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "One-hot Encoding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-034",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Khi sử dụng NLTK cho Lemmatization, bạn cần tải xuống tài nguyên nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `stopwords`",
+      "B. `punkt`",
+      "C. `wordnet`",
+      "D. `averaged_perceptron_tagger`"
+    ],
+    "correct_answer": "C",
+    "explanation": "WordNet là một cơ sở dữ liệu từ vựng lớn của tiếng Anh, cung cấp thông tin về mối quan hệ ngữ nghĩa giữa các từ, được WordNetLemmatizer sử dụng.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "NLTK", "WordNet"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-035",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "Nếu bạn muốn phân biệt giữa 'read' (động từ nguyên thể) và 'read' (động từ quá khứ), kỹ thuật tiền xử lý nào sẽ hữu ích nhất?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Stop Word Removal.",
+      "B. Lemmatization.",
+      "C. Part-of-Speech Tagging.",
+      "D. Text Normalization (chuyển chữ thường)."
+    ],
+    "correct_answer": "C",
+    "explanation": "POS tagging sẽ gán các nhãn khác nhau (ví dụ: VBD cho quá khứ, VB cho nguyên thể) cho cùng một từ tùy thuộc vào ngữ cảnh, giúp phân biệt ý nghĩa ngữ pháp.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging", "Verb Forms"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-036",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "Trong Regex, ký tự `.` (dấu chấm) khớp với cái gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một dấu chấm theo nghĩa đen.",
+      "B. Bất kỳ ký tự nào ngoại trừ ký tự xuống dòng mới (newline character).",
+      "C. Chỉ khoảng trắng.",
+      "D. Chỉ các chữ cái."
+    ],
+    "correct_answer": "B",
+    "explanation": "`.` là một ký tự đại diện (wildcard) trong Regex, khớp với hầu hết các ký tự đơn lẻ.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Regular Expressions", "Wildcard"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-037",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Đâu là một ví dụ phổ biến của Word Embedding được huấn luyện trước (pre-trained Word Embedding)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. BoW.",
+      "B. TF-IDF.",
+      "C. Word2Vec, GloVe, FastText.",
+      "D. One-hot encoding."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các mô hình này đã được huấn luyện trên các tập dữ liệu văn bản rất lớn và cung cấp các biểu diễn nhúng từ chất lượng cao có thể được sử dụng trực tiếp hoặc tinh chỉnh.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Pre-trained Embeddings"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-038",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Lemmatization giúp giảm kích thước từ vựng (vocabulary size) như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bằng cách xóa các từ không phổ biến.",
+      "B. Bằng cách ánh xạ các dạng từ khác nhau (ví dụ: số ít, số nhiều, các thì của động từ) về cùng một dạng nguyên thể (lemma) duy nhất, giảm số lượng các token riêng biệt.",
+      "C. Bằng cách thêm các từ mới vào từ vựng.",
+      "D. Bằng cách chỉ giữ lại các từ dài."
+    ],
+    "correct_answer": "B",
+    "explanation": "Việc đưa các từ về dạng gốc của chúng là một kỹ thuật giảm kích thước từ vựng và chuẩn hóa hiệu quả.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "Vocabulary Reduction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-039",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "Việc sử dụng POS tags có thể cải thiện hiệu suất của mô hình Deep Learning trong NLP như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bằng cách giảm kích thước tập dữ liệu huấn luyện.",
+      "B. Bằng cách cung cấp thêm thông tin ngữ pháp hữu ích cho mô hình, giúp nó hiểu cấu trúc câu và mối quan hệ giữa các từ tốt hơn, đặc biệt quan trọng cho các tác vụ như dịch máy, phân tích cú pháp.",
+      "C. Bằng cách làm cho mô hình chạy nhanh hơn.",
+      "D. Bằng cách loại bỏ sự cần thiết của các kỹ thuật nhúng từ."
+    ],
+    "correct_answer": "B",
+    "explanation": "POS tags cung cấp một lớp thông tin ngữ pháp bổ sung mà các mô hình có thể học cách tận dụng, cải thiện khả năng hiểu ngôn ngữ.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging", "Deep Learning Benefits"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-040",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "Để khớp với một hoặc nhiều lần xuất hiện của ký tự 'a' trong Regex, bạn sẽ sử dụng mẫu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. `a?`",
+      "B. `a*`",
+      "C. `a+`",
+      "D. `a{1}`"
+    ],
+    "correct_answer": "C",
+    "explanation": "`+` là lượng từ (quantifier) trong Regex, có nghĩa là 'một hoặc nhiều lần'.",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Regular Expressions", "Quantifiers"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-041",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Nếu bạn muốn duy trì các từ ghép (compound words) như 'New York' làm một token duy nhất, bạn sẽ cần một phương pháp tokenization nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Simple whitespace tokenization.",
+      "B. Multi-word expression (MWE) tokenization.",
+      "C. Character-level tokenization.",
+      "D. Subword tokenization."
+    ],
+    "correct_answer": "B",
+    "explanation": "MWE tokenization được thiết kế để nhận diện và xử lý các cụm từ có ý nghĩa như một đơn vị duy nhất.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Tokenization", "Multi-word Expression"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-042",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Xử lý các emoji trong chuẩn hóa văn bản nên được thực hiện như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn xóa tất cả các emoji.",
+      "B. Có thể xóa, thay thế bằng mô tả văn bản (ví dụ: ':smile:'), hoặc giữ nguyên tùy thuộc vào tác vụ và liệu emoji có mang ý nghĩa quan trọng hay không (ví dụ: phân tích cảm xúc).",
+      "C. Biến đổi emoji thành các số.",
+      "D. Bỏ qua hoàn toàn emoji."
+    ],
+    "correct_answer": "B",
+    "explanation": "Emoji có thể chứa đựng thông tin cảm xúc quan trọng, vì vậy cách xử lý chúng cần được cân nhắc kỹ lưỡng dựa trên mục tiêu của tác vụ.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Text Normalization", "Emojis"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-043",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stop Word Removal",
+    "question_text": "Việc sử dụng từ dừng tùy chỉnh (custom stop words) là cần thiết khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn luôn cần từ dừng tùy chỉnh.",
+      "B. Khi các từ mặc định trong danh sách từ dừng của thư viện không phù hợp hoàn toàn với miền dữ liệu hoặc tác vụ cụ thể của bạn (ví dụ: các từ phổ biến trong y tế có thể không phải là từ dừng).",
+      "C. Khi tập dữ liệu quá nhỏ.",
+      "D. Khi bạn muốn tăng số lượng từ trong văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Danh sách từ dừng mặc định có thể không tối ưu cho mọi miền dữ liệu. Việc tùy chỉnh danh sách giúp cải thiện hiệu quả của quá trình loại bỏ từ dừng.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Stop Word Removal", "Custom Stopwords"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-044",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Để huấn luyện Word Embeddings tùy chỉnh trên một corpus lớn, bạn sẽ sử dụng công cụ hoặc thư viện nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Scikit-learn.",
+      "B. Gensim (đặc biệt cho Word2Vec) hoặc các framework Deep Learning như PyTorch/TensorFlow.",
+      "C. Pandas.",
+      "D. Matplotlib."
+    ],
+    "correct_answer": "B",
+    "explanation": "Gensim là một thư viện Python chuyên dụng cho mô hình hóa chủ đề và nhúng từ, cung cấp các triển khai hiệu quả của Word2Vec và các thuật toán tương tự.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "Word Embeddings Training"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-045",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Stemming and Lemmatization",
+    "question_text": "Ảnh hưởng của Stemming/Lemmatization lên ngữ nghĩa của từ là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Luôn giữ nguyên ngữ nghĩa.",
+      "B. Có thể giúp nhóm các từ có cùng gốc ngữ nghĩa nhưng đôi khi cũng có thể làm mất đi các sắc thái ngữ nghĩa tinh tế hoặc tạo ra các từ gốc không có nghĩa.",
+      "C. Luôn làm cho ngữ nghĩa rõ ràng hơn.",
+      "D. Không ảnh hưởng đến ngữ nghĩa."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mặc dù hữu ích cho chuẩn hóa, nhưng Stemming và Lemmatization cần được sử dụng cẩn thận vì chúng có thể ảnh hưởng đến ngữ nghĩa, đặc biệt trong các tác vụ nhạy cảm với sắc thái.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Stemming and Lemmatization", "Semantic Impact"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-046",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Part-of-Speech Tagging",
+    "question_text": "Độ chính xác của POS Tagging có thể bị ảnh hưởng bởi yếu tố nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước phông chữ của văn bản.",
+      "B. Kích thước và chất lượng của dữ liệu huấn luyện (training data) cho POS tagger, sự mơ hồ của từ trong ngữ cảnh, và sự đa dạng của văn bản.",
+      "C. Màu sắc của văn bản.",
+      "D. Tốc độ CPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "Giống như bất kỳ mô hình học máy nào, hiệu suất của POS tagger phụ thuộc vào chất lượng dữ liệu mà nó được huấn luyện và sự phức tạp của ngôn ngữ.",
+    "difficulty_level": "medium",
+    "tags": ["Text Preprocessing", "Part-of-Speech Tagging", "Accuracy Factors"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-047",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Regular Expressions",
+    "question_text": "Trong Regex, ký tự `^` (caret) có ý nghĩa gì khi nó đứng ở đầu một mẫu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khớp với cuối chuỗi.",
+      "B. Khớp với đầu chuỗi.",
+      "C. Khớp với bất kỳ ký tự nào.",
+      "D. Không có ý nghĩa đặc biệt."
+    ],
+    "correct_answer": "B",
+    "explanation": "`^` là một anchor trong Regex, đánh dấu vị trí bắt đầu của một chuỗi hoặc một dòng (tùy thuộc vào chế độ).",
+    "difficulty_level": "easy",
+    "tags": ["Text Preprocessing", "Regular Expressions", "Anchors"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-048",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Tokenization",
+    "question_text": "Tokenization dựa trên ký tự (Character-level Tokenization) có ưu điểm và nhược điểm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ưu điểm: Từ vựng rất nhỏ, xử lý tốt từ OOV. Nhược điểm: Không nắm bắt được ý nghĩa từ, cần mô hình phức tạp hơn để xử lý ngữ nghĩa.",
+      "B. Ưu điểm: Nắm bắt được ý nghĩa từ. Nhược điểm: Từ vựng rất lớn.",
+      "C. Ưu điểm: Luôn nhanh nhất. Nhược điểm: Không linh hoạt.",
+      "D. Ưu điểm: Luôn chính xác. Nhược điểm: Không thể xử lý nhiều ngôn ngữ."
+    ],
+    "correct_answer": "A",
+    "explanation": "Character-level tokenization tránh hoàn toàn vấn đề OOV và có từ vựng cố định nhỏ, nhưng nó mất đi thông tin về cấu trúc từ và ngữ nghĩa, yêu cầu các mô hình Deep Learning có khả năng học các biểu diễn này.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Tokenization", "Character-level"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-049",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Text Normalization",
+    "question_text": "Khi nào việc sửa lỗi chính tả (Spelling Correction) được coi là một phần của tiền xử lý văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn muốn tạo văn bản mới hoàn toàn.",
+      "B. Khi dữ liệu đầu vào chứa nhiều lỗi chính tả có thể ảnh hưởng đến chất lượng phân tích hoặc hiệu suất mô hình, giúp chuẩn hóa văn bản về dạng chính xác hơn.",
+      "C. Chỉ khi văn bản rất ngắn.",
+      "D. Khi bạn không có đủ dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sửa lỗi chính tả có thể là một bước tiền xử lý quan trọng, đặc biệt với dữ liệu được tạo bởi người dùng (ví dụ: bình luận trên mạng xã hội).",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Text Normalization", "Spelling Correction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-TP-050",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Text Preprocessing",
+    "subskill_name": "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+    "question_text": "Nếu bạn muốn biểu diễn văn bản dưới dạng vector và bảo toàn một phần thông tin về thứ tự từ trong khi vẫn giữ kích thước vector hợp lý, kỹ thuật nào có thể là sự lựa chọn tốt hơn so với BoW/TF-IDF?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. N-gram features (với BoW/TF-IDF).",
+      "B. Chỉ Word Embeddings không có ngữ cảnh.",
+      "C. Chỉ Lemmatization.",
+      "D. Chỉ Stop Word Removal."
+    ],
+    "correct_answer": "A",
+    "explanation": "N-gram (ví dụ: bigrams, trigrams) kết hợp các nhóm từ liên tiếp, giúp nắm bắt một số thông tin về thứ tự từ và ngữ cảnh, cải thiện khả năng biểu diễn so với unigram BoW/TF-IDF.",
+    "difficulty_level": "hard",
+    "tags": ["Text Preprocessing", "Encoding Techniques", "N-grams"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-001",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "'Sentiment Analysis' (Phân tích cảm xúc) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại văn bản dựa trên chủ đề.",
+      "B. Xác định sắc thái cảm xúc (ví dụ: tích cực, tiêu cực, trung tính) hoặc ý kiến trong một đoạn văn bản.",
+      "C. Dịch văn bản từ ngôn ngữ này sang ngôn ngữ khác.",
+      "D. Tóm tắt một đoạn văn bản dài."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân tích cảm xúc là một tác vụ cơ bản trong NLP với nhiều ứng dụng trong kinh doanh, tiếp thị và nghiên cứu thị trường.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-002",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "'Question Answering' (Hỏi đáp) là tác vụ gì trong NLP?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ra câu hỏi mới.",
+      "B. Xây dựng hệ thống có khả năng tự động trả lời các câu hỏi được đặt ra bằng ngôn ngữ tự nhiên, dựa trên một tập hợp các tài liệu hoặc cơ sở kiến thức.",
+      "C. Phân tích ngữ pháp của câu hỏi.",
+      "D. Dịch câu hỏi sang một ngôn ngữ khác."
+    ],
+    "correct_answer": "B",
+    "explanation": "Hệ thống hỏi đáp là một lĩnh vực nghiên cứu quan trọng trong AI, cho phép máy tính hiểu và tương tác với thông tin như con người.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Question Answering"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-003",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "'Text Classification' (Phân loại văn bản) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tóm tắt nội dung văn bản.",
+      "B. Gán một hoặc nhiều nhãn (label) hoặc danh mục (category) cho một đoạn văn bản dựa trên nội dung của nó.",
+      "C. Chuyển đổi văn bản thành giọng nói.",
+      "D. Phát hiện các lỗi ngữ pháp trong văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân loại văn bản là một trong những tác vụ cơ bản và ứng dụng rộng rãi nhất trong NLP, từ lọc spam đến phân loại tin tức.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Text Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-004",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "'Text Summarization' (Tóm tắt văn bản) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mở rộng văn bản gốc với các chi tiết bổ sung.",
+      "B. Tạo ra một phiên bản ngắn gọn, súc tích của một hoặc nhiều tài liệu, giữ lại các thông tin quan trọng nhất.",
+      "C. Đánh giá chất lượng của văn bản.",
+      "D. Dịch văn bản sang ngôn ngữ khác."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tóm tắt văn bản giúp người dùng nhanh chóng nắm bắt nội dung chính của các tài liệu dài mà không cần đọc toàn bộ.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Text Summarization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-005",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": "'Named Entity Recognition (NER)' (Nhận dạng thực thể có tên) có mục tiêu gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đếm số lượng từ trong văn bản.",
+      "B. Xác định và phân loại các thực thể có tên trong văn bản (ví dụ: tên người, địa điểm, tổ chức, ngày tháng, tiền tệ) vào các danh mục đã định nghĩa trước.",
+      "C. Phân tích cảm xúc của văn bản.",
+      "D. Dịch tên riêng sang ngôn ngữ khác."
+    ],
+    "correct_answer": "B",
+    "explanation": "NER là một tác vụ nền tảng trong trích xuất thông tin, hữu ích cho nhiều ứng dụng như chatbot, hệ thống tìm kiếm thông tin, và xây dựng cơ sở tri thức.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-006",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "'Topic Modeling' (Mô hình hóa chủ đề) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ra các chủ đề ngẫu nhiên cho văn bản.",
+      "B. Một kỹ thuật học máy không giám sát để khám phá các chủ đề (topics) trừu tượng tiềm ẩn trong một bộ sưu tập lớn các tài liệu văn bản.",
+      "C. Phân loại văn bản thành các danh mục đã biết trước.",
+      "D. Đánh dấu các phần của bài phát biểu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mô hình hóa chủ đề giúp hiểu cấu trúc ngữ nghĩa của tập dữ liệu văn bản lớn mà không cần nhãn thủ công.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Topic Modeling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-007",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "'Machine Translation' (Dịch máy) là tác vụ gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dịch ngôn ngữ ký hiệu.",
+      "B. Tự động dịch văn bản hoặc lời nói từ ngôn ngữ nguồn sang ngôn ngữ đích, duy trì ý nghĩa gốc.",
+      "C. Phân tích ngữ pháp của văn bản.",
+      "D. Tóm tắt văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Dịch máy là một trong những thách thức lớn và phức tạp nhất trong NLP, đòi hỏi sự hiểu biết sâu sắc về ngữ pháp, ngữ nghĩa và văn hóa của cả hai ngôn ngữ.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Machine Translation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-008",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Sự khác biệt giữa phân tích cảm xúc cấp câu (sentence-level) và cấp tài liệu (document-level) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Cấp câu chỉ phân tích một từ, cấp tài liệu phân tích cả câu.",
+      "B. Cấp câu xác định cảm xúc của từng câu, trong khi cấp tài liệu xác định cảm xúc tổng thể của toàn bộ tài liệu.",
+      "C. Cấp câu sử dụng mô hình Deep Learning, cấp tài liệu sử dụng mô hình truyền thống.",
+      "D. Không có sự khác biệt."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mức độ granular của phân tích cảm xúc phụ thuộc vào yêu cầu của ứng dụng, có thể đi sâu hơn nữa đến cấp độ khía cạnh (aspect-based sentiment analysis).",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Levels"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-009",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "Loại hệ thống hỏi đáp nào thường trả lời bằng cách trích xuất một đoạn văn bản chính xác từ ngữ cảnh đã cho?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Free-form QA.",
+      "B. Extractive QA (Hỏi đáp trích xuất).",
+      "C. Generative QA.",
+      "D. Multiple-choice QA."
+    ],
+    "correct_answer": "B",
+    "explanation": "Extractive QA là phổ biến trong các bộ dữ liệu như SQuAD, nơi câu trả lời luôn là một đoạn con của văn bản đầu vào.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Question Answering", "Extractive QA"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-010",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "Một thách thức phổ biến trong phân loại văn bản là 'imbalanced datasets' (tập dữ liệu không cân bằng). Điều này có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các nhãn không được gán đúng cách.",
+      "B. Số lượng mẫu của các lớp khác nhau không đồng đều, một lớp có thể có rất ít mẫu so với các lớp khác, dẫn đến mô hình thiên vị lớp đa số.",
+      "C. Kích thước văn bản trong tập dữ liệu không đồng đều.",
+      "D. Các nhãn bị thiếu trong tập dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tập dữ liệu không cân bằng là một vấn đề phổ biến có thể ảnh hưởng nghiêm trọng đến hiệu suất của mô hình, đặc biệt là đối với các lớp thiểu số.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Text Classification", "Imbalanced Data"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-011",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "Sự khác biệt giữa tóm tắt văn bản 'Extractive' và 'Abstractive' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Extractive chỉ dùng cho các bài báo khoa học, Abstractive cho tin tức.",
+      "B. Extractive tạo tóm tắt bằng cách chọn các câu hoặc cụm từ nguyên bản từ văn bản gốc, trong khi Abstractive tạo ra các câu mới không nhất thiết phải có trong văn bản gốc.",
+      "C. Extractive là thủ công, Abstractive là tự động.",
+      "D. Extractive nhanh hơn, Abstractive chậm hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Extractive summarization đơn giản hơn để triển khai nhưng có thể thiếu tính mạch lạc, trong khi Abstractive summarization phức tạp hơn nhưng tạo ra tóm tắt tự nhiên và chất lượng cao hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Text Summarization", "Extractive", "Abstractive"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-012",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": "Trong tác vụ NER, nhãn 'B-PER' có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Bắt đầu của một địa điểm.",
+      "B. Bắt đầu của một thực thể Người (Person).",
+      "C. Bên trong của một tổ chức.",
+      "D. Cuối của một ngày."
+    ],
+    "correct_answer": "B",
+    "explanation": "Định dạng BIO (Begin, Inside, Outside) là một lược đồ gắn nhãn phổ biến cho NER, trong đó 'B-' chỉ ra khởi đầu của một thực thể.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)", "BIO Tagging"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-013",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "Thuật toán phổ biến nhất cho Topic Modeling là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Support Vector Machines (SVM).",
+      "B. Latent Dirichlet Allocation (LDA).",
+      "C. K-Means Clustering.",
+      "D. Naive Bayes."
+    ],
+    "correct_answer": "B",
+    "explanation": "LDA là một mô hình thống kê tạo sinh để mô hình hóa chủ đề, giả định rằng mỗi tài liệu là sự pha trộn của các chủ đề và mỗi chủ đề là sự pha trộn của các từ.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Topic Modeling", "LDA"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-014",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "Cách tiếp cận dịch máy hiện đại nhất dựa trên kiến trúc nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Rule-based (Dựa trên luật).",
+      "B. Statistical Machine Translation (SMT).",
+      "C. Neural Machine Translation (NMT), đặc biệt là các mô hình Transformer.",
+      "D. Example-based (Dựa trên ví dụ)."
+    ],
+    "correct_answer": "C",
+    "explanation": "NMT, đặc biệt với kiến trúc Transformer, đã cách mạng hóa dịch máy, mang lại chất lượng bản dịch vượt trội.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Machine Translation", "NMT", "Transformer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-015",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Khi nào thì phân tích cảm xúc dựa trên luật (Rule-based Sentiment Analysis) là một lựa chọn tốt?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn có một lượng lớn dữ liệu được gán nhãn.",
+      "B. Khi bạn có một miền dữ liệu cụ thể, có thể định nghĩa rõ ràng các luật và từ điển cảm xúc, và không có đủ dữ liệu để huấn luyện mô hình học máy.",
+      "C. Khi bạn cần độ chính xác cao nhất cho mọi trường hợp.",
+      "D. Khi bạn muốn tự động học tất cả các mẫu cảm xúc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Rule-based systems có thể hiệu quả trong các miền hẹp và có thể giải thích được, nhưng chúng khó mở rộng và duy trì.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Rule-based"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-016",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "Thách thức chính trong Question Answering dựa trên kiến thức đồ thị (Knowledge Graph QA) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ truy vấn quá nhanh.",
+      "B. Chuyển đổi ngôn ngữ tự nhiên thành các truy vấn có cấu trúc (ví dụ: SPARQL) và xử lý sự mơ hồ trong các truy vấn.",
+      "C. Khả năng tìm kiếm thông tin không giới hạn.",
+      "D. Nó chỉ hoạt động với các câu hỏi rất đơn giản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Ánh xạ ngôn ngữ tự nhiên sang cấu trúc dữ liệu đồ thị tri thức là một thách thức lớn trong QA dựa trên KG.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Question Answering", "Knowledge Graph QA"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-017",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "Các mô hình học máy truyền thống nào thường được sử dụng cho Text Classification (trước kỷ nguyên Deep Learning)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Recurrent Neural Networks (RNNs).",
+      "B. Support Vector Machines (SVMs), Naive Bayes, Logistic Regression.",
+      "C. Transformers.",
+      "D. Convolutional Neural Networks (CNNs)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Những thuật toán này đã từng là xương sống của phân loại văn bản và vẫn còn hiệu quả trong nhiều trường hợp.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Text Classification", "Traditional ML"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-018",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "Khi nào thì tóm tắt văn bản 'Extractive' có thể là lựa chọn ưu tiên hơn 'Abstractive'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn cần tóm tắt rất tự nhiên và sáng tạo.",
+      "B. Khi độ chính xác của thông tin gốc là tối quan trọng, và bạn muốn đảm bảo rằng mọi câu trong tóm tắt đều có nguồn gốc từ văn bản gốc (ví dụ: tóm tắt pháp lý, y tế).",
+      "C. Khi bạn có rất nhiều dữ liệu để huấn luyện.",
+      "D. Khi bạn muốn tóm tắt dài hơn văn bản gốc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Extractive summarization đảm bảo tính chính xác và nguồn gốc của thông tin, điều này rất quan trọng trong các lĩnh vực yêu cầu độ tin cậy cao.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Text Summarization", "Extractive Advantages"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-019",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": " NER có ứng dụng thực tế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ra hình ảnh từ văn bản.",
+      "B. Trích xuất thông tin, xây dựng biểu đồ tri thức, tìm kiếm thông tin, hệ thống hỏi đáp, và ẩn danh dữ liệu nhạy cảm.",
+      "C. Chỉ phân loại các email.",
+      "D. Dịch ngôn ngữ."
+    ],
+    "correct_answer": "B",
+    "explanation": "NER là một công cụ mạnh mẽ để tổ chức và cấu trúc dữ liệu phi cấu trúc, mở ra nhiều ứng dụng trong doanh nghiệp và nghiên cứu.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)", "Applications"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-020",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "Topic Modeling khác gì so với Text Classification?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Topic Modeling yêu cầu nhãn thủ công, Text Classification thì không.",
+      "B. Topic Modeling là không giám sát, khám phá các chủ đề tiềm ẩn; Text Classification là có giám sát, gán văn bản vào các danh mục đã biết trước.",
+      "C. Topic Modeling chỉ hoạt động với các văn bản ngắn, Text Classification với các văn bản dài.",
+      "D. Cả hai đều giống nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sự khác biệt chính nằm ở việc có cần nhãn dữ liệu trước hay không. Topic Modeling tìm kiếm cấu trúc tự nhiên trong dữ liệu, trong khi Text Classification học từ các nhãn đã cho.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Topic Modeling", "Text Classification", "Comparison"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-021",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "Thách thức chính trong Neural Machine Translation (NMT) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó không thể xử lý các ngôn ngữ có cùng bảng chữ cái.",
+      "B. Yêu cầu lượng lớn dữ liệu song ngữ, khó xử lý các từ hiếm, vấn đề dịch các tên riêng và thuật ngữ, và khả năng tạo ra bản dịch trông tự nhiên nhưng không chính xác (hallucinations).",
+      "C. Nó quá nhanh để sử dụng.",
+      "D. Nó chỉ hoạt động cho các câu rất ngắn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mặc dù NMT đã đạt được những tiến bộ vượt bậc, nhưng vẫn còn nhiều thách thức, đặc biệt trong các kịch bản thực tế phức tạp.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Machine Translation", "NMT Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-022",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Để huấn luyện một mô hình phân tích cảm xúc dựa trên học máy (machine learning-based), bạn cần loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ văn bản thô chưa có nhãn.",
+      "B. Tập dữ liệu văn bản đã được gán nhãn cảm xúc (tích cực, tiêu cực, trung tính).",
+      "C. Chỉ các số.",
+      "D. Hình ảnh có nhãn cảm xúc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Huấn luyện mô hình học máy yêu cầu dữ liệu có nhãn để mô hình có thể học mối quan hệ giữa văn bản và cảm xúc.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Labeled Data"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-023",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "Đâu là một ví dụ về 'Generative QA'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Trích xuất câu trả lời trực tiếp từ một đoạn văn bản.",
+      "B. Một hệ thống chatbot có thể tạo ra các câu trả lời mới, không nhất thiết phải có trong tài liệu nguồn, dựa trên sự hiểu biết của nó về ngôn ngữ và thế giới.",
+      "C. Một hệ thống chỉ trả lời câu hỏi 'có' hoặc 'không'.",
+      "D. Một hệ thống chỉ tìm kiếm câu trả lời trong một cơ sở dữ liệu có cấu trúc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Generative QA phức tạp hơn Extractive QA vì nó yêu cầu mô hình không chỉ hiểu mà còn tạo ra văn bản mới, thường thông qua các mô hình ngôn ngữ lớn (LLMs).",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Question Answering", "Generative QA"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-024",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "Khi huấn luyện một mô hình Text Classification, bạn cần chọn loại hàm mất mát (loss function) nào cho bài toán phân loại đa lớp (multi-class)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Squared Error (MSE).",
+      "B. Binary Cross-Entropy (BCE).",
+      "C. Categorical Cross-Entropy hoặc Sparse Categorical Cross-Entropy.",
+      "D. Huber Loss."
+    ],
+    "correct_answer": "C",
+    "explanation": "Categorical Cross-Entropy phù hợp khi nhãn được mã hóa one-hot, trong khi Sparse Categorical Cross-Entropy phù hợp khi nhãn là số nguyên.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Text Classification", "Loss Function"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-025",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "Các mô hình Deep Learning phổ biến cho tóm tắt văn bản Abstractive là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Logistic Regression.",
+      "B. Seq2Seq models (Encoder-Decoder architectures), đặc biệt là các biến thể dựa trên Transformer.",
+      "C. Naive Bayes.",
+      "D. K-Means."
+    ],
+    "correct_answer": "B",
+    "explanation": "Seq2Seq và Transformer là kiến trúc chính cho các tác vụ sinh văn bản như tóm tắt trừu tượng, dịch máy.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Text Summarization", "Deep Learning Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-026",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": "Hầu hết các hệ thống NER hiện đại sử dụng kiến trúc mô hình nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Traditional rule-based systems.",
+      "B. Recurrent Neural Networks (RNNs) như LSTMs/GRUs (thường kết hợp với CRF) hoặc các mô hình dựa trên Transformer (ví dụ: BERT, RoBERTa).",
+      "C. Decision Trees.",
+      "D. K-Nearest Neighbors."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các mô hình tuần hoàn và Transformer đã chứng tỏ hiệu suất vượt trội trong NER nhờ khả năng nắm bắt ngữ cảnh và phụ thuộc dài hạn.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)", "Architectures"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-027",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "Đo lường sự 'coherence' (độ mạch lạc) của các chủ đề trong Topic Modeling có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đo lường tốc độ tính toán của mô hình.",
+      "B. Đánh giá mức độ các từ trong một chủ đề liên quan chặt chẽ với nhau và có ý nghĩa ngữ nghĩa đối với con người.",
+      "C. Đo lường kích thước của từng chủ đề.",
+      "D. Đo lường số lượng tài liệu trong mỗi chủ đề."
+    ],
+    "correct_answer": "B",
+    "explanation": "Topic coherence là một chỉ số quan trọng để đánh giá chất lượng của các chủ đề được khám phá bởi mô hình, vì các chủ đề có độ mạch lạc cao thường dễ hiểu và hữu ích hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Topic Modeling", "Coherence"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-028",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "Đâu là ưu điểm chính của NMT so với SMT (Statistical Machine Translation)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. NMT cần ít dữ liệu huấn luyện hơn.",
+      "B. NMT tạo ra bản dịch trôi chảy và tự nhiên hơn, xử lý tốt hơn các câu dài và phức tạp, và có khả năng học các mối quan hệ ngữ nghĩa sâu sắc hơn.",
+      "C. NMT luôn nhanh hơn.",
+      "D. NMT không yêu cầu GPU."
+    ],
+    "correct_answer": "B",
+    "explanation": "NMT đã vượt qua SMT về chất lượng bản dịch, đặc biệt là về tính trôi chảy và ngữ pháp, nhờ khả năng học các biểu diễn ngôn ngữ phức tạp.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Machine Translation", "NMT Advantages"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-029",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Tại sao việc xử lý 'ngôn ngữ nói' (informal language) và 'sarcasm' (châm biếm) lại là thách thức trong phân tích cảm xúc?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các từ này quá dài.",
+      "B. Ngôn ngữ nói thường chứa các lỗi chính tả, từ viết tắt, và cấu trúc không chuẩn; châm biếm đảo ngược ý nghĩa thực sự của từ, đòi hỏi sự hiểu biết ngữ cảnh sâu sắc.",
+      "C. Các từ này không có trong từ điển.",
+      "D. Các từ này hiếm khi xuất hiện trong dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Châm biếm và ngôn ngữ nói tạo ra sự không khớp giữa nghĩa đen và nghĩa bóng, là một thách thức lớn cho các mô hình phân tích cảm xúc.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-030",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "Bộ dữ liệu hỏi đáp phổ biến nhất cho Extractive QA là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. IMDb (phân tích cảm xúc phim).",
+      "B. SQuAD (Stanford Question Answering Dataset).",
+      "C. COCO (thị giác máy tính).",
+      "D. MNIST (nhận dạng chữ số)."
+    ],
+    "correct_answer": "B",
+    "explanation": "SQuAD là một bộ dữ liệu chuẩn mực cho Extractive QA, chứa các cặp câu hỏi-đoạn văn bản nơi câu trả lời là một đoạn con của đoạn văn bản.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Question Answering", "SQuAD"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-031",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "Chỉ số đánh giá nào (evaluation metric) thường được ưu tiên hơn độ chính xác đơn thuần (accuracy) khi bạn có tập dữ liệu không cân bằng trong phân loại văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. F1-score, Precision, Recall, AUC-ROC.",
+      "B. Only Accuracy.",
+      "C. Training time.",
+      "D. Memory usage."
+    ],
+    "correct_answer": "A",
+    "explanation": "Precision, Recall và F1-score cung cấp cái nhìn sâu sắc hơn về hiệu suất của mô hình trên từng lớp, đặc biệt quan trọng với các lớp thiểu số. AUC-ROC cũng là một chỉ số mạnh mẽ cho bài toán không cân bằng.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Text Classification", "Evaluation Metrics", "Imbalanced Data"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-032",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "Chỉ số nào thường được sử dụng để đánh giá chất lượng của tóm tắt văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. BLEU score.",
+      "B. ROUGE score.",
+      "C. Perplexity.",
+      "D. Accuracy."
+    ],
+    "correct_answer": "B",
+    "explanation": "ROUGE (Recall-Oriented Understudy for Gisting Evaluation) là một tập hợp các chỉ số được sử dụng rộng rãi để đánh giá chất lượng của bản tóm tắt tự động bằng cách so sánh nó với bản tóm tắt do con người viết.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Text Summarization", "ROUGE"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-033",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": "Một thách thức phổ biến trong NER là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các thực thể luôn có cùng độ dài.",
+      "B. Sự đa dạng và mơ hồ của các thực thể có tên, đặc biệt là các tên viết tắt hoặc các thực thể có nhiều hơn một loại (ví dụ: 'Apple' có thể là công ty hoặc trái cây).",
+      "C. Các thực thể luôn là danh từ riêng.",
+      "D. Các thực thể chỉ xuất hiện một lần trong văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sự mơ hồ và biến thể là những vấn đề lớn trong NER, đòi hỏi các mô hình phải có khả năng hiểu ngữ cảnh.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-034",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "Ngoài LDA, có những kỹ thuật nào khác cho Topic Modeling?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. TF-IDF.",
+      "B. NMF (Non-negative Matrix Factorization), LSA (Latent Semantic Analysis), và các mô hình dựa trên neural như Neural Topic Models.",
+      "C. Stemming.",
+      "D. Word2Vec."
+    ],
+    "correct_answer": "B",
+    "explanation": "Có nhiều phương pháp tiếp cận khác nhau để mô hình hóa chủ đề, từ các phương pháp dựa trên phân tích ma trận đến các mô hình dựa trên mạng neural.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Topic Modeling", "Other Techniques"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-035",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "Chỉ số nào thường được sử dụng để đánh giá chất lượng của bản dịch máy?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. ROUGE score.",
+      "B. BLEU score.",
+      "C. Perplexity.",
+      "D. F1-score."
+    ],
+    "correct_answer": "B",
+    "explanation": "BLEU (Bilingual Evaluation Understudy) là một chỉ số phổ biến để đánh giá bản dịch máy bằng cách so sánh sự trùng lặp của n-gram giữa bản dịch và bản dịch tham chiếu do con người viết.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Machine Translation", "BLEU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-036",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Việc sử dụng Word Embeddings đã cải thiện phân tích cảm xúc như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Làm cho mô hình phức tạp hơn.",
+      "B. Cho phép mô hình nắm bắt ý nghĩa ngữ cảnh và mối quan hệ ngữ nghĩa giữa các từ, xử lý tốt hơn các từ đồng nghĩa/đa nghĩa và cải thiện khả năng tổng quát hóa.",
+      "C. Tăng tốc độ huấn luyện.",
+      "D. Giảm số lượng dữ liệu cần thiết."
+    ],
+    "correct_answer": "B",
+    "explanation": "Word Embeddings cung cấp một biểu diễn ngữ nghĩa phong phú cho các từ, giúp mô hình hiểu sâu hơn về nội dung cảm xúc của văn bản.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Word Embeddings"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-037",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "Sự khác biệt giữa hệ thống Hỏi đáp và hệ thống Tìm kiếm thông tin (Information Retrieval) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hệ thống IR trả lời trực tiếp câu hỏi, hệ thống QA chỉ tìm tài liệu.",
+      "B. Hệ thống IR tìm kiếm các tài liệu liên quan đến truy vấn, trong khi hệ thống QA đi xa hơn bằng cách trích xuất hoặc tạo ra câu trả lời chính xác từ các tài liệu tìm được.",
+      "C. Hệ thống IR chỉ hoạt động với văn bản, hệ thống QA với hình ảnh.",
+      "D. Cả hai đều giống nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "QA là một cấp độ cao hơn của IR, tập trung vào việc cung cấp câu trả lời trực tiếp thay vì chỉ các tài liệu liên quan.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Question Answering", "Information Retrieval", "Comparison"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-038",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "Để nâng cao hiệu suất của mô hình phân loại văn bản trên tập dữ liệu nhỏ, bạn có thể sử dụng kỹ thuật nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng số lượng lớp phân loại.",
+      "B. Học chuyển giao (Transfer Learning) bằng cách sử dụng các mô hình ngôn ngữ lớn đã được huấn luyện trước (pre-trained Large Language Models) và tinh chỉnh chúng.",
+      "C. Giảm số lượng tham số của mô hình.",
+      "D. Loại bỏ tất cả các từ dừng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Học chuyển giao là một kỹ thuật cực kỳ hiệu quả để tận dụng kiến thức từ các mô hình đã được huấn luyện trên lượng lớn dữ liệu, đặc biệt hữu ích khi dữ liệu của bạn bị hạn chế.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Text Classification", "Transfer Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-039",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "Thách thức chính trong tóm tắt văn bản Abstractive là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dễ dàng tạo ra các bản tóm tắt mạch lạc.",
+      "B. Duy trì tính chính xác (factuality) và sự mạch lạc ngữ pháp, tránh tạo ra 'hallucinations' (thông tin sai lệch) hoặc các lỗi ngữ pháp.",
+      "C. Luôn tạo ra các bản tóm tắt ngắn hơn văn bản gốc.",
+      "D. Không cần dữ liệu huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Việc tạo ra văn bản mới luôn đi kèm với rủi ro về độ chính xác và tính trôi chảy, là thách thức lớn đối với các mô hình tóm tắt trừu tượng.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Text Summarization", "Abstractive Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-040",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": "Để huấn luyện một mô hình NER, bạn cần loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Văn bản chưa có nhãn.",
+      "B. Văn bản đã được gán nhãn các thực thể có tên (ví dụ: 'Barack Obama' là B-PER, I-PER).",
+      "C. Chỉ hình ảnh.",
+      "D. Văn bản với nhãn cảm xúc."
+    ],
+    "correct_answer": "B",
+    "explanation": "NER là một tác vụ học máy có giám sát, do đó yêu cầu dữ liệu huấn luyện đã được gán nhãn chính xác.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)", "Labeled Data"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-041",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "Mục tiêu của việc 'tinh chỉnh' (fine-tuning) một mô hình ngôn ngữ lớn (LLM) cho một tác vụ NLP cụ thể (ví dụ: Sentiment Analysis) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Huấn luyện mô hình từ đầu với ít dữ liệu hơn.",
+      "B. Điều chỉnh một mô hình đã được huấn luyện trước trên một lượng lớn dữ liệu tổng quát để nó hoạt động tốt hơn trên một tác vụ và miền dữ liệu cụ thể, tận dụng kiến thức đã học trước đó.",
+      "C. Giảm kích thước của mô hình.",
+      "D. Loại bỏ hoàn toàn sự cần thiết của dữ liệu huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tinh chỉnh cho phép các mô hình ngôn ngữ lớn thích nghi với các tác vụ cụ thể, cải thiện hiệu suất mà không cần huấn luyện lại từ đầu.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Topic Modeling", "Fine-tuning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-042",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "Hệ thống dịch máy 'zero-shot' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Hệ thống chỉ dịch các từ đơn lẻ.",
+      "B. Một hệ thống NMT có thể dịch giữa hai ngôn ngữ mà nó chưa từng được huấn luyện trực tiếp trên các cặp song ngữ của hai ngôn ngữ đó, bằng cách tận dụng khả năng biểu diễn đa ngôn ngữ đã học được.",
+      "C. Hệ thống không tạo ra bất kỳ bản dịch nào.",
+      "D. Hệ thống chỉ dịch sang ngôn ngữ có số lượng từ ít nhất."
+    ],
+    "correct_answer": "B",
+    "explanation": "Zero-shot translation là một khả năng ấn tượng của các mô hình đa ngôn ngữ lớn, cho phép dịch giữa các cặp ngôn ngữ không nhìn thấy trong quá trình huấn luyện.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Machine Translation", "Zero-shot"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-043",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Phân tích cảm xúc 'Aspect-Based' (Phân tích cảm xúc dựa trên khía cạnh) có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ phân tích cảm xúc của toàn bộ tài liệu.",
+      "B. Xác định cảm xúc liên quan đến các khía cạnh hoặc thuộc tính cụ thể của một đối tượng hoặc chủ đề được đề cập trong văn bản.",
+      "C. Chỉ phân tích cảm xúc của các từ đơn lẻ.",
+      "D. Chỉ phân tích cảm xúc của những người nói."
+    ],
+    "correct_answer": "B",
+    "explanation": "Aspect-based sentiment analysis cung cấp một cái nhìn chi tiết hơn về cảm xúc, hữu ích cho các ứng dụng như phân tích đánh giá sản phẩm.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Aspect-Based"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-044",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Question Answering",
+    "question_text": "Một hệ thống QA có thể xử lý các câu hỏi đòi hỏi suy luận đa bước (multi-hop reasoning) bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ tìm kiếm câu trả lời trực tiếp trong một tài liệu duy nhất.",
+      "B. Bằng cách kết hợp thông tin từ nhiều đoạn văn bản hoặc nhiều tài liệu để suy luận ra câu trả lời cuối cùng.",
+      "C. Bằng cách luôn yêu cầu người dùng cung cấp thêm thông tin.",
+      "D. Bằng cách bỏ qua các câu hỏi phức tạp."
+    ],
+    "correct_answer": "B",
+    "explanation": "Multi-hop reasoning là một lĩnh vực nghiên cứu tích cực trong QA, nhằm mục đích xây dựng các hệ thống có khả năng suy luận sâu hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Question Answering", "Multi-hop Reasoning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-045",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Classification",
+    "question_text": "Phân loại văn bản 'Multi-label' khác gì 'Multi-class'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Multi-label chỉ có hai lớp, Multi-class có nhiều hơn hai.",
+      "B. Multi-label cho phép một văn bản thuộc về nhiều hơn một danh mục cùng lúc, trong khi Multi-class yêu cầu một văn bản chỉ thuộc về duy nhất một danh mục.",
+      "C. Multi-label sử dụng ít dữ liệu hơn.",
+      "D. Multi-label nhanh hơn để huấn luyện."
+    ],
+    "correct_answer": "B",
+    "explanation": "Multi-label classification phức tạp hơn vì mô hình cần dự đoán nhiều nhãn độc lập cho cùng một đầu vào.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Text Classification", "Multi-label", "Multi-class"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-046",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Text Summarization",
+    "question_text": "Ứng dụng thực tế của tóm tắt văn bản là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Viết bài báo khoa học.",
+      "B. Tóm tắt tin tức, tài liệu pháp lý, bài báo nghiên cứu, email, và tạo mô tả sản phẩm.",
+      "C. Tạo ra dữ liệu huấn luyện mới.",
+      "D. Dịch ngôn ngữ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Tóm tắt văn bản có nhiều ứng dụng hữu ích trong việc xử lý và tiêu thụ lượng lớn thông tin.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Text Summarization", "Applications"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-047",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Named Entity Recognition (NER)",
+    "question_text": "Ngoài các loại thực thể phổ biến (PERSON, ORG, LOC), NER có thể được mở rộng để nhận dạng các loại thực thể tùy chỉnh không? Nếu có, làm thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không, NER chỉ nhận dạng các loại thực thể cố định.",
+      "B. Có, bằng cách huấn luyện mô hình NER trên dữ liệu được gán nhãn với các loại thực thể tùy chỉnh mới (ví dụ: PRODUCT, SYMPTOM, DRUG).",
+      "C. Bằng cách chỉnh sửa thủ công code của thư viện NER.",
+      "D. Bằng cách thêm các từ mới vào từ điển."
+    ],
+    "correct_answer": "B",
+    "explanation": "Việc tùy chỉnh NER là một kỹ năng quan trọng để áp dụng NER vào các miền dữ liệu chuyên biệt.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Named Entity Recognition (NER)", "Custom Entities"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-048",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Topic Modeling",
+    "question_text": "Topic Modeling có phải là một kỹ thuật học có giám sát hay không giám sát?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Có giám sát.",
+      "B. Không giám sát.",
+      "C. Bán giám sát.",
+      "D. Học tăng cường."
+    ],
+    "correct_answer": "B",
+    "explanation": "Topic Modeling không yêu cầu nhãn dữ liệu trước, nó tự động khám phá cấu trúc chủ đề từ corpus.",
+    "difficulty_level": "easy",
+    "tags": ["Core NLP Tasks", "Topic Modeling", "Unsupervised Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-049",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Machine Translation",
+    "question_text": "Hiện tượng 'catastrophic forgetting' trong NMT đề cập đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình quên cách dịch các từ phổ biến.",
+      "B. Khi mô hình được huấn luyện thêm cho một cặp ngôn ngữ mới, nó có thể quên đi khả năng dịch các cặp ngôn ngữ mà nó đã học trước đó.",
+      "C. Mô hình quên toàn bộ dữ liệu huấn luyện.",
+      "D. Mô hình không thể học được ngôn ngữ mới."
+    ],
+    "correct_answer": "B",
+    "explanation": "Catastrophic forgetting là một vấn đề trong học máy liên tục, đặc biệt với NMT đa ngôn ngữ, nơi việc học nhiệm vụ mới có thể làm suy giảm hiệu suất trên các nhiệm vụ cũ.",
+    "difficulty_level": "hard",
+    "tags": ["Core NLP Tasks", "Machine Translation", "Catastrophic Forgetting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "NLP-CNLP-050",
+    "target": "AI Engineer",
+    "skill_category": "Natural Language Processing (NLP)",
+    "skill_name": "Core NLP Tasks",
+    "subskill_name": "Sentiment Analysis",
+    "question_text": "Khi nào thì phân tích cảm xúc 'lexicon-based' (dựa trên từ điển) được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi bạn có lượng lớn dữ liệu được gán nhãn để huấn luyện mô hình phức tạp.",
+      "B. Khi bạn không có đủ dữ liệu được gán nhãn để huấn luyện mô hình ML/DL, và bạn có thể sử dụng các từ điển chứa điểm cảm xúc cho các từ (ví dụ: AFINN, VADER).",
+      "C. Để tạo ra các từ mới cho từ điển cảm xúc.",
+      "D. Để dịch văn bản sang ngôn ngữ khác."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lexicon-based sentiment analysis là một phương pháp đơn giản hơn, không yêu cầu huấn luyện mô hình, nhưng độ chính xác có thể bị hạn chế đối với các sắc thái phức tạp hoặc ngữ cảnh đặc biệt.",
+    "difficulty_level": "medium",
+    "tags": ["Core NLP Tasks", "Sentiment Analysis", "Lexicon-based"],
+    "date_created": "2025-07-28"
+  }
+]

@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "CV-ANLT-001",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Cơ chế \"Attention\" trong Transformer hoạt động như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó tập trung vào toàn bộ chuỗi đầu vào mà không phân biệt tầm quan trọng của từ.",
+      "B. Nó gán trọng số cho các phần khác nhau của chuỗi đầu vào, cho phép mô hình tập trung vào các từ có liên quan khi xử lý từng từ.",
+      "C. Nó chỉ được sử dụng trong các mô hình CNN cho tác vụ xử lý ảnh.",
+      "D. Nó là một dạng của mạng nơ-ron hồi quy (RNN) được cải tiến."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cơ chế Attention trong Transformer cho phép mô hình gán trọng số khác nhau cho các từ trong chuỗi đầu vào, từ đó tập trung vào những phần quan trọng nhất để tạo ra đầu ra chính xác hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "Attention Mechanisms"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-002",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Điểm khác biệt chính giữa kiến trúc của BERT và GPT là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. BERT là mô hình Transformer mã hóa (Encoder-only), trong khi GPT là mô hình Transformer giải mã (Decoder-only).",
+      "B. BERT được đào tạo cho tác vụ sinh văn bản, còn GPT cho tác vụ hiểu ngôn ngữ.",
+      "C. BERT sử dụng Self-Attention, còn GPT sử dụng Cross-Attention.",
+      "D. BERT chỉ dùng cho tiếng Anh, còn GPT hỗ trợ nhiều ngôn ngữ."
+    ],
+    "correct_answer": "A",
+    "explanation": "BERT là mô hình Encoder-only Transformer, tập trung vào việc hiểu ngữ cảnh hai chiều. GPT là mô hình Decoder-only Transformer, được thiết kế để sinh văn bản dựa trên ngữ cảnh một chiều.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "BERT", "GPT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-003",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Khi sử dụng mô hình sinh văn bản như GPT, khái niệm 'Top-k sampling' có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chọn từ có xác suất cao nhất trong toàn bộ từ vựng.",
+      "B. Chỉ xem xét $k$ từ có xác suất cao nhất và lấy mẫu từ những từ đó.",
+      "C. Chọn từ ngẫu nhiên từ toàn bộ từ vựng.",
+      "D. Loại bỏ $k$ từ có xác suất thấp nhất trước khi lấy mẫu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Top-k sampling là một kỹ thuật trong sinh văn bản, nơi mô hình chỉ xem xét $k$ từ có xác suất cao nhất tại mỗi bước để lựa chọn từ tiếp theo, giúp tạo ra văn bản đa dạng và tự nhiên hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation", "GPT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-004",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Trong cơ chế Multi-Head Attention, mục đích của việc sử dụng nhiều 'heads' là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tăng cường khả năng học các mối quan hệ tuyến tính giữa các từ.",
+      "B. Để cho phép mô hình tập trung vào các loại thông tin hoặc mối quan hệ khác nhau đồng thời.",
+      "C. Để giảm thiểu chi phí tính toán của cơ chế Attention.",
+      "D. Để bắt chước cách bộ não con người xử lý thông tin."
+    ],
+    "correct_answer": "B",
+    "explanation": "Multi-Head Attention cho phép mô hình xử lý thông tin đầu vào từ nhiều góc độ khác nhau thông qua các \"heads\" độc lập, giúp nắm bắt đa dạng các mối quan hệ và ngữ cảnh.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms", "Multi-Head Attention"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-005",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "Thử thách chính trong việc xây dựng hệ thống đối thoại (Dialogue System) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đảm bảo hệ thống có thể duy trì ngữ cảnh và tạo ra phản hồi nhất quán trong suốt cuộc trò chuyện.",
+      "B. Tập hợp đủ dữ liệu đào tạo có sẵn trên internet.",
+      "C. Giảm thiểu thời gian phản hồi của hệ thống xuống dưới 1 giây.",
+      "D. Đảm bảo hệ thống chỉ trả lời đúng một câu hỏi một lần."
+    ],
+    "correct_answer": "A",
+    "explanation": "Thách thức lớn nhất trong hệ thống đối thoại là khả năng duy trì ngữ cảnh xuyên suốt cuộc trò chuyện và tạo ra các phản hồi liên quan, tự nhiên và nhất quán với lịch sử đối thoại.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-006",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Tác vụ nào sau đây KHÔNG phải là ứng dụng tiêu biểu của mô hình Sequence-to-Sequence?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dịch máy (Machine Translation).",
+      "B. Tóm tắt văn bản (Text Summarization).",
+      "C. Phân loại cảm xúc (Sentiment Analysis) của một câu đơn.",
+      "D. Sinh phản hồi trong chatbot (Chatbot Response Generation)."
+    ],
+    "correct_answer": "C",
+    "explanation": "Mô hình Sequence-to-Sequence thường được sử dụng cho các tác vụ chuyển đổi chuỗi này sang chuỗi khác. Phân loại cảm xúc của một câu đơn là tác vụ phân loại chuỗi, không đòi hỏi kiến trúc Seq2Seq đầy đủ.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-007",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Knowledge Graphs",
+    "question_text": "Thành phần cơ bản của một Knowledge Graph là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các cặp khóa-giá trị.",
+      "B. Các bộ ba (subject, predicate, object) đại diện cho các thực thể và mối quan hệ giữa chúng.",
+      "C. Các ma trận mật độ cao.",
+      "D. Các chuỗi văn bản thuần túy."
+    ],
+    "correct_answer": "B",
+    "explanation": "Knowledge Graph biểu diễn thông tin dưới dạng đồ thị, nơi các nút là thực thể và các cạnh là mối quan hệ giữa chúng, thường được mô tả qua các bộ ba (subject, predicate, object).",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Knowledge Graphs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-008",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Language Modeling",
+    "question_text": "Mục tiêu chính của Language Modeling là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dịch văn bản từ ngôn ngữ này sang ngôn ngữ khác.",
+      "B. Dự đoán từ tiếp theo trong một chuỗi hoặc gán xác suất cho một chuỗi các từ.",
+      "C. Phân loại văn bản vào các danh mục định sẵn.",
+      "D. Trích xuất các thực thể được đặt tên từ văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Language Modeling là quá trình xây dựng mô hình dự đoán từ tiếp theo trong một chuỗi hoặc ước tính xác suất của một chuỗi từ, đóng vai trò nền tảng cho nhiều tác vụ NLP khác.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Language Modeling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-009",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Phát biểu nào sau đây đúng về cơ chế Positional Encoding trong Transformer?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó sử dụng để thêm thông tin về thứ tự từ vào đầu vào của Transformer.",
+      "B. Nó thay thế hoàn toàn embedding của từ.",
+      "C. Nó chỉ được sử dụng trong phần giải mã (Decoder) của Transformer.",
+      "D. Nó là một lớp Attention bổ sung."
+    ],
+    "correct_answer": "A",
+    "explanation": "Positional Encoding cung cấp thông tin về thứ tự vị trí của các từ trong chuỗi đầu vào cho Transformer, vì cơ chế Attention không tự động nắm bắt thông tin này.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "Positional Encoding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-010",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Kỹ thuật 'Beam Search' trong sinh văn bản nhằm mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chọn từ có xác suất cao nhất tại mỗi bước một cách cục bộ.",
+      "B. Khám phá nhiều chuỗi ứng cử viên tiềm năng để tìm ra chuỗi có xác suất cao nhất tổng thể.",
+      "C. Giảm thiểu kích thước mô hình để sinh văn bản nhanh hơn.",
+      "D. Chỉ sinh ra một câu văn bản duy nhất."
+    ],
+    "correct_answer": "B",
+    "explanation": "Beam Search là một kỹ thuật giải mã được sử dụng để tìm ra chuỗi văn bản đầu ra có xác suất cao nhất bằng cách khám phá một số chuỗi ứng cử viên tiềm năng tại mỗi bước, thay vì chỉ chọn từ có xác suất cao nhất tại chỗ.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation", "Beam Search"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-011",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Mô hình RoBERTa là một biến thể của BERT được cải tiến như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sử dụng kiến trúc Decoder-only thay vì Encoder-only.",
+      "B. Đào tạo trên tập dữ liệu lớn hơn và thời gian lâu hơn, loại bỏ Next Sentence Prediction (NSP).",
+      "C. Giới thiệu cơ chế Cross-Attention mới.",
+      "D. Tập trung vào việc tạo ra văn bản thay vì hiểu văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "RoBERTa (A Robustly Optimized BERT Pretraining Approach) cải thiện BERT bằng cách đào tạo trên dữ liệu lớn hơn, loại bỏ tác vụ Next Sentence Prediction và sử dụng batch size lớn hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "RoBERTa"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-012",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Thử thách nào thường gặp nhất khi sinh văn bản dài bằng các mô hình Transformer?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khó khăn trong việc duy trì tính nhất quán và mạch lạc của nội dung.",
+      "B. Tốc độ sinh văn bản quá chậm.",
+      "C. Mô hình yêu cầu quá nhiều bộ nhớ để chạy.",
+      "D. Thiếu đa dạng từ vựng trong văn bản được sinh ra."
+    ],
+    "correct_answer": "A",
+    "explanation": "Một trong những thách thức lớn nhất khi sinh văn bản dài là đảm bảo tính nhất quán chủ đề, logic và không lặp lại nội dung, vì các mô hình thường chỉ có tầm nhìn hạn chế về ngữ cảnh trước đó.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-013",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Lợi ích chính của Self-Attention so với các mô hình RNN/CNN truyền thống trong việc xử lý chuỗi là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm thiểu đáng kể số lượng tham số của mô hình.",
+      "B. Xử lý các phụ thuộc dài hạn hiệu quả hơn và cho phép song song hóa tính toán.",
+      "C. Chỉ tập trung vào các từ liền kề trong chuỗi.",
+      "D. Cần ít dữ liệu huấn luyện hơn để đạt hiệu suất tương đương."
+    ],
+    "correct_answer": "B",
+    "explanation": "Self-Attention cho phép mô hình nhìn toàn bộ chuỗi cùng một lúc, giải quyết vấn đề phụ thuộc dài hạn của RNN và cho phép tính toán song song, cải thiện tốc độ đào tạo và hiệu suất.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms", "Self-Attention"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-014",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "\"NLG\" trong hệ thống đối thoại là viết tắt của gì và có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Natural Language Grammar: Xử lý ngữ pháp của câu trả lời.",
+      "B. Natural Language Generation: Tạo ra phản hồi bằng ngôn ngữ tự nhiên từ một biểu diễn phi ngôn ngữ.",
+      "C. Natural Language Grouping: Nhóm các câu hỏi tương tự lại với nhau.",
+      "D. Neural Language Graph: Biểu diễn cấu trúc ngữ nghĩa của cuộc hội thoại."
+    ],
+    "correct_answer": "B",
+    "explanation": "NLG (Natural Language Generation) là thành phần trong hệ thống đối thoại có nhiệm vụ chuyển đổi ý định hoặc biểu diễn nội bộ của hệ thống thành văn bản ngôn ngữ tự nhiên để phản hồi người dùng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems", "NLG"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-015",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Mô hình Sequence-to-Sequence (Seq2Seq) thường bao gồm mấy phần chính?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một phần mã hóa (Encoder) và một phần giải mã (Decoder).",
+      "B. Chỉ có phần mã hóa (Encoder).",
+      "C. Chỉ có phần giải mã (Decoder).",
+      "D. Một phần Attention và một phần Feedforward."
+    ],
+    "correct_answer": "A",
+    "explanation": "Mô hình Seq2Seq cơ bản bao gồm một Encoder để xử lý chuỗi đầu vào và tạo ra một biểu diễn ngữ cảnh, và một Decoder để sinh ra chuỗi đầu ra dựa trên biểu diễn đó.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-016",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Knowledge Graphs",
+    "question_text": "RDF (Resource Description Framework) được sử dụng trong Knowledge Graphs với mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để nén kích thước của Knowledge Graph.",
+      "B. Để định nghĩa cú pháp và ngữ nghĩa của các bộ ba (triples).",
+      "C. Để thực hiện các phép tính toán trên đồ thị tri thức.",
+      "D. Để trực quan hóa Knowledge Graph."
+    ],
+    "correct_answer": "B",
+    "explanation": "RDF là một framework tiêu chuẩn để biểu diễn thông tin dưới dạng các bộ ba (subject-predicate-object), tạo nên nền tảng cú pháp và ngữ nghĩa cho Knowledge Graph.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Knowledge Graphs", "RDF"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-017",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Language Modeling",
+    "question_text": "Mục tiêu chính của Pre-training trong các mô hình ngôn ngữ lớn (LLM) như BERT/GPT là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để đạt được hiệu suất tối ưu trên một tác vụ cụ thể ngay lập tức.",
+      "B. Để học biểu diễn ngôn ngữ tổng quát từ lượng lớn dữ liệu không gắn nhãn.",
+      "C. Để giảm kích thước mô hình sau khi đào tạo.",
+      "D. Để tạo ra dữ liệu đào tạo có nhãn tự động."
+    ],
+    "correct_answer": "B",
+    "explanation": "Pre-training giúp mô hình học các mẫu hình, ngữ pháp, và ngữ nghĩa tổng quát của ngôn ngữ từ một lượng lớn văn bản không gắn nhãn, tạo ra một nền tảng vững chắc cho các tác vụ downstream.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Language Modeling", "Pre-training", "LLM"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-018",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Tại sao các mô hình Transformer như BERT và GPT được ưa chuộng hơn RNN/LSTM cho nhiều tác vụ NLP hiện nay?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng có ít tham số hơn, giúp đào tạo nhanh hơn.",
+      "B. Chúng có khả năng xử lý song song cao hơn và nắm bắt phụ thuộc dài hạn hiệu quả hơn nhờ cơ chế Attention.",
+      "C. Chúng hoàn toàn loại bỏ nhu cầu về dữ liệu đào tạo lớn.",
+      "D. Chúng chỉ hoạt động tốt với các ngôn ngữ ít tài nguyên."
+    ],
+    "correct_answer": "B",
+    "explanation": "Kiến trúc Attention của Transformer cho phép xử lý song song và nắm bắt mối quan hệ giữa các từ ở khoảng cách xa trong chuỗi hiệu quả hơn nhiều so với kiến trúc tuần tự của RNN/LSTM.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "BERT", "GPT", "RNN", "LSTM"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-019",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Thế nào là 'Perplexity' trong đánh giá mô hình ngôn ngữ và sinh văn bản?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một thước đo tốc độ sinh văn bản của mô hình.",
+      "B. Một thước đo độ phức tạp của từ vựng được sử dụng bởi mô hình.",
+      "C. Một thước đo xem mô hình dự đoán từ tiếp theo kém bất ngờ như thế nào; giá trị thấp hơn là tốt hơn.",
+      "D. Một thước đo số lượng từ mà mô hình có thể sinh ra trong một khoảng thời gian nhất định."
+    ],
+    "correct_answer": "C",
+    "explanation": "Perplexity là một thước đo đánh giá chất lượng của mô hình ngôn ngữ. Giá trị Perplexity càng thấp, khả năng dự đoán từ tiếp theo của mô hình càng tốt và mô hình càng ít 'bất ngờ' trước dữ liệu mới.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation", "Language Modeling", "Perplexity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-020",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Trong cơ chế Attention, các Query, Key và Value vectors được tạo ra từ đâu?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Từ các trọng số được khởi tạo ngẫu nhiên.",
+      "B. Từ các embedding của từ đầu vào bằng cách nhân với các ma trận trọng số học được.",
+      "C. Từ các lớp nơ-ron truyền thống (fully connected layers).",
+      "D. Từ các kết quả đầu ra của lớp Softmax."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trong Attention, các vector Query (Q), Key (K), và Value (V) được tạo ra bằng cách nhân các embedding đầu vào của từ với ba ma trận trọng số khác nhau, được học trong quá trình đào tạo.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-021",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "Thuật ngữ 'Turn-taking' trong Dialogue Systems ám chỉ điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khả năng hệ thống thay đổi chủ đề cuộc trò chuyện.",
+      "B. Quá trình luân phiên giữa người dùng và hệ thống trong việc kiểm soát cuộc đối thoại.",
+      "C. Việc hệ thống thay đổi mô hình ngôn ngữ dựa trên ngữ cảnh.",
+      "D. Kỹ thuật để hệ thống tự động học từ các cuộc hội thoại trước đó."
+    ],
+    "correct_answer": "B",
+    "explanation": "Turn-taking là quá trình quản lý lượt nói trong cuộc hội thoại, đảm bảo rằng người dùng và hệ thống biết khi nào nên nói và khi nào nên lắng nghe.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-022",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Vai trò của \"Context Vector\" trong các mô hình Seq2Seq ban đầu (trước Transformer) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Lưu trữ toàn bộ lịch sử cuộc trò chuyện.",
+      "B. Mã hóa thông tin từ chuỗi đầu vào để Decoder có thể sử dụng.",
+      "C. Điều chỉnh tốc độ học của mô hình.",
+      "D. Quyết định độ dài của chuỗi đầu ra."
+    ],
+    "correct_answer": "B",
+    "explanation": "Context Vector (còn gọi là State Vector) là đầu ra cuối cùng của Encoder, được truyền cho Decoder để tóm tắt toàn bộ thông tin quan trọng từ chuỗi đầu vào.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-023",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Knowledge Graphs",
+    "question_text": "SPARQL là ngôn ngữ truy vấn được sử dụng phổ biến với loại dữ liệu nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Cơ sở dữ liệu quan hệ (Relational Databases).",
+      "B. Dữ liệu phi cấu trúc (Unstructured Data).",
+      "C. Knowledge Graphs và dữ liệu RDF.",
+      "D. Dữ liệu chuỗi thời gian (Time-series Data)."
+    ],
+    "correct_answer": "C",
+    "explanation": "SPARQL (SPARQL Protocol and RDF Query Language) là ngôn ngữ truy vấn tiêu chuẩn cho dữ liệu RDF và Knowledge Graphs, cho phép tìm kiếm và trích xuất thông tin từ các đồ thị tri thức.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Knowledge Graphs", "SPARQL"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-024",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Language Modeling",
+    "question_text": "Phân biệt giữa 'causal language modeling' và 'masked language modeling'.",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Causal LM dự đoán từ tiếp theo, Masked LM dự đoán từ bị che.",
+      "B. Causal LM dự đoán từ bị che, Masked LM dự đoán từ tiếp theo.",
+      "C. Causal LM dùng cho sinh văn bản, Masked LM dùng cho dịch máy.",
+      "D. Causal LM dùng Encoder-only, Masked LM dùng Decoder-only."
+    ],
+    "correct_answer": "A",
+    "explanation": "Causal Language Modeling (như GPT) dự đoán từ tiếp theo chỉ dựa vào các từ trước đó. Masked Language Modeling (như BERT) dự đoán các từ bị che (masked) trong một câu, dựa trên ngữ cảnh hai chiều.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Language Modeling", "Causal LM", "Masked LM"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-025",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Khái niệm 'fine-tuning' trong bối cảnh các mô hình Transformer đã được pre-trained (như BERT) có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đào tạo lại toàn bộ mô hình từ đầu với dữ liệu mới.",
+      "B. Điều chỉnh các tham số của mô hình đã pre-trained trên một tập dữ liệu nhỏ hơn cho một tác vụ cụ thể.",
+      "C. Chỉ đào tạo lớp đầu ra (output layer) của mô hình.",
+      "D. Giảm kích thước mô hình để triển khai trên thiết bị di động."
+    ],
+    "correct_answer": "B",
+    "explanation": "Fine-tuning là quá trình điều chỉnh nhỏ các trọng số của mô hình đã được pre-trained trên một tập dữ liệu nhỏ và cụ thể cho một tác vụ downstream, giúp mô hình thích nghi với nhiệm vụ đó trong khi vẫn giữ lại kiến thức ngôn ngữ tổng quát.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "Fine-tuning", "Pre-trained Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-026",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Kỹ thuật 'Temperature Sampling' trong sinh văn bản ảnh hưởng đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ sinh văn bản.",
+      "B. Số lượng từ được sinh ra.",
+      "C. Tính ngẫu nhiên/đa dạng của văn bản được sinh ra.",
+      "D. Độ chính xác ngữ pháp của văn bản."
+    ],
+    "correct_answer": "C",
+    "explanation": "Temperature sampling là một kỹ thuật được sử dụng để điều khiển tính ngẫu nhiên (randomness) hoặc tính sáng tạo của văn bản được sinh ra. Nhiệt độ thấp hơn làm cho mô hình chọn các từ có xác suất cao hơn, dẫn đến văn bản ít đa dạng nhưng chính xác hơn; nhiệt độ cao hơn làm tăng sự đa dạng nhưng có thể dẫn đến kết quả kém mạch lạc.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation", "Temperature Sampling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-027",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Hạn chế chính của cơ chế Attention khi xử lý chuỗi rất dài là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Không thể nắm bắt được mối quan hệ giữa các từ xa nhau.",
+      "B. Chi phí tính toán tăng bậc hai ($O(N^2)$) theo độ dài chuỗi $N$.",
+      "C. Cần quá nhiều dữ liệu để học.",
+      "D. Dễ bị Overfitting."
+    ],
+    "correct_answer": "B",
+    "explanation": "Chi phí tính toán của Attention là $O(N^2)$ với $N$ là độ dài chuỗi, do đó việc xử lý các chuỗi rất dài trở nên tốn kém và không hiệu quả về mặt tính toán.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-028",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "Trong các hệ thống đối thoại, thành phần 'Dialog State Tracker' có nhiệm vụ gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phát hiện ý định của người dùng từ câu nói.",
+      "B. Quản lý và cập nhật thông tin về trạng thái hiện tại của cuộc hội thoại.",
+      "C. Sinh ra phản hồi bằng ngôn ngữ tự nhiên.",
+      "D. Đánh giá chất lượng của cuộc đối thoại."
+    ],
+    "correct_answer": "B",
+    "explanation": "Dialog State Tracker (DST) có nhiệm vụ theo dõi và cập nhật trạng thái của cuộc đối thoại, bao gồm các thông tin về mục tiêu của người dùng, các slot đã được điền, và các ràng buộc.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems", "Dialog State Tracker"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-029",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Mô hình Sequence-to-Sequence (Seq2Seq) kết hợp với cơ chế Attention giải quyết được hạn chế nào của Seq2Seq truyền thống?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Vấn đề về gradient vanishing/exploding.",
+      "B. Khả năng xử lý chuỗi đầu vào có độ dài rất lớn.",
+      "C. Bottleneck của Context Vector khi mã hóa toàn bộ thông tin chuỗi đầu vào.",
+      "D. Tốc độ đào tạo mô hình quá chậm."
+    ],
+    "correct_answer": "C",
+    "explanation": "Cơ chế Attention giúp Decoder trực tiếp truy cập và tập trung vào các phần liên quan của chuỗi đầu vào tại mỗi bước sinh đầu ra, khắc phục hạn chế của việc nén toàn bộ thông tin vào một Context Vector cố định, vốn là 'nút cổ chai' của Seq2Seq truyền thống.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models", "Attention"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-030",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Knowledge Graphs",
+    "question_text": "Điều gì làm cho Knowledge Graph trở nên hữu ích trong các ứng dụng AI so với cơ sở dữ liệu truyền thống?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khả năng lưu trữ dữ liệu phi cấu trúc một cách hiệu quả hơn.",
+      "B. Khả năng biểu diễn và suy luận về mối quan hệ phức tạp giữa các thực thể.",
+      "C. Tốc độ truy vấn dữ liệu nhanh hơn đáng kể.",
+      "D. Yêu cầu ít bộ nhớ hơn để lưu trữ dữ liệu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Knowledge Graphs cho phép biểu diễn các mối quan hệ ngữ nghĩa phong phú giữa các thực thể và hỗ trợ suy luận logic trên dữ liệu, điều mà các cơ sở dữ liệu quan hệ truyền thống khó thực hiện hiệu quả.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Knowledge Graphs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-031",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Language Modeling",
+    "question_text": "Mục đích của việc sử dụng các token đặc biệt như [CLS] và [SEP] trong BERT là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ để đánh dấu bắt đầu và kết thúc của một câu.",
+      "B. [CLS] dùng cho phân loại câu, [SEP] dùng để phân tách các câu hoặc đoạn.",
+      "C. Để giảm kích thước từ vựng của mô hình.",
+      "D. Để loại bỏ các từ không quan trọng trong đầu vào."
+    ],
+    "correct_answer": "B",
+    "explanation": "[CLS] (Classification) là token đặc biệt được thêm vào đầu mỗi đầu vào và embedding của nó thường được sử dụng cho các tác vụ phân loại câu. [SEP] (Separator) được sử dụng để phân tách các câu hoặc đoạn văn khác nhau trong một đầu vào duy nhất.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Language Modeling", "BERT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-032",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Tại sao 'Masked Language Model' (MLM) lại phù hợp cho BERT nhưng không phù hợp cho GPT?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. GPT là mô hình mã hóa, không cần masking.",
+      "B. BERT được thiết kế để hiểu ngữ cảnh hai chiều (bidirectional), trong khi GPT là mô hình sinh văn bản một chiều (unidirectional).",
+      "C. MLM yêu cầu tập dữ liệu lớn hơn nhiều so với GPT.",
+      "D. GPT chỉ hoạt động với dữ liệu có nhãn."
+    ],
+    "correct_answer": "B",
+    "explanation": "MLM cho phép BERT học biểu diễn hai chiều bằng cách dự đoán các từ bị che dựa trên cả ngữ cảnh bên trái và bên phải. GPT là mô hình sinh văn bản một chiều, do đó chỉ có thể nhìn các từ trước đó và không thể sử dụng masking theo cách này.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "BERT", "GPT", "MLM"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-033",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Kỹ thuật nào sau đây được sử dụng để giảm thiểu sự lặp lại trong văn bản được sinh ra bởi các mô hình ngôn ngữ lớn?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Greedy Search.",
+      "B. Beam Search với large beam width.",
+      "C. Penalties cho các n-gram đã xuất hiện hoặc điều chỉnh softmax logits.",
+      "D. Tăng kích thước batch size trong quá trình đào tạo."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các kỹ thuật như áp dụng hình phạt cho các n-gram đã xuất hiện hoặc điều chỉnh logits của softmax (ví dụ: nucleus sampling) được sử dụng để khuyến khích mô hình sinh ra văn bản đa dạng hơn và tránh lặp lại.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-034",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Sự khác biệt chính giữa Self-Attention và Cross-Attention trong kiến trúc Transformer là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Self-Attention tính toán sự phụ thuộc giữa các từ trong cùng một chuỗi, Cross-Attention giữa hai chuỗi khác nhau.",
+      "B. Self-Attention chỉ được sử dụng trong Encoder, Cross-Attention chỉ trong Decoder.",
+      "C. Self-Attention không có Query, Key, Value, trong khi Cross-Attention có.",
+      "D. Self-Attention là tuyến tính, Cross-Attention là phi tuyến tính."
+    ],
+    "correct_answer": "A",
+    "explanation": "Self-Attention tính toán trọng số Attention giữa các phần tử của cùng một chuỗi (ví dụ: từ trong cùng một câu). Cross-Attention (chỉ có trong Decoder) tính toán trọng số Attention giữa Query từ chuỗi mục tiêu và Key/Value từ chuỗi nguồn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms", "Self-Attention", "Cross-Attention"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-035",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "Thế nào là 'Intent Recognition' (Nhận dạng ý định) trong ngữ cảnh của Dialogue System?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xác định cảm xúc của người dùng.",
+      "B. Phân loại câu nói của người dùng thành một trong các ý định được định nghĩa trước (ví dụ: 'đặt vé', 'kiểm tra thời tiết').",
+      "C. Sinh ra phản hồi phù hợp với ý định của người dùng.",
+      "D. Trích xuất thông tin cụ thể (entity) từ câu nói của người dùng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Intent Recognition là bước đầu tiên và quan trọng trong hệ thống đối thoại, nơi hệ thống cố gắng hiểu mục đích hoặc ý định của người dùng thông qua câu nói của họ.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems", "Intent Recognition"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-036",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Ứng dụng nào sau đây yêu cầu mô hình Sequence-to-Sequence có khả năng xử lý cả đầu vào và đầu ra là các chuỗi dài và phức tạp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại spam email.",
+      "B. Nhận dạng thực thể có tên (Named Entity Recognition).",
+      "C. Tạo phụ đề cho video (Video Captioning).",
+      "D. Đếm số từ trong một tài liệu."
+    ],
+    "correct_answer": "C",
+    "explanation": "Tạo phụ đề cho video đòi hỏi mô hình phải chuyển đổi một chuỗi các khung hình video (input sequence) thành một chuỗi văn bản mô tả (output sequence), thường là một tác vụ phức tạp với cả đầu vào và đầu ra là các chuỗi dài.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-037",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Knowledge Graphs",
+    "question_text": "Mối quan hệ 'is-a' trong Knowledge Graph biểu thị điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mối quan hệ sở hữu.",
+      "B. Mối quan hệ cha-con (subclass-of hoặc type-of).",
+      "C. Mối quan hệ nguyên nhân-kết quả.",
+      "D. Mối quan hệ đồng vị."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mối quan hệ 'is-a' (hoặc 'subClassOf' trong OWL/RDF Schema) biểu thị một thực thể là một loại cụ thể của thực thể khác (ví dụ: 'Dog is-a Mammal').",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Knowledge Graphs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-038",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Language Modeling",
+    "question_text": "Phương pháp đào tạo 'Next Sentence Prediction' (NSP) được sử dụng trong BERT với mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để cải thiện khả năng sinh văn bản mạch lạc.",
+      "B. Để học mối quan hệ giữa hai câu liên tiếp.",
+      "C. Để dự đoán từ bị che trong câu.",
+      "D. Để phân loại văn bản thành các thể loại khác nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "NSP là một trong hai tác vụ pre-training của BERT, giúp mô hình học cách hiểu mối quan hệ ngữ nghĩa giữa hai câu, liệu chúng có phải là câu tiếp theo trong một văn bản gốc hay không.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Language Modeling", "BERT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-039",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Phiên bản nào của GPT nổi tiếng với khả năng tạo ra văn bản cực kỳ chân thực và dài, thường được dùng cho chatbot hoặc viết nội dung?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. GPT-1.",
+      "B. GPT-2.",
+      "C. GPT-3.",
+      "D. BERT."
+    ],
+    "correct_answer": "C",
+    "explanation": "GPT-3 (Generative Pre-trained Transformer 3) là phiên bản có số lượng tham số khổng lồ, nổi bật với khả năng sinh văn bản tự nhiên, mạch lạc và có độ dài lớn, thường được dùng cho các ứng dụng chatbot, viết bài, sáng tạo nội dung.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "GPT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-040",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Để sinh văn bản đa dạng và sáng tạo hơn, kỹ thuật nào sau đây thường được ưa chuộng hơn 'Greedy Search'?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sampling (ví dụ: Top-k, Nucleus sampling).",
+      "B. Maximum Likelihood Estimation (MLE).",
+      "C. Fine-tuning với tập dữ liệu nhỏ.",
+      "D. Sử dụng mô hình RNN thay vì Transformer."
+    ],
+    "correct_answer": "A",
+    "explanation": "Greedy Search chỉ chọn từ có xác suất cao nhất tại mỗi bước, dẫn đến văn bản đơn điệu và lặp lại. Các kỹ thuật Sampling (Top-k, Nucleus sampling) đưa yếu tố ngẫu nhiên vào quá trình lựa chọn từ, giúp tạo ra văn bản đa dạng và sáng tạo hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation", "Sampling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-041",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Công thức tính điểm Attention cơ bản trong Self-Attention là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Softmax(Query ⋅ Key^T).",
+      "B. Softmax(Query ⋅ Key^T / $\\sqrt{d_k}$) ⋅ Value.",
+      "C. Sigmoid(Query ⋅ Key^T) ⋅ Value.",
+      "D. Tích vô hướng giữa Query và Value."
+    ],
+    "correct_answer": "B",
+    "explanation": "Công thức Attention chuẩn (Scaled Dot-Product Attention) là Softmax(Query ⋅ Key^T / $\\sqrt{d_k}$) ⋅ Value, trong đó $\\sqrt{d_k}$ là yếu tố chia tỉ lệ để tránh gradient quá lớn.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms", "Self-Attention"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-042",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "Phân biệt 'Task-oriented Dialogue System' và 'Open-domain Dialogue System'.",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Task-oriented xử lý các nhiệm vụ cụ thể, Open-domain có thể trò chuyện về bất kỳ chủ đề nào.",
+      "B. Task-oriented chỉ dùng Rule-based, Open-domain chỉ dùng AI.",
+      "C. Task-oriented chỉ dùng trong ngành công nghiệp, Open-domain chỉ dùng trong nghiên cứu.",
+      "D. Task-oriented không duy trì trạng thái cuộc trò chuyện, Open-domain thì có."
+    ],
+    "correct_answer": "A",
+    "explanation": "Task-oriented Dialogue System (ví dụ: đặt vé máy bay, hỏi thời tiết) có mục tiêu cụ thể. Open-domain Dialogue System (ví dụ: chatbot đàm thoại tổng quát) có thể trò chuyện về nhiều chủ đề mà không có mục tiêu rõ ràng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-043",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Trong kiến trúc Encoder-Decoder của Seq2Seq, nhiệm vụ của Encoder là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sinh ra chuỗi đầu ra mong muốn.",
+      "B. Chuyển đổi chuỗi đầu vào thành một biểu diễn ngữ cảnh (context representation).",
+      "C. Đánh giá chất lượng của chuỗi được sinh ra.",
+      "D. Đảm bảo tính duy nhất của các từ trong từ vựng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Encoder chịu trách nhiệm đọc và mã hóa toàn bộ chuỗi đầu vào thành một vector ngữ cảnh hoặc một tập hợp các vector, nắm bắt thông tin quan trọng để truyền cho Decoder.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-044",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Knowledge Graphs",
+    "question_text": "Một lợi ích của Knowledge Graph so với văn bản thuần túy trong việc trích xuất thông tin là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tiết kiệm không gian lưu trữ hơn.",
+      "B. Cho phép suy luận và truy vấn các mối quan hệ phức tạp mà văn bản khó nắm bắt.",
+      "C. Dễ dàng hơn trong việc thu thập dữ liệu.",
+      "D. Không cần xử lý ngôn ngữ tự nhiên (NLP)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Knowledge Graph biểu diễn thông tin một cách có cấu trúc, cho phép thực hiện các truy vấn phức tạp và suy luận về mối quan hệ giữa các thực thể, điều khó khăn khi chỉ dựa vào văn bản thuần túy.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Knowledge Graphs"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-045",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Language Modeling",
+    "question_text": "Kỹ thuật 'Byte Pair Encoding' (BPE) trong Tokenization có mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ mã hóa các ký tự đặc biệt.",
+      "B. Giảm kích thước của từ vựng mô hình mà vẫn xử lý được các từ hiếm gặp và OOV (Out-Of-Vocabulary) words.",
+      "C. Chuyển đổi văn bản thành dạng nhị phân.",
+      "D. Thêm thông tin vị trí vào các token."
+    ],
+    "correct_answer": "B",
+    "explanation": "BPE là một thuật toán tokenization giúp tạo ra các subword unit, cho phép mô hình xử lý cả các từ phổ biến và từ hiếm gặp/từ mới (OOV) bằng cách phân tách chúng thành các đơn vị nhỏ hơn, từ đó giảm kích thước từ vựng hiệu quả.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Language Modeling", "Tokenization", "BPE"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-046",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Transformer Networks (BERT, GPT, RoBERTa)",
+    "question_text": "Điều gì xảy ra nếu loại bỏ Positional Encoding khỏi kiến trúc Transformer?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình sẽ không thể xử lý chuỗi đầu vào.",
+      "B. Mô hình sẽ mất khả năng nắm bắt thứ tự và vị trí tương đối của các từ trong chuỗi.",
+      "C. Mô hình sẽ trở nên mạnh mẽ hơn trong việc học ngữ nghĩa.",
+      "D. Chi phí tính toán của mô hình sẽ giảm đáng kể."
+    ],
+    "correct_answer": "B",
+    "explanation": "Vì cơ chế Attention độc lập với thứ tự của các từ, Positional Encoding là cần thiết để cung cấp thông tin về vị trí và thứ tự, nếu không mô hình sẽ coi 'Anh yêu em' và 'Em yêu anh' là giống nhau về mặt thứ tự.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Transformer Networks", "Positional Encoding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-047",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Text Generation",
+    "question_text": "Trong ngữ cảnh sinh văn bản, 'Prompt Engineering' ám chỉ điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kỹ thuật thiết kế kiến trúc mô hình mới cho sinh văn bản.",
+      "B. Phương pháp tối ưu hóa tốc độ sinh văn bản.",
+      "C. Nghệ thuật và khoa học thiết kế đầu vào (prompt) để hướng dẫn mô hình sinh ra kết quả mong muốn.",
+      "D. Quá trình thu thập dữ liệu cho các tác vụ sinh văn bản."
+    ],
+    "correct_answer": "C",
+    "explanation": "Prompt Engineering là việc xây dựng các 'prompt' (gợi ý/yêu cầu) hiệu quả để điều khiển hành vi của các mô hình ngôn ngữ lớn, giúp chúng sinh ra văn bản chính xác, phù hợp và theo ý muốn.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Text Generation", "Prompt Engineering"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-048",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Attention Mechanisms",
+    "question_text": "Cơ chế \"Attention Masking\" trong Decoder của Transformer có mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ngăn mô hình nhìn thấy các token trong tương lai khi sinh văn bản.",
+      "B. Che giấu một số token ngẫu nhiên để mô hình học cách dự đoán chúng.",
+      "C. Giảm số lượng phép tính Attention cần thiết.",
+      "D. Đảm bảo mô hình chỉ tập trung vào các từ quan trọng."
+    ],
+    "correct_answer": "A",
+    "explanation": "Attention Masking trong Decoder đảm bảo rằng tại mỗi bước sinh từ, mô hình chỉ tính toán Attention dựa trên các từ đã được sinh ra (hoặc từ đầu vào đã có) chứ không phải các từ trong tương lai, duy trì tính nhân quả của quá trình sinh văn bản.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Attention Mechanisms", "Attention Masking"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-049",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Dialogue Systems",
+    "question_text": "Trong thành phần 'Natural Language Understanding' (NLU) của Dialogue System, đâu là hai tác vụ chính?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Text Summarization và Machine Translation.",
+      "B. Intent Recognition và Slot Filling.",
+      "C. Dialogue Management và Natural Language Generation.",
+      "D. Language Modeling và Text Classification."
+    ],
+    "correct_answer": "B",
+    "explanation": "NLU chịu trách nhiệm hiểu đầu vào của người dùng. Hai tác vụ chính trong NLU là nhận dạng ý định (Intent Recognition) của người dùng và trích xuất các thông tin chi tiết (slot values) liên quan đến ý định đó (Slot Filling).",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Dialogue Systems", "NLU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-ANLT-050",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Advanced NLP Techniques",
+    "subskill_name": "Sequence-to-Sequence Models",
+    "question_text": "Tại sao kiến trúc Transformer thường được ưa chuộng hơn RNN-based Seq2Seq cho Machine Translation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Transformer yêu cầu ít dữ liệu đào tạo hơn.",
+      "B. Transformer có khả năng song song hóa cao hơn và xử lý phụ thuộc dài hạn tốt hơn.",
+      "C. Transformer đơn giản hơn nhiều trong việc triển khai.",
+      "D. Transformer không yêu cầu GPU mạnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Transformer loại bỏ tính tuần tự của RNN, cho phép tính toán song song hiệu quả hơn và xử lý các phụ thuộc giữa các từ ở khoảng cách xa tốt hơn nhờ cơ chế Attention, dẫn đến hiệu suất vượt trội trong dịch máy.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Advanced NLP Techniques", "Sequence-to-Sequence Models", "Transformer", "Machine Translation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-001",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Bộ lọc Median (Median Filter) trong xử lý ảnh có tác dụng chính là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Làm sắc nét các cạnh trong ảnh.",
+      "B. Giảm nhiễu loại salt-and-pepper (nhiễu hạt tiêu) hiệu quả mà ít làm mờ cạnh.",
+      "C. Tăng độ tương phản của ảnh.",
+      "D. Chuyển đổi ảnh màu sang ảnh xám."
+    ],
+    "correct_answer": "B",
+    "explanation": "Bộ lọc Median thay thế giá trị của pixel bằng giá trị trung vị của các pixel lân cận, rất hiệu quả trong việc loại bỏ nhiễu loại salt-and-pepper và các loại nhiễu xung mà vẫn giữ được các cạnh tốt hơn các bộ lọc trung bình.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Median Filter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-002",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Kỹ thuật 'Histogram Equalization' (Cân bằng Histogram) được sử dụng để làm gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chuyển đổi ảnh sang không gian màu khác.",
+      "B. Tăng cường độ tương phản tổng thể của ảnh, đặc biệt là trong các vùng thiếu sáng hoặc quá sáng.",
+      "C. Giảm kích thước ảnh.",
+      "D. Phát hiện các đối tượng trong ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Histogram Equalization là một kỹ thuật nâng cao độ tương phản bằng cách trải đều phân bố cường độ pixel, làm cho các vùng ít tương phản trở nên rõ ràng hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "Histogram Equalization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-003",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Thuật toán Canny Edge Detector bao gồm những bước chính nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Làm mờ (Gaussian Blur), Phát hiện gradient, Non-maximum suppression, Double thresholding, Hysteresis thresholding.",
+      "B. Chỉ có Gaussian Blur và Edge Thinning.",
+      "C. Chỉ có Thresholding và Morphological Operations.",
+      "D. Color Space Conversion và Histogram Equalization."
+    ],
+    "correct_answer": "A",
+    "explanation": "Canny là một trong những thuật toán phát hiện cạnh phổ biến nhất, bao gồm các bước: làm mờ bằng Gaussian, tính gradient, loại bỏ các pixel không phải cực đại (non-maximum suppression), ngưỡng kép (double thresholding) và nối các cạnh bằng ngưỡng Hysteresis.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Canny"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-004",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Không gian màu RGB (Red, Green, Blue) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một không gian màu dựa trên cường độ sáng và sắc độ.",
+      "B. Một không gian màu phụ thuộc vào thiết bị, kết hợp các giá trị cường độ của ba màu cơ bản ánh sáng.",
+      "C. Một không gian màu chỉ dùng cho ảnh đen trắng.",
+      "D. Một không gian màu dùng để nén ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "RGB là một mô hình màu cộng, trong đó ba màu cơ bản là Đỏ, Lục, Lam được kết hợp với các cường độ khác nhau để tạo ra mọi màu khác. Đây là mô hình phổ biến trong hiển thị kỹ thuật số.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "RGB"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-005",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "Đặc trưng SIFT (Scale-Invariant Feature Transform) có ưu điểm nổi bật nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Rất nhanh để tính toán và yêu cầu ít bộ nhớ.",
+      "B. Bất biến với thay đổi về tỷ lệ, xoay và một phần với thay đổi về góc nhìn và ánh sáng.",
+      "C. Chỉ phù hợp cho ảnh đen trắng.",
+      "D. Chỉ được sử dụng trong nhận dạng khuôn mặt."
+    ],
+    "correct_answer": "B",
+    "explanation": "SIFT tạo ra các đặc trưng điểm ảnh mạnh mẽ, bất biến với các phép biến đổi hình học (như tỷ lệ, xoay) và kháng nhiễu, kháng thay đổi ánh sáng, làm cho nó rất hữu ích cho các tác vụ như khớp ảnh và nhận dạng vật thể.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction", "SIFT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-006",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Phép biến đổi hình học nào bảo toàn hình dạng và kích thước của đối tượng nhưng có thể thay đổi vị trí và hướng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Scale (Phóng to/Thu nhỏ).",
+      "B. Affine Transformation.",
+      "C. Rigid Transformation (Rotation + Translation).",
+      "D. Perspective Transformation."
+    ],
+    "correct_answer": "C",
+    "explanation": "Biến đổi cứng nhắc (Rigid Transformation) bao gồm phép quay (Rotation) và tịnh tiến (Translation). Nó giữ nguyên hình dạng, kích thước và góc giữa các đường thẳng của đối tượng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Rigid Transformation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-007",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Image Segmentation (Phân đoạn ảnh) có mục đích chính là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm nhiễu trong ảnh.",
+      "B. Chia ảnh thành các vùng hoặc đối tượng có ý nghĩa dựa trên thuộc tính của pixel.",
+      "C. Tăng độ phân giải của ảnh.",
+      "D. Nén ảnh để giảm dung lượng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân đoạn ảnh là quá trình chia ảnh thành nhiều phân đoạn hoặc các nhóm pixel (siêu pixel) nhằm đơn giản hóa hoặc thay đổi biểu diễn của ảnh thành một thứ có ý nghĩa và dễ phân tích hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-008",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Bộ lọc Gaussian (Gaussian Filter) được dùng phổ biến để làm gì trong xử lý ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Làm sắc nét ảnh.",
+      "B. Làm mờ ảnh (smoothing) và giảm nhiễu, đặc biệt là nhiễu ngẫu nhiên (Gaussian noise).",
+      "C. Chuyển đổi ảnh sang ảnh nhị phân.",
+      "D. Phát hiện các đường thẳng trong ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Bộ lọc Gaussian là một bộ lọc thông thấp, có tác dụng làm mờ ảnh bằng cách sử dụng hàm phân bố Gaussian để tính trọng số trung bình của các pixel lân cận, giúp giảm nhiễu và làm mịn ảnh.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Gaussian Filter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-009",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Kỹ thuật 'Gamma Correction' trong xử lý ảnh có tác dụng gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thay đổi màu sắc tổng thể của ảnh.",
+      "B. Điều chỉnh độ sáng và độ tương phản của ảnh một cách phi tuyến tính, thường để sửa lỗi hiển thị trên màn hình.",
+      "C. Giảm nhiễu hạt.",
+      "D. Làm nổi bật các chi tiết nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Gamma Correction là một phép biến đổi phi tuyến tính dùng để điều chỉnh độ sáng hoặc độ tương phản của ảnh, thường được áp dụng để bù trừ cho đặc tính hiển thị phi tuyến của các thiết bị (như màn hình) hoặc để điều chỉnh mức độ sáng trong các vùng tối của ảnh.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "Gamma Correction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-010",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Bộ lọc Sobel trong phát hiện cạnh có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm nhiễu ảnh.",
+      "B. Ước tính độ dốc (gradient) cường độ pixel theo hướng ngang và dọc để tìm cạnh.",
+      "C. Chuyển đổi ảnh sang dạng nhị phân.",
+      "D. Tăng độ tương phản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Bộ lọc Sobel là một toán tử gradient rời rạc dùng để tính xấp xỉ đạo hàm của cường độ ảnh. Nó tính toán cường độ gradient theo cả hai hướng x và y để tìm các cạnh.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Sobel Filter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-011",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Không gian màu HSV (Hue, Saturation, Value) có ưu điểm gì trong các ứng dụng Computer Vision?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Dễ dàng chuyển đổi sang ảnh xám hơn RGB.",
+      "B. Tách biệt thông tin màu sắc (Hue, Saturation) khỏi thông tin cường độ sáng (Value), giúp dễ dàng xử lý màu sắc độc lập với độ sáng.",
+      "C. Yêu cầu ít bộ nhớ hơn RGB.",
+      "D. Phù hợp hơn cho việc nén ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "HSV giúp các nhà nghiên cứu dễ dàng thao tác hoặc phân tích màu sắc mà không bị ảnh hưởng bởi sự thay đổi của ánh sáng, điều này rất hữu ích trong các tác vụ như nhận dạng vật thể dựa trên màu sắc.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "HSV"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-012",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "Đặc trưng HOG (Histogram of Oriented Gradients) thường được sử dụng trong ứng dụng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tái tạo ảnh 3D từ ảnh 2D.",
+      "B. Nhận dạng đối tượng và đặc biệt là phát hiện người trong ảnh/video.",
+      "C. Nén ảnh hiệu quả.",
+      "D. Chuyển đổi ảnh đen trắng thành ảnh màu."
+    ],
+    "correct_answer": "B",
+    "explanation": "HOG là một bộ mô tả đặc trưng được sử dụng trong computer vision và xử lý ảnh với mục đích phát hiện vật thể. Kỹ thuật này đếm số lần xuất hiện của các hướng gradient trong các vùng cục bộ của ảnh, đặc biệt hiệu quả cho việc phát hiện hình dạng con người.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction", "HOG"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-013",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Phép biến đổi 'Affine Transformation' trong xử lý ảnh có thể làm thay đổi những thuộc tính nào của đối tượng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ vị trí và hướng.",
+      "B. Vị trí, hướng, kích thước, và hình dạng (méo mó).",
+      "C. Chỉ màu sắc và độ sáng.",
+      "D. Chỉ độ phân giải của ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phép biến đổi Affine là một biến đổi tuyến tính, có thể bảo toàn tính song song của các đường thẳng nhưng không nhất thiết bảo toàn góc hoặc độ dài. Nó có thể thay đổi vị trí (translation), hướng (rotation), kích thước (scaling), và nghiêng (shearing).",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Affine Transformation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-014",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Phân biệt giữa 'Semantic Segmentation' và 'Instance Segmentation'.",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Semantic chỉ phân loại đối tượng, Instance chỉ định vị đối tượng.",
+      "B. Semantic phân loại từng pixel vào một lớp, Instance phân loại từng pixel và phân biệt từng thể hiện của đối tượng.",
+      "C. Semantic tạo bounding box, Instance tạo mask nhị phân.",
+      "D. Semantic nhanh hơn, Instance chính xác hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Semantic Segmentation gán một nhãn lớp cho mỗi pixel, không phân biệt các thể hiện riêng lẻ của cùng một lớp (ví dụ: tất cả ô tô được gắn nhãn 'ô tô'). Instance Segmentation không chỉ gán nhãn lớp mà còn phân biệt từng thể hiện riêng lẻ của đối tượng (ví dụ: 'ô tô 1', 'ô tô 2').",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation", "Semantic Segmentation", "Instance Segmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-015",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Bộ lọc nào thường được sử dụng để làm sắc nét ảnh bằng cách tăng cường sự khác biệt giữa các pixel lân cận?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Filter.",
+      "B. Gaussian Filter.",
+      "C. Laplacian Filter hoặc Unsharp Masking.",
+      "D. Median Filter."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các bộ lọc như Laplacian hoặc kỹ thuật Unsharp Masking hoạt động bằng cách nhấn mạnh sự thay đổi cường độ pixel, làm nổi bật các cạnh và chi tiết, từ đó làm sắc nét ảnh.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Sharpening", "Laplacian", "Unsharp Masking"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-016",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Thế nào là 'Contrast Stretching' trong việc nâng cao chất lượng ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nén dải động của cường độ pixel.",
+      "B. Mở rộng dải động của cường độ pixel để tăng độ tương phản của ảnh.",
+      "C. Giảm nhiễu bằng cách làm mờ ảnh.",
+      "D. Thay đổi màu sắc của ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Contrast Stretching (còn gọi là Normalization) là kỹ thuật nâng cao độ tương phản bằng cách 'kéo dãn' dải giá trị cường độ pixel của ảnh để lấp đầy toàn bộ dải động sẵn có, làm cho ảnh rõ nét hơn.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "Contrast Stretching"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-017",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Thuật toán phát hiện cạnh Prewitt khác biệt với Sobel ở điểm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Prewitt sử dụng ma trận kernel đối xứng hoàn toàn, Sobel thì không.",
+      "B. Prewitt nhạy cảm với nhiễu hơn Sobel.",
+      "C. Prewitt chỉ phát hiện cạnh ngang, Sobel phát hiện cạnh dọc.",
+      "D. Prewitt có hiệu suất tính toán tốt hơn Sobel."
+    ],
+    "correct_answer": "A",
+    "explanation": "Cả Prewitt và Sobel đều là các bộ lọc đạo hàm bậc nhất. Điểm khác biệt chính là các kernel của Sobel có trọng số lớn hơn ở phần trung tâm để làm mịn nhiễu, trong khi kernel của Prewitt có các giá trị đồng đều hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Prewitt", "Sobel"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-018",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Không gian màu CMYK (Cyan, Magenta, Yellow, Key/Black) chủ yếu được sử dụng trong lĩnh vực nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chụp ảnh kỹ thuật số (Digital Photography).",
+      "B. Hiển thị trên màn hình máy tính.",
+      "C. In ấn (Printing).",
+      "D. Xử lý ảnh y tế."
+    ],
+    "correct_answer": "C",
+    "explanation": "CMYK là một mô hình màu trừ được sử dụng rộng rãi trong in ấn, nơi các mực màu được trộn lẫn để hấp thụ ánh sáng và tạo ra màu sắc.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "CMYK"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-019",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "Mục đích chính của 'Feature Extraction' (Trích xuất đặc trưng) trong xử lý ảnh là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Giảm kích thước ảnh mà không mất thông tin quan trọng.",
+      "B. Biến đổi dữ liệu ảnh thô thành một tập hợp các giá trị mô tả ý nghĩa, nhỏ gọn hơn và phù hợp cho các thuật toán học máy.",
+      "C. Nâng cao chất lượng hình ảnh để hiển thị tốt hơn.",
+      "D. Thay đổi màu sắc của ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Trích xuất đặc trưng là quá trình tự động hóa việc tìm kiếm và định lượng các thông tin quan trọng từ ảnh, biến đổi dữ liệu ảnh phức tạp thành một biểu diễn đơn giản hơn nhưng vẫn giữ được thông tin cần thiết cho các tác vụ như nhận dạng hoặc phân loại.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-020",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Phép biến đổi 'Perspective Transformation' (Biến đổi phối cảnh) được sử dụng khi nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi cần dịch chuyển ảnh mà không thay đổi hình dạng.",
+      "B. Khi cần hiệu chỉnh hình ảnh bị méo do góc nhìn của camera.",
+      "C. Khi cần xoay ảnh quanh một điểm cố định.",
+      "D. Khi cần thay đổi kích thước ảnh theo một tỷ lệ nhất định."
+    ],
+    "correct_answer": "B",
+    "explanation": "Perspective Transformation mô phỏng cách vật thể xuất hiện trong ảnh khi nhìn từ một góc độ cụ thể, cho phép hiệu chỉnh các biến dạng do phối cảnh hoặc tạo hiệu ứng 3D từ ảnh 2D.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Perspective Transformation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-021",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Thuật toán 'Watershed Segmentation' hoạt động dựa trên nguyên lý nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tìm các đường viền bằng cách tính toán gradient ảnh.",
+      "B. Chia ảnh thành các vùng dựa trên mức độ tương đồng màu sắc.",
+      "C. Xem ảnh như một bản đồ địa hình và tìm các 'lưu vực' nước, phân chia bởi các 'đường phân thủy'.",
+      "D. Sử dụng mạng nơ-ron để học các ranh giới đối tượng."
+    ],
+    "correct_answer": "C",
+    "explanation": "Watershed Segmentation là một kỹ thuật phân đoạn ảnh dựa trên hình thái học. Nó coi ảnh như một bề mặt địa hình, nơi cường độ pixel biểu thị độ cao, và thực hiện 'ngập' từ các 'lỗ thủng' (minima cục bộ) để tìm ra các ranh giới tự nhiên (đường phân thủy).",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation", "Watershed"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-022",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Bộ lọc nào thích hợp để loại bỏ nhiễu 'Gaussian noise' (nhiễu ngẫu nhiên) khỏi ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sharpening Filter.",
+      "B. Emboss Filter.",
+      "C. Gaussian Filter.",
+      "D. Sobel Filter."
+    ],
+    "correct_answer": "C",
+    "explanation": "Bộ lọc Gaussian là lựa chọn phổ biến và hiệu quả để làm mịn ảnh và loại bỏ nhiễu Gaussian do phân bố của nó giống với phân bố của nhiễu này.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Gaussian Noise"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-023",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Adaptive Histogram Equalization (AHE) khác gì so với Histogram Equalization thông thường?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. AHE chỉ áp dụng cho ảnh màu.",
+      "B. AHE điều chỉnh histogram cục bộ cho từng vùng nhỏ của ảnh, còn HE điều chỉnh histogram toàn cục.",
+      "C. AHE nhanh hơn HE rất nhiều.",
+      "D. AHE chỉ được dùng để giảm nhiễu."
+    ],
+    "correct_answer": "B",
+    "explanation": "AHE xử lý từng vùng cục bộ của ảnh để tránh làm sáng quá mức hoặc làm tối quá mức các vùng cụ thể, trong khi HE điều chỉnh toàn bộ ảnh, điều này có thể dẫn đến việc mất chi tiết ở một số vùng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "AHE", "Histogram Equalization"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-024",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Hạn chế chính của việc sử dụng một ngưỡng đơn (Single Thresholding) để phát hiện cạnh sau khi tính toán gradient là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Quá phức tạp để tính toán.",
+      "B. Dễ bỏ sót các cạnh yếu hoặc tạo ra các cạnh giả do nhiễu.",
+      "C. Chỉ hoạt động với ảnh màu.",
+      "D. Tạo ra quá nhiều cạnh sắc nét."
+    ],
+    "correct_answer": "B",
+    "explanation": "Ngưỡng đơn có thể làm mất các cạnh quan trọng có cường độ gradient thấp hơn ngưỡng, hoặc bao gồm các điểm nhiễu có cường độ cao hơn ngưỡng, dẫn đến việc bỏ sót hoặc tạo ra cạnh giả.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Thresholding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-025",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Không gian màu YCbCr được sử dụng rộng rãi trong các chuẩn nén video và ảnh kỹ thuật số (như JPEG) vì lý do gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó cung cấp dải màu rộng hơn RGB.",
+      "B. Nó tách thông tin độ sáng (Y) khỏi thông tin màu sắc (Cb, Cr), cho phép nén thông tin màu sắc hiệu quả hơn do mắt người ít nhạy cảm với thay đổi màu hơn độ sáng.",
+      "C. Nó là một không gian màu phụ gia.",
+      "D. Nó chỉ dùng cho ảnh đen trắng."
+    ],
+    "correct_answer": "B",
+    "explanation": "YCbCr tách kênh độ sáng (Luminance - Y) khỏi hai kênh sắc độ (Chrominance - Cb, Cr). Điều này cho phép nén thông tin sắc độ nhiều hơn thông tin độ sáng, vì mắt người ít nhạy cảm hơn với sự thay đổi màu sắc, từ đó đạt được tỷ lệ nén cao hơn mà ít làm giảm chất lượng hình ảnh cảm nhận được.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "YCbCr"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-026",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "SURF (Speeded Up Robust Features) là một phiên bản cải tiến của SIFT với ưu điểm chính là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó cung cấp các đặc trưng 3D.",
+      "B. Nó nhanh hơn đáng kể trong việc tính toán mà vẫn duy trì hiệu suất tương đương SIFT.",
+      "C. Nó chỉ phát hiện các đường thẳng.",
+      "D. Nó yêu cầu ít bộ nhớ hơn SIFT."
+    ],
+    "correct_answer": "B",
+    "explanation": "SURF được thiết kế để tăng tốc quá trình tính toán đặc trưng so với SIFT bằng cách sử dụng các phép xấp xỉ và các phương pháp hiệu quả hơn, làm cho nó phù hợp hơn cho các ứng dụng thời gian thực.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction", "SURF", "SIFT"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-027",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Để thay đổi kích thước của một ảnh (phóng to hoặc thu nhỏ), phép biến đổi hình học nào được sử dụng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Translation (Tịnh tiến).",
+      "B. Rotation (Quay).",
+      "C. Scaling (Phóng/Thu).",
+      "D. Shearing (Xén/Nghiêng)."
+    ],
+    "correct_answer": "C",
+    "explanation": "Scaling là phép biến đổi thay đổi kích thước của đối tượng hoặc ảnh theo một tỷ lệ nhất định, làm cho nó lớn hơn (phóng to) hoặc nhỏ hơn (thu nhỏ).",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Scaling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-028",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Thuật toán K-means Clustering có thể được sử dụng trong Image Segmentation như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó được dùng để phát hiện cạnh của ảnh.",
+      "B. Nó phân nhóm các pixel thành K cluster dựa trên các giá trị thuộc tính (ví dụ: cường độ màu), mỗi cluster đại diện cho một phân đoạn.",
+      "C. Nó chỉ dùng để giảm nhiễu ảnh.",
+      "D. Nó trực tiếp tạo ra các bounding box cho đối tượng."
+    ],
+    "correct_answer": "B",
+    "explanation": "K-means có thể được áp dụng để nhóm các pixel lại với nhau dựa trên giá trị cường độ hoặc màu sắc của chúng. Mỗi nhóm (cluster) sau đó có thể được coi là một phân đoạn của ảnh, giúp phân biệt các vùng khác nhau.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation", "K-means Clustering"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-029",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Sự khác biệt chính giữa bộ lọc trung bình (Mean Filter) và bộ lọc trung vị (Median Filter) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Filter bảo toàn cạnh tốt hơn Median Filter.",
+      "B. Median Filter hiệu quả hơn Mean Filter trong việc loại bỏ nhiễu Salt-and-Pepper.",
+      "C. Mean Filter làm sắc nét ảnh, Median Filter làm mờ ảnh.",
+      "D. Cả hai đều có tác dụng như nhau."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mean Filter tính giá trị trung bình và làm mờ ảnh đồng đều, dễ bị ảnh hưởng bởi các giá trị nhiễu ngoại lai. Median Filter thay bằng giá trị trung vị, ít bị ảnh hưởng bởi nhiễu xung (salt-and-pepper noise) và bảo toàn cạnh tốt hơn.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Mean Filter", "Median Filter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-030",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Tại sao việc loại bỏ nhiễu là bước tiền xử lý quan trọng trong nhiều ứng dụng xử lý ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để giảm kích thước file ảnh.",
+      "B. Để tăng cường chất lượng hình ảnh trực quan cho người xem.",
+      "C. Để cải thiện hiệu suất của các thuật toán xử lý ảnh tiếp theo, vì nhiễu có thể gây ra kết quả sai lệch.",
+      "D. Để chuyển đổi ảnh sang định dạng khác."
+    ],
+    "correct_answer": "C",
+    "explanation": "Nhiễu có thể làm hỏng thông tin ảnh, gây ra lỗi trong các bước xử lý tiếp theo như phát hiện cạnh, phân đoạn hoặc nhận dạng đối tượng. Loại bỏ nhiễu giúp cải thiện đáng kể độ chính xác của các thuật toán.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "Noise Reduction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-031",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Phát hiện cạnh bằng toán tử Roberts Cross chỉ sử dụng các ma trận 2x2. Điều này ảnh hưởng gì đến khả năng phát hiện cạnh của nó?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó chỉ có thể phát hiện các cạnh rất mạnh.",
+      "B. Nó nhạy cảm với nhiễu và thường tạo ra các cạnh dày hơn.",
+      "C. Nó chỉ có thể phát hiện các cạnh dọc và ngang.",
+      "D. Nó nhanh hơn nhưng kém chính xác hơn trong việc định vị cạnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Roberts Cross là một trong những toán tử đơn giản nhất, sử dụng ma trận 2x2. Do kích thước nhỏ, nó ít làm mịn ảnh hơn và do đó nhạy cảm hơn với nhiễu, dẫn đến các cạnh có thể không được định vị chính xác hoặc bị nhiễu làm sai lệch.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Roberts Cross"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-032",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Để biểu diễn ảnh đen trắng (grayscale) trong không gian màu, kênh nào của RGB thường được sử dụng hoặc mô phỏng?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kênh Red (R).",
+      "B. Kênh Green (G).",
+      "C. Kênh Blue (B).",
+      "D. Một giá trị cường độ duy nhất cho mỗi pixel, thường là trung bình có trọng số của R, G, B."
+    ],
+    "correct_answer": "D",
+    "explanation": "Ảnh đen trắng được biểu diễn bằng một giá trị cường độ duy nhất cho mỗi pixel, thường được tính từ một sự kết hợp có trọng số của các kênh màu RGB (ví dụ: $0.299R + 0.587G + 0.114B$), phản ánh độ sáng của pixel.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "Grayscale"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-033",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "Tại sao các đặc trưng cục bộ (Local Features) như SIFT hay SURF lại được ưa chuộng hơn đặc trưng toàn cục (Global Features) trong nhiều tác vụ nhận dạng vật thể?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chúng dễ dàng tính toán hơn.",
+      "B. Chúng mạnh mẽ hơn với che khuất (occlusion), thay đổi góc nhìn và biến dạng cục bộ.",
+      "C. Chúng cung cấp thông tin màu sắc chính xác hơn.",
+      "D. Chúng yêu cầu ít dữ liệu huấn luyện hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các đặc trưng cục bộ tập trung vào các khu vực nhỏ của ảnh. Điều này giúp chúng robust hơn khi một phần của đối tượng bị che khuất hoặc khi có sự thay đổi nhỏ về hình dạng hay góc nhìn, vì phần còn lại của đối tượng vẫn có thể được nhận dạng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction", "Local Features"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-034",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Phép biến đổi hình học nào được sử dụng để căn chỉnh hai ảnh chụp cùng một cảnh nhưng từ các góc độ khác nhau?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Translation.",
+      "B. Scaling.",
+      "C. Perspective Transformation.",
+      "D. Shearing."
+    ],
+    "correct_answer": "C",
+    "explanation": "Perspective Transformation có khả năng biến đổi các đường song song thành không song song, phù hợp để căn chỉnh các ảnh có sự thay đổi về phối cảnh do góc nhìn camera khác nhau.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Perspective Transformation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-035",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Thresholding (Ngưỡng hóa) là một kỹ thuật phân đoạn ảnh đơn giản hoạt động dựa trên nguyên lý nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại pixel dựa trên cường độ sáng của chúng so với một ngưỡng nhất định.",
+      "B. Phát hiện các cạnh của đối tượng.",
+      "C. Phân nhóm các pixel dựa trên màu sắc tương đồng.",
+      "D. Tái tạo ảnh 3D từ ảnh 2D."
+    ],
+    "correct_answer": "A",
+    "explanation": "Thresholding là kỹ thuật phân đoạn cơ bản nhất, chuyển đổi ảnh grayscale thành ảnh nhị phân bằng cách gán pixel trắng hoặc đen tùy thuộc vào việc cường độ của nó cao hơn hay thấp hơn một ngưỡng đã định.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation", "Thresholding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-036",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Loại bộ lọc nào sau đây thường được sử dụng để làm nổi bật các cạnh và chi tiết nhỏ trong ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Low-pass filter (Bộ lọc thông thấp).",
+      "B. High-pass filter (Bộ lọc thông cao).",
+      "C. Band-pass filter (Bộ lọc dải tần).",
+      "D. Notch filter (Bộ lọc chặn dải)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Bộ lọc thông cao làm giảm các thành phần tần số thấp (vùng đồng nhất) và tăng cường các thành phần tần số cao (cạnh, chi tiết), từ đó làm nổi bật chúng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "High-pass Filter"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-037",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Kỹ thuật 'Power Law Transformation' (Biến đổi luật lũy thừa) được sử dụng để điều chỉnh độ sáng/tối và độ tương phản của ảnh dựa trên một tham số $\\gamma$ (gamma). Nếu $\\gamma < 1$, ảnh sẽ như thế nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ảnh sẽ trở nên tối hơn.",
+      "B. Ảnh sẽ trở nên sáng hơn và tương phản ở vùng tối sẽ tăng.",
+      "C. Ảnh sẽ không thay đổi.",
+      "D. Ảnh sẽ bị đảo ngược màu sắc."
+    ],
+    "correct_answer": "B",
+    "explanation": "Khi $\\gamma < 1$, phép biến đổi sẽ làm cho các giá trị pixel thấp (vùng tối) tăng lên nhiều hơn các giá trị pixel cao (vùng sáng), dẫn đến ảnh sáng hơn và tăng độ tương phản ở vùng tối.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "Power Law Transformation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-038",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Mục đích của bước Non-maximum Suppression trong thuật toán Canny Edge Detector là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để giảm nhiễu Gaussian.",
+      "B. Để làm mờ các cạnh.",
+      "C. Để làm mỏng các cạnh, đảm bảo chỉ giữ lại các pixel cực đại cục bộ trên gradient để tạo ra các cạnh một pixel.",
+      "D. Để nối các đoạn cạnh lại với nhau."
+    ],
+    "correct_answer": "C",
+    "explanation": "Non-maximum Suppression loại bỏ các điểm không phải là cực đại cục bộ trong hướng gradient, giúp làm mỏng các cạnh và loại bỏ các phản hồi giả, tạo ra các cạnh rõ nét chỉ một pixel bề rộng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Canny"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-039",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Khi nào việc chuyển đổi ảnh từ không gian màu RGB sang Grayscale (ảnh xám) là phù hợp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi cần thực hiện các tác vụ xử lý chỉ dựa trên thông tin cường độ sáng, không quan tâm đến màu sắc.",
+      "B. Khi muốn tăng cường độ chi tiết của ảnh.",
+      "C. Khi cần giảm kích thước file ảnh mà không làm mất thông tin màu sắc.",
+      "D. Khi muốn làm sắc nét ảnh."
+    ],
+    "correct_answer": "A",
+    "explanation": "Nhiều thuật toán xử lý ảnh (ví dụ: phát hiện cạnh, phân đoạn dựa trên ngưỡng, một số thuật toán nhận dạng) chỉ cần thông tin cường độ sáng và không bị ảnh hưởng bởi màu sắc. Việc chuyển sang grayscale giúp đơn giản hóa dữ liệu và giảm chi phí tính toán.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "Grayscale"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-040",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "SURF, giống như SIFT, sử dụng khái niệm 'scale-space' để tìm các điểm đặc trưng. Điều này có ý nghĩa gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các đặc trưng được tính toán chỉ ở một kích thước ảnh duy nhất.",
+      "B. Các đặc trưng được tính toán ở nhiều phiên bản ảnh có độ phân giải và làm mờ khác nhau để đảm bảo bất biến với tỷ lệ.",
+      "C. Các đặc trưng được tính toán dựa trên thông tin 3D của đối tượng.",
+      "D. Các đặc trưng được điều chỉnh theo thời gian thực."
+    ],
+    "correct_answer": "B",
+    "explanation": "Scale-space là một khung lý thuyết trong xử lý ảnh để biểu diễn ảnh ở nhiều tỷ lệ (scale) khác nhau. Việc tính toán đặc trưng ở các tỷ lệ khác nhau giúp đảm bảo rằng chúng có thể được nhận dạng ngay cả khi kích thước đối tượng trong ảnh thay đổi.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction", "SURF", "SIFT", "Scale-space"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-041",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Phép biến đổi 'Shearing' (xén/nghiêng) trong xử lý ảnh là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Di chuyển ảnh theo một hướng nhất định.",
+      "B. Kéo dãn hoặc nén ảnh theo một hướng, làm cho các hình chữ nhật biến thành hình bình hành.",
+      "C. Quay ảnh quanh một điểm trung tâm.",
+      "D. Phóng to hoặc thu nhỏ ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Shearing là một phép biến đổi làm biến dạng hình ảnh bằng cách kéo dãn một chiều của ảnh song song với một trục cố định, trong khi chiều kia vẫn giữ nguyên, khiến các hình vuông/chữ nhật biến thành hình bình hành.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Shearing"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-042",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Phân đoạn ảnh bằng ngưỡng OTSU (Otsu's Thresholding) hoạt động dựa trên nguyên lý nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chọn ngưỡng để tối đa hóa variance giữa các lớp (inter-class variance).",
+      "B. Chọn ngưỡng để tối thiểu hóa variance trong mỗi lớp (intra-class variance).",
+      "C. Chọn ngưỡng dựa trên giá trị trung bình của tất cả các pixel.",
+      "D. Chọn ngưỡng ngẫu nhiên và điều chỉnh thủ công."
+    ],
+    "correct_answer": "A",
+    "explanation": "Thuật toán Otsu tìm kiếm ngưỡng tối ưu bằng cách phân chia các pixel của ảnh thành hai lớp (tiền cảnh và hậu cảnh) sao cho sự khác biệt (variance) giữa hai lớp là lớn nhất, đồng thời giảm thiểu sự khác biệt trong mỗi lớp.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation", "Otsu's Thresholding"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-043",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Trong xử lý ảnh, convolution (tích chập) của một bộ lọc (kernel) với ảnh là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phép cộng đơn giản các giá trị pixel.",
+      "B. Một phép toán thực hiện nhân từng phần tử của kernel với các pixel tương ứng trong cửa sổ trượt của ảnh và cộng tổng các kết quả.",
+      "C. Phép biến đổi Fourier trên ảnh.",
+      "D. Phép chia ảnh thành các khối nhỏ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Convolution là một phép toán cơ bản trong xử lý ảnh và mạng nơ-ron tích chập. Nó áp dụng một kernel (ma trận nhỏ) lên ảnh bằng cách trượt kernel qua ảnh, nhân từng phần tử tương ứng và cộng tổng để tạo ra một pixel mới trong ảnh đầu ra.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Convolution"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-044",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Enhancement",
+    "question_text": "Kỹ thuật 'Logarithmic Transformation' (Biến đổi Logarit) thường được sử dụng để làm gì trong nâng cao ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Làm sáng các vùng tối của ảnh đồng thời nén dải động của các giá trị pixel cao.",
+      "B. Làm tối các vùng sáng của ảnh.",
+      "C. Tăng cường độ sắc nét của cạnh.",
+      "D. Chuyển đổi ảnh màu sang ảnh xám."
+    ],
+    "correct_answer": "A",
+    "explanation": "Biến đổi logarit ánh xạ một dải giá trị đầu vào hẹp sang một dải giá trị đầu ra rộng hơn, làm sáng các vùng tối và ngược lại, nén các vùng sáng, rất hữu ích cho các ảnh có dải động cao hoặc các chi tiết quan trọng nằm ở vùng tối.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Enhancement", "Logarithmic Transformation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-045",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Edge Detection",
+    "question_text": "Tại sao làm mờ ảnh (smoothing) thường là bước tiền xử lý cần thiết trước khi phát hiện cạnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để tăng độ phân giải của ảnh.",
+      "B. Để loại bỏ nhiễu, vì nhiễu có thể tạo ra các cạnh giả hoặc làm suy yếu các cạnh thật.",
+      "C. Để thay đổi màu sắc của ảnh.",
+      "D. Để làm cho các cạnh trở nên sắc nét hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các thuật toán phát hiện cạnh thường dựa vào sự thay đổi đột ngột về cường độ pixel. Nhiễu cũng gây ra sự thay đổi đột ngột này, do đó, làm mờ giúp loại bỏ nhiễu, đảm bảo rằng chỉ những thay đổi cường độ thực sự mới được coi là cạnh.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Image Processing", "Edge Detection", "Smoothing", "Noise Reduction"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-046",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Color Spaces",
+    "question_text": "Ưu điểm chính của không gian màu L*a*b* so với RGB là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. L*a*b* là không gian màu độc lập thiết bị và có tính nhận thức đồng đều (perceptually uniform).",
+      "B. L*a*b* yêu cầu ít kênh màu hơn RGB.",
+      "C. L*a*b* chỉ dùng cho in ấn.",
+      "D. L*a*b* có tốc độ chuyển đổi nhanh hơn RGB."
+    ],
+    "correct_answer": "A",
+    "explanation": "L*a*b* được thiết kế để là không gian màu độc lập thiết bị, nghĩa là các giá trị màu L*a*b* sẽ trông giống nhau trên các thiết bị khác nhau. Ngoài ra, nó có tính nhận thức đồng đều, nghĩa là sự thay đổi số học trong các giá trị L*a*b* tương ứng với sự thay đổi nhận thức tương đương về màu sắc.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Color Spaces", "Lab"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-047",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Feature Extraction (SIFT, HOG, SURF)",
+    "question_text": "Điểm đặc trưng Harris Corner Detector dùng để phát hiện loại đặc trưng nào trong ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các vùng có màu sắc đồng nhất.",
+      "B. Các đường thẳng dài.",
+      "C. Các góc (corners) - là các điểm có sự thay đổi cường độ đáng kể theo nhiều hướng.",
+      "D. Các vùng có kết cấu phức tạp."
+    ],
+    "correct_answer": "C",
+    "explanation": "Harris Corner Detector là một thuật toán cổ điển để phát hiện các 'góc' trong ảnh. Góc được định nghĩa là một điểm mà tại đó có sự thay đổi cường độ đáng kể khi dịch chuyển một cửa sổ nhỏ theo bất kỳ hướng nào.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Feature Extraction", "Harris Corner"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-048",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Geometric Transformations",
+    "question_text": "Phép biến đổi nào sau đây thường được sử dụng để căn chỉnh (align) hình ảnh cho các tác vụ như ghép ảnh toàn cảnh (image stitching) hoặc đăng ký ảnh (image registration)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Translation.",
+      "B. Rotation.",
+      "C. Affine hoặc Perspective Transformation.",
+      "D. Scaling."
+    ],
+    "correct_answer": "C",
+    "explanation": "Để căn chỉnh ảnh từ các góc độ hoặc vị trí khác nhau, các phép biến đổi như Affine (cho các thay đổi tuyến tính) hoặc đặc biệt là Perspective Transformation (cho các thay đổi phối cảnh) là cần thiết để ánh xạ các điểm từ ảnh này sang ảnh kia một cách chính xác.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Geometric Transformations", "Image Stitching", "Image Registration"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-049",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Segmentation",
+    "question_text": "Trong Image Segmentation, thuật ngữ 'Over-segmentation' (phân đoạn quá mức) có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Ảnh được phân đoạn thành quá ít vùng.",
+      "B. Ảnh được phân đoạn thành quá nhiều vùng nhỏ, không có ý nghĩa.",
+      "C. Thuật toán phân đoạn quá chậm.",
+      "D. Thuật toán không thể phân biệt được các đối tượng."
+    ],
+    "correct_answer": "B",
+    "explanation": "Over-segmentation xảy ra khi một đối tượng duy nhất được chia thành nhiều phân đoạn nhỏ hơn, hoặc khi ảnh được chia thành quá nhiều vùng mà mỗi vùng không đại diện cho một đối tượng hay khu vực có ý nghĩa.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Image Processing", "Image Segmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-IP-050",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Image Processing",
+    "subskill_name": "Image Filtering",
+    "question_text": "Kỹ thuật 'Non-local Means' (NLM) Filter là một bộ lọc giảm nhiễu tiên tiến hoạt động dựa trên nguyên lý nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ dựa vào các pixel lân cận trực tiếp của một pixel.",
+      "B. Tính toán trọng số của một pixel bằng cách so sánh các vùng ảnh tương tự ở các vị trí khác nhau trong ảnh.",
+      "C. Sử dụng biến đổi Fourier để lọc nhiễu.",
+      "D. Áp dụng một ngưỡng cứng cho các pixel nhiễu."
+    ],
+    "correct_answer": "B",
+    "explanation": "Không giống như các bộ lọc cục bộ (Gaussian, Mean) chỉ xem xét lân cận trực tiếp, NLM tìm kiếm các 'patch' (vùng nhỏ) tương tự trong toàn bộ ảnh và tính trung bình có trọng số của các pixel trong các patch tương tự này, giúp bảo toàn chi tiết và loại bỏ nhiễu hiệu quả hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Image Processing", "Image Filtering", "Non-local Means"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-001",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Tác vụ Phân loại ảnh (Image Classification) nhằm mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Xác định vị trí của tất cả các đối tượng trong ảnh.",
+      "B. Gán một nhãn duy nhất (hoặc nhiều nhãn) cho toàn bộ bức ảnh từ một tập hợp các lớp đã biết.",
+      "C. Tạo ra một chú thích bằng văn bản mô tả nội dung của ảnh.",
+      "D. Thay đổi kích thước hoặc màu sắc của ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phân loại ảnh là việc gán một hoặc nhiều nhãn hạng mục cho một hình ảnh, xác định đối tượng hoặc cảnh chính trong đó.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-002",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Mô hình Convolutional Neural Network (CNN) hoạt động hiệu quả trong phân loại ảnh là do đặc tính nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khả năng xử lý tuần tự dữ liệu như trong RNN.",
+      "B. Sử dụng các lớp Fully Connected (FC) là chủ yếu.",
+      "C. Khả năng tự động học các đặc trưng không gian (spatial features) từ dữ liệu pixel.",
+      "D. Chỉ làm việc với dữ liệu ảnh đen trắng."
+    ],
+    "correct_answer": "C",
+    "explanation": "CNN hoạt động hiệu quả trong phân loại ảnh nhờ khả năng tự động học các đặc trưng không gian, như cạnh, kết cấu và hình dạng, thông qua các lớp tích chập.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "CNN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-003",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Thuật ngữ \"Overfitting\" trong phân loại ảnh đề cập đến hiện tượng nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mô hình học quá ít từ dữ liệu đào tạo và không thể dự đoán tốt trên dữ liệu mới.",
+      "B. Mô hình học quá chi tiết từ dữ liệu đào tạo, dẫn đến hiệu suất kém trên dữ liệu chưa thấy.",
+      "C. Mô hình không thể hội tụ (converge) trong quá trình đào tạo.",
+      "D. Mô hình yêu cầu quá nhiều thời gian để đào tạo."
+    ],
+    "correct_answer": "B",
+    "explanation": "Overfitting là khi mô hình học quá sát với dữ liệu huấn luyện, bao gồm cả nhiễu, khiến nó hoạt động kém hiệu quả trên dữ liệu mới chưa từng thấy.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-004",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Phương pháp nào sau đây thường được sử dụng để giảm thiểu Overfitting trong các mô hình phân loại ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tăng kích thước tập dữ liệu đào tạo một cách đáng kể.",
+      "B. Giảm số lượng lớp trong mô hình CNN.",
+      "C. Sử dụng Dropout Layers hoặc Regularization (L1/L2).",
+      "D. Tăng Learning Rate lên rất cao."
+    ],
+    "correct_answer": "C",
+    "explanation": "Dropout và các kỹ thuật Regularization như L1/L2 là các phương pháp phổ biến để ngăn chặn overfitting bằng cách thêm hình phạt vào các trọng số của mô hình hoặc bỏ qua ngẫu nhiên các nơ-ron trong quá trình đào tạo.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "Overfitting"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-005",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Chức năng của lớp Pooling (ví dụ: Max Pooling) trong CNN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Áp dụng các bộ lọc để trích xuất đặc trưng mới.",
+      "B. Giảm chiều dữ liệu (downsampling) và giữ lại các đặc trưng quan trọng nhất.",
+      "C. Thêm thông tin về vị trí của các đặc trưng.",
+      "D. Kích hoạt các nơ-ron không tuyến tính."
+    ],
+    "correct_answer": "B",
+    "explanation": "Lớp Pooling, đặc biệt là Max Pooling, được sử dụng để giảm kích thước không gian của biểu diễn đặc trưng, giúp giảm số lượng tham số và tính toán, đồng thời làm cho các đặc trưng trở nên bất biến với các biến đổi nhỏ (translation invariance).",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "CNN", "Pooling"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-006",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Dataset ImageNet đóng vai trò quan trọng như thế nào trong sự phát triển của Image Classification?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đây là dataset lớn nhất và duy nhất được sử dụng cho phân loại ảnh.",
+      "B. Nó cung cấp một tiêu chuẩn thử nghiệm quy mô lớn và thúc đẩy sự phát triển của các kiến trúc CNN sâu.",
+      "C. ImageNet chỉ được sử dụng để đào tạo các mô hình nhận diện khuôn mặt.",
+      "D. Nó là dataset chuyên dùng để kiểm tra overfitting."
+    ],
+    "correct_answer": "B",
+    "explanation": "ImageNet là một dataset phân loại ảnh quy mô lớn (hàng triệu ảnh, hàng nghìn lớp) đã trở thành một chuẩn mực quan trọng, thúc đẩy nghiên cứu và phát triển các mô hình CNN sâu như AlexNet, VGG, ResNet.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "ImageNet"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-007",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Trong tác vụ phân loại ảnh, tham số 'stride' trong lớp Convolutional ảnh hưởng đến điều gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Kích thước của bộ lọc (kernel size).",
+      "B. Số lượng bản đồ đặc trưng (feature maps) đầu ra.",
+      "C. Kích thước của đầu ra sau phép tích chập (spatial dimensions of the output feature map).",
+      "D. Tỷ lệ học (learning rate) của mô hình."
+    ],
+    "correct_answer": "C",
+    "explanation": "Stride xác định số bước mà bộ lọc trượt qua ảnh đầu vào. Stride lớn hơn sẽ dẫn đến kích thước đầu ra nhỏ hơn, giúp giảm chiều dữ liệu.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "CNN", "Stride"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-008",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Captioning",
+    "question_text": "Mô hình điển hình cho Image Captioning (Chú thích ảnh) thường bao gồm những phần nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ một mô hình CNN cho việc phân loại.",
+      "B. Một Encoder (thường là CNN) để trích xuất đặc trưng ảnh và một Decoder (thường là RNN/Transformer) để sinh văn bản.",
+      "C. Chỉ một mô hình RNN để sinh chuỗi ký tự.",
+      "D. Một mô hình GAN để tạo ảnh và chú thích."
+    ],
+    "correct_answer": "B",
+    "explanation": "Image Captioning kết hợp thị giác máy tính và xử lý ngôn ngữ tự nhiên. Một Encoder (CNN) hiểu hình ảnh, và một Decoder (như RNN hoặc Transformer) chuyển đổi sự hiểu đó thành mô tả văn bản.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Captioning", "Encoder-Decoder", "CNN", "RNN", "Transformer"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-009",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Captioning",
+    "question_text": "Để đánh giá chất lượng của chú thích ảnh được sinh ra, chúng ta thường sử dụng các chỉ số nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Accuracy và F1-score.",
+      "B. BLEU, METEOR, CIDEr, SPICE.",
+      "C. Mean IoU (Intersection over Union).",
+      "D. PSNR và SSIM."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các chỉ số như BLEU, METEOR, CIDEr, SPICE được thiết kế đặc biệt để đánh giá chất lượng của văn bản được sinh ra so với các chú thích tham chiếu, tính đến ngữ pháp, ngữ nghĩa và sự liên quan.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Captioning", "Evaluation Metrics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-010",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Captioning",
+    "question_text": "Thử thách lớn nhất trong Image Captioning là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Đảm bảo mô hình có thể nhận diện tất cả các đối tượng trong ảnh.",
+      "B. Tạo ra chú thích vừa chính xác về nội dung vừa tự nhiên và trôi chảy về mặt ngôn ngữ.",
+      "C. Tăng tốc độ đào tạo mô hình.",
+      "D. Giảm kích thước của dataset chú thích."
+    ],
+    "correct_answer": "B",
+    "explanation": "Thách thức chính là việc mô hình không chỉ phải hiểu được các đối tượng và mối quan hệ trong ảnh mà còn phải diễn đạt chúng thành ngôn ngữ tự nhiên, mạch lạc và có ngữ nghĩa.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Captioning", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-011",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Tác vụ Phát hiện đối tượng (Object Detection) khác với Phân loại ảnh (Image Classification) ở điểm nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phát hiện đối tượng chỉ làm việc với ảnh đen trắng.",
+      "B. Phát hiện đối tượng không cần đào tạo trên dữ liệu lớn.",
+      "C. Phát hiện đối tượng không chỉ phân loại mà còn xác định vị trí (hộp giới hạn) của từng đối tượng trong ảnh.",
+      "D. Phát hiện đối tượng chỉ được sử dụng cho một loại đối tượng duy nhất."
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong khi phân loại ảnh chỉ gán nhãn cho toàn bộ ảnh, phát hiện đối tượng đi xa hơn bằng cách xác định cả nhãn lớp và vị trí (thường là hộp giới hạn) cho mỗi đối tượng trong ảnh.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "Image Classification"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-012",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Ưu điểm chính của các thuật toán One-Stage Detector như YOLO và SSD so với Two-Stage Detector như Faster R-CNN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Độ chính xác (accuracy) cao hơn đáng kể.",
+      "B. Tốc độ suy luận (inference speed) nhanh hơn nhiều.",
+      "C. Yêu cầu ít dữ liệu đào tạo hơn.",
+      "D. Khả năng phát hiện các đối tượng nhỏ tốt hơn."
+    ],
+    "correct_answer": "B",
+    "explanation": "One-Stage Detectors (YOLO, SSD) dự đoán hộp giới hạn và phân loại đối tượng trong một lần chạy mạng, trong khi Two-Stage Detectors (Faster R-CNN) cần hai bước (đề xuất vùng và phân loại/hồi quy hộp), khiến One-Stage nhanh hơn, đặc biệt cho các ứng dụng thời gian thực.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "YOLO", "SSD", "Faster R-CNN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-013",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Trong Object Detection, Mean Average Precision (mAP) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Một metric đo tốc độ xử lý của mô hình.",
+      "B. Một metric đánh giá độ chính xác trung bình trên tất cả các lớp và ngưỡng IoU khác nhau.",
+      "C. Một hàm mất mát (loss function) được sử dụng để đào tạo mô hình.",
+      "D. Một phương pháp tiền xử lý dữ liệu cho ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "mAP là một metric phổ biến để đánh giá các mô hình phát hiện đối tượng. Nó tính toán giá trị trung bình của Average Precision (AP) trên tất cả các lớp và thường trên các ngưỡng IoU (Intersection over Union) khác nhau, cung cấp một cái nhìn tổng thể về hiệu suất.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "mAP", "Evaluation Metrics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-014",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Khái niệm 'Anchor Boxes' được sử dụng trong các thuật toán phát hiện đối tượng như Faster R-CNN và SSD nhằm mục đích gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để thêm nhiễu ngẫu nhiên vào dữ liệu đào tạo.",
+      "B. Để đề xuất các hộp giới hạn có kích thước và tỷ lệ khung hình khác nhau tại mỗi vị trí trong ảnh.",
+      "C. Để tăng tốc độ xử lý ảnh đầu vào.",
+      "D. Để phân loại các pixel thành các đối tượng cụ thể."
+    ],
+    "correct_answer": "B",
+    "explanation": "Anchor boxes là các hộp giới hạn được xác định trước với các kích thước và tỷ lệ khung hình khác nhau, được đặt tại các vị trí lưới trong ảnh. Các thuật toán học cách điều chỉnh các anchor này để phù hợp với các đối tượng thực tế, giúp phát hiện đa dạng đối tượng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "Anchor Boxes", "Faster R-CNN", "SSD"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-015",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Trong YOLO, mỗi ô lưới (grid cell) dự đoán bao nhiêu hộp giới hạn và xác suất lớp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ một hộp giới hạn và một xác suất lớp.",
+      "B. Nhiều hộp giới hạn và một tập hợp xác suất lớp cho mỗi hộp.",
+      "C. Nhiều hộp giới hạn nhưng chỉ một xác suất lớp chung cho cả ô.",
+      "D. YOLO không sử dụng ô lưới."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mỗi ô lưới trong YOLO chịu trách nhiệm dự đoán một số hộp giới hạn cố định (thường là 2 hoặc 3, tùy phiên bản) cùng với độ tin cậy của chúng và xác suất các lớp cho mỗi hộp.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "YOLO"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-016",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Nhiệm vụ chính của Region Proposal Network (RPN) trong Faster R-CNN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại các đối tượng được tìm thấy trong ảnh.",
+      "B. Sinh ra các vùng ứng cử viên (Region Proposals) có khả năng chứa đối tượng.",
+      "C. Thực hiện Non-Maximum Suppression (NMS).",
+      "D. Đào tạo toàn bộ mạng nhận diện đối tượng."
+    ],
+    "correct_answer": "B",
+    "explanation": "RPN là một phần của Faster R-CNN, được thiết kế để tạo ra các đề xuất vùng (bounding box proposals) mà có khả năng chứa một đối tượng, thay thế cho các phương pháp tìm kiếm vùng truyền thống chậm chạp.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "Faster R-CNN", "RPN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-017",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Khi nào nên ưu tiên sử dụng YOLO thay vì Faster R-CNN?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi yêu cầu độ chính xác tuyệt đối là ưu tiên hàng đầu, bất kể tốc độ.",
+      "B. Khi cần phát hiện các đối tượng rất nhỏ và mật độ dày đặc.",
+      "C. Khi cần phát hiện đối tượng trong thời gian thực (real-time applications) với tốc độ cao là quan trọng.",
+      "D. Khi dữ liệu đào tạo rất hạn chế và cần học từ ít mẫu."
+    ],
+    "correct_answer": "C",
+    "explanation": "YOLO (You Only Look Once) được biết đến với tốc độ xử lý cực kỳ nhanh, phù hợp cho các ứng dụng yêu cầu phát hiện đối tượng trong thời gian thực, mặc dù có thể đánh đổi một chút về độ chính xác so với Faster R-CNN cho các đối tượng nhỏ.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "YOLO", "Faster R-CNN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-018",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Visual Question Answering",
+    "question_text": "Visual Question Answering (VQA) là tác vụ gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ đơn thuần phân loại một ảnh.",
+      "B. Tạo ra một câu hỏi từ một bức ảnh.",
+      "C. Trả lời một câu hỏi bằng ngôn ngữ tự nhiên dựa trên nội dung của một bức ảnh.",
+      "D. Dịch một câu hỏi từ ngôn ngữ này sang ngôn ngữ khác."
+    ],
+    "correct_answer": "C",
+    "explanation": "VQA yêu cầu mô hình hiểu cả nội dung hình ảnh và câu hỏi bằng ngôn ngữ tự nhiên để đưa ra câu trả lời phù hợp, thường dưới dạng văn bản.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Visual Question Answering", "VQA"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-019",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Visual Question Answering",
+    "question_text": "Để giải quyết bài toán VQA, các mô hình thường tích hợp những loại thông tin nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ thông tin hình ảnh từ CNN.",
+      "B. Chỉ thông tin văn bản từ RNN/Transformer.",
+      "C. Cả thông tin hình ảnh (visual features) và thông tin câu hỏi (textual features) và kết hợp chúng.",
+      "D. Chỉ thông tin về nhãn đối tượng đã được định nghĩa trước."
+    ],
+    "correct_answer": "C",
+    "explanation": "Các mô hình VQA thành công thường cần một cơ chế để trích xuất đặc trưng từ cả hình ảnh và văn bản (câu hỏi), sau đó kết hợp thông tin này để suy luận và đưa ra câu trả lời.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Visual Question Answering", "Multimodal Learning"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-020",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Visual Question Answering",
+    "question_text": "Thử thách lớn nhất của VQA là mô hình phải có khả năng gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ nhận diện các đối tượng đơn lẻ trong ảnh.",
+      "B. Hiểu được các mối quan hệ phức tạp giữa các đối tượng và thuộc tính trong ảnh, cũng như logic ẩn trong câu hỏi.",
+      "C. Đảm bảo tốc độ trả lời nhanh dưới 1 giây.",
+      "D. Chỉ trả lời các câu hỏi 'có' hoặc 'không'."
+    ],
+    "correct_answer": "B",
+    "explanation": "VQA không chỉ là nhận diện đối tượng mà còn yêu cầu suy luận ngữ nghĩa sâu sắc, hiểu các mối quan hệ không gian, thuộc tính, và đôi khi cả kiến thức thế giới thực để trả lời các câu hỏi phức tạp.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Visual Question Answering", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-021",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "Tác vụ Image Segmentation (Phân đoạn ảnh) khác gì so với Object Detection?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân đoạn ảnh chỉ phân loại toàn bộ bức ảnh, không xác định đối tượng.",
+      "B. Phân đoạn ảnh không xác định vị trí đối tượng, chỉ chú thích văn bản.",
+      "C. Phân đoạn ảnh không chỉ xác định vị trí đối tượng mà còn tạo ra mặt nạ (mask) cấp độ pixel cho từng đối tượng.",
+      "D. Phân đoạn ảnh chỉ làm việc với ảnh đen trắng."
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong khi Object Detection vẽ hộp giới hạn quanh đối tượng, Image Segmentation đi xa hơn bằng cách tạo ra một mặt nạ chính xác từng pixel cho mỗi đối tượng, phân loại từng pixel vào một lớp nhất định.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "Object Detection"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-022",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "Phân biệt giữa Semantic Segmentation và Instance Segmentation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Semantic Segmentation phân loại từng pixel vào một lớp, trong khi Instance Segmentation phân biệt các cá thể riêng lẻ của cùng một lớp.",
+      "B. Semantic Segmentation chỉ xác định ranh giới của đối tượng, còn Instance Segmentation chỉ chú thích văn bản.",
+      "C. Semantic Segmentation tạo ra hộp giới hạn, còn Instance Segmentation tạo ra mặt nạ pixel.",
+      "D. Semantic Segmentation chỉ làm việc với ảnh màu, còn Instance Segmentation với ảnh đen trắng."
+    ],
+    "correct_answer": "A",
+    "explanation": "Semantic Segmentation gán mỗi pixel một nhãn lớp (ví dụ: 'người', 'xe', 'đường'), mà không phân biệt các cá thể của cùng một lớp. Instance Segmentation đi xa hơn, nó phân biệt từng cá thể riêng lẻ của một lớp (ví dụ: 'người 1', 'người 2').",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "Semantic Segmentation", "Instance Segmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-023",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "Kiến trúc mạng nơ-ron nào thường được sử dụng cho Semantic Segmentation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Các mạng chỉ có lớp Fully Connected (MLP).",
+      "B. Mạng Encoder-Decoder với skip connections (ví dụ: U-Net, FCN).",
+      "C. Các mô hình dựa trên Transformer (ví dụ: BERT).",
+      "D. Các mạng Generative Adversarial Networks (GAN)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các kiến trúc Encoder-Decoder (như U-Net, FCN) rất phổ biến trong Semantic Segmentation vì chúng có thể nén thông tin không gian (encoder) và sau đó giải mã lại để tạo ra các mặt nạ phân đoạn chi tiết với độ phân giải đầy đủ (decoder), thường kèm theo skip connections để giữ lại thông tin chi tiết.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "Semantic Segmentation", "U-Net", "FCN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-024",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "Metric đánh giá nào là phổ biến nhất cho tác vụ Image Segmentation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Accuracy (Độ chính xác).",
+      "B. Precision và Recall.",
+      "C. Mean Intersection over Union (mIoU).",
+      "D. F1-score."
+    ],
+    "correct_answer": "C",
+    "explanation": "Mean Intersection over Union (mIoU) là metric tiêu chuẩn cho Image Segmentation, đo lường sự chồng chéo giữa vùng dự đoán và vùng sự thật trên mặt đất, sau đó tính trung bình trên tất cả các lớp.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "mIoU", "Evaluation Metrics"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-025",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "Panoptic Segmentation là sự kết hợp của những tác vụ nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Image Classification và Object Detection.",
+      "B. Semantic Segmentation và Image Captioning.",
+      "C. Semantic Segmentation và Instance Segmentation.",
+      "D. Object Detection và Face Recognition."
+    ],
+    "correct_answer": "C",
+    "explanation": "Panoptic Segmentation là một tác vụ tổng hợp, yêu cầu phân loại từng pixel trong ảnh, phân biệt các cá thể của 'things' (ví dụ: con người, xe hơi) và gán nhãn cho các vùng 'stuff' (ví dụ: đường, bầu trời) không có hình dạng rõ ràng, do đó là sự kết hợp của Semantic và Instance Segmentation.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "Panoptic Segmentation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-026",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "Loss function (hàm mất mát) nào thường được dùng trong Image Segmentation để xử lý sự mất cân bằng lớp?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Mean Squared Error (MSE).",
+      "B. Cross-Entropy Loss.",
+      "C. Dice Loss hoặc Focal Loss.",
+      "D. Huber Loss."
+    ],
+    "correct_answer": "C",
+    "explanation": "Trong segmentation, các lớp nền (background) thường chiếm ưu thế hơn các lớp đối tượng, dẫn đến mất cân bằng lớp. Dice Loss và Focal Loss là các hàm mất mát được thiết kế để xử lý vấn đề này, giúp mô hình tập trung hơn vào các lớp thiểu số hoặc các pixel khó phân loại.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "Loss Function", "Dice Loss", "Focal Loss"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-027",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Nhận diện khuôn mặt (Face Recognition) khác gì với Phát hiện khuôn mặt (Face Detection)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nhận diện khuôn mặt chỉ phát hiện vị trí khuôn mặt trong ảnh, còn Phát hiện khuôn mặt xác định danh tính.",
+      "B. Nhận diện khuôn mặt xác định danh tính của một người từ khuôn mặt, còn Phát hiện khuôn mặt chỉ xác định vị trí của khuôn mặt trong ảnh.",
+      "C. Cả hai đều là cùng một tác vụ.",
+      "D. Nhận diện khuôn mặt chỉ hoạt động trên video, còn Phát hiện khuôn mặt trên ảnh tĩnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Phát hiện khuôn mặt là bước đầu tiên để tìm và định vị các khuôn mặt trong ảnh/video. Nhận diện khuôn mặt là bước tiếp theo để xác định danh tính của khuôn mặt được phát hiện bằng cách so sánh với cơ sở dữ liệu.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Face Detection"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-028",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Metric nào thường được sử dụng để so sánh sự tương đồng giữa các đặc trưng khuôn mặt trong Face Recognition?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Cross-Entropy Loss.",
+      "B. Cosine Similarity (Độ tương tự Cosine).",
+      "C. Mean Squared Error (MSE).",
+      "D. Jaccard Index."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cosine Similarity đo lường cosin của góc giữa hai vector trong không gian đa chiều, thường được sử dụng để đánh giá độ tương tự giữa các embedding (vector đặc trưng) của khuôn mặt. Giá trị gần 1 cho thấy độ tương đồng cao.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Cosine Similarity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-029",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Loss function nào được thiết kế đặc biệt để học các embedding (biểu diễn) khuôn mặt có khả năng phân biệt cao?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Softmax Loss.",
+      "B. Binary Cross-Entropy Loss.",
+      "C. Triplet Loss hoặc ArcFace Loss.",
+      "D. L1 Loss."
+    ],
+    "correct_answer": "C",
+    "explanation": "Triplet Loss và ArcFace Loss (cùng với CosFace, SphereFace) là các hàm mất mát được phát triển để tối ưu hóa khoảng cách giữa các embedding khuôn mặt, đảm bảo các embedding của cùng một người gần nhau và các embedding của những người khác nhau xa nhau trong không gian đặc trưng.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Loss Function", "Triplet Loss", "ArcFace"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-030",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Đâu là một thách thức lớn trong việc xây dựng hệ thống nhận diện khuôn mặt mạnh mẽ trong thế giới thực?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thiếu dữ liệu ảnh khuôn mặt.",
+      "B. Biến thể về ánh sáng, tư thế, biểu cảm và che khuất (ví dụ: khẩu trang).",
+      "C. Tốc độ xử lý của thuật toán quá nhanh.",
+      "D. Khả năng nhận diện của con người quá kém."
+    ],
+    "correct_answer": "B",
+    "explanation": "Các yếu tố như ánh sáng kém, góc chụp khác nhau, biểu cảm khuôn mặt thay đổi, và các vật cản (kính, khẩu trang) là những thách thức lớn khiến việc nhận diện khuôn mặt trở nên khó khăn hơn trong môi trường thực tế.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-031",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Kỹ thuật nào thường được sử dụng để chuẩn hóa khuôn mặt (Face Alignment) trước khi trích xuất đặc trưng cho nhận diện?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Thay đổi ngẫu nhiên kích thước khuôn mặt.",
+      "B. Xoay và dịch chuyển khuôn mặt để đưa các điểm mốc (landmarks) về vị trí chuẩn.",
+      "C. Chuyển đổi khuôn mặt sang ảnh đen trắng.",
+      "D. Áp dụng bộ lọc làm mờ (blur filter)."
+    ],
+    "correct_answer": "B",
+    "explanation": "Face Alignment là quá trình biến đổi hình ảnh khuôn mặt để các điểm mốc chính (như mắt, mũi, miệng) nằm ở vị trí cố định, giúp giảm thiểu sự biến đổi do tư thế và góc chụp, từ đó cải thiện hiệu suất nhận diện.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Face Alignment"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-032",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Khía cạnh đạo đức nào thường gây tranh cãi nhất liên quan đến công nghệ nhận diện khuôn mặt?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ xử lý của thuật toán.",
+      "B. Chi phí phần cứng để triển khai.",
+      "C. Vấn đề về quyền riêng tư, giám sát hàng loạt và khả năng phân biệt đối xử.",
+      "D. Độ chính xác không thể đạt 100%."
+    ],
+    "correct_answer": "C",
+    "explanation": "Những lo ngại chính liên quan đến nhận diện khuôn mặt bao gồm việc giám sát liên tục, xâm phạm quyền riêng tư cá nhân và tiềm năng sử dụng công nghệ này để phân biệt đối xử hoặc kiểm soát dân số.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Ethics", "Privacy"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-033",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Tác vụ Image Generation (Sinh ảnh) là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chuyển đổi ảnh sang định dạng khác.",
+      "B. Tạo ra các bức ảnh mới, chân thực từ dữ liệu hoặc mô tả nhất định.",
+      "C. Phân loại các đối tượng trong ảnh.",
+      "D. Tăng độ phân giải của một bức ảnh hiện có."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sinh ảnh là khả năng tạo ra các hình ảnh mới mà không tồn tại trong tập dữ liệu gốc, dựa trên các điều kiện đầu vào như mô tả văn bản, ảnh tham chiếu, hoặc dữ liệu ngẫu nhiên.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-034",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Mô hình Generative Adversarial Network (GAN) bao gồm những thành phần chính nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ một Generator.",
+      "B. Một Generator và một Discriminator.",
+      "C. Chỉ một Discriminator.",
+      "D. Một Encoder và một Decoder."
+    ],
+    "correct_answer": "B",
+    "explanation": "GANs bao gồm hai mạng thần kinh cạnh tranh: một Generator tạo ra dữ liệu giả, và một Discriminator phân biệt giữa dữ liệu thật và dữ liệu giả. Chúng được đào tạo đồng thời trong một trò chơi đối kháng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "GAN"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-035",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Mục tiêu của Generator trong GAN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Phân loại dữ liệu đầu vào là thật hay giả.",
+      "B. Tạo ra dữ liệu giả (ví dụ: ảnh) mà có thể đánh lừa được Discriminator.",
+      "C. Đánh giá chất lượng của dữ liệu được tạo ra.",
+      "D. Giảm thiểu mất mát (loss) của Discriminator."
+    ],
+    "correct_answer": "B",
+    "explanation": "Generator có nhiệm vụ tạo ra dữ liệu tổng hợp (ví dụ: hình ảnh) càng giống dữ liệu thật càng tốt, với mục tiêu đánh lừa Discriminator tin rằng dữ liệu đó là thật.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "GAN", "Generator"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-036",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Diffusion Models tạo ra ảnh bằng cách nào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sinh ảnh từ nhiễu ngẫu nhiên trong một bước duy nhất.",
+      "B. Đảo ngược quá trình thêm nhiễu dần dần vào ảnh gốc qua nhiều bước.",
+      "C. Học cách sao chép các ảnh có sẵn trong tập dữ liệu.",
+      "D. Tối ưu hóa một hàm mục tiêu dựa trên các ràng buộc logic."
+    ],
+    "correct_answer": "B",
+    "explanation": "Diffusion Models hoạt động bằng cách thêm nhiễu Gaussian dần dần vào dữ liệu (ảnh) qua nhiều bước cho đến khi nó trở thành nhiễu thuần túy, sau đó học cách đảo ngược quá trình này để tái tạo dữ liệu gốc từ nhiễu.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "Diffusion Models"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-037",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Ứng dụng nào sau đây KHÔNG phải là ứng dụng trực tiếp của Image Generation?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tạo ảnh chân dung người không tồn tại.",
+      "B. Chuyển đổi ảnh phong cách (Style Transfer).",
+      "C. Tăng cường dữ liệu (Data Augmentation) bằng cách tạo thêm mẫu ảnh.",
+      "D. Đánh giá độ chính xác của một mô hình phân loại ảnh."
+    ],
+    "correct_answer": "D",
+    "explanation": "Đánh giá độ chính xác của mô hình phân loại ảnh là một tác vụ đánh giá (evaluation task), không phải một ứng dụng của việc sinh ảnh. Mặc dù ảnh được sinh ra có thể được dùng để mở rộng tập dữ liệu cho phân loại, bản thân việc đánh giá không phải là sinh ảnh.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "Applications"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-038",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Chỉ số nào thường được sử dụng để đánh giá chất lượng và sự đa dạng của ảnh được tạo ra bởi các mô hình sinh ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Accuracy và Recall.",
+      "B. Intersection over Union (IoU).",
+      "C. Inception Score (IS) và Fréchet Inception Distance (FID).",
+      "D. R-squared."
+    ],
+    "correct_answer": "C",
+    "explanation": "Inception Score (IS) và Fréchet Inception Distance (FID) là hai metric phổ biến để đánh giá chất lượng của ảnh sinh ra bởi GANs và Diffusion Models. IS đo lường cả chất lượng và sự đa dạng, trong khi FID đo lường khoảng cách giữa phân bố đặc trưng của ảnh thật và ảnh giả.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "Evaluation Metrics", "IS", "FID"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-039",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Nhược điểm lớn nhất của mô hình GAN là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khó tạo ra ảnh có độ phân giải thấp.",
+      "B. Quá trình đào tạo không ổn định (training instability) và chế độ sụp đổ (mode collapse).",
+      "C. Không thể tạo ra ảnh từ nhiễu ngẫu nhiên.",
+      "D. Chỉ có thể tạo ra ảnh đen trắng."
+    ],
+    "correct_answer": "B",
+    "explanation": "GANs nổi tiếng là khó đào tạo do tính chất đối kháng của chúng, thường gặp phải vấn đề đào tạo không ổn định và mode collapse (Generator chỉ tạo ra một số loại ảnh giới hạn, bỏ qua sự đa dạng của dữ liệu thật).",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "GAN", "Challenges"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-040",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "\"Text-to-Image Generation\" là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Biến đổi ảnh thành văn bản mô tả.",
+      "B. Tạo ra một bức ảnh mới dựa trên mô tả bằng văn bản.",
+      "C. Phân loại văn bản có trong ảnh.",
+      "D. Dịch văn bản từ ngôn ngữ này sang hình ảnh."
+    ],
+    "correct_answer": "B",
+    "explanation": "Text-to-Image Generation là một tác vụ sinh ảnh có điều kiện, nơi mô hình tạo ra một hình ảnh phù hợp với mô tả được cung cấp dưới dạng văn bản (ví dụ: 'một con mèo đang đội mũ').",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "Text-to-Image"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-041",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Mô hình nào sau đây là ví dụ nổi bật của Diffusion Models trong sinh ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. AlexNet.",
+      "B. StyleGAN.",
+      "C. DALL-E 2 hoặc Stable Diffusion.",
+      "D. ResNet."
+    ],
+    "correct_answer": "C",
+    "explanation": "DALL-E 2 và Stable Diffusion là hai trong số những mô hình sinh ảnh tiên tiến nhất hiện nay, cả hai đều dựa trên kiến trúc Diffusion Models để tạo ra hình ảnh chất lượng cao và đa dạng từ các mô tả văn bản.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "Diffusion Models", "DALL-E 2", "Stable Diffusion"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-042",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Trong tác vụ phát hiện đối tượng, Non-Maximum Suppression (NMS) có vai trò gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Sinh ra các vùng ứng cử viên cho đối tượng.",
+      "B. Loại bỏ các hộp giới hạn trùng lặp cao, chỉ giữ lại hộp có điểm tin cậy cao nhất.",
+      "C. Chuẩn hóa kích thước các hộp giới hạn.",
+      "D. Tăng độ chính xác của phân loại đối tượng."
+    ],
+    "correct_answer": "B",
+    "explanation": "NMS là một bước hậu xử lý quan trọng trong phát hiện đối tượng. Nó loại bỏ các hộp giới hạn dự đoán dư thừa và chồng chéo, giữ lại hộp có điểm tin cậy cao nhất cho mỗi đối tượng.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "NMS"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-043",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Khi nào IoU (Intersection over Union) của hai hộp giới hạn đạt giá trị cao?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Khi hai hộp không chồng lấn lên nhau.",
+      "B. Khi hai hộp có kích thước khác nhau hoàn toàn.",
+      "C. Khi hai hộp chồng lấn lên nhau một cách đáng kể.",
+      "D. IoU chỉ được dùng để so sánh tốc độ xử lý."
+    ],
+    "correct_answer": "C",
+    "explanation": "IoU là một metric đo mức độ chồng lấn giữa hai hộp giới hạn. Giá trị IoU cao (gần 1) cho thấy hai hộp chồng lấn nhiều và gần giống nhau, trong khi giá trị thấp (gần 0) cho thấy ít hoặc không chồng lấn.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "IoU"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-044",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Visual Question Answering",
+    "question_text": "Để nâng cao khả năng suy luận của mô hình VQA, một số nghiên cứu sử dụng 'Attention Mechanism' giữa thông tin hình ảnh và thông tin câu hỏi. Mục đích của cơ chế này là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Để giảm số lượng tham số trong mô hình.",
+      "B. Để mô hình có thể tập trung vào các phần liên quan của ảnh và câu hỏi khi đưa ra câu trả lời.",
+      "C. Để tăng tốc độ tiền xử lý dữ liệu.",
+      "D. Để chuyển đổi ảnh sang dạng văn bản."
+    ],
+    "correct_answer": "B",
+    "explanation": "Cơ chế Attention cho phép mô hình VQA gán trọng số khác nhau cho các vùng hình ảnh và các từ trong câu hỏi, giúp nó tập trung vào những phần thông tin quan trọng nhất để suy luận và đưa ra câu trả lời chính xác.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Visual Question Answering", "Attention Mechanisms"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-045",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Segmentation (Semantic, Instance, Panoptic)",
+    "question_text": "U-Net là một kiến trúc mạng nơ-ron phổ biến trong segmentation. Tên gọi 'U-Net' xuất phát từ đặc điểm nào của kiến trúc này?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Nó được phát triển tại Đại học Utrech.",
+      "B. Hình dạng của kiến trúc khi được vẽ ra giống chữ 'U', với các đường skip connection.",
+      "C. Nó sử dụng duy nhất một loại lớp Convolutional.",
+      "D. Nó là viết tắt của 'Universal Network'."
+    ],
+    "correct_answer": "B",
+    "explanation": "Kiến trúc U-Net được đặt tên theo hình dạng chữ 'U' đặc trưng của nó, với một đường dẫn thu hẹp (encoder) và một đường dẫn mở rộng (decoder) được kết nối bằng các skip connections, giúp truyền tải thông tin không gian chi tiết.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Segmentation", "U-Net"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-046",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Face Recognition",
+    "question_text": "Để một hệ thống nhận diện khuôn mặt hoạt động hiệu quả, điều gì là quan trọng nhất về dữ liệu đào tạo?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Chỉ cần ảnh khuôn mặt của người nổi tiếng.",
+      "B. Dữ liệu phải đa dạng về chủng tộc, giới tính, độ tuổi, điều kiện ánh sáng và góc chụp.",
+      "C. Dữ liệu chỉ nên bao gồm ảnh khuôn mặt rõ nét, chụp thẳng.",
+      "D. Số lượng ảnh không quan trọng bằng chất lượng ảnh đơn lẻ."
+    ],
+    "correct_answer": "B",
+    "explanation": "Sự đa dạng trong dữ liệu đào tạo là cực kỳ quan trọng để đảm bảo mô hình có thể khái quát hóa tốt và hoạt động hiệu quả trong các điều kiện thực tế khác nhau, tránh sai lệch và giảm hiệu suất trên các nhóm dân số cụ thể.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Face Recognition", "Data Diversity"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-047",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Khái niệm \"Mode Collapse\" trong GANs có nghĩa là gì?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Generator tạo ra các mẫu rất đa dạng nhưng chất lượng thấp.",
+      "B. Generator chỉ tạo ra một tập hợp nhỏ các loại mẫu ảnh, bỏ qua sự đa dạng thực sự của dữ liệu huấn luyện.",
+      "C. Discriminator luôn thắng Generator.",
+      "D. Quá trình đào tạo GAN quá ổn định."
+    ],
+    "correct_answer": "B",
+    "explanation": "Mode collapse xảy ra khi Generator trong GAN không thể tạo ra toàn bộ sự đa dạng của dữ liệu huấn luyện. Thay vào đó, nó chỉ tập trung vào một số chế độ (modes) hoặc loại mẫu nhất định mà nó có thể đánh lừa Discriminator một cách dễ dàng.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "GAN", "Mode Collapse"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-048",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Classification",
+    "question_text": "Hàm kích hoạt (Activation Function) nào thường được sử dụng trong lớp đầu ra của mô hình phân loại ảnh với nhiều lớp (multi-class classification)?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. ReLU.",
+      "B. Sigmoid.",
+      "C. Softmax.",
+      "D. Tanh."
+    ],
+    "correct_answer": "C",
+    "explanation": "Softmax được sử dụng trong lớp đầu ra của các mô hình phân loại đa lớp để chuyển đổi đầu ra raw (logits) thành phân phối xác suất trên các lớp, đảm bảo tổng xác suất bằng 1.",
+    "difficulty_level": "easy",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Classification", "Activation Function", "Softmax"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-049",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Object Detection (YOLO, SSD, Faster R-CNN)",
+    "question_text": "Trong kiến trúc Faster R-CNN, thành phần nào chịu trách nhiệm cho việc trích xuất các đặc trưng chung từ ảnh đầu vào?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Region Proposal Network (RPN).",
+      "B. Lớp phân loại và hồi quy hộp giới hạn.",
+      "C. Mạng backbone (ví dụ: VGG, ResNet).",
+      "D. Lớp Fully Connected (FC)."
+    ],
+    "correct_answer": "C",
+    "explanation": "Mạng backbone (thường là một CNN được huấn luyện trước như VGG hay ResNet) đóng vai trò là bộ trích xuất đặc trưng chung từ ảnh đầu vào, cung cấp các feature map cấp cao cho cả RPN và phần phân loại/hồi quy tiếp theo.",
+    "difficulty_level": "medium",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Object Detection", "Faster R-CNN", "Backbone Network"],
+    "date_created": "2025-07-28"
+  },
+  {
+    "id": "CV-C_CVT-050",
+    "target": "AI Engineer",
+    "skill_category": "Computer Vision",
+    "skill_name": "Core Computer Vision Tasks",
+    "subskill_name": "Image Generation",
+    "question_text": "Điều gì là một điểm mạnh của Diffusion Models so với GANs trong tác vụ sinh ảnh?",
+    "answer_type": "multiple_choice",
+    "options": [
+      "A. Tốc độ đào tạo nhanh hơn đáng kể.",
+      "B. Dễ dàng hơn trong việc kiểm soát quá trình sinh ảnh.",
+      "C. Khả năng sinh ảnh có chất lượng và sự đa dạng vượt trội, ít gặp vấn đề 'mode collapse'.",
+      "D. Yêu cầu ít dữ liệu đào tạo hơn."
+    ],
+    "correct_answer": "C",
+    "explanation": "Diffusion Models thường được đánh giá cao hơn GANs về khả năng sinh ra ảnh có chất lượng cao và độ đa dạng phong phú, đồng thời ít gặp phải các vấn đề như mode collapse, mặc dù quá trình đào tạo của chúng có thể chậm hơn.",
+    "difficulty_level": "hard",
+    "tags": ["Computer Vision", "Core Computer Vision Tasks", "Image Generation", "Diffusion Models", "GAN"],
+    "date_created": "2025-07-28"
+  }
+]

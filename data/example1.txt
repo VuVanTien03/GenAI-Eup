@@ -1,0 +1,38 @@
+{
+  "day": 2,
+  "objective": "Listening practice with short conversations",
+  "resources": ["BBC Learning English", "IELTS Listening Section 1"],
+  "theory": "Focus on identifying keywords and understanding simple conversations",
+  "question_review": [
+    {
+      "question": "What should you focus on first while listening?",
+      "answers": {
+        "A": "Accent",
+        "B": "Keywords",
+        "C": "Background music",
+        "D": "Grammar structure"
+      },
+      "true_answer": "B"
+    },
+    {
+      "question": "What is a common strategy to avoid missing answers?",
+      "answers": {
+        "A": "Ignore instructions",
+        "B": "Check spelling after the test",
+        "C": "Read the questions before listening",
+        "D": "Guess everything randomly"
+      },
+      "true_answer": "C"
+    },
+    {
+      "question": "What is NOT usually found in Listening Part 1?",
+      "answers": {
+        "A": "Everyday conversations",
+        "B": "Academic vocabulary",
+        "C": "Slow-paced dialogue",
+        "D": "Phone bookings"
+      },
+      "true_answer": "B"
+    }
+  ]
+}
