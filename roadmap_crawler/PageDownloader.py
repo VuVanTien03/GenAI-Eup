@@ -19,7 +19,7 @@ class PageDownloader:
 
     def download_page(self, url, save_name, folder="roadmap"):
         self.driver.get(url)
-        time.sleep(3)
+        time.sleep(4)
 
         target = "Tôi muốn trở thành " + save_name
 
@@ -30,7 +30,7 @@ class PageDownloader:
 
         input_box.send_keys(target)
         input_box.send_keys(Keys.RETURN)
-        time.sleep(6)
+        time.sleep(10)
 
 
         save_dir = f"html_pages/{folder}/{save_name}"
@@ -45,7 +45,7 @@ class PageDownloader:
 
 if __name__ == "__main__":
     #login info
-    EMAIL = "vuvantien_t67@hus.edu.vn"
+    EMAIL = "vuvantien247@gmail.com"
     PASSWORD = "Anhyeuem2003"
 
     options = Options()
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     # Gọi login()
     login(driver, "https://roadmap.sh/login", EMAIL, PASSWORD)
 
-    save_name = ["AI engineer", "Backend", "Frontend"]
+    save_name = ["Data engineer", "Machine learning engineer", "Full-stack ", "Data Analyst", "Android", "Ios", "MLops"]
 
     # Gọi PageDownloader
     bot = PageDownloader(driver, EMAIL, PASSWORD)

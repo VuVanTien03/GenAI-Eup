@@ -1,0 +1,127 @@
+﻿Skill,Parent,Group,Type
+Data Science Mastery,,Data scientist,Target
+Foundational Mathematics,Data Science Mastery,Data scientist,Skill
+Vectors and Matrices,Linear Algebra,Data scientist,Sub-sub-skill
+Systems of Linear Equations,Linear Algebra,Data scientist,Sub-sub-skill
+Matrix Operations,Linear Algebra,Data scientist,Sub-sub-skill
+Vector Spaces,Linear Algebra,Data scientist,Sub-sub-skill
+Eigenvalues and Eigenvectors,Linear Algebra,Data scientist,Sub-sub-skill
+Dimensionality Reduction (PCA),Linear Algebra,Data scientist,Sub-sub-skill
+Linear Transformations,Linear Algebra,Data scientist,Sub-sub-skill
+Singular Value Decomposition (SVD),Linear Algebra,Data scientist,Sub-sub-skill
+Linear Algebra,Foundational Mathematics,Data scientist,Sub-skill
+Limits and Continuity,Calculus,Data scientist,Sub-sub-skill
+Optimization Techniques,Calculus,Data scientist,Sub-sub-skill
+Derivatives and Differentiation Rules,Calculus,Data scientist,Sub-sub-skill
+Gradient Descent,Calculus,Data scientist,Sub-sub-skill
+Integrals and Integration Techniques,Calculus,Data scientist,Sub-sub-skill
+Lagrange Multipliers,Calculus,Data scientist,Sub-sub-skill
+Multivariable Calculus,Calculus,Data scientist,Sub-sub-skill
+Partial Derivatives,Calculus,Data scientist,Sub-sub-skill
+Calculus,Foundational Mathematics,Data scientist,Sub-skill
+Programming Fundamentals,Data Science Mastery,Data scientist,Skill
+Descriptive Statistics,Statistics,Data scientist,Sub-sub-skill
+Hypothesis Testing,Statistics,Data scientist,Sub-sub-skill
+Probability Theory,Statistics,Data scientist,Sub-sub-skill
+Confidence Intervals,Statistics,Data scientist,Sub-sub-skill
+Random Variables,Statistics,Data scientist,Sub-sub-skill
+Regression Analysis,Statistics,Data scientist,Sub-sub-skill
+Probability Distributions,Statistics,Data scientist,Sub-sub-skill
+Bayesian Statistics,Statistics,Data scientist,Sub-sub-skill
+Statistics,Programming Fundamentals,Data scientist,Sub-skill
+Data Types and Structures,Python Basics,Data scientist,Sub-sub-skill
+Error Handling,Python Basics,Data scientist,Sub-sub-skill
+"Control Flow (Loops, Conditionals)",Python Basics,Data scientist,Sub-sub-skill
+File I/O,Python Basics,Data scientist,Sub-sub-skill
+Functions and Modules,Python Basics,Data scientist,Sub-sub-skill
+Regular Expressions,Python Basics,Data scientist,Sub-sub-skill
+Object-Oriented Programming (OOP),Python Basics,Data scientist,Sub-sub-skill
+Virtual Environments,Python Basics,Data scientist,Sub-sub-skill
+Python Basics,Programming Fundamentals,Data scientist,Sub-skill
+Data Wrangling and Exploration,Data Science Mastery,Data scientist,Skill
+Data Types and Structures,R Basics,Data scientist,Sub-sub-skill
+Error Handling,R Basics,Data scientist,Sub-sub-skill
+"Control Flow (Loops, Conditionals)",R Basics,Data scientist,Sub-sub-skill
+File I/O,R Basics,Data scientist,Sub-sub-skill
+Functions and Packages,R Basics,Data scientist,Sub-sub-skill
+Regular Expressions,R Basics,Data scientist,Sub-sub-skill
+Object-Oriented Programming (OOP),R Basics,Data scientist,Sub-sub-skill
+R Environment Setup,R Basics,Data scientist,Sub-sub-skill
+R Basics,Data Wrangling and Exploration,Data scientist,Sub-skill
+"Web Scraping (BeautifulSoup, Scrapy)",Data Acquisition,Data scientist,Sub-sub-skill
+Data Lakes and Warehouses,Data Acquisition,Data scientist,Sub-sub-skill
+API Interactions,Data Acquisition,Data scientist,Sub-sub-skill
+"Cloud Storage (AWS S3, Azure Blob Storage)",Data Acquisition,Data scientist,Sub-sub-skill
+"Database Connections (SQL, NoSQL)",Data Acquisition,Data scientist,Sub-sub-skill
+"Data Streaming (Kafka, Spark Streaming)",Data Acquisition,Data scientist,Sub-sub-skill
+"File Formats (CSV, JSON, XML)",Data Acquisition,Data scientist,Sub-sub-skill
+Data Versioning (DVC),Data Acquisition,Data scientist,Sub-sub-skill
+Data Acquisition,Data Wrangling and Exploration,Data scientist,Sub-skill
+Handling Missing Values,Data Cleaning,Data scientist,Sub-sub-skill
+Duplicate Removal,Data Cleaning,Data scientist,Sub-sub-skill
+Outlier Detection and Treatment,Data Cleaning,Data scientist,Sub-sub-skill
+Data Validation,Data Cleaning,Data scientist,Sub-sub-skill
+Data Type Conversion,Data Cleaning,Data scientist,Sub-sub-skill
+Error Correction,Data Cleaning,Data scientist,Sub-sub-skill
+Data Standardization and Normalization,Data Cleaning,Data scientist,Sub-sub-skill
+Data Imputation Techniques,Data Cleaning,Data scientist,Sub-sub-skill
+Data Cleaning,Data Wrangling and Exploration,Data scientist,Sub-skill
+Machine Learning,Data Science Mastery,Data scientist,Skill
+Descriptive Statistics,Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+Data Profiling,Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+"Data Visualization (Matplotlib, Seaborn, Plotly)",Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+Feature Understanding,Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+Correlation Analysis,Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+Univariate and Multivariate Analysis,Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+Hypothesis Generation,Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+"Interactive Data Exploration (Jupyter Notebooks, Streamlit)",Exploratory Data Analysis (EDA),Data scientist,Sub-sub-skill
+Exploratory Data Analysis (EDA),Machine Learning,Data scientist,Sub-skill
+Linear Regression,Supervised Learning,Data scientist,Sub-sub-skill
+Support Vector Machines (SVM),Supervised Learning,Data scientist,Sub-sub-skill
+Logistic Regression,Supervised Learning,Data scientist,Sub-sub-skill
+K-Nearest Neighbors (KNN),Supervised Learning,Data scientist,Sub-sub-skill
+Decision Trees,Supervised Learning,Data scientist,Sub-sub-skill
+Naive Bayes,Supervised Learning,Data scientist,Sub-sub-skill
+Random Forests,Supervised Learning,Data scientist,Sub-sub-skill
+"Ensemble Methods (Boosting, Bagging)",Supervised Learning,Data scientist,Sub-sub-skill
+Supervised Learning,Machine Learning,Data scientist,Sub-skill
+"Clustering (K-Means, Hierarchical Clustering, DBSCAN)",Unsupervised Learning,Data scientist,Sub-sub-skill
+"Topic Modeling (LDA, NMF)",Unsupervised Learning,Data scientist,Sub-sub-skill
+"Dimensionality Reduction (PCA, t-SNE)",Unsupervised Learning,Data scientist,Sub-sub-skill
+Self-Organizing Maps (SOM),Unsupervised Learning,Data scientist,Sub-sub-skill
+"Association Rule Mining (Apriori, Eclat)",Unsupervised Learning,Data scientist,Sub-sub-skill
+Independent Component Analysis (ICA),Unsupervised Learning,Data scientist,Sub-sub-skill
+Anomaly Detection,Unsupervised Learning,Data scientist,Sub-sub-skill
+Collaborative Filtering,Unsupervised Learning,Data scientist,Sub-sub-skill
+Unsupervised Learning,Machine Learning,Data scientist,Sub-skill
+Deep Learning,Data Science Mastery,Data scientist,Skill
+Cross-Validation Techniques,Model Evaluation and Selection,Data scientist,Sub-sub-skill
+"Hyperparameter Tuning (Grid Search, Random Search, Bayesian Optimization)",Model Evaluation and Selection,Data scientist,Sub-sub-skill
+Bias-Variance Tradeoff,Model Evaluation and Selection,Data scientist,Sub-sub-skill
+"Regularization Techniques (L1, L2)",Model Evaluation and Selection,Data scientist,Sub-sub-skill
+"Performance Metrics (Accuracy, Precision, Recall, F1-Score, AUC-ROC)",Model Evaluation and Selection,Data scientist,Sub-sub-skill
+"Model Interpretability (SHAP, LIME)",Model Evaluation and Selection,Data scientist,Sub-sub-skill
+"Model Selection Criteria (AIC, BIC)",Model Evaluation and Selection,Data scientist,Sub-sub-skill
+Model Deployment Strategies,Model Evaluation and Selection,Data scientist,Sub-sub-skill
+Model Evaluation and Selection,Deep Learning,Data scientist,Sub-skill
+Perceptron,Neural Networks,Data scientist,Sub-sub-skill
+"Regularization Techniques (Dropout, Batch Normalization)",Neural Networks,Data scientist,Sub-sub-skill
+Multilayer Perceptron (MLP),Neural Networks,Data scientist,Sub-sub-skill
+Loss Functions,Neural Networks,Data scientist,Sub-sub-skill
+"Activation Functions (ReLU, Sigmoid, Tanh)",Neural Networks,Data scientist,Sub-sub-skill
+Vanishing/Exploding Gradients,Neural Networks,Data scientist,Sub-sub-skill
+Backpropagation,Neural Networks,Data scientist,Sub-sub-skill
+Weight Initialization,Neural Networks,Data scientist,Sub-sub-skill
+"Optimization Algorithms (Adam, SGD)",Neural Networks,Data scientist,Sub-sub-skill
+Neural Networks,Deep Learning,Data scientist,Sub-skill
+Convolutional Layers,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+Image Segmentation,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+Pooling Layers,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+Transfer Learning,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+"CNN Architectures (LeNet, AlexNet, VGGNet, ResNet, Inception)",Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+Data Augmentation,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+Image Classification,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+CNN Visualization,Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+"Object Detection (YOLO, SSD, Faster R-CNN)",Convolutional Neural Networks (CNNs),Data scientist,Sub-sub-skill
+Convolutional Neural Networks (CNNs),Deep Learning,Data scientist,Sub-skill
+Recurrent Neural Networks (RNNs),Deep Learning,Data scientist,Sub-skill

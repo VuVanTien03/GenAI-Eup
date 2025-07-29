@@ -1,0 +1,283 @@
+﻿Skill,Parent,Group,Type
+AI Engineer,,AI engineer,Target
+Foundational Knowledge,AI Engineer,AI engineer,Skill
+Linear Algebra,Mathematics,AI engineer,Sub-sub-skill
+Information Theory,Mathematics,AI engineer,Sub-sub-skill
+Calculus,Mathematics,AI engineer,Sub-sub-skill
+Optimization Techniques,Mathematics,AI engineer,Sub-sub-skill
+Probability and Statistics,Mathematics,AI engineer,Sub-sub-skill
+Numerical Analysis,Mathematics,AI engineer,Sub-sub-skill
+Discrete Mathematics,Mathematics,AI engineer,Sub-sub-skill
+Mathematics,Foundational Knowledge,AI engineer,Sub-skill
+Machine Learning Fundamentals,AI Engineer,AI engineer,Skill
+Python Fundamentals,Programming,AI engineer,Sub-sub-skill
+Version Control (Git),Programming,AI engineer,Sub-sub-skill
+Data Structures and Algorithms,Programming,AI engineer,Sub-sub-skill
+Testing and Debugging,Programming,AI engineer,Sub-sub-skill
+Object-Oriented Programming,Programming,AI engineer,Sub-sub-skill
+Code Optimization,Programming,AI engineer,Sub-sub-skill
+Software Engineering Principles,Programming,AI engineer,Sub-sub-skill
+Programming,Machine Learning Fundamentals,AI engineer,Sub-skill
+Linear Regression,Supervised Learning,AI engineer,Sub-sub-skill
+Random Forests,Supervised Learning,AI engineer,Sub-sub-skill
+Logistic Regression,Supervised Learning,AI engineer,Sub-sub-skill
+"Gradient Boosting (XGBoost, LightGBM, CatBoost)",Supervised Learning,AI engineer,Sub-sub-skill
+Support Vector Machines (SVM),Supervised Learning,AI engineer,Sub-sub-skill
+Model Evaluation Metrics,Supervised Learning,AI engineer,Sub-sub-skill
+Decision Trees,Supervised Learning,AI engineer,Sub-sub-skill
+Supervised Learning,Machine Learning Fundamentals,AI engineer,Sub-skill
+"Clustering (K-Means, Hierarchical Clustering, DBSCAN)",Unsupervised Learning,AI engineer,Sub-sub-skill
+Association Rule Mining,Unsupervised Learning,AI engineer,Sub-sub-skill
+"Dimensionality Reduction (PCA, t-SNE)",Unsupervised Learning,AI engineer,Sub-sub-skill
+"Generative Models (GANs, VAEs)",Unsupervised Learning,AI engineer,Sub-sub-skill
+Anomaly Detection,Unsupervised Learning,AI engineer,Sub-sub-skill
+Self-Organizing Maps,Unsupervised Learning,AI engineer,Sub-sub-skill
+Unsupervised Learning,Machine Learning Fundamentals,AI engineer,Sub-skill
+Deep Learning Frameworks,AI Engineer,AI engineer,Skill
+Neural Networks Basics,Deep Learning,AI engineer,Sub-sub-skill
+Backpropagation,Deep Learning,AI engineer,Sub-sub-skill
+Activation Functions,Deep Learning,AI engineer,Sub-sub-skill
+Convolutional Neural Networks (CNNs),Deep Learning,AI engineer,Sub-sub-skill
+Loss Functions,Deep Learning,AI engineer,Sub-sub-skill
+"Recurrent Neural Networks (RNNs, LSTMs, GRUs)",Deep Learning,AI engineer,Sub-sub-skill
+"Optimization Algorithms (SGD, Adam, RMSprop)",Deep Learning,AI engineer,Sub-sub-skill
+Deep Learning,Deep Learning Frameworks,AI engineer,Sub-skill
+TensorFlow Core,TensorFlow,AI engineer,Sub-sub-skill
+TensorFlow Serving,TensorFlow,AI engineer,Sub-sub-skill
+Keras API,TensorFlow,AI engineer,Sub-sub-skill
+TensorFlow Lite,TensorFlow,AI engineer,Sub-sub-skill
+TensorFlow Datasets,TensorFlow,AI engineer,Sub-sub-skill
+TensorBoard,TensorFlow,AI engineer,Sub-sub-skill
+TensorFlow Hub,TensorFlow,AI engineer,Sub-sub-skill
+TensorFlow,Deep Learning Frameworks,AI engineer,Sub-skill
+Natural Language Processing (NLP),AI Engineer,AI engineer,Skill
+PyTorch Basics,PyTorch,AI engineer,Sub-sub-skill
+Training Loops,PyTorch,AI engineer,Sub-sub-skill
+Autograd,PyTorch,AI engineer,Sub-sub-skill
+PyTorch Lightning,PyTorch,AI engineer,Sub-sub-skill
+Neural Network Modules,PyTorch,AI engineer,Sub-sub-skill
+TorchServe,PyTorch,AI engineer,Sub-sub-skill
+Data Loading and Processing,PyTorch,AI engineer,Sub-sub-skill
+PyTorch,Natural Language Processing (NLP),AI engineer,Sub-skill
+Tokenization,Text Preprocessing,AI engineer,Sub-sub-skill
+Text Normalization,Text Preprocessing,AI engineer,Sub-sub-skill
+Stop Word Removal,Text Preprocessing,AI engineer,Sub-sub-skill
+"Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",Text Preprocessing,AI engineer,Sub-sub-skill
+Stemming and Lemmatization,Text Preprocessing,AI engineer,Sub-sub-skill
+Part-of-Speech Tagging,Text Preprocessing,AI engineer,Sub-sub-skill
+Regular Expressions,Text Preprocessing,AI engineer,Sub-sub-skill
+Text Preprocessing,Natural Language Processing (NLP),AI engineer,Sub-skill
+Sentiment Analysis,Core NLP Tasks,AI engineer,Sub-sub-skill
+Question Answering,Core NLP Tasks,AI engineer,Sub-sub-skill
+Text Classification,Core NLP Tasks,AI engineer,Sub-sub-skill
+Text Summarization,Core NLP Tasks,AI engineer,Sub-sub-skill
+Named Entity Recognition (NER),Core NLP Tasks,AI engineer,Sub-sub-skill
+Topic Modeling,Core NLP Tasks,AI engineer,Sub-sub-skill
+Machine Translation,Core NLP Tasks,AI engineer,Sub-sub-skill
+Core NLP Tasks,Natural Language Processing (NLP),AI engineer,Sub-skill
+Computer Vision,AI Engineer,AI engineer,Skill
+"Transformer Networks (BERT, GPT, RoBERTa)",Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Text Generation,Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Attention Mechanisms,Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Dialogue Systems,Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Sequence-to-Sequence Models,Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Knowledge Graphs,Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Language Modeling,Advanced NLP Techniques,AI engineer,Sub-sub-skill
+Advanced NLP Techniques,Computer Vision,AI engineer,Sub-skill
+Image Filtering,Image Processing,AI engineer,Sub-sub-skill
+Image Enhancement,Image Processing,AI engineer,Sub-sub-skill
+Edge Detection,Image Processing,AI engineer,Sub-sub-skill
+Color Spaces,Image Processing,AI engineer,Sub-sub-skill
+"Feature Extraction (SIFT, HOG, SURF)",Image Processing,AI engineer,Sub-sub-skill
+Geometric Transformations,Image Processing,AI engineer,Sub-sub-skill
+Image Segmentation,Image Processing,AI engineer,Sub-sub-skill
+Image Processing,Computer Vision,AI engineer,Sub-skill
+Image Classification,Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+Image Captioning,Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+"Object Detection (YOLO, SSD, Faster R-CNN)",Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+Visual Question Answering,Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+"Image Segmentation (Semantic, Instance, Panoptic)",Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+Face Recognition,Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+Image Generation,Core Computer Vision Tasks,AI engineer,Sub-sub-skill
+Core Computer Vision Tasks,Computer Vision,AI engineer,Sub-skill
+Reinforcement Learning,AI Engineer,AI engineer,Skill
+Convolutional Neural Networks (CNNs) Architectures,Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+Video Analysis,Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+Transfer Learning,Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+Action Recognition,Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+Generative Adversarial Networks (GANs),Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+Self-Supervised Learning,Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+3D Vision,Advanced Computer Vision Techniques,AI engineer,Sub-sub-skill
+Advanced Computer Vision Techniques,Reinforcement Learning,AI engineer,Sub-skill
+Markov Decision Processes (MDPs),Fundamentals of RL,AI engineer,Sub-sub-skill
+Dynamic Programming,Fundamentals of RL,AI engineer,Sub-sub-skill
+Bellman Equations,Fundamentals of RL,AI engineer,Sub-sub-skill
+Monte Carlo Methods,Fundamentals of RL,AI engineer,Sub-sub-skill
+Exploration vs. Exploitation,Fundamentals of RL,AI engineer,Sub-sub-skill
+"Temporal Difference Learning (SARSA, Q-learning)",Fundamentals of RL,AI engineer,Sub-sub-skill
+Policy and Value Iteration,Fundamentals of RL,AI engineer,Sub-sub-skill
+Fundamentals of RL,Reinforcement Learning,AI engineer,Sub-skill
+Deep Q-Networks (DQN),Deep Reinforcement Learning,AI engineer,Sub-sub-skill
+Exploration Strategies,Deep Reinforcement Learning,AI engineer,Sub-sub-skill
+"Policy Gradient Methods (REINFORCE, A2C, A3C)",Deep Reinforcement Learning,AI engineer,Sub-sub-skill
+Reward Shaping,Deep Reinforcement Learning,AI engineer,Sub-sub-skill
+"Actor-Critic Methods (DDPG, TD3, SAC)",Deep Reinforcement Learning,AI engineer,Sub-sub-skill
+Multi-Agent Reinforcement Learning,Deep Reinforcement Learning,AI engineer,Sub-sub-skill
+Deep Reinforcement Learning,Reinforcement Learning,AI engineer,Sub-skill
+Data Engineering,AI Engineer,AI engineer,Skill
+Inverse Reinforcement Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Transfer Reinforcement Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Imitation Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Offline Reinforcement Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Hierarchical Reinforcement Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Safe Reinforcement Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Meta-Reinforcement Learning,Advanced RL Topics,AI engineer,Sub-sub-skill
+Advanced RL Topics,Data Engineering,AI engineer,Sub-skill
+Web Scraping,Data Collection,AI engineer,Sub-sub-skill
+Data Ingestion Tools,Data Collection,AI engineer,Sub-sub-skill
+APIs,Data Collection,AI engineer,Sub-sub-skill
+Data Warehousing,Data Collection,AI engineer,Sub-sub-skill
+"Databases (SQL, NoSQL)",Data Collection,AI engineer,Sub-sub-skill
+ETL Processes,Data Collection,AI engineer,Sub-sub-skill
+"Data Streaming (Kafka, Spark Streaming)",Data Collection,AI engineer,Sub-sub-skill
+Data Collection,Data Engineering,AI engineer,Sub-skill
+Data Cleaning,Data Processing,AI engineer,Sub-sub-skill
+Data Storage,Data Processing,AI engineer,Sub-sub-skill
+Data Transformation,Data Processing,AI engineer,Sub-sub-skill
+Data Governance,Data Processing,AI engineer,Sub-sub-skill
+Data Integration,Data Processing,AI engineer,Sub-sub-skill
+Data Security,Data Processing,AI engineer,Sub-sub-skill
+Data Validation,Data Processing,AI engineer,Sub-sub-skill
+Data Processing,Data Engineering,AI engineer,Sub-skill
+Model Deployment,AI Engineer,AI engineer,Skill
+Hadoop,Big Data Technologies,AI engineer,Sub-sub-skill
+"Cloud Data Platforms (AWS, Azure, GCP)",Big Data Technologies,AI engineer,Sub-sub-skill
+Spark,Big Data Technologies,AI engineer,Sub-sub-skill
+Distributed Computing,Big Data Technologies,AI engineer,Sub-sub-skill
+Hive,Big Data Technologies,AI engineer,Sub-sub-skill
+Data Lake,Big Data Technologies,AI engineer,Sub-sub-skill
+Pig,Big Data Technologies,AI engineer,Sub-sub-skill
+Big Data Technologies,Model Deployment,AI engineer,Sub-skill
+REST APIs,Model Serving,AI engineer,Sub-sub-skill
+Serverless Deployment,Model Serving,AI engineer,Sub-sub-skill
+gRPC,Model Serving,AI engineer,Sub-sub-skill
+Model Versioning,Model Serving,AI engineer,Sub-sub-skill
+Docker,Model Serving,AI engineer,Sub-sub-skill
+Monitoring and Logging,Model Serving,AI engineer,Sub-sub-skill
+Kubernetes,Model Serving,AI engineer,Sub-sub-skill
+Model Serving,Model Deployment,AI engineer,Sub-skill
+Model Optimization for Edge Devices,Edge Computing,AI engineer,Sub-sub-skill
+Edge Deployment Platforms,Edge Computing,AI engineer,Sub-sub-skill
+TensorFlow Lite,Edge Computing,AI engineer,Sub-sub-skill
+Federated Learning,Edge Computing,AI engineer,Sub-sub-skill
+Core ML,Edge Computing,AI engineer,Sub-sub-skill
+Privacy-Preserving AI,Edge Computing,AI engineer,Sub-sub-skill
+ONNX,Edge Computing,AI engineer,Sub-sub-skill
+Edge Computing,Model Deployment,AI engineer,Sub-skill
+Cloud Computing,AI Engineer,AI engineer,Skill
+Performance Monitoring,Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+Explainable AI (XAI),Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+Data Drift Detection,Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+Bias Detection and Mitigation,Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+Model Retraining,Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+Security Vulnerabilities,Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+A/B Testing,Model Monitoring and Maintenance,AI engineer,Sub-sub-skill
+Model Monitoring and Maintenance,Cloud Computing,AI engineer,Sub-skill
+Amazon Web Services (AWS),Cloud Platforms,AI engineer,Sub-sub-skill
+"Cloud Services (Compute, Storage, Networking)",Cloud Platforms,AI engineer,Sub-sub-skill
+Microsoft Azure,Cloud Platforms,AI engineer,Sub-sub-skill
+Cloud Security,Cloud Platforms,AI engineer,Sub-sub-skill
+Google Cloud Platform (GCP),Cloud Platforms,AI engineer,Sub-sub-skill
+Cloud Cost Management,Cloud Platforms,AI engineer,Sub-sub-skill
+Cloud Infrastructure,Cloud Platforms,AI engineer,Sub-sub-skill
+Cloud Platforms,Cloud Computing,AI engineer,Sub-skill
+AWS SageMaker,AI Services on Cloud,AI engineer,Sub-sub-skill
+Pre-trained Models,AI Services on Cloud,AI engineer,Sub-sub-skill
+Azure Machine Learning,AI Services on Cloud,AI engineer,Sub-sub-skill
+Cloud GPUs and TPUs,AI Services on Cloud,AI engineer,Sub-sub-skill
+Google AI Platform,AI Services on Cloud,AI engineer,Sub-sub-skill
+Cloud Data Storage,AI Services on Cloud,AI engineer,Sub-sub-skill
+Cloud AutoML,AI Services on Cloud,AI engineer,Sub-sub-skill
+AI Services on Cloud,Cloud Computing,AI engineer,Sub-skill
+Ethics and Responsible AI,AI Engineer,AI engineer,Skill
+CI/CD Pipelines,DevOps for AI,AI engineer,Sub-sub-skill
+Monitoring and Alerting,DevOps for AI,AI engineer,Sub-sub-skill
+Infrastructure as Code (IaC),DevOps for AI,AI engineer,Sub-sub-skill
+Automation,DevOps for AI,AI engineer,Sub-sub-skill
+Containerization,DevOps for AI,AI engineer,Sub-sub-skill
+Collaboration,DevOps for AI,AI engineer,Sub-sub-skill
+Orchestration,DevOps for AI,AI engineer,Sub-sub-skill
+DevOps for AI,Ethics and Responsible AI,AI engineer,Sub-skill
+Bias Detection,Bias and Fairness,AI engineer,Sub-sub-skill
+Data Diversity,Bias and Fairness,AI engineer,Sub-sub-skill
+Bias Mitigation Techniques,Bias and Fairness,AI engineer,Sub-sub-skill
+Responsible Data Collection,Bias and Fairness,AI engineer,Sub-sub-skill
+Fairness Metrics,Bias and Fairness,AI engineer,Sub-sub-skill
+Ethical Considerations,Bias and Fairness,AI engineer,Sub-sub-skill
+Algorithmic Auditing,Bias and Fairness,AI engineer,Sub-sub-skill
+Bias and Fairness,Ethics and Responsible AI,AI engineer,Sub-skill
+"Data Privacy Regulations (GDPR, CCPA)",Privacy and Security,AI engineer,Sub-sub-skill
+Secure Multi-Party Computation,Privacy and Security,AI engineer,Sub-sub-skill
+Differential Privacy,Privacy and Security,AI engineer,Sub-sub-skill
+Data Anonymization,Privacy and Security,AI engineer,Sub-sub-skill
+Federated Learning,Privacy and Security,AI engineer,Sub-sub-skill
+Security Best Practices,Privacy and Security,AI engineer,Sub-sub-skill
+Homomorphic Encryption,Privacy and Security,AI engineer,Sub-sub-skill
+Privacy and Security,Ethics and Responsible AI,AI engineer,Sub-skill
+Advanced Topics,AI Engineer,AI engineer,Skill
+Explainable AI (XAI) Techniques,Explainability and Transparency,AI engineer,Sub-sub-skill
+Accountability,Explainability and Transparency,AI engineer,Sub-sub-skill
+Model Interpretability,Explainability and Transparency,AI engineer,Sub-sub-skill
+Human-Centered AI,Explainability and Transparency,AI engineer,Sub-sub-skill
+Transparency in AI Systems,Explainability and Transparency,AI engineer,Sub-sub-skill
+Ethical Frameworks,Explainability and Transparency,AI engineer,Sub-sub-skill
+Trustworthy AI,Explainability and Transparency,AI engineer,Sub-sub-skill
+Explainability and Transparency,Advanced Topics,AI engineer,Sub-skill
+Domain Adaptation,Transfer Learning,AI engineer,Sub-sub-skill
+Zero-Shot Learning,Transfer Learning,AI engineer,Sub-sub-skill
+Fine-tuning,Transfer Learning,AI engineer,Sub-sub-skill
+Multi-Task Learning,Transfer Learning,AI engineer,Sub-sub-skill
+Meta-Learning,Transfer Learning,AI engineer,Sub-sub-skill
+Curriculum Learning,Transfer Learning,AI engineer,Sub-sub-skill
+Few-Shot Learning,Transfer Learning,AI engineer,Sub-sub-skill
+Transfer Learning,Advanced Topics,AI engineer,Sub-skill
+Variational Autoencoders (VAEs),Generative Models,AI engineer,Sub-sub-skill
+Diffusion Models,Generative Models,AI engineer,Sub-sub-skill
+Generative Adversarial Networks (GANs),Generative Models,AI engineer,Sub-sub-skill
+Energy-Based Models,Generative Models,AI engineer,Sub-sub-skill
+Normalizing Flows,Generative Models,AI engineer,Sub-sub-skill
+"Applications in Image Generation, Text Generation, and Data Augmentation",Generative Models,AI engineer,Sub-sub-skill
+Autoregressive Models,Generative Models,AI engineer,Sub-sub-skill
+Generative Models,Advanced Topics,AI engineer,Sub-skill
+Research and Development,AI Engineer,AI engineer,Skill
+Graph Theory Basics,Graph Neural Networks,AI engineer,Sub-sub-skill
+Message Passing Neural Networks,Graph Neural Networks,AI engineer,Sub-sub-skill
+Graph Convolutional Networks (GCNs),Graph Neural Networks,AI engineer,Sub-sub-skill
+Graph Embeddings,Graph Neural Networks,AI engineer,Sub-sub-skill
+Graph Attention Networks (GATs),Graph Neural Networks,AI engineer,Sub-sub-skill
+"Applications in Social Networks, Knowledge Graphs, and Drug Discovery",Graph Neural Networks,AI engineer,Sub-sub-skill
+Graph Neural Networks,Research and Development,AI engineer,Sub-skill
+Identifying Key Papers,Reading Research Papers,AI engineer,Sub-sub-skill
+Staying Up-to-Date,Reading Research Papers,AI engineer,Sub-sub-skill
+Understanding Methodologies,Reading Research Papers,AI engineer,Sub-sub-skill
+Conference Proceedings,Reading Research Papers,AI engineer,Sub-sub-skill
+Evaluating Results,Reading Research Papers,AI engineer,Sub-sub-skill
+Journal Publications,Reading Research Papers,AI engineer,Sub-sub-skill
+Literature Reviews,Reading Research Papers,AI engineer,Sub-sub-skill
+Reading Research Papers,Research and Development,AI engineer,Sub-skill
+Experimental Design,Experimentation and Validation,AI engineer,Sub-sub-skill
+Error Analysis,Experimentation and Validation,AI engineer,Sub-sub-skill
+Hypothesis Testing,Experimentation and Validation,AI engineer,Sub-sub-skill
+Reproducibility,Experimentation and Validation,AI engineer,Sub-sub-skill
+Statistical Significance,Experimentation and Validation,AI engineer,Sub-sub-skill
+Benchmarking,Experimentation and Validation,AI engineer,Sub-sub-skill
+Ablation Studies,Experimentation and Validation,AI engineer,Sub-sub-skill
+Experimentation and Validation,Research and Development,AI engineer,Sub-skill
+Open Source Projects,Contributing to the Field,AI engineer,Sub-sub-skill
+Community Engagement,Contributing to the Field,AI engineer,Sub-sub-skill
+Publishing Research,Contributing to the Field,AI engineer,Sub-sub-skill
+Knowledge Sharing,Contributing to the Field,AI engineer,Sub-sub-skill
+Participating in Competitions,Contributing to the Field,AI engineer,Sub-sub-skill
+Innovation,Contributing to the Field,AI engineer,Sub-sub-skill
+Collaboration,Contributing to the Field,AI engineer,Sub-sub-skill
+Contributing to the Field,Research and Development,AI engineer,Sub-skill

@@ -1,0 +1,189 @@
+﻿Skill,Parent,Group,Type
+Frontend Development,,Frontend,Target
+Fundamentals,Frontend Development,Frontend,Skill
+HTML Structure,HTML,Frontend,Sub-sub-skill
+Accessibility (ARIA),HTML,Frontend,Sub-sub-skill
+Semantic HTML,HTML,Frontend,Sub-sub-skill
+HTML Best Practices,HTML,Frontend,Sub-sub-skill
+HTML Forms,HTML,Frontend,Sub-sub-skill
+HTML SEO,HTML,Frontend,Sub-sub-skill
+HTML5 APIs,HTML,Frontend,Sub-sub-skill
+HTML,Fundamentals,Frontend,Sub-skill
+CSS Syntax and Selectors,CSS,Frontend,Sub-sub-skill
+CSS Transitions and Animations,CSS,Frontend,Sub-sub-skill
+Box Model,CSS,Frontend,Sub-sub-skill
+Responsive Design (Media Queries),CSS,Frontend,Sub-sub-skill
+"CSS Layout (Flexbox, Grid)",CSS,Frontend,Sub-sub-skill
+"CSS Preprocessors (Sass, Less)",CSS,Frontend,Sub-sub-skill
+CSS Positioning,CSS,Frontend,Sub-sub-skill
+CSS,Fundamentals,Frontend,Sub-skill
+Version Control,Frontend Development,Frontend,Skill
+"JavaScript Basics (Variables, Data Types, Operators)",JavaScript,Frontend,Sub-sub-skill
+"JavaScript Testing (Unit, Integration)",JavaScript,Frontend,Sub-sub-skill
+DOM Manipulation,JavaScript,Frontend,Sub-sub-skill
+JavaScript Debugging,JavaScript,Frontend,Sub-sub-skill
+"Asynchronous JavaScript (Promises, Async/Await)",JavaScript,Frontend,Sub-sub-skill
+JavaScript Design Patterns,JavaScript,Frontend,Sub-sub-skill
+ES6+ Features,JavaScript,Frontend,Sub-sub-skill
+JavaScript,Version Control,Frontend,Sub-skill
+Package Managers,Frontend Development,Frontend,Skill
+"Git Basics (Commit, Push, Pull)",Git,Frontend,Sub-sub-skill
+"Remote Repositories (GitHub, GitLab, Bitbucket)",Git,Frontend,Sub-sub-skill
+Branching and Merging,Git,Frontend,Sub-sub-skill
+Git Hooks,Git,Frontend,Sub-sub-skill
+Resolving Conflicts,Git,Frontend,Sub-sub-skill
+Git Best Practices,Git,Frontend,Sub-sub-skill
+"Git Workflows (Gitflow, GitHub Flow)",Git,Frontend,Sub-sub-skill
+Git,Package Managers,Frontend,Sub-skill
+Build Tools,Frontend Development,Frontend,Skill
+Package Installation and Management,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+Dependency Management,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+Package Versioning,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+Security Vulnerabilities,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+Package Publishing,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+Package Configuration,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+Package Scripts,npm/Yarn/pnpm,Frontend,Sub-sub-skill
+npm/Yarn/pnpm,Build Tools,Frontend,Sub-skill
+Frameworks,Frontend Development,Frontend,Skill
+Module Bundling,Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Development Servers,Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Code Transpilation (Babel),Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Plugin Ecosystem,Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Code Minification and Optimization,Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Configuration,Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Asset Management,Webpack/Parcel/Rollup,Frontend,Sub-sub-skill
+Webpack/Parcel/Rollup,Frameworks,Frontend,Sub-skill
+React Components and JSX,React,Frontend,Sub-sub-skill
+React Forms,React,Frontend,Sub-sub-skill
+"React State Management (useState, useReducer, Context API)",React,Frontend,Sub-sub-skill
+"React Testing (Jest, Enzyme, React Testing Library)",React,Frontend,Sub-sub-skill
+React Hooks,React,Frontend,Sub-sub-skill
+React Performance Optimization,React,Frontend,Sub-sub-skill
+React Router,React,Frontend,Sub-sub-skill
+React,Frameworks,Frontend,Sub-skill
+Angular Components and Templates,Angular,Frontend,Sub-sub-skill
+"Angular Forms (Template-driven, Reactive)",Angular,Frontend,Sub-sub-skill
+Angular Modules,Angular,Frontend,Sub-sub-skill
+RxJS Observables,Angular,Frontend,Sub-sub-skill
+Angular Services and Dependency Injection,Angular,Frontend,Sub-sub-skill
+"Angular Testing (Jasmine, Karma)",Angular,Frontend,Sub-sub-skill
+Angular Routing,Angular,Frontend,Sub-sub-skill
+Angular,Frameworks,Frontend,Sub-skill
+State Management,Frontend Development,Frontend,Skill
+Vue Components and Templates,Vue.js,Frontend,Sub-sub-skill
+Vuex State Management,Vue.js,Frontend,Sub-sub-skill
+Vue Directives,Vue.js,Frontend,Sub-sub-skill
+Vue CLI,Vue.js,Frontend,Sub-sub-skill
+Vue Computed Properties and Watchers,Vue.js,Frontend,Sub-sub-skill
+"Vue Testing (Jest, Vue Test Utils)",Vue.js,Frontend,Sub-sub-skill
+Vue Router,Vue.js,Frontend,Sub-sub-skill
+Vue.js,State Management,Frontend,Sub-skill
+"Redux Principles (Store, Actions, Reducers)",Redux,Frontend,Sub-sub-skill
+Redux DevTools,Redux,Frontend,Sub-sub-skill
+"Redux Middleware (Thunk, Saga)",Redux,Frontend,Sub-sub-skill
+Redux Best Practices,Redux,Frontend,Sub-sub-skill
+Redux Toolkit,Redux,Frontend,Sub-sub-skill
+"Alternatives to Redux (MobX, Zustand)",Redux,Frontend,Sub-sub-skill
+Connecting Redux to React,Redux,Frontend,Sub-sub-skill
+Redux,State Management,Frontend,Sub-skill
+Testing,Frontend Development,Frontend,Skill
+Creating and Consuming Contexts,Context API,Frontend,Sub-sub-skill
+Using Context for Authentication,Context API,Frontend,Sub-sub-skill
+Context Providers,Context API,Frontend,Sub-sub-skill
+Context with Reducers,Context API,Frontend,Sub-sub-skill
+Context Consumers,Context API,Frontend,Sub-sub-skill
+Context Best Practices,Context API,Frontend,Sub-sub-skill
+Using Context for Themeing,Context API,Frontend,Sub-sub-skill
+Context API,Testing,Frontend,Sub-skill
+Jest,Unit Testing,Frontend,Sub-sub-skill
+Test-Driven Development (TDD),Unit Testing,Frontend,Sub-sub-skill
+Mocha,Unit Testing,Frontend,Sub-sub-skill
+Mocking,Unit Testing,Frontend,Sub-sub-skill
+Jasmine,Unit Testing,Frontend,Sub-sub-skill
+Assertions,Unit Testing,Frontend,Sub-sub-skill
+Unit Testing,Testing,Frontend,Sub-skill
+Styling,Frontend Development,Frontend,Skill
+Cypress,Integration Testing,Frontend,Sub-sub-skill
+End-to-End Testing,Integration Testing,Frontend,Sub-sub-skill
+Selenium,Integration Testing,Frontend,Sub-sub-skill
+UI Testing,Integration Testing,Frontend,Sub-sub-skill
+Puppeteer,Integration Testing,Frontend,Sub-sub-skill
+Testing Frameworks,Integration Testing,Frontend,Sub-sub-skill
+Integration Testing,Styling,Frontend,Sub-skill
+Styled Components,CSS-in-JS,Frontend,Sub-sub-skill
+Aphrodite,CSS-in-JS,Frontend,Sub-sub-skill
+Emotion,CSS-in-JS,Frontend,Sub-sub-skill
+Themeing,CSS-in-JS,Frontend,Sub-sub-skill
+JSS,CSS-in-JS,Frontend,Sub-sub-skill
+Performance Considerations,CSS-in-JS,Frontend,Sub-sub-skill
+Radium,CSS-in-JS,Frontend,Sub-sub-skill
+CSS-in-JS,Styling,Frontend,Sub-skill
+Server-Side Rendering (SSR),Frontend Development,Frontend,Skill
+Local Scoping,CSS Modules,Frontend,Sub-sub-skill
+Integration with Build Tools,CSS Modules,Frontend,Sub-sub-skill
+Composition,CSS Modules,Frontend,Sub-sub-skill
+Benefits and Drawbacks,CSS Modules,Frontend,Sub-sub-skill
+Global Styles,CSS Modules,Frontend,Sub-sub-skill
+Best Practices,CSS Modules,Frontend,Sub-sub-skill
+CSS Module Configuration,CSS Modules,Frontend,Sub-sub-skill
+CSS Modules,Server-Side Rendering (SSR),Frontend,Sub-skill
+Next.js Pages,Next.js,Frontend,Sub-sub-skill
+SEO Optimization,Next.js,Frontend,Sub-sub-skill
+"Data Fetching (getServerSideProps, getStaticProps)",Next.js,Frontend,Sub-sub-skill
+Performance Optimization,Next.js,Frontend,Sub-sub-skill
+API Routes,Next.js,Frontend,Sub-sub-skill
+Next.js Configuration,Next.js,Frontend,Sub-sub-skill
+Deployment,Next.js,Frontend,Sub-sub-skill
+Next.js,Server-Side Rendering (SSR),Frontend,Sub-skill
+Static Site Generation (SSG),Frontend Development,Frontend,Skill
+Nuxt.js Pages,Nuxt.js,Frontend,Sub-sub-skill
+Deployment,Nuxt.js,Frontend,Sub-sub-skill
+"Data Fetching (asyncData, fetch)",Nuxt.js,Frontend,Sub-sub-skill
+SEO Optimization,Nuxt.js,Frontend,Sub-sub-skill
+Middleware,Nuxt.js,Frontend,Sub-sub-skill
+Performance Optimization,Nuxt.js,Frontend,Sub-sub-skill
+Modules,Nuxt.js,Frontend,Sub-sub-skill
+Nuxt.js,Static Site Generation (SSG),Frontend,Sub-skill
+Gatsby Plugins,Gatsby,Frontend,Sub-sub-skill
+SEO Optimization,Gatsby,Frontend,Sub-sub-skill
+GraphQL Data Layer,Gatsby,Frontend,Sub-sub-skill
+Performance Optimization,Gatsby,Frontend,Sub-sub-skill
+Gatsby Themes,Gatsby,Frontend,Sub-sub-skill
+Gatsby Configuration,Gatsby,Frontend,Sub-sub-skill
+Deployment,Gatsby,Frontend,Sub-sub-skill
+Gatsby,Static Site Generation (SSG),Frontend,Sub-skill
+Accessibility,Frontend Development,Frontend,Skill
+Hugo Templates,Hugo,Frontend,Sub-sub-skill
+SEO Optimization,Hugo,Frontend,Sub-sub-skill
+Hugo Shortcodes,Hugo,Frontend,Sub-sub-skill
+Performance Optimization,Hugo,Frontend,Sub-sub-skill
+Hugo Themes,Hugo,Frontend,Sub-sub-skill
+Hugo Configuration,Hugo,Frontend,Sub-sub-skill
+Deployment,Hugo,Frontend,Sub-sub-skill
+Hugo,Accessibility,Frontend,Sub-skill
+Performance Optimization,Frontend Development,Frontend,Skill
+ARIA Attributes,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Color Contrast,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Semantic HTML,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Accessible Forms,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Keyboard Navigation,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Accessibility Testing,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Screen Reader Compatibility,Web Accessibility Standards (WCAG),Frontend,Sub-sub-skill
+Web Accessibility Standards (WCAG),Performance Optimization,Frontend,Sub-skill
+Progressive Web Apps (PWAs),Frontend Development,Frontend,Skill
+Lazy Loading,Code Splitting,Frontend,Sub-sub-skill
+Caching,Code Splitting,Frontend,Sub-sub-skill
+Tree Shaking,Code Splitting,Frontend,Sub-sub-skill
+Image Optimization,Code Splitting,Frontend,Sub-sub-skill
+Minification,Code Splitting,Frontend,Sub-sub-skill
+Performance Auditing (Lighthouse),Code Splitting,Frontend,Sub-sub-skill
+Compression,Code Splitting,Frontend,Sub-sub-skill
+Code Splitting,Progressive Web Apps (PWAs),Frontend,Sub-skill
+Caching Strategies,Service Workers,Frontend,Sub-sub-skill
+Offline Support,Service Workers,Frontend,Sub-sub-skill
+Push Notifications,Service Workers,Frontend,Sub-sub-skill
+PWA Best Practices,Service Workers,Frontend,Sub-sub-skill
+Background Sync,Service Workers,Frontend,Sub-sub-skill
+PWA Deployment,Service Workers,Frontend,Sub-sub-skill
+Web App Manifest,Service Workers,Frontend,Sub-sub-skill
+Service Workers,Progressive Web Apps (PWAs),Frontend,Sub-skill

@@ -1,0 +1,329 @@
+[
+  {
+    "target": "Backend Development",
+    "category": "roadmap",
+    "skills": [
+      {
+        "name": "Fundamentals",
+        "subskills": [
+          {
+            "name": "Computer Science Basics",
+            "subsubskills": [
+              "Data Structures and Algorithms",
+              "Database Management Systems",
+              "Time Complexity and Big O Notation",
+              "Software Engineering Principles",
+              "Operating Systems Concepts",
+              "Version Control Systems (Git)",
+              "Networking Basics"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Backend Languages",
+        "subskills": [
+          {
+            "name": "Programming Fundamentals",
+            "subsubskills": [
+              "Variables, Data Types, and Operators",
+              "Error Handling and Debugging",
+              "Control Flow (Loops, Conditionals)",
+              "Input/Output Operations",
+              "Functions and Modularity",
+              "Testing Fundamentals",
+              "Object-Oriented Programming (OOP) Principles"
+            ]
+          },
+          {
+            "name": "Language 1 (e.g., Python)",
+            "subsubskills": [
+              "Syntax and Semantics",
+              "Web Frameworks (e.g., Django, Flask)",
+              "Data Structures and Collections",
+              "Asynchronous Programming",
+              "Modules and Packages",
+              "Testing and Debugging",
+              "Object-Oriented Programming"
+            ]
+          },
+          {
+            "name": "Language 2 (e.g., Java)",
+            "subsubskills": [
+              "Syntax and Semantics",
+              "Web Frameworks (e.g., Spring, Jakarta EE)",
+              "Object-Oriented Programming",
+              "Design Patterns",
+              "Collections Framework",
+              "JVM Internals",
+              "Multithreading and Concurrency"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Databases",
+        "subskills": [
+          {
+            "name": "Language 3 (e.g., Node.js)",
+            "subsubskills": [
+              "JavaScript Fundamentals",
+              "Web Frameworks (e.g., Express.js, NestJS)",
+              "Asynchronous Programming (Promises, Async/Await)",
+              "RESTful API Design",
+              "Node.js Core Modules",
+              "Real-time Communication (WebSockets)",
+              "Package Management (npm, yarn)"
+            ]
+          },
+          {
+            "name": "Relational Databases (SQL)",
+            "subsubskills": [
+              "Database Design and Normalization",
+              "Database Security",
+              "SQL Syntax (CRUD Operations)",
+              "Stored Procedures and Functions",
+              "Transactions and ACID Properties",
+              "Database Administration",
+              "Indexing and Query Optimization"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Web Frameworks",
+        "subskills": [
+          {
+            "name": "NoSQL Databases",
+            "subsubskills": [
+              "Key-Value Stores (e.g., Redis, Memcached)",
+              "Data Modeling for NoSQL",
+              "Document Databases (e.g., MongoDB, Couchbase)",
+              "Scalability and Performance",
+              "Column-Family Databases (e.g., Cassandra, HBase)",
+              "Use Case Scenarios",
+              "Graph Databases (e.g., Neo4j)"
+            ]
+          },
+          {
+            "name": "Framework 1 (e.g., Django)",
+            "subsubskills": [
+              "MVC Architecture",
+              "Authentication and Authorization",
+              "ORM (Object-Relational Mapping)",
+              "Forms and Validation",
+              "Routing and URL Handling",
+              "Security Best Practices",
+              "Template Engines"
+            ]
+          },
+          {
+            "name": "Framework 2 (e.g., Spring)",
+            "subsubskills": [
+              "Dependency Injection",
+              "Data Access with Spring Data",
+              "Aspect-Oriented Programming",
+              "Security with Spring Security",
+              "Spring Boot",
+              "Testing with Spring Test",
+              "RESTful API Development"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "API Development",
+        "subskills": [
+          {
+            "name": "Framework 3 (e.g., Express.js)",
+            "subsubskills": [
+              "Middleware",
+              "RESTful API Design",
+              "Routing",
+              "Authentication and Authorization",
+              "Request and Response Handling",
+              "Error Handling",
+              "Templating Engines"
+            ]
+          },
+          {
+            "name": "RESTful APIs",
+            "subsubskills": [
+              "REST Principles and Best Practices",
+              "API Documentation (Swagger, OpenAPI)",
+              "API Design and Versioning",
+              "Authentication and Authorization (OAuth, JWT)",
+              "HTTP Methods and Status Codes",
+              "Rate Limiting and Throttling",
+              "Request and Response Payloads (JSON, XML)"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "System Design",
+        "subskills": [
+          {
+            "name": "GraphQL APIs",
+            "subsubskills": [
+              "GraphQL Schema Definition",
+              "Authentication and Authorization",
+              "Queries, Mutations, and Subscriptions",
+              "Error Handling",
+              "Resolvers",
+              "GraphQL Clients",
+              "Data Fetching and Optimization"
+            ]
+          },
+          {
+            "name": "Scalability and Performance",
+            "subsubskills": [
+              "Horizontal and Vertical Scaling",
+              "Content Delivery Networks (CDNs)",
+              "Load Balancing",
+              "Performance Monitoring and Optimization",
+              "Caching Strategies",
+              "Concurrency and Parallelism",
+              "Database Sharding"
+            ]
+          },
+          {
+            "name": "Microservices Architecture",
+            "subsubskills": [
+              "Service Decomposition",
+              "Event-Driven Architecture",
+              "API Gateways",
+              "Containerization (Docker)",
+              "Service Discovery",
+              "Orchestration (Kubernetes)",
+              "Inter-service Communication"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DevOps and Deployment",
+        "subskills": [
+          {
+            "name": "Cloud Computing",
+            "subsubskills": [
+              "Cloud Providers (AWS, Azure, GCP)",
+              "Cloud Storage",
+              "Infrastructure as a Service (IaaS)",
+              "Cloud Networking",
+              "Platform as a Service (PaaS)",
+              "Cloud Security",
+              "Serverless Computing"
+            ]
+          },
+          {
+            "name": "Continuous Integration and Continuous Deployment (CI/CD)",
+            "subsubskills": [
+              "CI/CD Pipelines",
+              "Deployment Strategies (Blue-Green, Canary)",
+              "Automated Testing",
+              "Monitoring and Logging",
+              "Infrastructure as Code (IaC)",
+              "Version Control",
+              "Configuration Management"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Security",
+        "subskills": [
+          {
+            "name": "Containerization and Orchestration",
+            "subsubskills": [
+              "Docker Fundamentals",
+              "Service Management",
+              "Docker Compose",
+              "Scaling and Resource Management",
+              "Kubernetes Architecture",
+              "Monitoring and Logging",
+              "Kubernetes Deployment Strategies"
+            ]
+          },
+          {
+            "name": "Authentication and Authorization",
+            "subsubskills": [
+              "Authentication Mechanisms (OAuth, JWT, SAML)",
+              "Password Management",
+              "Authorization Models (RBAC, ABAC)",
+              "Session Management",
+              "Multi-Factor Authentication (MFA)",
+              "Security Best Practices"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Testing",
+        "subskills": [
+          {
+            "name": "Web Security",
+            "subsubskills": [
+              "OWASP Top 10 Vulnerabilities",
+              "Security Headers",
+              "Cross-Site Scripting (XSS)",
+              "Input Validation",
+              "SQL Injection",
+              "Output Encoding",
+              "Cross-Site Request Forgery (CSRF)"
+            ]
+          },
+          {
+            "name": "Unit Testing",
+            "subsubskills": [
+              "Test-Driven Development (TDD)",
+              "Code Coverage",
+              "Mocking and Stubbing",
+              "Test Automation",
+              "Test Frameworks (e.g., JUnit, pytest, Jest)",
+              "Boundary Testing"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Monitoring and Logging",
+        "subskills": [
+          {
+            "name": "Integration Testing",
+            "subsubskills": [
+              "API Testing",
+              "Test Environments",
+              "Database Testing",
+              "Test Data Management",
+              "End-to-End Testing",
+              "Performance Testing"
+            ]
+          },
+          {
+            "name": "Logging",
+            "subsubskills": [
+              "Log Levels",
+              "Centralized Logging Systems (e.g., ELK Stack, Splunk)",
+              "Log Aggregation",
+              "Log Rotation",
+              "Log Analysis",
+              "Security Auditing"
+            ]
+          },
+          {
+            "name": "Monitoring",
+            "subsubskills": [
+              "System Monitoring",
+              "Alerting and Notifications",
+              "Application Performance Monitoring (APM)",
+              "Metrics and Dashboards",
+              "Real-time Monitoring",
+              "Health Checks"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

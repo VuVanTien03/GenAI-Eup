@@ -1,0 +1,208 @@
+[
+  {
+    "target": "Data Science Mastery",
+    "category": "roadmap",
+    "skills": [
+      {
+        "name": "Foundational Mathematics",
+        "subskills": [
+          {
+            "name": "Linear Algebra",
+            "subsubskills": [
+              "Vectors and Matrices",
+              "Systems of Linear Equations",
+              "Matrix Operations",
+              "Vector Spaces",
+              "Eigenvalues and Eigenvectors",
+              "Dimensionality Reduction (PCA)",
+              "Linear Transformations",
+              "Singular Value Decomposition (SVD)"
+            ]
+          },
+          {
+            "name": "Calculus",
+            "subsubskills": [
+              "Limits and Continuity",
+              "Optimization Techniques",
+              "Derivatives and Differentiation Rules",
+              "Gradient Descent",
+              "Integrals and Integration Techniques",
+              "Lagrange Multipliers",
+              "Multivariable Calculus",
+              "Partial Derivatives"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Programming Fundamentals",
+        "subskills": [
+          {
+            "name": "Statistics",
+            "subsubskills": [
+              "Descriptive Statistics",
+              "Hypothesis Testing",
+              "Probability Theory",
+              "Confidence Intervals",
+              "Random Variables",
+              "Regression Analysis",
+              "Probability Distributions",
+              "Bayesian Statistics"
+            ]
+          },
+          {
+            "name": "Python Basics",
+            "subsubskills": [
+              "Data Types and Structures",
+              "Error Handling",
+              "Control Flow (Loops, Conditionals)",
+              "File I/O",
+              "Functions and Modules",
+              "Regular Expressions",
+              "Object-Oriented Programming (OOP)",
+              "Virtual Environments"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Wrangling and Exploration",
+        "subskills": [
+          {
+            "name": "R Basics",
+            "subsubskills": [
+              "Data Types and Structures",
+              "Error Handling",
+              "Control Flow (Loops, Conditionals)",
+              "File I/O",
+              "Functions and Packages",
+              "Regular Expressions",
+              "Object-Oriented Programming (OOP)",
+              "R Environment Setup"
+            ]
+          },
+          {
+            "name": "Data Acquisition",
+            "subsubskills": [
+              "Web Scraping (BeautifulSoup, Scrapy)",
+              "Data Lakes and Warehouses",
+              "API Interactions",
+              "Cloud Storage (AWS S3, Azure Blob Storage)",
+              "Database Connections (SQL, NoSQL)",
+              "Data Streaming (Kafka, Spark Streaming)",
+              "File Formats (CSV, JSON, XML)",
+              "Data Versioning (DVC)"
+            ]
+          },
+          {
+            "name": "Data Cleaning",
+            "subsubskills": [
+              "Handling Missing Values",
+              "Duplicate Removal",
+              "Outlier Detection and Treatment",
+              "Data Validation",
+              "Data Type Conversion",
+              "Error Correction",
+              "Data Standardization and Normalization",
+              "Data Imputation Techniques"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "subskills": [
+          {
+            "name": "Exploratory Data Analysis (EDA)",
+            "subsubskills": [
+              "Descriptive Statistics",
+              "Data Profiling",
+              "Data Visualization (Matplotlib, Seaborn, Plotly)",
+              "Feature Understanding",
+              "Correlation Analysis",
+              "Univariate and Multivariate Analysis",
+              "Hypothesis Generation",
+              "Interactive Data Exploration (Jupyter Notebooks, Streamlit)"
+            ]
+          },
+          {
+            "name": "Supervised Learning",
+            "subsubskills": [
+              "Linear Regression",
+              "Support Vector Machines (SVM)",
+              "Logistic Regression",
+              "K-Nearest Neighbors (KNN)",
+              "Decision Trees",
+              "Naive Bayes",
+              "Random Forests",
+              "Ensemble Methods (Boosting, Bagging)"
+            ]
+          },
+          {
+            "name": "Unsupervised Learning",
+            "subsubskills": [
+              "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+              "Topic Modeling (LDA, NMF)",
+              "Dimensionality Reduction (PCA, t-SNE)",
+              "Self-Organizing Maps (SOM)",
+              "Association Rule Mining (Apriori, Eclat)",
+              "Independent Component Analysis (ICA)",
+              "Anomaly Detection",
+              "Collaborative Filtering"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deep Learning",
+        "subskills": [
+          {
+            "name": "Model Evaluation and Selection",
+            "subsubskills": [
+              "Cross-Validation Techniques",
+              "Hyperparameter Tuning (Grid Search, Random Search, Bayesian Optimization)",
+              "Bias-Variance Tradeoff",
+              "Regularization Techniques (L1, L2)",
+              "Performance Metrics (Accuracy, Precision, Recall, F1-Score, AUC-ROC)",
+              "Model Interpretability (SHAP, LIME)",
+              "Model Selection Criteria (AIC, BIC)",
+              "Model Deployment Strategies"
+            ]
+          },
+          {
+            "name": "Neural Networks",
+            "subsubskills": [
+              "Perceptron",
+              "Regularization Techniques (Dropout, Batch Normalization)",
+              "Multilayer Perceptron (MLP)",
+              "Loss Functions",
+              "Activation Functions (ReLU, Sigmoid, Tanh)",
+              "Vanishing/Exploding Gradients",
+              "Backpropagation",
+              "Weight Initialization",
+              "Optimization Algorithms (Adam, SGD)"
+            ]
+          },
+          {
+            "name": "Convolutional Neural Networks (CNNs)",
+            "subsubskills": [
+              "Convolutional Layers",
+              "Image Segmentation",
+              "Pooling Layers",
+              "Transfer Learning",
+              "CNN Architectures (LeNet, AlexNet, VGGNet, ResNet, Inception)",
+              "Data Augmentation",
+              "Image Classification",
+              "CNN Visualization",
+              "Object Detection (YOLO, SSD, Faster R-CNN)"
+            ]
+          },
+          {
+            "name": "Recurrent Neural Networks (RNNs)",
+            "subsubskills": []
+          }
+        ]
+      }
+    ]
+  }
+]
