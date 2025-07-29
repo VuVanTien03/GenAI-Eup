@@ -19,10 +19,3 @@ def login(driver, url, email, password):
     except:
         return False
 
-
-driver = webdriver.Chrome()
-
-if login(driver, "https://roadmap.sh/login", "vuvantien_t67@hus.edu.vn", "Anhyeuem2003"):
-    print("Đăng nhập thành công")
-else:
-    print("Đăng nhập thất bại")
