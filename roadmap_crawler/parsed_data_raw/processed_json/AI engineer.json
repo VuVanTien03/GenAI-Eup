@@ -1,0 +1,473 @@
+[
+  {
+    "target": "AI Engineer",
+    "category": "roadmap",
+    "skills": [
+      {
+        "name": "Foundational Knowledge",
+        "subskills": [
+          {
+            "name": "Mathematics",
+            "subsubskills": [
+              "Linear Algebra",
+              "Information Theory",
+              "Calculus",
+              "Optimization Techniques",
+              "Probability and Statistics",
+              "Numerical Analysis",
+              "Discrete Mathematics"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Machine Learning Fundamentals",
+        "subskills": [
+          {
+            "name": "Programming",
+            "subsubskills": [
+              "Python Fundamentals",
+              "Version Control (Git)",
+              "Data Structures and Algorithms",
+              "Testing and Debugging",
+              "Object-Oriented Programming",
+              "Code Optimization",
+              "Software Engineering Principles"
+            ]
+          },
+          {
+            "name": "Supervised Learning",
+            "subsubskills": [
+              "Linear Regression",
+              "Random Forests",
+              "Logistic Regression",
+              "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+              "Support Vector Machines (SVM)",
+              "Model Evaluation Metrics",
+              "Decision Trees"
+            ]
+          },
+          {
+            "name": "Unsupervised Learning",
+            "subsubskills": [
+              "Clustering (K-Means, Hierarchical Clustering, DBSCAN)",
+              "Association Rule Mining",
+              "Dimensionality Reduction (PCA, t-SNE)",
+              "Generative Models (GANs, VAEs)",
+              "Anomaly Detection",
+              "Self-Organizing Maps"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deep Learning Frameworks",
+        "subskills": [
+          {
+            "name": "Deep Learning",
+            "subsubskills": [
+              "Neural Networks Basics",
+              "Backpropagation",
+              "Activation Functions",
+              "Convolutional Neural Networks (CNNs)",
+              "Loss Functions",
+              "Recurrent Neural Networks (RNNs, LSTMs, GRUs)",
+              "Optimization Algorithms (SGD, Adam, RMSprop)"
+            ]
+          },
+          {
+            "name": "TensorFlow",
+            "subsubskills": [
+              "TensorFlow Core",
+              "TensorFlow Serving",
+              "Keras API",
+              "TensorFlow Lite",
+              "TensorFlow Datasets",
+              "TensorBoard",
+              "TensorFlow Hub"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Natural Language Processing (NLP)",
+        "subskills": [
+          {
+            "name": "PyTorch",
+            "subsubskills": [
+              "PyTorch Basics",
+              "Training Loops",
+              "Autograd",
+              "PyTorch Lightning",
+              "Neural Network Modules",
+              "TorchServe",
+              "Data Loading and Processing"
+            ]
+          },
+          {
+            "name": "Text Preprocessing",
+            "subsubskills": [
+              "Tokenization",
+              "Text Normalization",
+              "Stop Word Removal",
+              "Encoding Techniques (Bag of Words, TF-IDF, Word Embeddings)",
+              "Stemming and Lemmatization",
+              "Part-of-Speech Tagging",
+              "Regular Expressions"
+            ]
+          },
+          {
+            "name": "Core NLP Tasks",
+            "subsubskills": [
+              "Sentiment Analysis",
+              "Question Answering",
+              "Text Classification",
+              "Text Summarization",
+              "Named Entity Recognition (NER)",
+              "Topic Modeling",
+              "Machine Translation"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Computer Vision",
+        "subskills": [
+          {
+            "name": "Advanced NLP Techniques",
+            "subsubskills": [
+              "Transformer Networks (BERT, GPT, RoBERTa)",
+              "Text Generation",
+              "Attention Mechanisms",
+              "Dialogue Systems",
+              "Sequence-to-Sequence Models",
+              "Knowledge Graphs",
+              "Language Modeling"
+            ]
+          },
+          {
+            "name": "Image Processing",
+            "subsubskills": [
+              "Image Filtering",
+              "Image Enhancement",
+              "Edge Detection",
+              "Color Spaces",
+              "Feature Extraction (SIFT, HOG, SURF)",
+              "Geometric Transformations",
+              "Image Segmentation"
+            ]
+          },
+          {
+            "name": "Core Computer Vision Tasks",
+            "subsubskills": [
+              "Image Classification",
+              "Image Captioning",
+              "Object Detection (YOLO, SSD, Faster R-CNN)",
+              "Visual Question Answering",
+              "Image Segmentation (Semantic, Instance, Panoptic)",
+              "Face Recognition",
+              "Image Generation"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reinforcement Learning",
+        "subskills": [
+          {
+            "name": "Advanced Computer Vision Techniques",
+            "subsubskills": [
+              "Convolutional Neural Networks (CNNs) Architectures",
+              "Video Analysis",
+              "Transfer Learning",
+              "Action Recognition",
+              "Generative Adversarial Networks (GANs)",
+              "Self-Supervised Learning",
+              "3D Vision"
+            ]
+          },
+          {
+            "name": "Fundamentals of RL",
+            "subsubskills": [
+              "Markov Decision Processes (MDPs)",
+              "Dynamic Programming",
+              "Bellman Equations",
+              "Monte Carlo Methods",
+              "Exploration vs. Exploitation",
+              "Temporal Difference Learning (SARSA, Q-learning)",
+              "Policy and Value Iteration"
+            ]
+          },
+          {
+            "name": "Deep Reinforcement Learning",
+            "subsubskills": [
+              "Deep Q-Networks (DQN)",
+              "Exploration Strategies",
+              "Policy Gradient Methods (REINFORCE, A2C, A3C)",
+              "Reward Shaping",
+              "Actor-Critic Methods (DDPG, TD3, SAC)",
+              "Multi-Agent Reinforcement Learning"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Engineering",
+        "subskills": [
+          {
+            "name": "Advanced RL Topics",
+            "subsubskills": [
+              "Inverse Reinforcement Learning",
+              "Transfer Reinforcement Learning",
+              "Imitation Learning",
+              "Offline Reinforcement Learning",
+              "Hierarchical Reinforcement Learning",
+              "Safe Reinforcement Learning",
+              "Meta-Reinforcement Learning"
+            ]
+          },
+          {
+            "name": "Data Collection",
+            "subsubskills": [
+              "Web Scraping",
+              "Data Ingestion Tools",
+              "APIs",
+              "Data Warehousing",
+              "Databases (SQL, NoSQL)",
+              "ETL Processes",
+              "Data Streaming (Kafka, Spark Streaming)"
+            ]
+          },
+          {
+            "name": "Data Processing",
+            "subsubskills": [
+              "Data Cleaning",
+              "Data Storage",
+              "Data Transformation",
+              "Data Governance",
+              "Data Integration",
+              "Data Security",
+              "Data Validation"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Model Deployment",
+        "subskills": [
+          {
+            "name": "Big Data Technologies",
+            "subsubskills": [
+              "Hadoop",
+              "Cloud Data Platforms (AWS, Azure, GCP)",
+              "Spark",
+              "Distributed Computing",
+              "Hive",
+              "Data Lake",
+              "Pig"
+            ]
+          },
+          {
+            "name": "Model Serving",
+            "subsubskills": [
+              "REST APIs",
+              "Serverless Deployment",
+              "gRPC",
+              "Model Versioning",
+              "Docker",
+              "Monitoring and Logging",
+              "Kubernetes"
+            ]
+          },
+          {
+            "name": "Edge Computing",
+            "subsubskills": [
+              "Model Optimization for Edge Devices",
+              "Edge Deployment Platforms",
+              "TensorFlow Lite",
+              "Federated Learning",
+              "Core ML",
+              "Privacy-Preserving AI",
+              "ONNX"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cloud Computing",
+        "subskills": [
+          {
+            "name": "Model Monitoring and Maintenance",
+            "subsubskills": [
+              "Performance Monitoring",
+              "Explainable AI (XAI)",
+              "Data Drift Detection",
+              "Bias Detection and Mitigation",
+              "Model Retraining",
+              "Security Vulnerabilities",
+              "A/B Testing"
+            ]
+          },
+          {
+            "name": "Cloud Platforms",
+            "subsubskills": [
+              "Amazon Web Services (AWS)",
+              "Cloud Services (Compute, Storage, Networking)",
+              "Microsoft Azure",
+              "Cloud Security",
+              "Google Cloud Platform (GCP)",
+              "Cloud Cost Management",
+              "Cloud Infrastructure"
+            ]
+          },
+          {
+            "name": "AI Services on Cloud",
+            "subsubskills": [
+              "AWS SageMaker",
+              "Pre-trained Models",
+              "Azure Machine Learning",
+              "Cloud GPUs and TPUs",
+              "Google AI Platform",
+              "Cloud Data Storage",
+              "Cloud AutoML"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ethics and Responsible AI",
+        "subskills": [
+          {
+            "name": "DevOps for AI",
+            "subsubskills": [
+              "CI/CD Pipelines",
+              "Monitoring and Alerting",
+              "Infrastructure as Code (IaC)",
+              "Automation",
+              "Containerization",
+              "Collaboration",
+              "Orchestration"
+            ]
+          },
+          {
+            "name": "Bias and Fairness",
+            "subsubskills": [
+              "Bias Detection",
+              "Data Diversity",
+              "Bias Mitigation Techniques",
+              "Responsible Data Collection",
+              "Fairness Metrics",
+              "Ethical Considerations",
+              "Algorithmic Auditing"
+            ]
+          },
+          {
+            "name": "Privacy and Security",
+            "subsubskills": [
+              "Data Privacy Regulations (GDPR, CCPA)",
+              "Secure Multi-Party Computation",
+              "Differential Privacy",
+              "Data Anonymization",
+              "Federated Learning",
+              "Security Best Practices",
+              "Homomorphic Encryption"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Advanced Topics",
+        "subskills": [
+          {
+            "name": "Explainability and Transparency",
+            "subsubskills": [
+              "Explainable AI (XAI) Techniques",
+              "Accountability",
+              "Model Interpretability",
+              "Human-Centered AI",
+              "Transparency in AI Systems",
+              "Ethical Frameworks",
+              "Trustworthy AI"
+            ]
+          },
+          {
+            "name": "Transfer Learning",
+            "subsubskills": [
+              "Domain Adaptation",
+              "Zero-Shot Learning",
+              "Fine-tuning",
+              "Multi-Task Learning",
+              "Meta-Learning",
+              "Curriculum Learning",
+              "Few-Shot Learning"
+            ]
+          },
+          {
+            "name": "Generative Models",
+            "subsubskills": [
+              "Variational Autoencoders (VAEs)",
+              "Diffusion Models",
+              "Generative Adversarial Networks (GANs)",
+              "Energy-Based Models",
+              "Normalizing Flows",
+              "Applications in Image Generation, Text Generation, and Data Augmentation",
+              "Autoregressive Models"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Research and Development",
+        "subskills": [
+          {
+            "name": "Graph Neural Networks",
+            "subsubskills": [
+              "Graph Theory Basics",
+              "Message Passing Neural Networks",
+              "Graph Convolutional Networks (GCNs)",
+              "Graph Embeddings",
+              "Graph Attention Networks (GATs)",
+              "Applications in Social Networks, Knowledge Graphs, and Drug Discovery"
+            ]
+          },
+          {
+            "name": "Reading Research Papers",
+            "subsubskills": [
+              "Identifying Key Papers",
+              "Staying Up-to-Date",
+              "Understanding Methodologies",
+              "Conference Proceedings",
+              "Evaluating Results",
+              "Journal Publications",
+              "Literature Reviews"
+            ]
+          },
+          {
+            "name": "Experimentation and Validation",
+            "subsubskills": [
+              "Experimental Design",
+              "Error Analysis",
+              "Hypothesis Testing",
+              "Reproducibility",
+              "Statistical Significance",
+              "Benchmarking",
+              "Ablation Studies"
+            ]
+          },
+          {
+            "name": "Contributing to the Field",
+            "subsubskills": [
+              "Open Source Projects",
+              "Community Engagement",
+              "Publishing Research",
+              "Knowledge Sharing",
+              "Participating in Competitions",
+              "Innovation",
+              "Collaboration"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

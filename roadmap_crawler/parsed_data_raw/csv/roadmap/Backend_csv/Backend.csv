@@ -1,0 +1,191 @@
+﻿Skill,Parent,Group,Type
+Backend Development,,Backend,Target
+Fundamentals,Backend Development,Backend,Skill
+Data Structures and Algorithms,Computer Science Basics,Backend,Sub-sub-skill
+Database Management Systems,Computer Science Basics,Backend,Sub-sub-skill
+Time Complexity and Big O Notation,Computer Science Basics,Backend,Sub-sub-skill
+Software Engineering Principles,Computer Science Basics,Backend,Sub-sub-skill
+Operating Systems Concepts,Computer Science Basics,Backend,Sub-sub-skill
+Version Control Systems (Git),Computer Science Basics,Backend,Sub-sub-skill
+Networking Basics,Computer Science Basics,Backend,Sub-sub-skill
+Computer Science Basics,Fundamentals,Backend,Sub-skill
+Backend Languages,Backend Development,Backend,Skill
+"Variables, Data Types, and Operators",Programming Fundamentals,Backend,Sub-sub-skill
+Error Handling and Debugging,Programming Fundamentals,Backend,Sub-sub-skill
+"Control Flow (Loops, Conditionals)",Programming Fundamentals,Backend,Sub-sub-skill
+Input/Output Operations,Programming Fundamentals,Backend,Sub-sub-skill
+Functions and Modularity,Programming Fundamentals,Backend,Sub-sub-skill
+Testing Fundamentals,Programming Fundamentals,Backend,Sub-sub-skill
+Object-Oriented Programming (OOP) Principles,Programming Fundamentals,Backend,Sub-sub-skill
+Programming Fundamentals,Backend Languages,Backend,Sub-skill
+Syntax and Semantics,"Language 1 (e.g., Python)",Backend,Sub-sub-skill
+"Web Frameworks (e.g., Django, Flask)","Language 1 (e.g., Python)",Backend,Sub-sub-skill
+Data Structures and Collections,"Language 1 (e.g., Python)",Backend,Sub-sub-skill
+Asynchronous Programming,"Language 1 (e.g., Python)",Backend,Sub-sub-skill
+Modules and Packages,"Language 1 (e.g., Python)",Backend,Sub-sub-skill
+Testing and Debugging,"Language 1 (e.g., Python)",Backend,Sub-sub-skill
+Object-Oriented Programming,"Language 1 (e.g., Python)",Backend,Sub-sub-skill
+"Language 1 (e.g., Python)",Backend Languages,Backend,Sub-skill
+Syntax and Semantics,"Language 2 (e.g., Java)",Backend,Sub-sub-skill
+"Web Frameworks (e.g., Spring, Jakarta EE)","Language 2 (e.g., Java)",Backend,Sub-sub-skill
+Object-Oriented Programming,"Language 2 (e.g., Java)",Backend,Sub-sub-skill
+Design Patterns,"Language 2 (e.g., Java)",Backend,Sub-sub-skill
+Collections Framework,"Language 2 (e.g., Java)",Backend,Sub-sub-skill
+JVM Internals,"Language 2 (e.g., Java)",Backend,Sub-sub-skill
+Multithreading and Concurrency,"Language 2 (e.g., Java)",Backend,Sub-sub-skill
+"Language 2 (e.g., Java)",Backend Languages,Backend,Sub-skill
+Databases,Backend Development,Backend,Skill
+JavaScript Fundamentals,"Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+"Web Frameworks (e.g., Express.js, NestJS)","Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+"Asynchronous Programming (Promises, Async/Await)","Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+RESTful API Design,"Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+Node.js Core Modules,"Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+Real-time Communication (WebSockets),"Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+"Package Management (npm, yarn)","Language 3 (e.g., Node.js)",Backend,Sub-sub-skill
+"Language 3 (e.g., Node.js)",Databases,Backend,Sub-skill
+Database Design and Normalization,Relational Databases (SQL),Backend,Sub-sub-skill
+Database Security,Relational Databases (SQL),Backend,Sub-sub-skill
+SQL Syntax (CRUD Operations),Relational Databases (SQL),Backend,Sub-sub-skill
+Stored Procedures and Functions,Relational Databases (SQL),Backend,Sub-sub-skill
+Transactions and ACID Properties,Relational Databases (SQL),Backend,Sub-sub-skill
+Database Administration,Relational Databases (SQL),Backend,Sub-sub-skill
+Indexing and Query Optimization,Relational Databases (SQL),Backend,Sub-sub-skill
+Relational Databases (SQL),Databases,Backend,Sub-skill
+Web Frameworks,Backend Development,Backend,Skill
+"Key-Value Stores (e.g., Redis, Memcached)",NoSQL Databases,Backend,Sub-sub-skill
+Data Modeling for NoSQL,NoSQL Databases,Backend,Sub-sub-skill
+"Document Databases (e.g., MongoDB, Couchbase)",NoSQL Databases,Backend,Sub-sub-skill
+Scalability and Performance,NoSQL Databases,Backend,Sub-sub-skill
+"Column-Family Databases (e.g., Cassandra, HBase)",NoSQL Databases,Backend,Sub-sub-skill
+Use Case Scenarios,NoSQL Databases,Backend,Sub-sub-skill
+"Graph Databases (e.g., Neo4j)",NoSQL Databases,Backend,Sub-sub-skill
+NoSQL Databases,Web Frameworks,Backend,Sub-skill
+MVC Architecture,"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+Authentication and Authorization,"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+ORM (Object-Relational Mapping),"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+Forms and Validation,"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+Routing and URL Handling,"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+Security Best Practices,"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+Template Engines,"Framework 1 (e.g., Django)",Backend,Sub-sub-skill
+"Framework 1 (e.g., Django)",Web Frameworks,Backend,Sub-skill
+Dependency Injection,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+Data Access with Spring Data,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+Aspect-Oriented Programming,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+Security with Spring Security,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+Spring Boot,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+Testing with Spring Test,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+RESTful API Development,"Framework 2 (e.g., Spring)",Backend,Sub-sub-skill
+"Framework 2 (e.g., Spring)",Web Frameworks,Backend,Sub-skill
+API Development,Backend Development,Backend,Skill
+Middleware,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+RESTful API Design,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+Routing,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+Authentication and Authorization,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+Request and Response Handling,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+Error Handling,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+Templating Engines,"Framework 3 (e.g., Express.js)",Backend,Sub-sub-skill
+"Framework 3 (e.g., Express.js)",API Development,Backend,Sub-skill
+REST Principles and Best Practices,RESTful APIs,Backend,Sub-sub-skill
+"API Documentation (Swagger, OpenAPI)",RESTful APIs,Backend,Sub-sub-skill
+API Design and Versioning,RESTful APIs,Backend,Sub-sub-skill
+"Authentication and Authorization (OAuth, JWT)",RESTful APIs,Backend,Sub-sub-skill
+HTTP Methods and Status Codes,RESTful APIs,Backend,Sub-sub-skill
+Rate Limiting and Throttling,RESTful APIs,Backend,Sub-sub-skill
+"Request and Response Payloads (JSON, XML)",RESTful APIs,Backend,Sub-sub-skill
+RESTful APIs,API Development,Backend,Sub-skill
+System Design,Backend Development,Backend,Skill
+GraphQL Schema Definition,GraphQL APIs,Backend,Sub-sub-skill
+Authentication and Authorization,GraphQL APIs,Backend,Sub-sub-skill
+"Queries, Mutations, and Subscriptions",GraphQL APIs,Backend,Sub-sub-skill
+Error Handling,GraphQL APIs,Backend,Sub-sub-skill
+Resolvers,GraphQL APIs,Backend,Sub-sub-skill
+GraphQL Clients,GraphQL APIs,Backend,Sub-sub-skill
+Data Fetching and Optimization,GraphQL APIs,Backend,Sub-sub-skill
+GraphQL APIs,System Design,Backend,Sub-skill
+Horizontal and Vertical Scaling,Scalability and Performance,Backend,Sub-sub-skill
+Content Delivery Networks (CDNs),Scalability and Performance,Backend,Sub-sub-skill
+Load Balancing,Scalability and Performance,Backend,Sub-sub-skill
+Performance Monitoring and Optimization,Scalability and Performance,Backend,Sub-sub-skill
+Caching Strategies,Scalability and Performance,Backend,Sub-sub-skill
+Concurrency and Parallelism,Scalability and Performance,Backend,Sub-sub-skill
+Database Sharding,Scalability and Performance,Backend,Sub-sub-skill
+Scalability and Performance,System Design,Backend,Sub-skill
+Service Decomposition,Microservices Architecture,Backend,Sub-sub-skill
+Event-Driven Architecture,Microservices Architecture,Backend,Sub-sub-skill
+API Gateways,Microservices Architecture,Backend,Sub-sub-skill
+Containerization (Docker),Microservices Architecture,Backend,Sub-sub-skill
+Service Discovery,Microservices Architecture,Backend,Sub-sub-skill
+Orchestration (Kubernetes),Microservices Architecture,Backend,Sub-sub-skill
+Inter-service Communication,Microservices Architecture,Backend,Sub-sub-skill
+Microservices Architecture,System Design,Backend,Sub-skill
+DevOps and Deployment,Backend Development,Backend,Skill
+"Cloud Providers (AWS, Azure, GCP)",Cloud Computing,Backend,Sub-sub-skill
+Cloud Storage,Cloud Computing,Backend,Sub-sub-skill
+Infrastructure as a Service (IaaS),Cloud Computing,Backend,Sub-sub-skill
+Cloud Networking,Cloud Computing,Backend,Sub-sub-skill
+Platform as a Service (PaaS),Cloud Computing,Backend,Sub-sub-skill
+Cloud Security,Cloud Computing,Backend,Sub-sub-skill
+Serverless Computing,Cloud Computing,Backend,Sub-sub-skill
+Cloud Computing,DevOps and Deployment,Backend,Sub-skill
+CI/CD Pipelines,Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+"Deployment Strategies (Blue-Green, Canary)",Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+Automated Testing,Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+Monitoring and Logging,Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+Infrastructure as Code (IaC),Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+Version Control,Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+Configuration Management,Continuous Integration and Continuous Deployment (CI/CD),Backend,Sub-sub-skill
+Continuous Integration and Continuous Deployment (CI/CD),DevOps and Deployment,Backend,Sub-skill
+Security,Backend Development,Backend,Skill
+Docker Fundamentals,Containerization and Orchestration,Backend,Sub-sub-skill
+Service Management,Containerization and Orchestration,Backend,Sub-sub-skill
+Docker Compose,Containerization and Orchestration,Backend,Sub-sub-skill
+Scaling and Resource Management,Containerization and Orchestration,Backend,Sub-sub-skill
+Kubernetes Architecture,Containerization and Orchestration,Backend,Sub-sub-skill
+Monitoring and Logging,Containerization and Orchestration,Backend,Sub-sub-skill
+Kubernetes Deployment Strategies,Containerization and Orchestration,Backend,Sub-sub-skill
+Containerization and Orchestration,Security,Backend,Sub-skill
+"Authentication Mechanisms (OAuth, JWT, SAML)",Authentication and Authorization,Backend,Sub-sub-skill
+Password Management,Authentication and Authorization,Backend,Sub-sub-skill
+"Authorization Models (RBAC, ABAC)",Authentication and Authorization,Backend,Sub-sub-skill
+Session Management,Authentication and Authorization,Backend,Sub-sub-skill
+Multi-Factor Authentication (MFA),Authentication and Authorization,Backend,Sub-sub-skill
+Security Best Practices,Authentication and Authorization,Backend,Sub-sub-skill
+Authentication and Authorization,Security,Backend,Sub-skill
+Testing,Backend Development,Backend,Skill
+OWASP Top 10 Vulnerabilities,Web Security,Backend,Sub-sub-skill
+Security Headers,Web Security,Backend,Sub-sub-skill
+Cross-Site Scripting (XSS),Web Security,Backend,Sub-sub-skill
+Input Validation,Web Security,Backend,Sub-sub-skill
+SQL Injection,Web Security,Backend,Sub-sub-skill
+Output Encoding,Web Security,Backend,Sub-sub-skill
+Cross-Site Request Forgery (CSRF),Web Security,Backend,Sub-sub-skill
+Web Security,Testing,Backend,Sub-skill
+Test-Driven Development (TDD),Unit Testing,Backend,Sub-sub-skill
+Code Coverage,Unit Testing,Backend,Sub-sub-skill
+Mocking and Stubbing,Unit Testing,Backend,Sub-sub-skill
+Test Automation,Unit Testing,Backend,Sub-sub-skill
+"Test Frameworks (e.g., JUnit, pytest, Jest)",Unit Testing,Backend,Sub-sub-skill
+Boundary Testing,Unit Testing,Backend,Sub-sub-skill
+Unit Testing,Testing,Backend,Sub-skill
+Monitoring and Logging,Backend Development,Backend,Skill
+API Testing,Integration Testing,Backend,Sub-sub-skill
+Test Environments,Integration Testing,Backend,Sub-sub-skill
+Database Testing,Integration Testing,Backend,Sub-sub-skill
+Test Data Management,Integration Testing,Backend,Sub-sub-skill
+End-to-End Testing,Integration Testing,Backend,Sub-sub-skill
+Performance Testing,Integration Testing,Backend,Sub-sub-skill
+Integration Testing,Monitoring and Logging,Backend,Sub-skill
+Log Levels,Logging,Backend,Sub-sub-skill
+"Centralized Logging Systems (e.g., ELK Stack, Splunk)",Logging,Backend,Sub-sub-skill
+Log Aggregation,Logging,Backend,Sub-sub-skill
+Log Rotation,Logging,Backend,Sub-sub-skill
+Log Analysis,Logging,Backend,Sub-sub-skill
+Security Auditing,Logging,Backend,Sub-sub-skill
+Logging,Monitoring and Logging,Backend,Sub-skill
+System Monitoring,Monitoring,Backend,Sub-sub-skill
+Alerting and Notifications,Monitoring,Backend,Sub-sub-skill
+Application Performance Monitoring (APM),Monitoring,Backend,Sub-sub-skill
+Metrics and Dashboards,Monitoring,Backend,Sub-sub-skill
+Real-time Monitoring,Monitoring,Backend,Sub-sub-skill
+Health Checks,Monitoring,Backend,Sub-sub-skill
+Monitoring,Monitoring and Logging,Backend,Sub-skill

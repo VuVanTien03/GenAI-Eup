@@ -1,0 +1,335 @@
+[
+  {
+    "target": "Frontend Development",
+    "category": "roadmap",
+    "skills": [
+      {
+        "name": "Fundamentals",
+        "subskills": [
+          {
+            "name": "HTML",
+            "subsubskills": [
+              "HTML Structure",
+              "Accessibility (ARIA)",
+              "Semantic HTML",
+              "HTML Best Practices",
+              "HTML Forms",
+              "HTML SEO",
+              "HTML5 APIs"
+            ]
+          },
+          {
+            "name": "CSS",
+            "subsubskills": [
+              "CSS Syntax and Selectors",
+              "CSS Transitions and Animations",
+              "Box Model",
+              "Responsive Design (Media Queries)",
+              "CSS Layout (Flexbox, Grid)",
+              "CSS Preprocessors (Sass, Less)",
+              "CSS Positioning"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Version Control",
+        "subskills": [
+          {
+            "name": "JavaScript",
+            "subsubskills": [
+              "JavaScript Basics (Variables, Data Types, Operators)",
+              "JavaScript Testing (Unit, Integration)",
+              "DOM Manipulation",
+              "JavaScript Debugging",
+              "Asynchronous JavaScript (Promises, Async/Await)",
+              "JavaScript Design Patterns",
+              "ES6+ Features"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Package Managers",
+        "subskills": [
+          {
+            "name": "Git",
+            "subsubskills": [
+              "Git Basics (Commit, Push, Pull)",
+              "Remote Repositories (GitHub, GitLab, Bitbucket)",
+              "Branching and Merging",
+              "Git Hooks",
+              "Resolving Conflicts",
+              "Git Best Practices",
+              "Git Workflows (Gitflow, GitHub Flow)"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Build Tools",
+        "subskills": [
+          {
+            "name": "npm/Yarn/pnpm",
+            "subsubskills": [
+              "Package Installation and Management",
+              "Dependency Management",
+              "Package Versioning",
+              "Security Vulnerabilities",
+              "Package Publishing",
+              "Package Configuration",
+              "Package Scripts"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frameworks",
+        "subskills": [
+          {
+            "name": "Webpack/Parcel/Rollup",
+            "subsubskills": [
+              "Module Bundling",
+              "Development Servers",
+              "Code Transpilation (Babel)",
+              "Plugin Ecosystem",
+              "Code Minification and Optimization",
+              "Configuration",
+              "Asset Management"
+            ]
+          },
+          {
+            "name": "React",
+            "subsubskills": [
+              "React Components and JSX",
+              "React Forms",
+              "React State Management (useState, useReducer, Context API)",
+              "React Testing (Jest, Enzyme, React Testing Library)",
+              "React Hooks",
+              "React Performance Optimization",
+              "React Router"
+            ]
+          },
+          {
+            "name": "Angular",
+            "subsubskills": [
+              "Angular Components and Templates",
+              "Angular Forms (Template-driven, Reactive)",
+              "Angular Modules",
+              "RxJS Observables",
+              "Angular Services and Dependency Injection",
+              "Angular Testing (Jasmine, Karma)",
+              "Angular Routing"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "State Management",
+        "subskills": [
+          {
+            "name": "Vue.js",
+            "subsubskills": [
+              "Vue Components and Templates",
+              "Vuex State Management",
+              "Vue Directives",
+              "Vue CLI",
+              "Vue Computed Properties and Watchers",
+              "Vue Testing (Jest, Vue Test Utils)",
+              "Vue Router"
+            ]
+          },
+          {
+            "name": "Redux",
+            "subsubskills": [
+              "Redux Principles (Store, Actions, Reducers)",
+              "Redux DevTools",
+              "Redux Middleware (Thunk, Saga)",
+              "Redux Best Practices",
+              "Redux Toolkit",
+              "Alternatives to Redux (MobX, Zustand)",
+              "Connecting Redux to React"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Testing",
+        "subskills": [
+          {
+            "name": "Context API",
+            "subsubskills": [
+              "Creating and Consuming Contexts",
+              "Using Context for Authentication",
+              "Context Providers",
+              "Context with Reducers",
+              "Context Consumers",
+              "Context Best Practices",
+              "Using Context for Themeing"
+            ]
+          },
+          {
+            "name": "Unit Testing",
+            "subsubskills": [
+              "Jest",
+              "Test-Driven Development (TDD)",
+              "Mocha",
+              "Mocking",
+              "Jasmine",
+              "Assertions"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Styling",
+        "subskills": [
+          {
+            "name": "Integration Testing",
+            "subsubskills": [
+              "Cypress",
+              "End-to-End Testing",
+              "Selenium",
+              "UI Testing",
+              "Puppeteer",
+              "Testing Frameworks"
+            ]
+          },
+          {
+            "name": "CSS-in-JS",
+            "subsubskills": [
+              "Styled Components",
+              "Aphrodite",
+              "Emotion",
+              "Themeing",
+              "JSS",
+              "Performance Considerations",
+              "Radium"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Server-Side Rendering (SSR)",
+        "subskills": [
+          {
+            "name": "CSS Modules",
+            "subsubskills": [
+              "Local Scoping",
+              "Integration with Build Tools",
+              "Composition",
+              "Benefits and Drawbacks",
+              "Global Styles",
+              "Best Practices",
+              "CSS Module Configuration"
+            ]
+          },
+          {
+            "name": "Next.js",
+            "subsubskills": [
+              "Next.js Pages",
+              "SEO Optimization",
+              "Data Fetching (getServerSideProps, getStaticProps)",
+              "Performance Optimization",
+              "API Routes",
+              "Next.js Configuration",
+              "Deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Static Site Generation (SSG)",
+        "subskills": [
+          {
+            "name": "Nuxt.js",
+            "subsubskills": [
+              "Nuxt.js Pages",
+              "Deployment",
+              "Data Fetching (asyncData, fetch)",
+              "SEO Optimization",
+              "Middleware",
+              "Performance Optimization",
+              "Modules"
+            ]
+          },
+          {
+            "name": "Gatsby",
+            "subsubskills": [
+              "Gatsby Plugins",
+              "SEO Optimization",
+              "GraphQL Data Layer",
+              "Performance Optimization",
+              "Gatsby Themes",
+              "Gatsby Configuration",
+              "Deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Accessibility",
+        "subskills": [
+          {
+            "name": "Hugo",
+            "subsubskills": [
+              "Hugo Templates",
+              "SEO Optimization",
+              "Hugo Shortcodes",
+              "Performance Optimization",
+              "Hugo Themes",
+              "Hugo Configuration",
+              "Deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Performance Optimization",
+        "subskills": [
+          {
+            "name": "Web Accessibility Standards (WCAG)",
+            "subsubskills": [
+              "ARIA Attributes",
+              "Color Contrast",
+              "Semantic HTML",
+              "Accessible Forms",
+              "Keyboard Navigation",
+              "Accessibility Testing",
+              "Screen Reader Compatibility"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Progressive Web Apps (PWAs)",
+        "subskills": [
+          {
+            "name": "Code Splitting",
+            "subsubskills": [
+              "Lazy Loading",
+              "Caching",
+              "Tree Shaking",
+              "Image Optimization",
+              "Minification",
+              "Performance Auditing (Lighthouse)",
+              "Compression"
+            ]
+          },
+          {
+            "name": "Service Workers",
+            "subsubskills": [
+              "Caching Strategies",
+              "Offline Support",
+              "Push Notifications",
+              "PWA Best Practices",
+              "Background Sync",
+              "PWA Deployment",
+              "Web App Manifest"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
