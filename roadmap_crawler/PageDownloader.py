@@ -9,7 +9,12 @@ from utils.DownloadTools import login
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+from dotenv import load_dotenv
 
+
+load_dotenv()
+ROADMAP_EMAIL = os.getenv("ROADMAP_EMAIL")
+ROADMAP_PASSWORD = os.getenv("ROADMAP_PASSWORD")
 
 class PageDownloader:
     def __init__(self, driver, email=None, password=None):
@@ -45,8 +50,8 @@ class PageDownloader:
 
 if __name__ == "__main__":
     #login info
-    EMAIL = "vuvantien247@gmail.com"
-    PASSWORD = "Anhyeuem2003"
+    EMAIL = ROADMAP_EMAIL
+    PASSWORD = ROADMAP_PASSWORD
 
     options = Options()
     options.add_argument("--disable-gpu")
