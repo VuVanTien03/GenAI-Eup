@@ -1,4 +1,4 @@
-from src.utils.load_documents import load_document
+from src.utils.load_documents import load_document, crawler_roadmap_to_docs
 from src.utils.vector_store import load_vector_store, create_vector_store
 from dotenv import dotenv_values
 from src.utils.custom_emb import create_embeddings
@@ -11,6 +11,8 @@ import json
 
 config = dotenv_values(".env")
 
+
+
 def GenSchedule(req, roadmap_data=None):
     """
     Generate learning schedule.
@@ -19,34 +21,34 @@ def GenSchedule(req, roadmap_data=None):
     """
     try:
         # --- Load documents ---
-        documents = []
+        documents = crawler_roadmap_to_docs(roadmap_data)
 
-        if roadmap_data:
-            # Nếu có roadmap_data từ MongoDB, convert sang text
-            if isinstance(roadmap_data, list):
-                roadmap_text = "\n".join([str(item) for item in roadmap_data])
-            elif isinstance(roadmap_data, dict):
-                roadmap_text = json.dumps(roadmap_data, ensure_ascii=False)
-            else:
-                roadmap_text = str(roadmap_data)
-
-            # Lưu tạm ra file hoặc convert trực tiếp
-            temp_path = "data/temp_roadmap.txt"
-            with open(temp_path, "w", encoding="utf-8") as f:
-                f.write(roadmap_text)
-
-            docs = load_document(temp_path)
-            if docs:
-                documents.extend(docs)
-                print(f"Loaded roadmap from MongoDB")
-        else:
-            # Nếu không có roadmap_data → fallback đọc file ví dụ
-            document_paths = []
-            for doc_path in document_paths:
-                docs = load_document(doc_path)
-                if docs:
-                    documents.extend(docs)
-                    print(f"Loaded document: {doc_path}")
+        # if roadmap_data:
+        #     # Nếu có roadmap_data từ MongoDB, convert sang text
+        #     if isinstance(roadmap_data, list):
+        #         roadmap_text = "\n".join([str(item) for item in roadmap_data])
+        #     elif isinstance(roadmap_data, dict):
+        #         roadmap_text = json.dumps(roadmap_data, ensure_ascii=False)
+        #     else:
+        #         roadmap_text = str(roadmap_data)
+        #
+        #     # Lưu tạm ra file hoặc convert trực tiếp
+        #     temp_path = "data/temp_roadmap.txt"
+        #     with open(temp_path, "w", encoding="utf-8") as f:
+        #         f.write(roadmap_text)
+        #
+        #     docs = load_document(temp_path)
+        #     if docs:
+        #         documents.extend(docs)
+        #         print(f"Loaded roadmap from MongoDB")
+        # else:
+        #     # Nếu không có roadmap_data → fallback đọc file ví dụ
+        #     document_paths = []
+        #     for doc_path in document_paths:
+        #         docs = load_document(doc_path)
+        #         if docs:
+        #             documents.extend(docs)
+        #             print(f"Loaded document: {doc_path}")
 
         if not documents:
             return {"error": "No documents found to load."}

@@ -346,16 +346,13 @@ async def query_schedule(req: Schedule):
     roadmap = await crawl_and_save_roadmap(query, level)
 
     try:
-        schedule = GenSchedule(req, roadmap)
-        # Ensure we propagate LLM/schedule errors as proper HTTP errors
-        if isinstance(schedule, dict) and schedule.get("error"):
-            raise HTTPException(status_code=500, detail=f"Schedule generation failed: {schedule['error']}")
+        result = GenSchedule(req, roadmap)  # result là dict JSON sạch
+        if isinstance(result, dict) and not result.get("error"):
+            inserted = roadmaps_collection.insert_one(result)
+            return {"success": True, "inserted_id": str(inserted.inserted_id), "data": result}
+        else:
+            raise HTTPException(status_code=500, detail=f"Schedule generation failed: {result.get('error')}")
 
-        return {
-            "success": True,
-            "roadmap": roadmap,
-            "schedule": schedule
-        }
     except HTTPException:
         raise
     except Exception as e:

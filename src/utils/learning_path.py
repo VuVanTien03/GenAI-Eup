@@ -1,5 +1,6 @@
 from typing import List, Union, Dict, Any
 
+
 def create_learning_path(agent: Any, learning_goal: str, user_knowledge: str = "") -> str:
     """
     Creates a personalized learning path using the agent.
