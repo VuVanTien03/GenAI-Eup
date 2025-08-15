@@ -27,11 +27,14 @@ def create_learning_path(agent: Any, learning_goal: str, user_knowledge: str = "
                           "learning_path": [
                             {
                               "week": 1,
-                              "objective": "..."
+                              "objective": "...",
                             },
                             ...
                           ]
                         }
+
+                        - "skills" is a list of required skills.
+                        Do not include explanation outside the JSON.
                         """
 
         return agent.run(prompt.strip())

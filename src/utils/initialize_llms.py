@@ -1,30 +1,23 @@
-import sys
-import os
+import logging
 import requests
-from dotenv import load_dotenv
+from dotenv import dotenv_values
 from typing import Optional, List, Any
 from pydantic import Field
-
+from langchain.llms.base import LLM
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain.chains import LLMChain
 from langchain_community.llms import LlamaCpp
-from langchain_community.llms.google_palm import GooglePalm
 from langchain_groq import ChatGroq
-from langchain.llms.base import LLM
+from langchain_community.llms.google_palm import GooglePalm
 
-# Load environment variables from .env file
-load_dotenv()
+logger = logging.getLogger(__name__)
+config = dotenv_values(".env")
 
-def initialize_llm(llm_type: str = "gemini", model_path: str = None) -> Any:
+def initialize_llm(llm_type: str = "gemini", model_path: Optional[str] = None) -> Any:
     try:
-        # Use default model path from env if not provided
-        model_path = model_path or os.getenv("LLM_MODEL_PATH")
-
         if llm_type == "local":
             if not model_path:
-                raise ValueError("LLM_MODEL_PATH must be set for local LLMs (LlamaCpp)")
-
+                raise ValueError("LLM_MODEL_PATH must be set for local LLMs")
             callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
             return LlamaCpp(
                 model_path=model_path,
@@ -35,26 +28,21 @@ def initialize_llm(llm_type: str = "gemini", model_path: str = None) -> Any:
             )
 
         elif llm_type == "openai":
-            api_key = os.getenv("OPENAI_API_KEY")
-            if not api_key:
-                raise ValueError("OPENAI_API_KEY must be set for OpenAI LLM")
-
+            if not config.get("GROQ_API_KEY"):
+                raise ValueError("GROQ_API_KEY must be set for Groq/OpenAI API")
             return ChatGroq(
                 temperature=0,
-                groq_api_key=api_key,
+                groq_api_key=config["GROQ_API_KEY"],
                 model_name="llama-3.3-70b-versatile"
             )
 
         elif llm_type == "google":
-            api_key = os.getenv("GOOGLE_API_KEY")
-            if not api_key:
-                raise ValueError("GOOGLE_API_KEY must be set for Google LLM")
-
-            return GooglePalm(google_api_key=api_key)
+            if not config.get("GOOGLE_API_KEY"):
+                raise ValueError("GOOGLE_API_KEY must be set for Google Palm")
+            return GooglePalm(google_api_key=config["GOOGLE_API_KEY"])
 
         elif llm_type == "gemini":
-            api_key = os.getenv("GEMINI_API_KEY")
-            if not api_key:
+            if not config.get("GEMINI_API_KEY"):
                 raise ValueError("GEMINI_API_KEY must be set for Gemini")
 
             class GeminiLLM(LLM):
@@ -67,11 +55,7 @@ def initialize_llm(llm_type: str = "gemini", model_path: str = None) -> Any:
                         "x-goog-api-key": self.api_key
                     }
                     body = {
-                        "contents": [
-                            {
-                                "parts": [{"text": prompt}]
-                            }
-                        ]
+                        "contents": [{"parts": [{"text": prompt}]}]
                     }
                     response = requests.post(url, headers=headers, json=body)
                     if response.status_code != 200:
@@ -86,11 +70,11 @@ def initialize_llm(llm_type: str = "gemini", model_path: str = None) -> Any:
                 def _llm_type(self) -> str:
                     return "gemini"
 
-            return GeminiLLM(api_key=api_key)
+            return GeminiLLM(api_key=config["GEMINI_API_KEY"])
 
         else:
             raise ValueError(f"Unsupported LLM type: {llm_type}")
 
     except Exception as e:
-        print(f"Error initializing LLM: {e}")
-        sys.exit(1)
+        logger.exception("Error initializing LLM")
+        raise RuntimeError(f"Failed to initialize LLM: {e}") from e
