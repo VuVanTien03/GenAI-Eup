@@ -26,20 +26,15 @@ def create_learning_path(agent: Any, learning_goal: str, user_knowledge: str = "
                           "skills": [list of skills the user needs to learn],
                           "learning_path": [
                             {
-                              "day": 1,
+                              "week": 1,
                               "objective": "...",
-                              "resources": ["resource1", "resource2"],
-                              "theory": "...",
-                              "question review": ""
                             },
                             ...
                           ]
                         }
 
                         - "skills" is a list of required skills.
-                        - Each "learning_path" day should have a number, clear objective, suggested resources (text/video/interactive), and a way to assess understanding (quiz, project, etc).
                         Do not include explanation outside the JSON.
-                        - Each question review of a day is choice question A,B,C,D and have answer for each question
                         """
 
         return agent.run(prompt.strip())

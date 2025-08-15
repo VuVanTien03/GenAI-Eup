@@ -29,7 +29,7 @@ class PageDownloader:
         target = "Tôi muốn trở thành " + save_name
 
         input_box = WebDriverWait(self.driver, 3).until(
-            EC.presence_of_element_located((By.ID, "«r8R0»"))
+            EC.presence_of_element_located((By.ID, "«r8»"))
         )
 
 

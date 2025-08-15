@@ -6,34 +6,62 @@ from src.utils.initialize_llms import initialize_llm
 from src.utils.create_agent import create_agent
 from src.utils.learning_path import create_learning_path
 from langchain.memory import ConversationBufferMemory
-import sys
 import os
-from src.constant import ScheduleType
 import json
 
 config = dotenv_values(".env")
-def GenSchedule(req: ScheduleType):
-    print(req)
+
+def GenSchedule(req, roadmap_data=None):
+    """
+    Generate learning schedule.
+    - req: ScheduleType object (có query, level)
+    - roadmap_data: dữ liệu roadmap (list hoặc text) nếu có
+    """
     try:
         # --- Load documents ---
-        document_paths = ["data/example1.txt"]
         documents = []
-        for doc_path in document_paths:
-            docs = load_document(doc_path)
+
+        if roadmap_data:
+            # Nếu có roadmap_data từ MongoDB, convert sang text
+            if isinstance(roadmap_data, list):
+                roadmap_text = "\n".join([str(item) for item in roadmap_data])
+            elif isinstance(roadmap_data, dict):
+                roadmap_text = json.dumps(roadmap_data, ensure_ascii=False)
+            else:
+                roadmap_text = str(roadmap_data)
+
+            # Lưu tạm ra file hoặc convert trực tiếp
+            temp_path = "data/temp_roadmap.txt"
+            with open(temp_path, "w", encoding="utf-8") as f:
+                f.write(roadmap_text)
+
+            docs = load_document(temp_path)
             if docs:
                 documents.extend(docs)
-                print(f"Loaded document: {doc_path}")
+                print(f"Loaded roadmap from MongoDB")
+        else:
+            # Nếu không có roadmap_data → fallback đọc file ví dụ
+            document_paths = []
+            for doc_path in document_paths:
+                docs = load_document(doc_path)
+                if docs:
+                    documents.extend(docs)
+                    print(f"Loaded document: {doc_path}")
 
         if not documents:
-            print("No documents loaded.")
             return {"error": "No documents found to load."}
 
-        # --- Embeddings + Vector Store ---
+        # # --- Embeddings + Vector Store ---
         embeddings = create_embeddings()
-        if os.path.exists(config['VECTORDB_PATH']):
-            vector_store = load_vector_store(db_path=config['VECTORDB_PATH'], embeddings=embeddings)
+        vectordb_path = config.get("VECTORDB_PATH")  # avoid KeyError
+        if vectordb_path and os.path.exists(vectordb_path):
+            vector_store = load_vector_store(
+                db_path=vectordb_path,
+                embeddings=embeddings
+            )
         else:
             vector_store = create_vector_store(documents, embeddings)
+
 
         # --- LLM, Agent ---
         llm = initialize_llm()
@@ -43,16 +71,19 @@ def GenSchedule(req: ScheduleType):
         # --- Create learning path ---
         learning_goal = req.query
         user_knowledge = req.level
-        learning_path = create_learning_path(agent, learning_goal, user_knowledge)
-        print(learning_path)
-
+        try:
+            learning_path = create_learning_path(agent, learning_goal, user_knowledge)
+        except Exception as e:
+            return {
+                "error": "Learning path generation failed.",
+                "raw_error": str(e)
+            }
 
         if not learning_path:
             return {"error": "LLM returned empty learning path."}
 
         try:
-            parsed = json.loads(learning_path)
-            return parsed
+            return json.loads(learning_path)
         except json.JSONDecodeError:
             return {
                 "error": "Failed to parse learning path as JSON.",
@@ -60,5 +91,4 @@ def GenSchedule(req: ScheduleType):
             }
 
     except Exception as e:
-        print(f"Unexpected error: {e}")
         return {"error": str(e)}
