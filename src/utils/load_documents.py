@@ -2,6 +2,8 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader, WebBas
 from typing import List, Union, Dict, Any
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import dotenv_values
+import json
+from langchain.schema import Document
 
 config = dotenv_values(".env")
 
@@ -37,3 +39,29 @@ def load_document(file_path: str) -> Union[List[str], str]:
         print(f"Error loading document {file_path}: {e}")
         return []  # Return an empty list on error to prevent crashing
 
+def load_roadmap_json(file_path: str):
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            json_data = json.load(f)
+
+        documents = []
+        for entry in json_data:
+            target = entry.get("target", "")
+            category = entry.get("category", "")
+            skill_blocks = []
+
+            for skill in entry.get("skills", []):
+                skill_text = f"Skill: {skill['name']}\n"
+                for sub in skill.get("subskills", []):
+                    sub_text = f"  Subskill: {sub['name']}\n"
+                    sub_text += "\n".join([f"    - {s}" for s in sub.get("subsubskills", [])])
+                    skill_text += sub_text + "\n"
+                skill_blocks.append(skill_text)
+
+            full_text = f"Target: {target}\nCategory: {category}\n" + "\n".join(skill_blocks)
+            documents.append(Document(page_content=full_text))
+
+        return documents
+    except Exception as e:
+        print(f"Error loading roadmap JSON: {e}")
+        return []

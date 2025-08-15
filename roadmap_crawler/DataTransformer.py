@@ -12,7 +12,10 @@ class DataTransformer:
         os.makedirs(self.output_dir, exist_ok=True)
 
     def process_csv_files(self):
-        """Duyệt qua các thư mục con trong `csv_dir` để xử lý các file CSV."""
+        """Duyệt qua các thư mục con trong `csv_dir` để xử lý các file CSV.
+        Trả về danh sách đường dẫn file JSON đã tạo.
+        """
+        all_outputs = []
         for category in os.listdir(self.csv_dir):
             category_path = os.path.join(self.csv_dir, category)
             if not os.path.isdir(category_path):
@@ -21,16 +24,25 @@ class DataTransformer:
             for target_folder in os.listdir(category_path):
                 target_path = os.path.join(category_path, target_folder)
                 if os.path.isdir(target_path):
-                    self.process_target_folder(target_path, category)
+                    outputs = self.process_target_folder(target_path, category)
+                    if outputs:
+                        all_outputs.extend(outputs)
+        return all_outputs
 
     def process_target_folder(self, folder_path: str, category: str):
-        """Xử lý tất cả các file CSV trong một thư mục cụ thể."""
+        """Xử lý tất cả các file CSV trong một thư mục cụ thể.
+        Trả về danh sách đường dẫn file JSON đã tạo.
+        """
         target_name = os.path.basename(folder_path).replace("_csv", "")
+        outputs = []
 
         for file in os.listdir(folder_path):
             if file.endswith(".csv"):
                 file_path = os.path.join(folder_path, file)
-                self.process_csv_file(file_path, target_name, category, file)
+                out = self.process_csv_file(file_path, target_name, category, file)
+                if out:
+                    outputs.append(out)
+        return outputs
 
     def process_csv_file(self, file_path: str, target_name: str, category: str, original_filename: str):
         """Đọc file CSV, xử lý dữ liệu và lưu kết quả dưới dạng JSON phân cấp."""
@@ -98,11 +110,13 @@ class DataTransformer:
                 json.dump(results, f, ensure_ascii=False, indent=2)
 
             print(f"✅ Created hierarchy JSON: {output_file}")
+            return output_file
         except Exception as e:
             print(f"❌ Error processing {file_path}: {e}")
-
+            return None
 
 if __name__ == "__main__":
     base_dir = "./parsed_data_raw"
     transformer = DataTransformer(base_dir)
-    transformer.process_csv_files()
+    out = transformer.process_csv_files()
+    print(out)
