@@ -46,6 +46,7 @@ def create_agent(llm: Any, vector_store: Chroma, memory: ConversationBufferMemor
             agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
             memory=memory,
             verbose=True,
+            handle_parsing_errors=True,
         )
         return agent
     except Exception as e:

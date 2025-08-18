@@ -20,20 +20,21 @@ def create_learning_path(agent: Any, learning_goal: str, user_knowledge: str = "
                 """
         if user_knowledge:
             prompt += f'The user has some existing knowledge: "{user_knowledge}".'
-            prompt += """
-                        Return your result in JSON format with the following structure:
 
-                        {
-                          "skills": [list of skills the user needs to learn],
-                          "learning_path": [
-                            {
-                              "week": 1,
-                              "objective": "...",
-                            },
-                            ...
-                          ]
-                        }
-                        """
+        prompt += """
+                                 Return your result in JSON format with the following structure:
+
+                                 {
+                                   "skills": [list of skills the user needs to learn],
+                                   "learning_path": [
+                                     {
+                                       "week": 1,
+                                       "objective": "...",
+                                     },
+                                     ...
+                                   ]
+                                 }
+                                 """
 
         return agent.run(prompt.strip())
     except Exception as e:

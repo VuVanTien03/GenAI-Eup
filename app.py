@@ -24,6 +24,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+from datetime import datetime
 
 config = dotenv_values(".env")
 
@@ -43,6 +44,7 @@ try:
     mongo_client = MongoClient(config.get("MONGODB_URI"))
     db = mongo_client[config.get("DATABASE_NAME")]
     roadmaps_collection = db["roadmaps"]
+    learning_path_collection = db['learning_path']
     print("✅ MongoDB connection established")
 except ConnectionFailure:
     print("❌ MongoDB connection failed")
@@ -340,23 +342,65 @@ async def query_schedule(req: Schedule):
     if not mongo_client:
         raise HTTPException(status_code=500, detail="MongoDB not connected")
 
-    query = req.query.strip()
-    level = req.level.strip()
+    query = (req.query or "").strip()
+    level = (req.level or "").strip()
 
+    # Crawl (và/hoặc lấy từ DB) roadmap gốc
     roadmap = await crawl_and_save_roadmap(query, level)
 
     try:
-        result = GenSchedule(req, roadmap)  # result là dict JSON sạch
-        if isinstance(result, dict) and not result.get("error"):
-            inserted = roadmaps_collection.insert_one(result)
-            return {"success": True, "inserted_id": str(inserted.inserted_id), "data": result}
+        # Có thể trả về dict (JSON) hoặc str (raw text) tùy bạn cấu hình GenSchedule
+        result = GenSchedule(req, roadmap)
+
+        # Chuẩn hóa tài liệu để lưu vào Mongo
+        if isinstance(result, dict):
+            # Nếu dict nhưng là lỗi
+            if result.get("error"):
+                raise HTTPException(status_code=500, detail=f"Schedule generation failed: {result.get('error')}")
+            doc = {
+                "type": "schedule",
+                "format": "json",
+                "query": query,
+                "level": level,
+                "roadmap": roadmap,        # có thể thay bằng roadmap_id nếu bạn muốn
+                "data": result,            # dữ liệu JSON sạch
+                "created_at": datetime.now(),
+                "source": "GenSchedule"
+            }
+            response_payload = {"data": result}
+
+        elif isinstance(result, str):
+            # Lưu nguyên văn trả lời
+            doc = {
+                "type": "schedule",
+                "format": "text",
+                "query": query,
+                "level": level,
+                "roadmap": roadmap,
+                "text": result,            # câu trả lời thô
+                "created_at": datetime.utcnow(),
+                "source": "GenSchedule"
+            }
+            response_payload = {"text": result}
+
         else:
-            raise HTTPException(status_code=500, detail=f"Schedule generation failed: {result.get('error')}")
+            raise HTTPException(
+                status_code=500,
+                detail=f"Unsupported result type from GenSchedule: {type(result)}"
+            )
+
+        inserted = learning_path_collection.insert_one(doc)
+        return {
+            "success": True,
+            "inserted_id": str(inserted.inserted_id),
+            "format": doc["format"],
+            **response_payload
+        }
 
     except HTTPException:
         raise
     except Exception as e:
-        # This will catch raised RuntimeError from initialize_llm or any unexpected error
+        # Bắt mọi lỗi không ngờ tới (LLM init, DB, v.v.)
         raise HTTPException(status_code=500, detail=f"Schedule generation failed: {str(e)}")
 
 @app.delete("/roadmap/{target}")
