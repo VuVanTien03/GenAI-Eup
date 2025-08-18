@@ -76,37 +76,6 @@ Hệ thống cung cấp các endpoint chính dưới dạng dịch vụ RESTful.
         }
         ```
 
-  * **`POST /knowledge`** – Thêm tài liệu hoặc nguồn tri thức mới vào hệ thống.
-
-      * **Mô tả:** Chấp nhận JSON chứa thông tin tri thức (ví dụ: tiêu đề và nội dung) và lưu vào vector store để truy xuất sau này.
-      * **Ví dụ yêu cầu:**
-        ```json
-        {
-          "title": "Sơ lược về Machine Learning",
-          "content": "Machine Learning là lĩnh vực trí tuệ nhân tạo cho phép máy tính học từ dữ liệu..."
-        }
-        ```
-      * **Ví dụ phản hồi:**
-        ```json
-        {
-          "message": "Knowledge added successfully"
-        }
-        ```
-
-  * **`GET /knowledge/search`** – Tìm kiếm tri thức theo từ khóa.
-
-      * **Mô tả:** Cho phép tìm các tài liệu hoặc đoạn văn bản liên quan đến từ khóa truy vấn.
-      * **Ví dụ truy cập:** `GET /knowledge/search?query=Python`
-      * **Ví dụ phản hồi:**
-        ```json
-        {
-          "results": [
-            {"id": 1, "snippet": "Python là ngôn ngữ lập trình cấp cao..."},
-            {"id": 5, "snippet": "Python được sử dụng rộng rãi trong khoa học dữ liệu..."}
-          ]
-        }
-        ```
-
   * **`GET /health`** – Kiểm tra tình trạng hoạt động của dịch vụ.
 
       * **Ví dụ phản hồi:**
