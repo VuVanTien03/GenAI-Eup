@@ -1,159 +1,138 @@
-# EUP - AI Tutor
+AI Tutor: Skill Builder
 
-## Getting Started with Docker
+AI Tutor: Skill Builder là một hệ thống trợ lý học tập cá nhân hoá dựa trên trí tuệ nhân tạo. Mục tiêu của dự án là hỗ trợ người dùng củng cố và mở rộng kỹ năng thông qua lộ trình học tập được thiết kế tự động, linh hoạt và phù hợp với quỹ thời gian cá nhân. Hệ thống thu thập và chuẩn hóa dữ liệu từ các nguồn học tập đáng tin cậy, xây dựng kho tri thức về kỹ năng và lộ trình, sau đó sử dụng mô hình ngôn ngữ lớn (LLM) để đề xuất danh mục kỹ năng và kế hoạch học tập cá nhân hóa.
 
-This project is a FastAPI-based AI Tutor backend. The recommended way to run the application is using Docker.
+Hình. Kiến trúc tổng thể của hệ thống AI Tutor: Skill Builder áp dụng phương pháp RAG (Retrieval-Augmented Generation)..
 
-### Prerequisites
-- [Docker](https://docs.docker.com/get-docker/) installed on your system.
+Hệ thống được thiết kế theo kiến trúc đa tầng. Nó kết hợp giữa mô hình ngôn ngữ lớn và cơ sở tri thức ngoài để tạo ra phản hồi cho người dùng. Các thành phần chính bao gồm: (i) module thu thập dữ liệu (crawler) để khai thác và tiền xử lý tài liệu học tập; (ii) vector store lưu trữ embeddings của các đoạn văn bản chuẩn hóa, phục vụ tìm kiếm ngữ nghĩa; (iii) mô hình ngôn ngữ lớn (ví dụ: LLaMA hoặc các LLM tương đương) đóng vai trò trung tâm cho việc suy luận và sinh câu trả lời; và (iv) API Backend xây dựng bằng FastAPI để tiếp nhận yêu cầu từ người dùng và trả về kết quả dưới dạng JSON. Hệ thống sử dụng phương pháp Retrieval-Augmented Generation (RAG), tức là mỗi khi có câu hỏi từ người dùng, hệ thống sẽ truy xuất các tài liệu liên quan từ vector store và đưa thông tin đó vào ngữ cảnh để LLM tổng hợp phản hồi. Toàn bộ hệ thống được đóng gói trong Docker, cho phép triển khai linh hoạt trên nhiều môi trường khác nhau.
 
-### 1. Clone the Repository
-```bash
-git clone https://gitlab.com/thanhhnant-group/eup-ai-tutor.git
-```
+Hướng dẫn cài đặt
 
-### 2. Build the Docker Image
-```bash
-docker build -t ai-schedule .
-```
+Yêu cầu hệ thống: Máy chủ/PC có cài đặt Docker (phiên bản mới nhất), Python 3.8+ và Git. Docker được dùng để container hóa toàn bộ ứng dụng, bao gồm mã nguồn, mô hình và thư viện cần thiết.
 
-### 3. Run the Docker Container
-```bash
-docker run -d -p 8000:8000 --name ai-schedule-container ai-schedule
-```
+Thiết lập môi trường Python:
 
-- The API will be available at: [http://localhost:8000](http://localhost:8000)
-- The root endpoint (`/`) should return `{"Hello": "World"}`.
+Clone repository về máy:
 
-### 4. Stopping and Removing the Container
-To stop the container:
-```bash
-docker stop ai-schedule-container
-```
-To remove the container:
-```bash
-docker rm ai-schedule-container
-```
+git clone https://github.com/<username>/ai-tutor-skill-builder.git
+cd ai-tutor-skill-builder
 
-### 5. Updating the Container
-If you make changes to the code:
-1. Stop and remove the running container (see above).
-2. Rebuild the image:
-   ```bash
-   docker build -t ai-schedule .
-   ```
-3. Run the container again (see above).
 
-### 6. Environment Variables
-- The application uses a `.env` file for configuration. Make sure your `.env` file is present in the project root before building the Docker image.
+Tạo và kích hoạt môi trường ảo Python:
 
----
+python3 -m venv .venv
+source .venv/bin/activate      # (Linux/macOS) hoặc .venv\Scripts\activate (Windows)
 
-## Project Structure
-```
-├── app.py              # Main FastAPI app
-├── requirements.txt    # Python dependencies
-├── Dockerfile          # Docker build instructions
-├── .env                # Environment variables (not committed)
-└── src/                # Source code
-```
 
-## API Endpoints
-- `GET /` — Health check, returns a welcome message.
-- `POST /query` — Main endpoint for schedule queries (see code for request format).
+Cài đặt các thư viện cần thiết:
 
-## Support
-For help, please open an issue in this repository.
+pip install --upgrade pip
+pip install -r requirements.txt
 
-## License
-Specify your license here.
 
-## Getting started
+Chạy ứng dụng với Docker:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Build Docker image: (Ví dụ tên image là ai-tutor)
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+docker build -t ai-tutor:latest .
 
-## Add your files
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+Chạy container: Mở cổng ứng dụng (giả sử API chạy trên port 8000):
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/thanhhnant-group/eup-ai-tutor.git
-git branch -M main
-git push -uf origin main
-```
+docker run -d -p 8000:8000 ai-tutor:latest
 
-## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/thanhhnant-group/eup-ai-tutor/-/settings/integrations)
+Sau khi chạy, API sẽ sẵn sàng lắng nghe các yêu cầu từ http://localhost:8000.
 
-## Collaborate with your team
+Hướng dẫn sử dụng API
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+Hệ thống cung cấp các endpoint chính dưới dạng dịch vụ RESTful. Dưới đây là danh sách các endpoint và ví dụ cấu trúc JSON:
 
-## Test and Deploy
+POST /query – Xử lý truy vấn học tập của người dùng.
 
-Use the built-in continuous integration in GitLab.
+Mô tả: Nhận đầu vào là câu hỏi của người dùng và trả về danh sách kỹ năng cần học kèm lịch học.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Ví dụ yêu cầu:
 
-***
+{
+  "query": "Tôi muốn trở thành nhà khoa học dữ liệu, cần học những kỹ năng gì và lộ trình thế nào trong 6 tháng?"
+}
 
-# Editing this README
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Ví dụ phản hồi: (JSON bao gồm skills và learning_path)
 
-## Suggestions for a good README
+{
+  "skills": ["Python", "Thống kê cơ bản", "Machine Learning"],
+  "learning_path": [
+    {"week": 1, "objective": "Làm quen Python", "deadline": "2025-09-01"},
+    {"week": 2, "objective": "Thống kê cơ bản", "deadline": "2025-09-08"},
+    // ...
+  ]
+}
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-## Name
-Choose a self-explaining name for your project.
+POST /knowledge – Thêm tài liệu hoặc nguồn tri thức mới vào hệ thống.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Mô tả: Chấp nhận JSON chứa thông tin tri thức (ví dụ: tiêu đề và nội dung) và lưu vào vector store để truy xuất sau này.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Ví dụ yêu cầu:
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+{
+  "title": "Sơ lược về Machine Learning",
+  "content": "Machine Learning là lĩnh vực trí tuệ nhân tạo cho phép máy tính học từ dữ liệu..."
+}
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Ví dụ phản hồi:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+{
+  "message": "Knowledge added successfully"
+}
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+GET /knowledge/search – Tìm kiếm tri thức theo từ khóa.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Mô tả: Cho phép tìm các tài liệu hoặc đoạn văn bản liên quan đến từ khóa truy vấn.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Ví dụ truy cập: GET /knowledge/search?query=Python
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Ví dụ phản hồi:
 
-## License
-For open source projects, say how it is licensed.
+{
+  "results": [
+    {"id": 1, "snippet": "Python là ngôn ngữ lập trình cấp cao..."},
+    {"id": 5, "snippet": "Python được sử dụng rộng rãi trong khoa học dữ liệu..."}
+  ]
+}
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+GET /health – Kiểm tra tình trạng hoạt động của dịch vụ.
+
+Ví dụ phản hồi:
+
+{
+  "status": "ok"
+}
+
+
+Lưu ý: Các giá trị trong ví dụ trên chỉ mang tính minh họa. Đầu ra thực tế có thể khác tùy theo dữ liệu và mô hình sử dụng.
+
+Ví dụ minh họa truy vấn
+
+Dưới đây là một số ví dụ về truy vấn mẫu mà người dùng có thể gửi cho hệ thống:
+
+Ví dụ 1: “Tôi muốn trở thành nhà khoa học dữ liệu, cần học những kỹ năng gì và lộ trình ra sao trong 6 tháng?”
+
+Ví dụ 2: “Xin tư vấn lộ trình học Python và Machine Learning để trở thành lập trình viên data trong 3 tháng.”
+
+Ví dụ 3: “Tôi đã biết C++ và toán cơ bản, hãy đề xuất các kỹ năng tiếp theo để phát triển web.”
+
+Các truy vấn này cho phép hệ thống xác định mục tiêu học tập, tình trạng hiện tại của người dùng, và thời gian yêu cầu để sinh ra danh sách kỹ năng cùng lịch học phù hợp.
+
+Liên hệ – Đóng góp – Giấy phép
+
+Liên hệ: Mọi thắc mắc, báo lỗi hoặc yêu cầu tính năng vui lòng gửi về repository GitHub của dự án. Các đóng góp (ví dụ tạo Pull Request hoặc mở Issue) đều được hoan nghênh.
+
+Đóng góp: Nếu bạn muốn đóng góp, hãy fork repository, phát triển tính năng mới hoặc sửa lỗi, rồi tạo Pull Request kèm mô tả chi tiết. Đội ngũ phát triển sẽ xem xét và phản hồi sớm nhất có thể.
+
+Giấy phép: Dự án được cấp phép theo MIT License (nếu có) hoặc giấy phép tương ứng được ghi trong file LICENSE.
