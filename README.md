@@ -2,8 +2,6 @@ AI Tutor: Skill Builder
 
 AI Tutor: Skill Builder là một hệ thống trợ lý học tập cá nhân hoá dựa trên trí tuệ nhân tạo. Mục tiêu của dự án là hỗ trợ người dùng củng cố và mở rộng kỹ năng thông qua lộ trình học tập được thiết kế tự động, linh hoạt và phù hợp với quỹ thời gian cá nhân. Hệ thống thu thập và chuẩn hóa dữ liệu từ các nguồn học tập đáng tin cậy, xây dựng kho tri thức về kỹ năng và lộ trình, sau đó sử dụng mô hình ngôn ngữ lớn (LLM) để đề xuất danh mục kỹ năng và kế hoạch học tập cá nhân hóa.
 
-Hình. Kiến trúc tổng thể của hệ thống AI Tutor: Skill Builder áp dụng phương pháp RAG (Retrieval-Augmented Generation)..
-
 Hệ thống được thiết kế theo kiến trúc đa tầng. Nó kết hợp giữa mô hình ngôn ngữ lớn và cơ sở tri thức ngoài để tạo ra phản hồi cho người dùng. Các thành phần chính bao gồm: (i) module thu thập dữ liệu (crawler) để khai thác và tiền xử lý tài liệu học tập; (ii) vector store lưu trữ embeddings của các đoạn văn bản chuẩn hóa, phục vụ tìm kiếm ngữ nghĩa; (iii) mô hình ngôn ngữ lớn (ví dụ: LLaMA hoặc các LLM tương đương) đóng vai trò trung tâm cho việc suy luận và sinh câu trả lời; và (iv) API Backend xây dựng bằng FastAPI để tiếp nhận yêu cầu từ người dùng và trả về kết quả dưới dạng JSON. Hệ thống sử dụng phương pháp Retrieval-Augmented Generation (RAG), tức là mỗi khi có câu hỏi từ người dùng, hệ thống sẽ truy xuất các tài liệu liên quan từ vector store và đưa thông tin đó vào ngữ cảnh để LLM tổng hợp phản hồi. Toàn bộ hệ thống được đóng gói trong Docker, cho phép triển khai linh hoạt trên nhiều môi trường khác nhau.
 
 Hướng dẫn cài đặt
