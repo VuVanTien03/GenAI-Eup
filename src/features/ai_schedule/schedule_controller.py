@@ -36,8 +36,9 @@ def GenSchedule(req, roadmap_data=None):
         # --- Create learning path ---
         learning_goal = req.query
         user_knowledge = req.level
+        deadline = req.deadline
 
-        learning_path = create_learning_path(agent, learning_goal, user_knowledge)
+        learning_path = create_learning_path(agent, learning_goal, deadline, user_knowledge)
 
         if not learning_path:
             return "LLM returned empty learning path."
