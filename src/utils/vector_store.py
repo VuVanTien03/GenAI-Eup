@@ -1,64 +1,120 @@
-from typing import List, Union, Dict, Any
+from __future__ import annotations
+
+from typing import List, Union, Optional, Sequence, Tuple
+import os
+
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from dotenv import dotenv_values
 from langchain_community.vectorstores import Chroma
-import sys
+
+try:
+    from langchain_core.documents import Document
+except ImportError:
+    from langchain.schema import Document  # fallback cho version cũ
+
 from src.utils.custom_emb import create_embeddings
 
-config = dotenv_values(".env")
-
-def create_vector_store(
-    texts: List[str], embeddings: HuggingFaceEmbeddings, db_path: str = config['VECTORDB_PATH']
-) -> Chroma:
+# --- Helper load config ---
+def get_env_var(key: str, default: Optional[str] = None) -> Optional[str]:
     """
-    Creates and persists a Chroma vector store from a list of texts and embeddings.
-
-    Args:
-        texts: List of text strings to store.
-        embeddings: The embedding model.
-        db_path: Path to store the Chroma database.
-
-    Returns:
-        A Chroma object.
+    Lấy biến môi trường ưu tiên theo thứ tự:
+    1. os.environ (Render, Railway... sẽ set ở đây)
+    2. .env (nếu có)
+    3. default (nếu có)
     """
+    value = os.environ.get(key)
+    if value:
+        return value
     try:
-        vector_store = Chroma.from_documents(texts, embeddings, persist_directory=db_path)
-        return vector_store
-    except Exception as e:
-        print(f"Error creating vector store: {e}")
-        sys.exit(1)  # Exit if vector store creation fails
+        from dotenv import dotenv_values
+        env_values = dotenv_values(".env")
+        return env_values.get(key, default)
+    except Exception:
+        return default
 
-def load_vector_store(
-    db_path: str = config['VECTORDB_PATH'], embeddings: HuggingFaceEmbeddings = None
+
+# =========================
+# Kiểm tra list Document
+# =========================
+def _is_document_list(items: Sequence) -> bool:
+    return len(items) > 0 and isinstance(items[0], Document)
+
+
+# =========================
+# Tạo Vector Store
+# =========================
+def create_vector_store(
+    texts: Union[List[str], List[Document]],
+    embeddings: Optional[HuggingFaceEmbeddings] = None,
+    db_path: Optional[str] = None,
+    collection_name: Optional[str] = None,
+    persist: bool = True,
 ) -> Chroma:
-    """Loads an existing Chroma vector store. If embeddings is None, it uses
-    the default embedding model.
-    """
     try:
         if embeddings is None:
             embeddings = create_embeddings()
-        vector_store = Chroma(
-            persist_directory=db_path, embedding_function=embeddings
-        )  # Use embedding_function
+
+        if db_path is None:
+            db_path = get_env_var("VECTORDB_PATH", "./chroma_db")
+
+        os.makedirs(db_path, exist_ok=True)
+
+        if _is_document_list(texts):
+            vector_store = Chroma.from_documents(
+                texts, embedding=embeddings, persist_directory=db_path, collection_name=collection_name
+            )
+        else:
+            vector_store = Chroma.from_texts(
+                texts, embedding=embeddings, persist_directory=db_path, collection_name=collection_name
+            )
+
+        if persist:
+            vector_store.persist()
+
         return vector_store
     except Exception as e:
-        print(f"Error loading vector store: {e}")
-        sys.exit(1)  # Exit if loading fails
+        raise RuntimeError(f"Error creating vector store: {e}") from e
 
-def get_similar_docs(query: str, vector_store: Chroma, k: int = 5) -> List[str]:
-    """
-    Retrieves the most similar documents from the vector store for a given query.
 
-    Args:
-        query: The query string.
-        vector_store: The Chroma vector store.
-        k: The number of similar documents to retrieve.
-
-    Returns:
-        A list of the most similar documents.
-    """
+# =========================
+# Load Vector Store
+# =========================
+def load_vector_store(
+    db_path: Optional[str] = None,
+    embeddings: Optional[HuggingFaceEmbeddings] = None,
+    collection_name: Optional[str] = None,
+) -> Chroma:
     try:
-        return vector_store.similarity_search(query, k=k)
+        if embeddings is None:
+            embeddings = create_embeddings()
+
+        if db_path is None:
+            db_path = get_env_var("VECTORDB_PATH", "./chroma_db")
+
+        if not os.path.isdir(db_path):
+            raise FileNotFoundError(f"Vector DB path không tồn tại: {db_path}")
+
+        return Chroma(
+            persist_directory=db_path,
+            embedding_function=embeddings,
+            collection_name=collection_name,
+        )
     except Exception as e:
-        print(f"Error retrieving similar documents: {e}")
-        return []  # Return empty list
+        raise RuntimeError(f"Error loading vector store: {e}") from e
+
+
+# =========================
+# Truy vấn
+# =========================
+def get_similar_docs(
+    query: str,
+    vector_store: Chroma,
+    k: int = 5,
+    with_score: bool = False,
+):
+    try:
+        if with_score:
+            return vector_store.similarity_search_with_score(query, k=k)
+        else:
+            return vector_store.similarity_search(query, k=k)
+    except Exception:
+        return []  # Không raise để không vỡ luồng gọi
