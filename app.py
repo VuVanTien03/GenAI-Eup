@@ -74,7 +74,7 @@ class RoadmapCrawler:
         """Setup Chrome driver for crawling"""
         try:
             options = Options()
-            # options.add_argument("--headless")
+            options.add_argument("--headless")
             options.add_argument("--disable-gpu")
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
@@ -123,11 +123,11 @@ class RoadmapCrawler:
         try:
             # Navigate to AI roadmap generator
             self.driver.get("https://roadmap.sh/ai/roadmap")
-            time.sleep(5)
+            time.sleep(8)
 
             # Find and fill the input
             input_box = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.ID, "«Ra35»"))
+                EC.presence_of_element_located((By.ID, "«R5155»"))
             )
 
             input_box.clear()
@@ -151,58 +151,138 @@ class RoadmapCrawler:
             return None
 
     def parse_roadmap_content(self):
-        """Parse the roadmap content from the page"""
+        """
+        Parse roadmap theo phân cấp:
+          title (Target) -> label (Skill) -> topic (Sub-skill) -> subtopic (Sub-sub-skill)
+
+        Cải tiến:
+          - Gắn subtopic đúng subskill ngay cả khi subtopic xuất hiện trước topic (dùng hàng đợi).
+          - Khi chuyển sang label/title mới mà còn subtopic treo -> flush vào subskill 'Khác' của skill hiện hành.
+          - Không trùng skill/subskill, giữ thứ tự xuất hiện.
+          - Fallback hợp lý: nếu thiếu label, subskill gắn vào title hiện tại.
+        """
         try:
-            # Find all roadmap nodes
             nodes = self.driver.find_elements(By.CSS_SELECTOR, "[data-type]")
 
-            roadmap_structure = {
-                "skills": [],
-                "learning_path": []
+            roadmap = {
+                "title": None,
+                "skills": []  # [{ "name": skill, "subskills": [{ "name": sub, "subsubskills": [...] }] }]
             }
 
-            current_skill = None
-            current_subskills = []
+            # Trạng thái hiện tại
+            current_title: str | None = None
+            current_skill: str | None = None  # label
+            current_subskill: str | None = None  # topic
+            pending_subsub: list[str] = []  # subtopic đợi đến khi có topic
+
+            PLACEHOLDER_SUBSKILL = "Khác"
+
+            # Chỉ mục chống trùng, vẫn giữ thứ tự bằng list thật
+            skills_index: dict[str, dict] = {}  # skill_name -> skill_obj
+            subskills_index: dict[tuple[str, str], dict] = {}  # (skill_name, subskill_name) -> sub_obj
+
+            def ensure_skill(name: str) -> dict:
+                """Lấy/tạo skill theo tên, đảm bảo có trong roadmap."""
+                name = (name or "").strip() or "Untitled"
+                obj = skills_index.get(name)
+                if obj is None:
+                    obj = {"name": name, "subskills": []}
+                    skills_index[name] = obj
+                    roadmap["skills"].append(obj)
+                return obj
+
+            def ensure_subskill(skill_name: str | None, sub_name: str | None) -> dict:
+                """Lấy/tạo sub-skill thuộc skill_name."""
+                skill_name = (skill_name or "").strip() or (current_title or "Untitled")
+                sub_name = (sub_name or "").strip() or PLACEHOLDER_SUBSKILL
+                key = (skill_name, sub_name)
+                obj = subskills_index.get(key)
+                if obj is None:
+                    parent_skill = ensure_skill(skill_name)
+                    obj = {"name": sub_name, "subsubskills": []}
+                    parent_skill["subskills"].append(obj)
+                    subskills_index[key] = obj
+                return obj
+
+            def flush_pending_to_placeholder():
+                """Đổ các subtopic đang treo vào subskill 'Khác' của skill hiện tại (nếu có)."""
+                nonlocal pending_subsub
+                if not pending_subsub:
+                    return
+                parent_skill = current_skill or (current_title or "Untitled")
+                sub_obj = ensure_subskill(parent_skill, PLACEHOLDER_SUBSKILL)
+                # chèn không trùng
+                for ss in pending_subsub:
+                    if ss not in sub_obj["subsubskills"]:
+                        sub_obj["subsubskills"].append(ss)
+                pending_subsub = []
 
             for node in nodes:
                 try:
-                    text = node.text.strip()
+                    text = (node.text or "").strip()
                     if not text:
                         continue
 
-                    data_type = node.get_attribute("data-type")
+                    dtype = (node.get_attribute("data-type") or "").strip()
+                    if not dtype:
+                        continue
 
-                    if data_type == "title":
-                        # Main target
-                        roadmap_structure["title"] = text
-                    elif data_type == "label" or data_type == "topic":
-                        # Main skill
-                        if current_skill:
-                            roadmap_structure["skills"].append({
-                                "name": current_skill,
-                                "subskills": current_subskills
-                            })
+                    if dtype == "title":
+                        # Trước khi đổi title, flush subtopic treo của skill hiện hành
+                        flush_pending_to_placeholder()
+                        current_title = text
+                        roadmap["title"] = text
+                        # reset ngữ cảnh con
+                        current_skill = None
+                        current_subskill = None
+
+                    elif dtype == "label":
+                        # Trước khi sang skill mới, flush subtopic treo về skill cũ
+                        flush_pending_to_placeholder()
                         current_skill = text
-                        current_subskills = []
-                    elif data_type == "subtopic":
-                        # Subskill
-                        current_subskills.append(text)
+                        ensure_skill(current_skill)
+                        current_subskill = None
 
-                except Exception as e:
+                    elif dtype == "topic":
+                        # Sub-skill thuộc skill hiện hành; nếu chưa có skill -> gắn vào title
+                        parent_skill = current_skill or (current_title or "Untitled")
+                        ensure_skill(parent_skill)  # đảm bảo skill tồn tại
+                        sub_obj = ensure_subskill(parent_skill, text)
+                        current_subskill = text
+
+                        # Nếu đang có subtopic treo, gắn vào subskill này
+                        if pending_subsub:
+                            for ss in pending_subsub:
+                                if ss not in sub_obj["subsubskills"]:
+                                    sub_obj["subsubskills"].append(ss)
+                            pending_subsub = []
+
+                    elif dtype == "subtopic":
+                        # Nếu đã có topic hiện hành, gắn trực tiếp; nếu chưa, tạm treo
+                        if current_subskill:
+                            parent_skill = current_skill or (current_title or "Untitled")
+                            sub_obj = ensure_subskill(parent_skill, current_subskill)
+                            if text not in sub_obj["subsubskills"]:
+                                sub_obj["subsubskills"].append(text)
+                        else:
+                            pending_subsub.append(text)
+
+                    else:
+                        # Kiểu không nằm trong mapping -> bỏ qua
+                        continue
+
+                except Exception:
+                    # Bỏ qua node lỗi đơn lẻ
                     continue
 
-            # Add the last skill
-            if current_skill:
-                roadmap_structure["skills"].append({
-                    "name": current_skill,
-                    "subskills": current_subskills
-                })
+            # Kết thúc vòng lặp: nếu còn subtopic treo, đổ vào placeholder của skill hiện hành (hoặc title)
+            flush_pending_to_placeholder()
 
-            return roadmap_structure
+            return roadmap
 
         except Exception as e:
             print(f"❌ Error parsing roadmap content: {e}")
-            return {"skills": [], "learning_path": []}
+            return {"title": None, "skills": [], "learning_path": []}
 
     def close(self):
         """Close the driver"""

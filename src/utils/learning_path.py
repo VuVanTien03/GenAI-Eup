@@ -34,7 +34,6 @@ def create_learning_path(agent: Any, learning_goal: str, deadline: str, user_kno
         Return your result in JSON format with the following structure:
 
         {
-          "skills": [list of skills the user needs to learn],
           "learning_path": [
             {
               "week": 1,
