@@ -88,7 +88,7 @@ try:
     if not MONGODB_URI:
         raise ValueError("Missing MONGODB_URI in environment or .env")
 
-    mongo_client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=8000)
+    mongo_client = MongoClient(MONGODB_URI, tls=True, serverSelectionTimeoutMS=8000)
     # Trigger server selection
     mongo_client.admin.command("ping")
 
