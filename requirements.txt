@@ -247,7 +247,6 @@ tinycss2==1.4.0
 tokenizers==0.21.2
 torch==2.7.1
 tornado==6.5.1
-tqdm==4.65.2
 traitlets==5.14.3
 transformers==4.53.1
 trimesh==4.7.1
